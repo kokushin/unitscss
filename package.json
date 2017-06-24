@@ -1,0 +1,29 @@
+{
+  "name": "mono.css",
+  "version": "1.0.0-beta",
+  "description": "Mono CSS is a simple and lightweight CSS framework.",
+  "main": "index.js",
+  "repository": "https://github.com/kokushin/mono.css.git",
+  "author": "kokushin <mail@kokush.in>",
+  "license": "MIT",
+  "scripts": {
+    "build": "gulp",
+    "dev": "gulp dev"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.4.2",
+    "gulp-header": "^1.8.8",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "node-sass-package-importer": "^3.0.4",
+    "postcss-cssnext": "^2.11.0"
+  },
+  "dependencies": {
+    "sanitize.css": "^5.0.0"
+  }
+}

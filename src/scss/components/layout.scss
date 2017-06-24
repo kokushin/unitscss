@@ -1,0 +1,41 @@
+.u-header {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 40px;
+  background-color: white;
+  > p {
+    max-width: 500px;
+    color: color(black a(.7));
+  }
+
+  &._fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    @include u-z-index(4);
+  }
+
+  &._theme-dark {
+    background-color: $u-color-dark;
+    & > p {
+      color: color(white a(.7));
+    }
+  }
+}
+.u-header-logo {
+  margin: 0 20px 0 0;
+  color: black;
+  > sup {
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 16px;
+    font-size: .75rem;
+    font-weight: normal;
+  }
+
+  ._theme-dark & {
+    color: white;
+  }
+}
