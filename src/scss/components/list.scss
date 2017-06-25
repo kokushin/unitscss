@@ -1,0 +1,35 @@
+.uc-list-unit {
+  max-width: $uc-max-screen-width;
+  margin: 56px auto 0;
+  padding: 32px 40px;
+  text-align: left;
+  background-color: $uc-color-bg;
+  border-radius: $uc-border-radius;
+}
+
+.uc-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  > li {
+    position: relative;
+    padding: 0 0 0 24px;
+    color: $uc-color-txt;
+    & + li {
+      margin: 16px 0 0;
+    }
+    &:before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      margin-top: -4px;
+      border-bottom: 2px solid color(black a(.3));
+      border-right: 2px solid color(black a(.3));
+      transform: rotate(-45deg);
+    }
+  }
+}

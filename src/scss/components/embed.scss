@@ -1,0 +1,24 @@
+.uc-code-unit {
+  margin: 56px 0 0;
+  text-align: left;
+  > p {
+    margin: 0;
+    color: color(black a(.7));
+    & + * {
+      margin: 16px 0 0;
+    }
+    ._of-dark & {
+      color: color(white a(.7));
+    }
+  }
+  > pre {
+    background-color: black;
+    border-radius: $uc-border-radius;
+    padding: 16px 24px;
+    > code {
+      margin: 0;
+      color: white;
+      @include u-font-size(14);
+    }
+  }
+}

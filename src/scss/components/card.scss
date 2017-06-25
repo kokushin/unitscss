@@ -1,0 +1,27 @@
+.uc-card-unit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 56px 0 0;
+}
+
+.uc-card {
+  flex: 1;
+  box-shadow: $uc-box-shadow;
+  border-radius: $uc-border-radius;
+  padding: 32px 24px;
+  background-color: white;
+  & + .uc-card {
+    margin-left: 24px;
+  }
+  > p {
+    margin: 16px 0 0;
+    @include u-font-size(14);
+    text-align: left;
+  }
+}
+
+.uc-card-title {
+  margin: 0;
+  color: $uc-color-dark;
+}

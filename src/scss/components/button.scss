@@ -1,0 +1,32 @@
+.uc-btn {
+  display: inline-block;
+  border-radius: $uc-border-radius;
+  box-shadow: $uc-box-shadow;
+  background-color: white;
+  border: 2px solid white;
+  margin: 56px 0 0;
+  & + .uc-btn {
+    margin-left: 16px;
+  }
+  > a {
+    display: block;
+    padding: 14px 48px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &._of-ghost > a,
+  &._of-primary > a {
+    color: white;
+  }
+
+  &._of-ghost {
+    background-color: transparent;
+  }
+
+  &._of-primary {
+    background-color: $uc-color-primary;
+    border: 2px solid $uc-color-primary;
+  }
+}

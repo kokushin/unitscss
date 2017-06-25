@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>UNITS - Simple and beautiful component set.</title>
-  <meta name="description" content="UNITS is a simple and beautiful component set.">
+  <title>UNITS - Simple and beautiful CSS component set.</title>
+  <meta name="description" content="UNITS is a simple and beautiful CSS component set.">
   <meta name="author" content="kokushin">
 
   <meta property="og:site_name" content="UNITS">
-  <meta property="og:title" content="UNITS - Simple and beautiful component set.">
-  <meta property="og:description" content="UNITS is a simple and beautiful component set.">
+  <meta property="og:title" content="UNITS - Simple and beautiful CSS component set.">
+  <meta property="og:description" content="UNITS is a simple and beautiful CSS component set.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kokushin.github.io/units/">
   <meta property="og:image" content="https://kokushin.github.io/units/img/share.png">
@@ -17,13 +17,118 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:site" content="@kokushing">
 
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" href="css/units.css">
   <link rel="stylesheet" href="css/userstyles.css">
 </head>
 <body>
-  <header class="u-header _theme-dark">
-    <h1 class="u-header-logo">UNITS <sup>Beta</sup></h1>
-    <p>Simple and beautiful component set.</p>
+
+  <header class="uc-header _of-black">
+    <h1 class="uc-header-logo">UNITS <sup>Beta</sup></h1>
   </header>
+
+  <section class="uc-hero">
+    <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+    <h2 class="uc-hero-title">Simple and beautiful component set.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iste!</p>
+    <div class="uc-btn _of-ghost"><a href="#">Get started</a></div>
+    <div class="uc-btn"><a href="#">Download</a></div>
+  </section>
+
+  <main class="uc-content">
+
+    <section class="uc-section _of-centering">
+      <h2 class="uc-section-title">Features</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br
+      >Itaque praesentium eius eveniet recusandae officia!</p>
+      <div class="uc-card-unit">
+        <div class="uc-card">
+          <h3 class="uc-card-title">Quickly available</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quas et est tenetur omnis labore doloribus commodi. Cupiditate.</p>
+        </div>
+        <div class="uc-card">
+          <h3 class="uc-card-title">Simple and beautiful</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quas et est tenetur omnis labore doloribus commodi. Cupiditate.</p>
+        </div>
+        <div class="uc-card">
+          <h3 class="uc-card-title">Modern browser support</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quas et est tenetur omnis labore doloribus commodi. Cupiditate.</p>
+        </div>
+      </div>
+      <div class="uc-btn _of-primary"><a href="#">Learn more</a></div>
+    </section>
+
+    <section class="uc-section _of-dark _of-centering">
+      <div class="uc-section-inner">
+        <h2 class="uc-section-title">Usage</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <div class="uc-code-unit">
+          <p>1. Download <a href="#" target="_blank">here</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <pre><code>$ git clone https://github.com/kokushin/units.git
+// or
+$ npm install unitscss --save-dev</code></pre>
+        </div>
+        <div class="uc-code-unit">
+          <p>2. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <pre><code>&lt;link rel="stylesheet" href="css/units.min.css"&gt;</code></pre>
+        </div>
+        <div class="uc-code-unit">
+          <p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut eos laudantium perferendis voluptatem sunt totam, esse mollitia officia! Ipsam numquam ducimus necessitatibus, nesciunt eos.</p>
+          <pre><code>&lt;div class="uc-card-unit"&gt;
+    &lt;div class="uc-card"&gt;
+      &lt;h3 class="uc-card-title"&gt;Lorem ipsum dolor.&lt;/h3&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+        </div>
+        <div class="uc-code-unit">
+          <p>4. Lorem ipsum dolor sit amet.</p>
+          <div class="uc-card-unit">
+            <div class="uc-card">
+              <h3 class="uc-card-title">Lorem ipsum dolor.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.</p>
+            </div>
+            <div class="uc-card">
+              <h3 class="uc-card-title">Lorem ipsum dolor.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="uc-section _of-centering">
+      <h2 class="uc-section-title">Next update</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br
+      >Itaque praesentium eius eveniet recusandae officia!</p>
+      <div class="uc-list-unit">
+        <ul class="uc-list">
+          <li>Add JavaScript that can be used in various scenes.</li>
+          <li>Increase variations of available units.</li>
+          <li>It corresponds to combination pattern of more units.</li>
+          <li>Replace Sass with PostCSS + nextcss.</li>
+          <li>Refactor the code.</li>
+        </ul>
+      </div>
+      <div class="uc-btn _of-primary"><a href="#">Follow <span style="text-transform:initial">GitHub</span></a></div>
+    </section>
+
+  </main>
+
+  <footer class="uc-footer _of-dark">
+    <ul class="uc-footer-link">
+      <li><a href="https://github.com/kokushin/units" target="_blank">GitHub</a></li>
+      <li><a href="https://github.com/kokushin/units" target="_blank">Document</a></li>
+      <li><a href="https://github.com/kokushin/units" target="_blank">Demo</a></li>
+      <li><a href="https://github.com/kokushin/units" target="_blank">Contact</a></li>
+    </ul>
+    <div class="uc-footer-logo"><cite>UNITS</cite></div>
+    <p>Made by <a href="#" target="_blank">@kokushing</a>,
+    Licensed under MIT license.<br>
+    Inspired by <a href="https://material.io/guidelines/" target="_blank">Google Material Design.</a><br>
+    Photo by <a href="https://unsplash.com/" target="_blank">unsplash.com.</a></p>
+    <small>&copy; 2017 UNITS v1.0.0-beta</small>
+  </footer>
+
 </body>
 </html>
