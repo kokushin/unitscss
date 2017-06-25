@@ -667,8 +667,10 @@ i {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   height: 80px;
-  padding: 0 40px;
+  padding: 0 80px;
   background-color: white;
 }
 
@@ -743,7 +745,7 @@ i {
 }
 
 .uc-footer {
-  padding: 80px 40px;
+  padding: 80px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -835,7 +837,7 @@ i {
 
 .uc-section {
   position: relative;
-  padding: 80px 40px 96px;
+  padding: 80px 80px 96px;
 }
 
 .uc-section + .uc-section {
@@ -930,7 +932,7 @@ i {
 .uc-hero-title {
   color: white;
   font-size: 3.5rem;
-  padding: 0 40px;
+  padding: 0 80px;
   margin: 0;
 }
 
@@ -1028,40 +1030,78 @@ i {
 .uc-list-unit {
   max-width: 1000px;
   margin: 56px auto 0;
-  padding: 32px 40px;
   text-align: left;
-  background-color: #f2f2f2;
   border-radius: 6px;
 }
 
 .uc-list {
   margin: 0;
-  padding: 0;
+  padding: 40px 24px;
   list-style-type: none;
+  border-top: 1px solid rgba(0, 0, 0, .08);
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
 }
 
 .uc-list > li {
-  position: relative;
-  padding: 0 0 0 24px;
   color: #333;
 }
 
 .uc-list > li + li {
-  margin: 16px 0 0;
+  margin: 24px 0 0;
 }
 
 .uc-list > li:before {
   content: " ";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0;
+  display: inline-block;
+  vertical-align: top;
   width: 8px;
   height: 8px;
-  margin-top: -4px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  border-right: 2px solid rgba(0, 0, 0, 0.3);
-  transform: rotate(-45deg);
+  border-radius: 50%;
+  margin-top: 6px;
+  margin-right: 12px;
+  background-color: #546e7a;
+}
+
+.uc-list > li > ul,
+.uc-list > li > ol {
+  list-style-type: none;
+  margin: 16px 0 0;
+}
+
+.uc-list > li > ul > li + li,
+.uc-list > li > ol > li + li {
+  margin: 16px 0 0;
+}
+
+.uc-list > li > ul > li:before,
+.uc-list > li > ol > li:before {
+  content: " ";
+  display: inline-block;
+  vertical-align: top;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-top: 6px;
+  margin-right: 12px;
+  background-color: transparent;
+  border: 2px solid #546e7a;
+}
+
+.uc-menu > a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.uc-menu > a + a {
+  margin-left: 16px;
+}
+
+._of-dark .uc-menu > a,
+._of-black .uc-menu > a,
+._of-ghost .uc-menu > a {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .uc-code-unit {
@@ -1083,9 +1123,13 @@ i {
 }
 
 .uc-code-unit > pre {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.92);
   border-radius: 6px;
   padding: 16px 24px;
+}
+
+.uc-code-unit > pre + p {
+  margin: 24px 0 0;
 }
 
 .uc-code-unit > pre > code {

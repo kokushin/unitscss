@@ -12,9 +12,12 @@
     }
   }
   > pre {
-    background-color: black;
+    background-color: color(black a(.92));
     border-radius: $uc-border-radius;
     padding: 16px 24px;
+    & + p {
+      margin: 24px 0 0;
+    }
     > code {
       margin: 0;
       color: white;
@@ -22,3 +25,12 @@
     }
   }
 }
+
+
+.uc-video-unit {}
+
+
+.uc-photo-unit {}
+
+
+.uc-slider-unit {}

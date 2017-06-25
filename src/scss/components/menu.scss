@@ -1,0 +1,17 @@
+.uc-menu {
+  > a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    color: color(black a(.7));
+    & + a {
+      margin-left: 16px;
+    }
+
+    ._of-dark &,
+    ._of-black &,
+    ._of-ghost & {
+      color: color(white a(.7));
+    }
+  }
+}

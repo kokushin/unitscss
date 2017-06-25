@@ -1,8 +1,9 @@
 .uc-header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: var(--u-header-height);
-  padding: 0 40px;
+  padding: 0 80px;
   background-color: white;
   > p {
     color: color(black a(.7));
@@ -65,7 +66,7 @@
 
 
 .uc-footer {
-  padding: 80px 40px;
+  padding: 80px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -144,7 +145,7 @@
 
 .uc-section {
   position: relative;
-  padding: 80px 40px 96px;
+  padding: 80px 80px 96px;
 
   & + .uc-section {
     border-top: 1px solid $uc-color-border;

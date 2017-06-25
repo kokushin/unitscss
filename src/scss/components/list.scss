@@ -1,35 +1,50 @@
+@mixin uc-list-dot() {
+  content: " ";
+  display: inline-block;
+  vertical-align: top;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-top: 6px;
+  margin-right: 12px;
+}
+
 .uc-list-unit {
   max-width: $uc-max-screen-width;
   margin: 56px auto 0;
-  padding: 32px 40px;
   text-align: left;
-  background-color: $uc-color-bg;
   border-radius: $uc-border-radius;
 }
 
 .uc-list {
   margin: 0;
-  padding: 0;
+  padding: 40px 24px;
   list-style-type: none;
+  border-top: 1px solid $uc-color-border;
+  border-bottom: 1px solid $uc-color-border;
   > li {
-    position: relative;
-    padding: 0 0 0 24px;
     color: $uc-color-txt;
     & + li {
-      margin: 16px 0 0;
+      margin: 24px 0 0;
     }
     &:before {
-      content: " ";
-      display: block;
-      position: absolute;
-      top: 50%;
-      left: 0;
-      width: 8px;
-      height: 8px;
-      margin-top: -4px;
-      border-bottom: 2px solid color(black a(.3));
-      border-right: 2px solid color(black a(.3));
-      transform: rotate(-45deg);
+      @include uc-list-dot();
+      background-color: $uc-color-primary;
+    }
+    > ul,
+    > ol {
+      list-style-type: none;
+      margin: 16px 0 0;
+      > li {
+        & + li {
+          margin: 16px 0 0;
+        }
+        &:before {
+          @include uc-list-dot();
+          background-color: transparent;
+          border: 2px solid $uc-color-primary;
+        }
+      }
     }
   }
 }
