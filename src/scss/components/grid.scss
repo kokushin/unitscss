@@ -1,0 +1,14 @@
+.uc-grid {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.uc-grid-cell {
+  position: relative;
+
+  @for $i from 1 through 12 {
+    &._of-col-#{$i} {
+      flex: #{$i};
+    }
+  }
+}

@@ -1,8 +1,11 @@
 .uc-card-unit {
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: space-between;
   margin: 56px 0 0;
+  & + .uc-card-unit {
+    margin: 32px 0 0;
+  }
 }
 
 .uc-card {

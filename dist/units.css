@@ -584,7 +584,7 @@ body {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-size: 1rem;
   letter-spacing: .05em;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 hr,
@@ -646,6 +646,11 @@ a:hover {
   white-space: nowrap;
 }
 
+p,
+.uc-txt {
+  line-height: 1.8;
+}
+
 h1,
 .uc-header-logo {
   line-height: 1;
@@ -660,6 +665,77 @@ h2,
 i {
   display: inline-block;
   font-style: normal;
+}
+
+.uc-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.uc-grid-cell {
+  position: relative;
+}
+
+.uc-grid-cell._of-col-1 {
+  -ms-flex: 1;
+      flex: 1;
+}
+
+.uc-grid-cell._of-col-2 {
+  -ms-flex: 2;
+      flex: 2;
+}
+
+.uc-grid-cell._of-col-3 {
+  -ms-flex: 3;
+      flex: 3;
+}
+
+.uc-grid-cell._of-col-4 {
+  -ms-flex: 4;
+      flex: 4;
+}
+
+.uc-grid-cell._of-col-5 {
+  -ms-flex: 5;
+      flex: 5;
+}
+
+.uc-grid-cell._of-col-6 {
+  -ms-flex: 6;
+      flex: 6;
+}
+
+.uc-grid-cell._of-col-7 {
+  -ms-flex: 7;
+      flex: 7;
+}
+
+.uc-grid-cell._of-col-8 {
+  -ms-flex: 8;
+      flex: 8;
+}
+
+.uc-grid-cell._of-col-9 {
+  -ms-flex: 9;
+      flex: 9;
+}
+
+.uc-grid-cell._of-col-10 {
+  -ms-flex: 10;
+      flex: 10;
+}
+
+.uc-grid-cell._of-col-11 {
+  -ms-flex: 11;
+      flex: 11;
+}
+
+.uc-grid-cell._of-col-12 {
+  -ms-flex: 12;
+      flex: 12;
 }
 
 .uc-header {
@@ -729,7 +805,12 @@ i {
   color: black;
 }
 
-.uc-header-logo > sup {
+.uc-header-logo a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.uc-header-logo sup {
   vertical-align: top;
   display: inline-block;
   padding-top: 8px;
@@ -891,6 +972,25 @@ i {
   color: white;
 }
 
+.uc-sidebar {
+  width: 240px;
+  height: 100%;
+  box-shadow: 0 7px 12px rgba(0, 0, 0, .16);
+  background-color: white;
+}
+
+.uc-sidebar._of-dark {
+  background-color: #37474f;
+}
+
+.uc-sidebar._of-black {
+  background-color: rgba(0, 0, 0, 0.92);
+}
+
+.uc-sidebar._of-dark, .uc-sidebar._of-black {
+  color: white;
+}
+
 .uc-hero {
   padding: 160px 0;
   background-color: #37474f;
@@ -906,7 +1006,7 @@ i {
 .uc-hero > p {
   color: white;
   font-size: 1.125rem;
-  margin: 16px 0 0;
+  margin: 24px 0 0;
 }
 
 ._of-ghost + .uc-hero,
@@ -932,6 +1032,7 @@ i {
 .uc-hero-title {
   color: white;
   font-size: 3.5rem;
+  line-height: 1.2;
   padding: 0 80px;
   margin: 0;
 }
@@ -961,11 +1062,15 @@ i {
 .uc-card-unit {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  -ms-flex-align: top;
+      align-items: top;
   -ms-flex-pack: justify;
       justify-content: space-between;
   margin: 56px 0 0;
+}
+
+.uc-card-unit + .uc-card-unit {
+  margin: 32px 0 0;
 }
 
 .uc-card {
@@ -1057,8 +1162,8 @@ i {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  margin-top: 6px;
-  margin-right: 12px;
+  margin-right: 16px;
+  margin-top: 8px;
   background-color: #546e7a;
 }
 
@@ -1081,27 +1186,70 @@ i {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  margin-top: 6px;
-  margin-right: 12px;
+  margin-right: 16px;
+  margin-top: 8px;
   background-color: transparent;
   border: 2px solid #546e7a;
+}
+
+.uc-menu-unit {
+  margin: 0;
+  padding: 32px 0;
 }
 
 .uc-menu > a {
   display: inline-block;
   text-decoration: none;
   font-weight: bold;
+  line-height: 1;
   color: rgba(0, 0, 0, 0.7);
 }
 
 .uc-menu > a + a {
-  margin-left: 16px;
+  margin: 0 0 0 16px;
+}
+
+.uc-menu > a._is-current {
+  color: black;
 }
 
 ._of-dark .uc-menu > a,
 ._of-black .uc-menu > a,
 ._of-ghost .uc-menu > a {
   color: rgba(255, 255, 255, 0.7);
+}
+
+._of-dark .uc-menu > a._is-current,
+._of-black .uc-menu > a._is-current,
+._of-ghost .uc-menu > a._is-current {
+  color: white;
+}
+
+.uc-menu._of-sidebar + ._of-sidebar > p {
+  margin-top: 16px;
+}
+
+.uc-menu._of-sidebar > p {
+  margin: 0;
+  line-height: 1;
+  padding: 16px 24px;
+}
+
+.uc-menu._of-sidebar > a {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: normal;
+  margin: 0;
+  padding: 16px 40px;
+}
+
+.uc-menu._of-sidebar > a._is-current {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.uc-menu._of-sidebar > a + a {
+  margin: 0;
 }
 
 .uc-code-unit {

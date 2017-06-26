@@ -49,7 +49,11 @@
 .uc-header-logo {
   margin: 0 20px 0 0;
   color: black;
-  > sup {
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+  sup {
     vertical-align: top;
     display: inline-block;
     padding-top: 8px;
@@ -194,5 +198,26 @@
     ._of-dark & {
       color: white;
     }
+  }
+}
+
+
+.uc-sidebar {
+  width: var(--u-sidebar-width);
+  height: 100%;
+  box-shadow: $uc-box-shadow-hover;
+  background-color: white;
+
+  &._of-dark {
+    background-color: $uc-color-dark;
+  }
+
+  &._of-black {
+    background-color: color(black a(.92));
+  }
+
+  &._of-dark,
+  &._of-black {
+    color: white;
   }
 }

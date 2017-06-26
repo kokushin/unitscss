@@ -10,7 +10,7 @@
   > p {
     color: white;
     @include u-font-size(18);
-    margin: 16px 0 0;
+    margin: 24px 0 0;
   }
 
   ._of-ghost + &,
@@ -32,6 +32,7 @@
 .uc-hero-title {
   color: white;
   @include u-font-size(56);
+  line-height: 1.2;
   padding: 0 80px;
   margin: 0;
 }
