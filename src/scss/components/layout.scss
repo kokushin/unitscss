@@ -171,7 +171,8 @@
 
 .uc-section-inner {
   max-width: $uc-max-screen-width;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .uc-section-title {

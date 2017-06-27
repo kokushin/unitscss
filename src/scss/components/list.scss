@@ -10,18 +10,17 @@
 }
 
 .uc-list-unit {
-  max-width: $uc-max-screen-width;
   margin: 56px auto 0;
   text-align: left;
-  border-radius: $uc-border-radius;
+  border-top: 1px solid $uc-color-border;
+  border-bottom: 1px solid $uc-color-border;
+  padding: 40px 24px;
 }
 
 .uc-list {
   margin: 0;
-  padding: 40px 24px;
+  padding: 0;
   list-style-type: none;
-  border-top: 1px solid $uc-color-border;
-  border-bottom: 1px solid $uc-color-border;
   > li {
     color: $uc-color-txt;
     & + li {
