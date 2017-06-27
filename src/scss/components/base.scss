@@ -37,10 +37,28 @@ h5,
 h6,
 .uc-h6 {
   margin: 0;
+  & + p {
+    margin: 16px 0 0;
+  }
 }
 
 p {
   color: $uc-color-txt;
+
+  & + h1,
+  & + .uc-h1,
+  & + h2,
+  & + .uc-h2,
+  & + h3,
+  & + .uc-h3,
+  & + h4,
+  & + .uc-h4,
+  & + h5,
+  & + .uc-h5,
+  & + h6,
+  & + .uc-h6 {
+    margin: 56px 0 0;
+  }
 }
 
 a {

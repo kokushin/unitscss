@@ -84,10 +84,11 @@
 
         <section class="uc-section">
           <h2 class="uc-section-title">カード</h2>
-          <p>カードコンポーネントは、情報をわかりやすくひとまとめにしたり、目立たせたりすることができます。<br>全部で6種類のバリエーションが用意されており、用途に応じて使い分けることが可能です。</p>
+          <p>カードコンポーネントは、情報をわかりやすくひとまとめにしたり、目立たせたりすることができます。<br>全部で7種類のバリエーションが用意されており、用途に応じて使い分けることが可能です。<br>横並びにする場合は<code>.uc-grid</code>と組み合わせて使用してください。</p>
 
           <div class="doc-component-box">
-            <h3>シンプルなカード</h3>
+            <h3>基本</h3>
+            <p>ベースとなるカードです。</p>
 
             <div class="uc-card-unit">
               <div class="uc-card">
@@ -107,35 +108,35 @@
 
           <div class="doc-component-box">
             <h3>ホバーカード</h3>
+            <p>マウスカーソルを載せると浮かび上がるカードです。要素を強調させたい場合などに有効です。<br>このクラスは他のクラスと組み合わせて利用できます。</p>
 
             <div class="uc-card-unit">
-              <div class="uc-card">
+              <div class="uc-card _of-hover">
                 <div class="uc-card-title">Hover card</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
-                <div class="uc-btn _of-primary"><a href="#">More</a></div>
               </div>
             </div>
             <div class="uc-code-unit">
-  <pre><code>&lt;div class="uc-card"&gt;
+  <pre><code>&lt;div class="uc-card _of-hover"&gt;
     &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
     &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
-    &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;More&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;</code></pre>
             </div>
           </div>
 
           <div class="doc-component-box">
             <h3>フロートカード</h3>
+            <p>常に浮かび上がっているカードです。要素を強調させたい場合などに有効です。<br>このクラスは他のクラスと組み合わせて利用できます。</p>
 
             <div class="uc-card-unit">
-              <div class="uc-card">
+              <div class="uc-card _of-float">
                 <div class="uc-card-title">Float card</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
                 <div class="uc-btn _of-primary"><a href="#">More</a></div>
               </div>
             </div>
             <div class="uc-code-unit">
-  <pre><code>&lt;div class="uc-card"&gt;
+  <pre><code>&lt;div class="uc-card _of-float"&gt;
     &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
     &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
     &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;More&lt;/a&gt;&lt;/div&gt;
@@ -145,28 +146,35 @@
 
           <div class="doc-component-box">
             <h3>バナーカード</h3>
+            <p>カード全体がクリッカブルになっているカードです。<br>まだ他のクラスとの組み合わせには対応していません。</p>
 
             <div class="uc-card-unit">
-              <div class="uc-card">
-                <div class="uc-card-title">Banner card</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
-                <div class="uc-btn _of-primary"><a href="#">More</a></div>
+              <div class="uc-card _of-banner">
+                <a href="#">
+                  <div class="uc-card-title">Banner card</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+                  <div class="uc-btn _of-primary"><span>More</span></div>
+                </a>
               </div>
             </div>
             <div class="uc-code-unit">
-  <pre><code>&lt;div class="uc-card"&gt;
-    &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
-    &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;More&lt;/a&gt;&lt;/div&gt;
+  <pre><code>&lt;div class="uc-card _of-banner"&gt;
+    &lt;a href="#"&gt;
+      &lt;div class="uc-card-title"&gt;Banner card&lt;/div&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+      &lt;div class="uc-btn _of-primary"&gt;&lt;span&gt;More&lt;/span&gt;&lt;/div&gt;
+    &lt;/a&gt;
   &lt;/div&gt;</code></pre>
             </div>
           </div>
 
           <div class="doc-component-box">
             <h3>カバー画像カード</h3>
+            <p>カード内に画像を埋め込むことができます。画像は自動的にトリミングされて中央に配置されます。</p>
 
             <div class="uc-card-unit">
               <div class="uc-card">
+                <div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"></div>
                 <div class="uc-card-title">Cover image card</div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
                 <div class="uc-btn _of-primary"><a href="#">More</a></div>
@@ -174,7 +182,8 @@
             </div>
             <div class="uc-code-unit">
   <pre><code>&lt;div class="uc-card"&gt;
-    &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
+    &lt;div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+    &lt;div class="uc-card-title"&gt;Cover image card&lt;/div&gt;
     &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
     &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;More&lt;/a&gt;&lt;/div&gt;
   &lt;/div&gt;</code></pre>
@@ -183,38 +192,62 @@
 
           <div class="doc-component-box">
             <h3>サムネイル画像カード</h3>
+            <p>カード内に埋め込まれた画像をサムネイルサイズにリサイズして表示します。</p>
 
             <div class="uc-card-unit">
-              <div class="uc-card">
-                <div class="uc-card-title">Thumb image card</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
-                <div class="uc-btn _of-primary"><a href="#">More</a></div>
+              <div class="uc-card _of-thumb">
+                <div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"></div>
+                <div class="uc-card-wrap">
+                  <div class="uc-card-title">Thumb image card</div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+                  <div class="uc-btn _of-primary"><a href="#">More</a></div>
+                </div>
               </div>
             </div>
             <div class="uc-code-unit">
-  <pre><code>&lt;div class="uc-card"&gt;
-    &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
-    &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;More&lt;/a&gt;&lt;/div&gt;
+  <pre><code>&lt;div class="uc-card _of-thumb"&gt;
+    &lt;div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+    &lt;div class="uc-card-wrap"&gt;
+      &lt;div class="uc-card-title"&gt;Thumb image card&lt;/div&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+      &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;More&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
   &lt;/div&gt;</code></pre>
             </div>
           </div>
 
           <div class="doc-component-box">
-            <h3>レイアウトカード</h3>
+            <h3>レイアウト用カード</h3>
+            <p>カード内に構造をもたせ、より複雑なスタイリングを可能にします。<br>下記のサンプルのようなプロフィールカードも簡単に作成できます。</p>
 
             <div class="uc-card-unit">
               <div class="uc-card">
-                <div class="uc-card-title">Layout card</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
-                <div class="uc-btn _of-primary"><a href="#">More</a></div>
+                <div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"></div>
+                <div class="uc-card-header">
+                  <div class="uc-card-icon" style="background-image:url(https://source.unsplash.com/random)"></div>
+                  <div class="uc-card-title">Layout card</div>
+                </div>
+                <div class="uc-card-body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+                </div>
+                <div class="uc-card-footer">
+                  <div class="uc-btn _of-primary"><a href="#">More</a></div>
+                </div>
               </div>
             </div>
             <div class="uc-code-unit">
   <pre><code>&lt;div class="uc-card"&gt;
-    &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
-    &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;More&lt;/a&gt;&lt;/div&gt;
+    &lt;div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+    &lt;div class="uc-card-header"&gt;
+      &lt;div class="uc-card-icon" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+      &lt;div class="uc-card-title"&gt;Layout card&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="uc-card-body"&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="uc-card-footer"&gt;
+      &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;More&lt;/a&gt;&lt;/div&gt;
+    &lt;/div&gt;
   &lt;/div&gt;</code></pre>
             </div>
           </div>

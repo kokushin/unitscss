@@ -11,25 +11,29 @@
   background-color: white;
   text-align: left;
   > a p,
-  > p {
+  p {
     margin: 12px 0 0;
     @include u-font-size(14);
     text-align: left;
   }
-  > .uc-btn {
+  > a .uc-btn,
+  .uc-btn {
     margin: 24px 0 0;
+    > span,
     > a {
       padding: 8px 32px;
       @include u-font-size(14);
     }
   }
 
-  &._of-col-full {
+  &._of-col-full,
+  .uc-grid-cell > & {
     max-width: 100%;
   }
 
   &._of-banner {
     padding: 0;
+    transition: $uc-box-shadow-transition;
     &:hover {
       box-shadow: $uc-box-shadow-hover;
     }
@@ -38,6 +42,31 @@
       height: 100%;
       padding: 32px 24px;
       text-decoration: none;
+    }
+  }
+
+  &._of-hover {
+    transition: $uc-box-shadow-transition;
+    &:hover {
+      box-shadow: $uc-box-shadow-hover;
+    }
+  }
+
+  &._of-float {
+    box-shadow: $uc-box-shadow-hover;
+  }
+
+  &._of-thumb {
+    display: flex;
+    .uc-card-image {
+      display: flex;
+      margin: -32px 24px -32px -24px;
+      width: 160px;
+      height: auto;
+      border-radius: $uc-border-radius 0 0 $uc-border-radius;
+    }
+    .uc-card-wrap {
+      flex: 1;
     }
   }
 }
@@ -56,4 +85,28 @@
   background-size: cover;
   background-color: $uc-color-bg;
   border-radius: $uc-border-radius $uc-border-radius 0 0;
+}
+
+.uc-card-header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: -24px -24px 24px;
+  padding: 16px 24px;
+  border-bottom: 1px solid $uc-color-border;
+
+  .uc-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-position: 50%;
+    background-size: cover;
+    background-color: $uc-color-bg;
+    margin-right: 16px;
+  }
+
+  .uc-card-title {
+    flex: 1;
+  }
 }

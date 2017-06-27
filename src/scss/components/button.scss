@@ -8,6 +8,7 @@
   & + .uc-btn {
     margin-left: 16px;
   }
+  > span,
   > a {
     display: block;
     padding: 14px 48px;
@@ -17,7 +18,9 @@
   }
 
   &._of-ghost > a,
-  &._of-primary > a {
+  &._of-ghost > span,
+  &._of-primary > a,
+  &._of-primary > span {
     color: white;
   }
 
@@ -29,4 +32,6 @@
     background-color: $uc-color-primary;
     border: 2px solid $uc-color-primary;
   }
+
+  &._of-icon {}
 }
