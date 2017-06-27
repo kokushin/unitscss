@@ -18,7 +18,7 @@
       margin-top: $uc-header-height;
     }
   }
-  &._of-centering {
+  &._of-center {
     justify-content: center;
   }
   &._of-fixed {
@@ -159,7 +159,7 @@
     border-top: 1px solid $uc-color-border;
   }
 
-  &._of-centering {
+  &._of-center {
     text-align: center;
   }
 
@@ -189,7 +189,7 @@
     background-color: color(black a(.3));
     margin: 16px 0 0;
 
-    ._of-centering & {
+    ._of-center & {
       margin: 16px auto 0;
     }
 

@@ -851,7 +851,7 @@ i {
   margin-top: 80px;
 }
 
-.uc-header._of-centering {
+.uc-header._of-center {
   -ms-flex-pack: center;
       justify-content: center;
 }
@@ -1018,7 +1018,7 @@ i {
   border-top: 1px solid rgba(0, 0, 0, .08);
 }
 
-.uc-section._of-centering {
+.uc-section._of-center {
   text-align: center;
 }
 
@@ -1050,7 +1050,7 @@ i {
   margin: 16px 0 0;
 }
 
-._of-centering .uc-section-title:after {
+._of-center .uc-section-title:after {
   margin: 16px auto 0;
 }
 
@@ -1173,7 +1173,6 @@ i {
 .uc-card > a p,
 .uc-card p {
   margin: 12px 0 0;
-  font-size: 0.875rem;
   text-align: left;
 }
 
@@ -1248,7 +1247,7 @@ i {
 
 .uc-card-title {
   margin: 0;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: bold;
   color: #37474f;
 }
@@ -1461,7 +1460,7 @@ i {
   margin: 0;
 }
 
-.uc-pager-unit._of-centering {
+.uc-pager-unit._of-center {
   text-align: center;
 }
 

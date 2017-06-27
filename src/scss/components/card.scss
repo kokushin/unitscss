@@ -13,7 +13,6 @@
   > a p,
   p {
     margin: 12px 0 0;
-    @include uc-font-size(14);
     text-align: left;
   }
   > a .uc-btn,
@@ -77,7 +76,7 @@
 
 .uc-card-title {
   margin: 0;
-  @include uc-font-size(18);
+  @include uc-font-size(20);
   font-weight: bold;
   color: $uc-color-dark;
 }
