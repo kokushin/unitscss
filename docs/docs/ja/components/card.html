@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UNITS - Simple and beautiful CSS component set.</title>
+  <meta name="description" content="UNITS is a simple and beautiful CSS component set.">
+  <meta name="author" content="kokushin">
+
+  <meta property="og:site_name" content="UNITS">
+  <meta property="og:title" content="UNITS - Simple and beautiful CSS component set.">
+  <meta property="og:description" content="UNITS is a simple and beautiful CSS component set.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kokushin.github.io/units/">
+  <meta property="og:image" content="https://kokushin.github.io/units/img/share.png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@kokushing">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/css/units.css">
+  <link rel="stylesheet" href="/css/userstyles.css">
+</head>
+<body>
+
+  <header class="uc-header _of-black _of-fixed">
+    <h1 class="uc-header-logo"><a href="/">UNITS <sup>Beta</sup></a></h1>
+    <div class="uc-menu" role="navigation">
+      <a href="/docs/" class="_is-current">Document</a>
+      <a href="#">Demo</a>
+      <a href="#">GitHub</a>
+      <a href="#">Twitter</a>
+    </div>
+  </header>
+
+  <div class="uc-grid">
+
+
+    <div class="uc-grid-cell">
+
+      <div class="uc-sidebar">
+        <nav class="uc-menu-unit">
+          <div class="uc-menu _of-sidebar">
+            <a href="/docs/ja/">はじめに</a>
+            <a href="/docs/ja/install.html">インストール</a>
+            <a href="/docs/ja/coding_guide.html">コーディングガイド</a>
+          </div>
+          <div class="uc-menu _of-sidebar">
+            <p><strong>コンポーネント</strong></p>
+            <a href="/docs/ja/components/layout.html">レイアウト</a>
+            <a href="/docs/ja/components/grid.html">グリッド</a>
+            <a href="/docs/ja/components/hero.html">ヒーローエリア</a>
+            <a href="/docs/ja/components/card.html" class="_is-current">カード</a>
+            <a href="/docs/ja/components/button.html">ボタン</a>
+            <a href="/docs/ja/components/form.html">フォーム</a>
+            <a href="/docs/ja/components/list.html">リスト</a>
+            <a href="/docs/ja/components/table.html">テーブル</a>
+            <a href="/docs/ja/components/menu.html">メニュー</a>
+            <a href="/docs/ja/components/embed.html">埋め込み</a>
+            <a href="/docs/ja/components/pager.html">ページャー</a>
+            <a href="/docs/ja/components/typography.html">タイポグラフィー</a>
+            <a href="/docs/ja/components/loading.html">ローディング</a>
+          </div>
+          <div class="uc-menu _of-sidebar">
+            <p><strong>関連リンク</strong></p>
+            <a href="/">Home</a>
+            <a href="https://github.com/kokushin/units" target="_blank">GitHub</a>
+            <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
+          </div>
+        </nav>
+      </div>
+
+    </div>
+
+
+    <div class="uc-grid-cell _of-col-fit">
+
+      <div class="uc-hero">
+        <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+        <div class="uc-hero-title">Components</div>
+      </div>
+
+      <main class="uc-content">
+
+        <section class="uc-section">
+          <h2 class="uc-section-title">カード</h2>
+          <p>カードコンポーネントは、情報をわかりやすくひとまとめにしたり、目立たせたりすることができます。<br>全部で6種類のバリエーションが用意されており、用途に応じて使い分けることが可能です。</p>
+
+          <div class="doc-component-box">
+            <h3>シンプルなカード</h3>
+
+            <div class="uc-card-unit">
+              <div class="uc-card">
+                <div class="uc-card-title">Simple card</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+                <div class="uc-btn _of-primary"><a href="#">More</a></div>
+              </div>
+            </div>
+            <div class="uc-code-unit">
+  <pre><code>&lt;div class="uc-card"&gt;
+    &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+    &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;More&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+            </div>
+          </div>
+
+          <div class="doc-component-box">
+            <h3>ホバーカード</h3>
+
+            <div class="uc-card-unit">
+              <div class="uc-card">
+                <div class="uc-card-title">Hover card</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+                <div class="uc-btn _of-primary"><a href="#">More</a></div>
+              </div>
+            </div>
+            <div class="uc-code-unit">
+  <pre><code>&lt;div class="uc-card"&gt;
+    &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+    &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;More&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+            </div>
+          </div>
+
+          <div class="doc-component-box">
+            <h3>フロートカード</h3>
+
+            <div class="uc-card-unit">
+              <div class="uc-card">
+                <div class="uc-card-title">Float card</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+                <div class="uc-btn _of-primary"><a href="#">More</a></div>
+              </div>
+            </div>
+            <div class="uc-code-unit">
+  <pre><code>&lt;div class="uc-card"&gt;
+    &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+    &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;More&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+            </div>
+          </div>
+
+          <div class="doc-component-box">
+            <h3>バナーカード</h3>
+
+            <div class="uc-card-unit">
+              <div class="uc-card">
+                <div class="uc-card-title">Banner card</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+                <div class="uc-btn _of-primary"><a href="#">More</a></div>
+              </div>
+            </div>
+            <div class="uc-code-unit">
+  <pre><code>&lt;div class="uc-card"&gt;
+    &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+    &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;More&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+            </div>
+          </div>
+
+          <div class="doc-component-box">
+            <h3>カバー画像カード</h3>
+
+            <div class="uc-card-unit">
+              <div class="uc-card">
+                <div class="uc-card-title">Cover image card</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+                <div class="uc-btn _of-primary"><a href="#">More</a></div>
+              </div>
+            </div>
+            <div class="uc-code-unit">
+  <pre><code>&lt;div class="uc-card"&gt;
+    &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+    &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;More&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+            </div>
+          </div>
+
+          <div class="doc-component-box">
+            <h3>サムネイル画像カード</h3>
+
+            <div class="uc-card-unit">
+              <div class="uc-card">
+                <div class="uc-card-title">Thumb image card</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+                <div class="uc-btn _of-primary"><a href="#">More</a></div>
+              </div>
+            </div>
+            <div class="uc-code-unit">
+  <pre><code>&lt;div class="uc-card"&gt;
+    &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+    &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;More&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+            </div>
+          </div>
+
+          <div class="doc-component-box">
+            <h3>レイアウトカード</h3>
+
+            <div class="uc-card-unit">
+              <div class="uc-card">
+                <div class="uc-card-title">Layout card</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+                <div class="uc-btn _of-primary"><a href="#">More</a></div>
+              </div>
+            </div>
+            <div class="uc-code-unit">
+  <pre><code>&lt;div class="uc-card"&gt;
+    &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+    &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;More&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <div class="uc-pager-unit">
+          <div class="uc-btn"><a href="./install.html">← ヒーローエリア</a></div>
+          <div class="uc-btn _of-primary"><a href="./install.html">ボタン →</a></div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <footer class="uc-footer _of-dark">
+    <ul class="uc-footer-link">
+      <li><a href="https://github.com/kokushin/units" target="_blank">Document</a></li>
+      <li><a href="https://github.com/kokushin/units" target="_blank">Demo</a></li>
+      <li><a href="https://github.com/kokushin/units" target="_blank">GitHub</a></li>
+      <li><a href="https://github.com/kokushin/units" target="_blank">Twitter</a></li>
+    </ul>
+    <div class="uc-footer-logo"><cite>UNITS</cite></div>
+    <p>Made by <a href="#" target="_blank">@kokushing</a>,
+    Licensed under MIT license.<br>
+    Inspired by <a href="https://material.io/guidelines/" target="_blank">Google Material Design.</a><br>
+    Photo by <a href="https://unsplash.com/" target="_blank">unsplash.com.</a></p>
+    <small>&copy; 2017 UNITS v1.0.0-beta</small>
+  </footer>
+
+</body>
+</html>

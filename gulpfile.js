@@ -2,7 +2,12 @@ const gulp = require('gulp');
 const $ = require('gulp-load-plugins')();
 const cssnext = require('postcss-cssnext');
 const processors = [
-  cssnext({browsers: ['last 2 version']})
+  cssnext({
+    browsers: ['last 2 version'],
+    features: {
+      calc: false
+    }
+  })
 ];
 const cleanCSS = require('gulp-clean-css');
 const browserSync = require('browser-sync').create();

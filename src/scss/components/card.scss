@@ -1,30 +1,59 @@
 .uc-card-unit {
-  display: flex;
-  align-items: top;
-  justify-content: space-between;
   margin: 56px 0 0;
-  & + .uc-card-unit {
-    margin: 32px 0 0;
-  }
 }
 
 .uc-card {
-  flex: 1;
+  max-width: 560px;
+  height: 100%;
   box-shadow: $uc-box-shadow;
   border-radius: $uc-border-radius;
   padding: 32px 24px;
   background-color: white;
-  & + .uc-card {
-    margin-left: 24px;
-  }
+  text-align: left;
+  > a p,
   > p {
-    margin: 16px 0 0;
+    margin: 12px 0 0;
     @include u-font-size(14);
     text-align: left;
+  }
+  > .uc-btn {
+    margin: 24px 0 0;
+    > a {
+      padding: 8px 32px;
+      @include u-font-size(14);
+    }
+  }
+
+  &._of-col-full {
+    max-width: 100%;
+  }
+
+  &._of-banner {
+    padding: 0;
+    &:hover {
+      box-shadow: $uc-box-shadow-hover;
+    }
+    > a {
+      display: block;
+      height: 100%;
+      padding: 32px 24px;
+      text-decoration: none;
+    }
   }
 }
 
 .uc-card-title {
   margin: 0;
+  @include u-font-size(18);
+  font-weight: bold;
   color: $uc-color-dark;
+}
+
+.uc-card-image {
+  margin: -32px -24px 24px;
+  height: 180px;
+  background-position: 50%;
+  background-size: cover;
+  background-color: $uc-color-bg;
+  border-radius: $uc-border-radius $uc-border-radius 0 0;
 }

@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: var(--u-header-height);
+  height: $uc-header-height;
   padding: 0 80px;
   background-color: white;
   > p {
@@ -15,7 +15,7 @@
     width: 100%;
     @include u-z-index(4);
     & + * {
-      margin-top: var(--u-header-height);
+      margin-top: $uc-header-height;
     }
   }
   &._of-centering {
@@ -65,6 +65,9 @@
   ._of-dark &,
   ._of-black & {
     color: white;
+    a {
+      color: white;
+    }
   }
 }
 
@@ -87,6 +90,7 @@
   }
   > small {
     display: block;
+    @include u-font-size(12);
     margin: 32px 0 0;
   }
 
@@ -149,7 +153,7 @@
 
 .uc-section {
   position: relative;
-  padding: 80px 80px 96px;
+  padding: 80px;
 
   & + .uc-section {
     border-top: 1px solid $uc-color-border;
@@ -203,10 +207,12 @@
 
 
 .uc-sidebar {
-  width: var(--u-sidebar-width);
+  width: $uc-sidebar-width;
   height: 100%;
   box-shadow: $uc-box-shadow-hover;
   background-color: white;
+  position: relative;
+  @include u-z-index(1);
 
   &._of-dark {
     background-color: $uc-color-dark;

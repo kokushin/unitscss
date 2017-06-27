@@ -1,0 +1,11 @@
+.uc-pager-unit {
+  margin: 0;
+  padding: 80px;
+  background-color: $uc-color-bg;
+  > * {
+    margin: 0;
+  }
+  &._of-centering {
+    text-align: center;
+  }
+}

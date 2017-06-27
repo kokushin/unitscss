@@ -41,8 +41,8 @@
       <div class="uc-sidebar">
         <nav class="uc-menu-unit">
           <div class="uc-menu _of-sidebar">
-            <a href="/docs/ja/" class="_is-current">はじめに</a>
-            <a href="/docs/ja/install.html">インストール</a>
+            <a href="/docs/ja/">はじめに</a>
+            <a href="/docs/ja/install.html" class="_is-current">インストール</a>
             <a href="/docs/ja/coding_guide.html">コーディングガイド</a>
           </div>
           <div class="uc-menu _of-sidebar">
@@ -83,53 +83,42 @@
       <main class="uc-content">
 
         <section class="uc-section">
-          <h2 class="uc-section-title">はじめに</h2>
-          <p>UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。<br>CSSを読み込み、UNITS Componentとして定められたHTMLをコピー&amp;ペーストするだけで誰でも簡単に利用することができます。</p>
-          <div class="uc-card-unit">
-            <div class="uc-grid _of-col-3 _of-gutters _of-wrap">
-              <div class="uc-grid-cell">
-                <div class="uc-card">
-                  <h3 class="uc-card-title">素早く利用できます</h3>
-                  <p>units.cssを読み込むだけ。あらかじめ様々なコンポーネントが用意されているので、必要なものだけを選択しあなたのWebサイトに組み込むことが可能です。</p>
-                </div>
-              </div>
-              <div class="uc-grid-cell">
-                <div class="uc-card">
-                  <h3 class="uc-card-title">シンプルで美しいビジュアル</h3>
-                  <p>各コンポーネントは美しくデザインされています。デザインは定期的にアップデートされますが、大きな変更は加えず、細かいマージンの調整を中心に行われます。</p>
-                </div>
-              </div>
-              <div class="uc-grid-cell">
-                <div class="uc-card">
-                  <h3 class="uc-card-title">モダンブラウザサポート</h3>
-                  <p>UNITSはMicrosoft Edge, Google Chrome, Firefox, Safariなど各ブラウザの最新バージョンに最適化されています。古いブラウザの動作は...ごめんなさい。</p>
-                </div>
-              </div>
-              <div class="uc-grid-cell">
-                <div class="uc-card">
-                  <h3 class="uc-card-title">レスポンシブWebデザイン</h3>
-                  <p>UNITSはレスポンシブWebデザインを採用し、全てのデバイス上で同じデザインを表示できるように開発を進めています。</p>
-                </div>
-              </div>
-              <div class="uc-grid-cell">
-                <div class="uc-card">
-                  <h3 class="uc-card-title">定期アップデート</h3>
-                  <p>UNITSはまだベータ版なので、短いスパンでアップデートされる予定です。それは新しいコンポーネントの追加やソースコード最適化、デザインの微調整などです。</p>
-                </div>
-              </div>
-              <div class="uc-grid-cell">
-                <div class="uc-card">
-                  <h3 class="uc-card-title">日本語をサポート</h3>
-                  <p>開発者は日本人なので、日本語でのサポートが可能です。日本語で書かれているWebページへの最適化、ドキュメントのアップデートも進めています。</p>
-                </div>
+          <h2 class="uc-section-title">インストール</h2>
+          <p>インストールは<code>unit.min.css</code>を読み込むだけです！<br>CSS本体はGitHubよりクローンもしくは<a href="#" target="_blank">ZIP形式でダウンロード</a>するか、npmを経由してダウンロードすることが可能です。</p>
+          <div class="uc-code-unit">
+            <h3>1．GitHubからクローンするか、npm経由でダウンロードする</h3>
+            <pre><code>$ git clone https://github.com/kokushin/units.git</code></pre>
+            <pre><code>$ npm install unitscss --save-dev</code></pre>
+          </div>
+          <div class="uc-code-unit">
+            <h3>2. unit.min.cssを読み込む</h3>
+            <pre><code>&lt;link rel="stylesheet" href="css/units.min.css"&gt;</code></pre>
+          </div>
+          <div class="uc-code-unit">
+            <h3>3. 使用したいコンポーネントのHTMLを記述する</h3>
+<pre><code>&lt;div class="uc-card-unit"&gt;
+    &lt;div class="uc-card"&gt;
+      &lt;h3 class="uc-card-title"&gt;Lorem ipsum dolor.&lt;/h3&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;</code></pre>
+          </div>
+          <div class="uc-code-unit">
+            <h3>4. 結果を確認してください！</h3>
+            <div class="uc-card-unit">
+              <div class="uc-card">
+                <div class="uc-card-title">Lorem ipsum dolor.</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.</p>
               </div>
             </div>
           </div>
         </section>
 
         <div class="uc-pager-unit">
-          <div class="uc-btn _of-primary"><a href="./install.html">インストール →</a></div>
+          <div class="uc-btn"><a href="./">← はじめに</a></div>
+          <div class="uc-btn _of-primary"><a href="./coding_guide.html">コーディングガイド →</a></div>
         </div>
+
       </main>
     </div>
   </div>

@@ -16,7 +16,7 @@
   ._of-ghost + &,
   ._of-fixed + & {
     margin-top: 0;
-    padding-top: calc(160px + var(--u-header-height));
+    padding-top: calc(160px + #{$uc-header-height});
   }
 
   &._of-full {
@@ -32,6 +32,7 @@
 .uc-hero-title {
   color: white;
   @include u-font-size(56);
+  font-weight: bold;
   line-height: 1.2;
   padding: 0 80px;
   margin: 0;

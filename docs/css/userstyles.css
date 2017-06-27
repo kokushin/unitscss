@@ -1,0 +1,24 @@
+
+
+/* Document Page */
+
+.doc-component-box {
+  padding: 80px 0 0;
+}
+.doc-component-box > h3 {
+  padding: 0 0 32px;
+}
+.doc-component-box .uc-card-unit {
+  margin: 0 -80px;
+  background-color:#f2f2f2;
+  padding: 40px 80px;
+}
+.doc-component-box .uc-code-unit {
+  margin: 0 -80px;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+.doc-component-box pre {
+  border-radius: 0;
+  margin: 0 80px;
+  padding: 40px 0;
+}

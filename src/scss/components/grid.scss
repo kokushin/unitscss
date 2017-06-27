@@ -1,14 +1,58 @@
 .uc-grid {
   display: flex;
-  flex-wrap: nowrap;
+
+  &._of-gutters {
+    margin: -32px 0 0 -32px;
+    > .uc-grid-cell {
+      padding: 32px 0 0 32px;
+    }
+  }
+
+  &._of-wrap {
+    flex-wrap: wrap;
+  }
+
+  &._of-top {
+    align-items: flex-start;
+  }
+
+  &._of-center {
+    align-items: center;
+  }
+
+  &._of-bottom {
+    align-items: flex-end;
+  }
 }
 
 .uc-grid-cell {
-  position: relative;
 
-  @for $i from 1 through 12 {
+  ._of-col-fit > &,
+  &._of-col-fit {
+    flex: 1;
+  }
+
+  ._of-col-full > &,
+  &._of-col-full {
+    flex: 0 0 100%;
+  }
+
+  @for $i from 2 through 12 {
+    ._of-col-#{$i} > &,
     &._of-col-#{$i} {
-      flex: #{$i};
+      flex: 0 0 calc(100%/#{$i});
     }
+  }
+
+  &._of-top {
+    align-self: flex-start;
+  }
+
+  &._of-center {
+    align-self: center;
+  }
+
+  &._of-bottom {
+    align-self: flex-end;
   }
 }
