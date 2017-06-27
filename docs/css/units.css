@@ -611,6 +611,8 @@ p,
 
 h1,
 .uc-header-logo {
+  font-size: 2rem;
+  font-weight: bold;
   line-height: 1; }
 
 h2,
@@ -965,6 +967,8 @@ i {
     .uc-card .uc-btn > a {
       padding: 8px 32px;
       font-size: 0.875rem; }
+  .uc-card._of-orig-height {
+    height: auto; }
   .uc-card._of-col-full,
   .uc-grid-cell > .uc-card {
     max-width: 100%; }
@@ -1068,6 +1072,8 @@ i {
   border-top: 1px solid rgba(0, 0, 0, .08);
   border-bottom: 1px solid rgba(0, 0, 0, .08);
   padding: 40px 24px; }
+  .uc-list-unit + p {
+    margin-top: 56px; }
 
 .uc-list {
   margin: 0;

@@ -15,6 +15,9 @@
   border-top: 1px solid $uc-color-border;
   border-bottom: 1px solid $uc-color-border;
   padding: 40px 24px;
+  & + p {
+    margin-top: 56px;
+  }
 }
 
 .uc-list {

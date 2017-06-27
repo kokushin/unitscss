@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: $uc-fonts;
-  @include u-font-size(16);
+  @include uc-font-size(16);
   letter-spacing: .05em;
   line-height: 1.6;
 }

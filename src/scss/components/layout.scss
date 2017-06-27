@@ -13,7 +13,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    @include u-z-index(4);
+    @include uc-z-index(4);
     & + * {
       margin-top: $uc-header-height;
     }
@@ -57,7 +57,7 @@
     vertical-align: top;
     display: inline-block;
     padding-top: 8px;
-    @include u-font-size(12);
+    @include uc-font-size(12);
     font-weight: normal;
     margin-left: -4px;
   }
@@ -83,14 +83,14 @@
   text-align: center;
   > p {
     margin: 24px 0 0;
-    @include u-font-size(14);
+    @include uc-font-size(14);
     & + p {
       margin: 16px 0 0;
     }
   }
   > small {
     display: block;
-    @include u-font-size(12);
+    @include uc-font-size(12);
     margin: 32px 0 0;
   }
 
@@ -103,7 +103,7 @@
 }
 
 .uc-footer-logo {
-  @include u-font-size(32);
+  @include uc-font-size(32);
   ._of-dark & {
     color: white;
     font-weight: bold;
@@ -213,7 +213,7 @@
   box-shadow: $uc-box-shadow-hover;
   background-color: white;
   position: relative;
-  @include u-z-index(1);
+  @include uc-z-index(1);
 
   &._of-dark {
     background-color: $uc-color-dark;

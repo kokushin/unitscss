@@ -16,11 +16,11 @@ $uc-fonts: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neu
 $uc-header-height: 80px;
 $uc-sidebar-width: 240px;
 
-@mixin u-font-size($px, $context: 16) {
+@mixin uc-font-size($px, $context: 16) {
   font-size: ($px / $context) * 1rem;
 }
 
-@mixin u-z-index($lv: 1) {
+@mixin uc-z-index($lv: 1) {
   @if $lv == 1 {
     z-index: 5999;
   } @else if $lv == 2 {

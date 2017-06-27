@@ -13,7 +13,7 @@
   > a p,
   p {
     margin: 12px 0 0;
-    @include u-font-size(14);
+    @include uc-font-size(14);
     text-align: left;
   }
   > a .uc-btn,
@@ -22,8 +22,12 @@
     > span,
     > a {
       padding: 8px 32px;
-      @include u-font-size(14);
+      @include uc-font-size(14);
     }
+  }
+
+  &._of-orig-height {
+    height: auto;
   }
 
   &._of-col-full,
@@ -73,7 +77,7 @@
 
 .uc-card-title {
   margin: 0;
-  @include u-font-size(18);
+  @include uc-font-size(18);
   font-weight: bold;
   color: $uc-color-dark;
 }

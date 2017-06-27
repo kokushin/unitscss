@@ -5,11 +5,13 @@ p,
 
 h1,
 .uc-header-logo {
+  @include uc-font-size(32);
+  font-weight: bold;
   line-height: 1;
 }
 
 h2,
 .uc-h2 {
-  @include u-font-size(40);
+  @include uc-font-size(40);
   line-height: 1.4;
 }
