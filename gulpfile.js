@@ -10,16 +10,17 @@ const cleanCSS = require('gulp-clean-css');
 const browserSync = require('browser-sync').create();
 const pkg = require('./package.json');
 const pkgImporter = require('node-sass-package-importer');
-const comment = `/**
+
+
+gulp.task('build', () => {
+  const banner = `/**
  * UNITS v${pkg.version}
  *
  * MIT License
  * https://kokushin.github.io/units/
  * Copyright 2017 @kokushing
-*/\r\n\n`;
+*/\r\n`;
 
-
-gulp.task('build', () => {
   return gulp.src('./src/scss/units.scss')
     .pipe($.sass({
       outputStyle: 'expanded',
@@ -28,13 +29,13 @@ gulp.task('build', () => {
       })
     }).on('error', $.sass.logError))
     .pipe($.postcss(processors))
-    .pipe($.header(comment))
+    .pipe($.header(banner))
     .pipe(gulp.dest('./dist'))
     .pipe($.rename({
       extname: '.min.css'
     }))
     .pipe(cleanCSS())
-    .pipe($.header(comment))
+    .pipe($.header(banner))
     .pipe(gulp.dest('./dist'));
 });
 
