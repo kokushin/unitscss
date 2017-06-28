@@ -27,7 +27,7 @@
   > li {
     color: $uc-color-txt;
     & + li {
-      margin: 24px 0 0;
+      margin: 16px 0 0;
     }
     &:before {
       @include uc-list-dot();
@@ -36,7 +36,7 @@
     > ul,
     > ol {
       list-style-type: none;
-      margin: 16px 0 0;
+      margin: 8px 0 0;
       > li {
         & + li {
           margin: 16px 0 0;

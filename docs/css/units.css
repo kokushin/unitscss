@@ -1081,7 +1081,7 @@ i {
   .uc-list > li {
     color: #333; }
     .uc-list > li + li {
-      margin: 24px 0 0; }
+      margin: 16px 0 0; }
     .uc-list > li:before {
       content: " ";
       display: inline-block;
@@ -1095,7 +1095,7 @@ i {
     .uc-list > li > ul,
     .uc-list > li > ol {
       list-style-type: none;
-      margin: 16px 0 0; }
+      margin: 8px 0 0; }
       .uc-list > li > ul > li + li,
       .uc-list > li > ol > li + li {
         margin: 16px 0 0; }

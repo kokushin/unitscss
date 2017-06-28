@@ -3,10 +3,7 @@
 /* Document Page */
 
 .doc-component-box {
-  padding: 56px 0 0;
-}
-.doc-component-box + .doc-component-box {
-  padding-top: 72px;
+  padding: 100px 0 0;
 }
 .doc-component-box .uc-card-unit {
   margin: 32px -80px 0;
@@ -21,7 +18,7 @@
 .doc-component-box pre {
   border-radius: 0;
   margin: 0 80px;
-  padding: 40px 0;
+  padding: 32px 0;
   background-color: white;
 }
 .doc-component-box pre > code {
