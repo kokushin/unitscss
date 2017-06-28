@@ -25,17 +25,11 @@ hr,
 }
 
 h1,
-.uc-h1,
 h2,
-.uc-h2,
 h3,
-.uc-h3,
 h4,
-.uc-h4,
 h5,
-.uc-h5,
-h6,
-.uc-h6 {
+h6 {
   margin: 0;
   & + p {
     margin: 16px 0 0;
@@ -44,19 +38,12 @@ h6,
 
 p {
   color: $uc-color-txt;
-
   & + h1,
-  & + .uc-h1,
   & + h2,
-  & + .uc-h2,
   & + h3,
-  & + .uc-h3,
   & + h4,
-  & + .uc-h4,
   & + h5,
-  & + .uc-h5,
-  & + h6,
-  & + .uc-h6 {
+  & + h6 {
     margin: 56px 0 0;
   }
 }
@@ -70,18 +57,6 @@ a {
   &:hover {
     text-decoration: none;
   }
-}
-
-._of-blind {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 1px;
-  font-size: 1px;
-  line-height: 100px;
-  white-space: nowrap;
 }
 
 pre {

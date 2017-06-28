@@ -1,0 +1,77 @@
+._of-centering {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+._of-blind {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  line-height: 100px;
+  white-space: nowrap;
+}
+
+._of-orig-width {
+  width: auto !important;
+}
+
+._of-orig-height {
+  height: auto !important;
+}
+
+._of-no-margin {
+  margin: 0 !important;
+}
+
+._of-no-padding {
+  padding: 0 !important;
+}
+
+._of-no-line-height {
+  line-height: 1 !important;
+}
+
+._of-bold {
+  font-weight: bold !important;
+}
+
+._of-txt-left {
+  text-align: left !important;
+}
+
+._of-txt-center {
+  text-align: center !important;
+}
+
+._of-txt-right {
+  text-align: right !important;
+}
+
+@for $i from 0 through 10 {
+  ._of-margin-top-step-#{$i} {
+    margin-top: #{$i*8}px !important;
+  }
+}
+
+@for $i from 0 through 10 {
+  ._of-margin-right-step-#{$i} {
+    margin-right: #{$i*8}px !important;
+  }
+}
+
+@for $i from 0 through 10 {
+  ._of-margin-bottom-step-#{$i} {
+    margin-bottom: #{$i*8}px !important;
+  }
+}
+
+@for $i from 0 through 10 {
+  ._of-margin-left-step-#{$i} {
+    margin-left: #{$i*8}px !important;
+  }
+}

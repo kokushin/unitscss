@@ -35,3 +35,15 @@ $uc-sidebar-width: 240px;
     z-index: 5999;
   }
 }
+
+@mixin uc-unit-margin() {
+  & + h1,
+  & + h2,
+  & + h3,
+  & + h4,
+  & + h5,
+  & + h6,
+  & + p {
+    margin: 56px 0 0;
+  }
+}
