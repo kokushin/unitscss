@@ -1,0 +1,21 @@
+.uc-sidebar {
+  width: $uc-sidebar-width;
+  height: 100%;
+  box-shadow: $uc-box-shadow-hover;
+  background-color: white;
+  position: relative;
+  @include uc-z-index(1);
+
+  &._of-dark {
+    background-color: $uc-color-dark;
+  }
+
+  &._of-black {
+    background-color: color(black a(.92));
+  }
+
+  &._of-dark,
+  &._of-black {
+    color: white;
+  }
+}

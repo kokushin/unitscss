@@ -5,6 +5,7 @@ html {
 body {
   font-family: $uc-fonts;
   @include uc-font-size(16);
+  color: $uc-color-txt;
   letter-spacing: .05em;
   line-height: 1.6;
 }

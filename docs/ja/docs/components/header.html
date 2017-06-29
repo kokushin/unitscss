@@ -51,13 +51,13 @@
           </div>
           <div class="uc-menu _of-sidebar">
             <p><strong>コンポーネント</strong></p>
-            <a href="/ja/docs/components/header.html">ヘッダー</a>
+            <a href="/ja/docs/components/header.html" class="_is-current">ヘッダー</a>
             <a href="/ja/docs/components/footer.html">フッター</a>
             <a href="/ja/docs/components/section.html">セクション</a>
             <a href="/ja/docs/components/sidebar.html">サイドバー</a>
             <a href="/ja/docs/components/grid.html">グリッド</a>
             <a href="/ja/docs/components/hero.html">ヒーローエリア</a>
-            <a href="/ja/docs/components/card.html" class="_is-current">カード</a>
+            <a href="/ja/docs/components/card.html">カード</a>
             <a href="/ja/docs/components/button.html">ボタン</a>
             <a href="/ja/docs/components/form.html">フォーム</a>
             <a href="/ja/docs/components/list.html">リスト</a>
@@ -90,19 +90,16 @@
       <main class="uc-content">
 
         <section class="uc-section">
-          <h2 class="uc-section-title">カード</h2>
-          <p>カードコンポーネントは、情報をわかりやすくひとまとめにしたり、目立たせたりすることができます。<br>全部で7種類のバリエーションが用意されており、用途に応じて使い分けることが可能です。<br>横並びにする場合は<code>.uc-grid</code>と組み合わせて使用してください。</p>
+          <h2 class="uc-section-title">ヘッダー</h2>
+          <p>ヘッダーコンポーネントは、Webページの最上部に配置される要素が含まれます。<br>背景色を変更するオプションや、固定のON/OFFを切り替えるオプションなどが用意されています。</p>
 
           <div class="uc-list-unit">
             <ul class="uc-list">
               <li><a href="#c-0">クラス一覧</a></li>
-              <li><a href="#c-1">基本のカード</a></li>
-              <li><a href="#c-2">ホバーカード</a></li>
-              <li><a href="#c-3">フロートカード</a></li>
-              <li><a href="#c-4">バナーカード</a></li>
-              <li><a href="#c-5">カバー画像カード</a></li>
-              <li><a href="#c-6">サムネイル画像カード</a></li>
-              <li><a href="#c-7">レイアウト用カード</a></li>
+              <li><a href="#c-1">基本のヘッダー</a></li>
+              <li><a href="#c-2">テーマヘッダー</a></li>
+              <li><a href="#c-3">ゴーストヘッダー</a></li>
+              <li><a href="#c-4">固定ヘッダー</a></li>
             </ul>
           </div>
 
@@ -123,81 +120,46 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>.uc-card</td>
+                    <td>.uc-header</td>
                     <td>コンポーネント</td>
                     <td>はい</td>
                     <td>-</td>
-                    <td>基本のカードを適用する</td>
+                    <td>基本のヘッダーを適用する</td>
                   </tr>
                   <tr>
-                    <td>.uc-card-image</td>
+                    <td>.uc-header-logo</td>
                     <td>コンポーネント</td>
-                    <td>いいえ</td>
+                    <td>はい</td>
                     <td>-</td>
-                    <td>画像を埋め込む</td>
+                    <td>基本のヘッダー用ロゴを適用する</td>
                   </tr>
                   <tr>
-                    <td>.uc-card-title</td>
-                    <td>コンポーネント</td>
-                    <td>いいえ</td>
-                    <td>-</td>
-                    <td>カード用の見出しのスタイルを適用する</td>
-                  </tr>
-                  <tr>
-                    <td>.uc-card-icon</td>
-                    <td>コンポーネント</td>
-                    <td>いいえ</td>
-                    <td>-</td>
-                    <td>プロフィール画像を埋め込む</td>
-                  </tr>
-                  <tr>
-                    <td>.uc-card-header</td>
-                    <td>コンポーネント</td>
-                    <td>いいえ</td>
-                    <td>-</td>
-                    <td>カードにヘッダーを定義する。flexboxを利用可能</td>
-                  </tr>
-                  <tr>
-                    <td>.uc-card-body</td>
-                    <td>コンポーネント</td>
-                    <td>いいえ</td>
-                    <td>-</td>
-                    <td>カードにボディを定義する</td>
-                  </tr>
-                  <tr>
-                    <td>.uc-card-footer</td>
-                    <td>コンポーネント</td>
-                    <td>いいえ</td>
-                    <td>-</td>
-                    <td>カードにフッターを定義する</td>
-                  </tr>
-                  <tr>
-                    <td>._of-banner</td>
+                    <td>._of-fixed</td>
                     <td>オプション</td>
                     <td>いいえ</td>
                     <td>不可</td>
-                    <td>カード全体がクリッカブルになっているカードを適用する</td>
+                    <td>ヘッダーを固定し、追従するようにする</td>
                   </tr>
                   <tr>
-                    <td>._of-thumb</td>
+                    <td>._of-ghost</td>
                     <td>オプション</td>
                     <td>いいえ</td>
                     <td>不可</td>
-                    <td>サムネイル画像が埋め込まれたカードを適用する</td>
+                    <td>ヘッダーの背景を透過する</td>
                   </tr>
                   <tr>
-                    <td>._of-hover</td>
+                    <td>._of-dark</td>
                     <td>オプション</td>
                     <td>いいえ</td>
                     <td>可能</td>
-                    <td>マウスカーソルを載せると浮かび上がる効果を適用する</td>
+                    <td>ヘッダーの背景にダークテーマを適用する</td>
                   </tr>
                   <tr>
-                    <td>._of-float</td>
+                    <td>._of-black</td>
                     <td>オプション</td>
                     <td>いいえ</td>
                     <td>可能</td>
-                    <td>常に浮かび上がっている効果を適用する</td>
+                    <td>ヘッダーの背景にブラックテーマを適用する</td>
                   </tr>
                 </tbody>
               </table>
@@ -205,40 +167,48 @@
           </div>
 
           <div class="doc-component-box" id="c-1">
-            <h3>基本のカード</h3>
-            <p>ベースとなるカードです。</p>
+            <h3>基本のヘッダー</h3>
+            <p>ベースとなるヘッダーです。</p>
 
             <div class="uc-card-unit">
-              <div class="uc-card">
-                <div class="uc-card-title">Simple card</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
-                <div class="uc-btn _of-primary"><a href="#">Button</a></div>
+              <div class="uc-header">
+                <div class="uc-header-logo">Logo</div>
+                <p>Page description</p>
               </div>
             </div>
             <div class="uc-code-unit">
-<pre><code class="html">&lt;div class="uc-card"&gt;
-  &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
-  &lt;div class="uc-btn _of-primary"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+<pre><code class="html">&lt;div class="uc-header"&gt;
+  &lt;div class="uc-header-logo"&gt;Logo&lt;/div&gt;
+  &lt;p&gt;Page description&lt;/p&gt;
 &lt;/div&gt;
 </code></pre>
             </div>
           </div>
 
           <div class="doc-component-box" id="c-2">
-            <h3>ホバーカード</h3>
-            <p>マウスカーソルを載せると浮かび上がるカードです。要素を強調させたい場合などに有効です。<br>このクラスは他のクラスと組み合わせて利用できます。</p>
+            <h3>テーマヘッダー</h3>
+            <p>ヘッダーの背景を各テーマごとに変更することが可能です。</p>
 
             <div class="uc-card-unit">
-              <div class="uc-card _of-hover">
-                <div class="uc-card-title">Hover card</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+              <div class="uc-header _of-black">
+                <div class="uc-header-logo">Black</div>
+                <p>Page description</p>
+              </div>
+              <span>&nbsp;</span>
+              <div class="uc-header _of-dark">
+                <div class="uc-header-logo">Dark</div>
+                <p>Page description</p>
               </div>
             </div>
             <div class="uc-code-unit">
-<pre><code class="html">&lt;div class="uc-card _of-hover"&gt;
-  &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+<pre><code class="html">&lt;div class="uc-header _of-black"&gt;
+  &lt;div class="uc-header-logo"&gt;Black&lt;/div&gt;
+  &lt;p&gt;Page description&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="uc-header _of-dark"&gt;
+  &lt;div class="uc-header-logo"&gt;Dark&lt;/div&gt;
+  &lt;p&gt;Page description&lt;/p&gt;
 &lt;/div&gt;
 </code></pre>
             </div>

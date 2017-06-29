@@ -1,0 +1,72 @@
+.uc-footer {
+  padding: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+  > p {
+    margin: 24px 0 0;
+    @include uc-font-size(14);
+    & + p {
+      margin: 16px 0 0;
+    }
+  }
+  > small {
+    display: block;
+    @include uc-font-size(12);
+    margin: 32px 0 0;
+  }
+
+  &._of-dark {
+    background-color: color(black a(.92));
+    > p, > small, a {
+      color: color(white a(.8));
+    }
+  }
+}
+
+.uc-footer-logo {
+  @include uc-font-size(32);
+  ._of-dark & {
+    color: white;
+    font-weight: bold;
+    margin: 56px 0 0;
+    > cite {
+      font-style: normal;
+    }
+  }
+}
+
+.uc-footer-link {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  > li {
+    margin: 0 16px;
+    position: relative;
+    & + li:before {
+      content: " ";
+      display: inline-block;
+      width: 1px;
+      height: 16px;
+      background-color: color(black a(.3));
+      position: absolute;
+      top: 50%;
+      left: -16px;
+      margin-top: -8px;
+
+      ._of-dark & {
+        background-color: color(white a(.3));
+      }
+    }
+    a {
+      color: $uc-color-txt;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
+}

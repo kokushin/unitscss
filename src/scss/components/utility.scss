@@ -53,25 +53,25 @@
 }
 
 @for $i from 0 through 10 {
-  ._of-margin-top-step-#{$i} {
+  ._of-mt-step-#{$i} {
     margin-top: #{$i*8}px !important;
   }
 }
 
 @for $i from 0 through 10 {
-  ._of-margin-right-step-#{$i} {
+  ._of-mr-step-#{$i} {
     margin-right: #{$i*8}px !important;
   }
 }
 
 @for $i from 0 through 10 {
-  ._of-margin-bottom-step-#{$i} {
+  ._of-mb-step-#{$i} {
     margin-bottom: #{$i*8}px !important;
   }
 }
 
 @for $i from 0 through 10 {
-  ._of-margin-left-step-#{$i} {
+  ._of-ml-step-#{$i} {
     margin-left: #{$i*8}px !important;
   }
 }

@@ -6,7 +6,7 @@
   padding: 100px 0 0;
 }
 .doc-component-box .uc-card-unit {
-  margin: 32px -80px 0;
+  margin: 40px -80px 0;
   background-color:#f2f2f2;
   padding: 40px 80px;
 }
@@ -18,9 +18,10 @@
 .doc-component-box pre {
   border-radius: 0;
   margin: 0 80px;
-  padding: 32px 0;
+  padding: 40px 0;
   background-color: white;
 }
 .doc-component-box pre > code {
   color: black;
+  background-color: white;
 }

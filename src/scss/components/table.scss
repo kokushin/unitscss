@@ -1,0 +1,29 @@
+.uc-table-unit {
+  margin: 56px 0 0;
+  @include uc-unit-margin();
+}
+
+.uc-table {
+  thead {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+  }
+  tbody {
+    > tr {
+      &:nth-child(even) {
+        background-color: $uc-color-bg;
+      }
+    }
+  }
+  th {
+    padding: 16px 24px;
+    text-align: left;
+  }
+  td {
+    padding: 16px 24px;
+  }
+
+  &._of-col-full {
+    width: 100%;
+  }
+}

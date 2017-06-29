@@ -582,6 +582,7 @@ html {
 body {
   font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   font-size: 1rem;
+  color: #333;
   letter-spacing: .05em;
   line-height: 1.6;
 }
@@ -806,6 +807,7 @@ i {
 }
 
 .uc-header > p {
+  margin-right: auto;
   color: rgba(0, 0, 0, 0.7);
 }
 
@@ -1361,6 +1363,42 @@ i {
   border: 2px solid #546e7a;
 }
 
+.uc-table-unit {
+  margin: 56px 0 0;
+}
+
+.uc-table-unit + h1,
+.uc-table-unit + h2,
+.uc-table-unit + h3,
+.uc-table-unit + h4,
+.uc-table-unit + h5,
+.uc-table-unit + h6,
+.uc-table-unit + p {
+  margin: 56px 0 0;
+}
+
+.uc-table thead {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.uc-table tbody > tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.uc-table th {
+  padding: 16px 24px;
+  text-align: left;
+}
+
+.uc-table td {
+  padding: 16px 24px;
+}
+
+.uc-table._of-col-full {
+  width: 100%;
+}
+
 .uc-menu-unit {
   margin: 0;
   padding: 32px 0;
@@ -1554,178 +1592,178 @@ i {
   text-align: right !important;
 }
 
-._of-margin-top-step-0 {
+._of-mt-step-0 {
   margin-top: 0px !important;
 }
 
-._of-margin-top-step-1 {
+._of-mt-step-1 {
   margin-top: 8px !important;
 }
 
-._of-margin-top-step-2 {
+._of-mt-step-2 {
   margin-top: 16px !important;
 }
 
-._of-margin-top-step-3 {
+._of-mt-step-3 {
   margin-top: 24px !important;
 }
 
-._of-margin-top-step-4 {
+._of-mt-step-4 {
   margin-top: 32px !important;
 }
 
-._of-margin-top-step-5 {
+._of-mt-step-5 {
   margin-top: 40px !important;
 }
 
-._of-margin-top-step-6 {
+._of-mt-step-6 {
   margin-top: 48px !important;
 }
 
-._of-margin-top-step-7 {
+._of-mt-step-7 {
   margin-top: 56px !important;
 }
 
-._of-margin-top-step-8 {
+._of-mt-step-8 {
   margin-top: 64px !important;
 }
 
-._of-margin-top-step-9 {
+._of-mt-step-9 {
   margin-top: 72px !important;
 }
 
-._of-margin-top-step-10 {
+._of-mt-step-10 {
   margin-top: 80px !important;
 }
 
-._of-margin-right-step-0 {
+._of-mr-step-0 {
   margin-right: 0px !important;
 }
 
-._of-margin-right-step-1 {
+._of-mr-step-1 {
   margin-right: 8px !important;
 }
 
-._of-margin-right-step-2 {
+._of-mr-step-2 {
   margin-right: 16px !important;
 }
 
-._of-margin-right-step-3 {
+._of-mr-step-3 {
   margin-right: 24px !important;
 }
 
-._of-margin-right-step-4 {
+._of-mr-step-4 {
   margin-right: 32px !important;
 }
 
-._of-margin-right-step-5 {
+._of-mr-step-5 {
   margin-right: 40px !important;
 }
 
-._of-margin-right-step-6 {
+._of-mr-step-6 {
   margin-right: 48px !important;
 }
 
-._of-margin-right-step-7 {
+._of-mr-step-7 {
   margin-right: 56px !important;
 }
 
-._of-margin-right-step-8 {
+._of-mr-step-8 {
   margin-right: 64px !important;
 }
 
-._of-margin-right-step-9 {
+._of-mr-step-9 {
   margin-right: 72px !important;
 }
 
-._of-margin-right-step-10 {
+._of-mr-step-10 {
   margin-right: 80px !important;
 }
 
-._of-margin-bottom-step-0 {
+._of-mb-step-0 {
   margin-bottom: 0px !important;
 }
 
-._of-margin-bottom-step-1 {
+._of-mb-step-1 {
   margin-bottom: 8px !important;
 }
 
-._of-margin-bottom-step-2 {
+._of-mb-step-2 {
   margin-bottom: 16px !important;
 }
 
-._of-margin-bottom-step-3 {
+._of-mb-step-3 {
   margin-bottom: 24px !important;
 }
 
-._of-margin-bottom-step-4 {
+._of-mb-step-4 {
   margin-bottom: 32px !important;
 }
 
-._of-margin-bottom-step-5 {
+._of-mb-step-5 {
   margin-bottom: 40px !important;
 }
 
-._of-margin-bottom-step-6 {
+._of-mb-step-6 {
   margin-bottom: 48px !important;
 }
 
-._of-margin-bottom-step-7 {
+._of-mb-step-7 {
   margin-bottom: 56px !important;
 }
 
-._of-margin-bottom-step-8 {
+._of-mb-step-8 {
   margin-bottom: 64px !important;
 }
 
-._of-margin-bottom-step-9 {
+._of-mb-step-9 {
   margin-bottom: 72px !important;
 }
 
-._of-margin-bottom-step-10 {
+._of-mb-step-10 {
   margin-bottom: 80px !important;
 }
 
-._of-margin-left-step-0 {
+._of-ml-step-0 {
   margin-left: 0px !important;
 }
 
-._of-margin-left-step-1 {
+._of-ml-step-1 {
   margin-left: 8px !important;
 }
 
-._of-margin-left-step-2 {
+._of-ml-step-2 {
   margin-left: 16px !important;
 }
 
-._of-margin-left-step-3 {
+._of-ml-step-3 {
   margin-left: 24px !important;
 }
 
-._of-margin-left-step-4 {
+._of-ml-step-4 {
   margin-left: 32px !important;
 }
 
-._of-margin-left-step-5 {
+._of-ml-step-5 {
   margin-left: 40px !important;
 }
 
-._of-margin-left-step-6 {
+._of-ml-step-6 {
   margin-left: 48px !important;
 }
 
-._of-margin-left-step-7 {
+._of-ml-step-7 {
   margin-left: 56px !important;
 }
 
-._of-margin-left-step-8 {
+._of-ml-step-8 {
   margin-left: 64px !important;
 }
 
-._of-margin-left-step-9 {
+._of-ml-step-9 {
   margin-left: 72px !important;
 }
 
-._of-margin-left-step-10 {
+._of-ml-step-10 {
   margin-left: 80px !important;
 }

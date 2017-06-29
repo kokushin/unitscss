@@ -1,0 +1,59 @@
+.uc-content {
+  position: relative;
+}
+
+
+.uc-section {
+  position: relative;
+  padding: 80px;
+
+  & + .uc-section {
+    border-top: 1px solid $uc-color-border;
+  }
+
+  &._of-center {
+    text-align: center;
+  }
+
+  &._of-dark {
+    background-color: $uc-color-dark;
+    color: white;
+  }
+}
+
+.uc-section-inner {
+  max-width: $uc-max-screen-width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uc-section-title {
+  color: black;
+  ._of-dark & {
+    color: white;
+  }
+
+  &:after {
+    content: " ";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: color(black a(.3));
+    margin: 16px 0 0;
+
+    ._of-center & {
+      margin: 16px auto 0;
+    }
+
+    ._of-dark & {
+      background-color: color(white a(.3));
+    }
+  }
+  & + p {
+    margin: 32px 0 0;
+
+    ._of-dark & {
+      color: white;
+    }
+  }
+}
