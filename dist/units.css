@@ -1458,10 +1458,10 @@ i {
 
 /* form-units */
 .uc-form {
-  border-radius: border-radius;
-  box-shadow: box-shadow;
+  border-radius: 6px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .26);
   background-color: #fff;
-  padding: 32px 24px;
+  padding: 40px 40px;
 }
 
 .uc-form-parts-unit + .uc-form-parts-unit {
@@ -1480,18 +1480,18 @@ i {
   margin: 0;
 }
 
-.uc-fform-parts {
+.uc-form-parts {
   width: 100%;
   padding: 16px;
-  border: 1px solid color-border;
-  border-radius: border-radius;
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 6px;
 }
 
-.uc-fform-parts._of-text {
+.uc-form-parts._of-text {
   line-height: 1;
 }
 
-.uc-fform-parts._of-textarea {
+.uc-form-parts._of-textarea {
   height: 10em;
 }
 
