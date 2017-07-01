@@ -44,13 +44,13 @@ gulp.task('default', ['build']);
 
 gulp.task('dev:serve', ['dev:build'], () => {
   browserSync.init({
-    server: './docs',
+    server: './htdocs',
     notify: false,
     ghostMode: false
   });
 
   gulp.watch('./src/**/*.scss', ['dev:build']);
-  gulp.watch('./docs/**/*.html').on('change', browserSync.reload);
+  gulp.watch('./htdocs/**/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('dev:build', ['build'], () => {
@@ -63,7 +63,7 @@ gulp.task('dev:build', ['build'], () => {
     }).on('error', $.sass.logError))
     .pipe($.postcss(processors))
     .pipe($.sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./docs/css'))
+    .pipe(gulp.dest('./htdocs/css'))
     .pipe(browserSync.stream());
 });
 
