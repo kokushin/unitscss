@@ -707,12 +707,12 @@ i {
       flex-wrap: wrap;
 }
 
-.uc-grid._of-gutters {
-  margin: -32px 0 0 -32px;
+.uc-grid._of-gutter {
+  margin: -40px 0 0 -40px;
 }
 
-.uc-grid._of-gutters .uc-grid-cell {
-  padding: 32px 0 0 32px;
+.uc-grid._of-gutter .uc-grid-cell {
+  padding: 40px 0 0 40px;
 }
 
 .uc-grid._of-nowrap {

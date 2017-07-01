@@ -2,10 +2,10 @@
   display: flex;
   flex-wrap: wrap;
 
-  &.#{$modifier-prefix}gutters {
-    margin: -32px 0 0 -32px;
+  &.#{$modifier-prefix}gutter {
+    margin: -#{$grid-gutter} 0 0 -#{$grid-gutter};
     .#{$component-prefix}grid-cell {
-      padding: 32px 0 0 32px;
+      padding: #{$grid-gutter} 0 0 #{$grid-gutter};
     }
   }
 
