@@ -1,9 +1,9 @@
-.uc-table-unit {
+@mixin table-unit() {
   margin: 56px 0 0;
-  @include uc-unit-margin();
+  @include unit-margin();
 }
 
-.uc-table {
+@mixin table() {
   thead {
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
@@ -11,7 +11,7 @@
   tbody {
     > tr {
       &:nth-child(even) {
-        background-color: $uc-color-bg;
+        background-color: $color-bg;
       }
     }
   }
@@ -23,7 +23,7 @@
     padding: 16px 24px;
   }
 
-  &._of-col-full {
+  &.#{$modifier-prefix}col-full {
     width: 100%;
   }
 }

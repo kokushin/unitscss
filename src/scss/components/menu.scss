@@ -1,9 +1,9 @@
-.uc-menu-unit {
+@mixin menu-unit() {
   margin: 0;
   padding: 32px 0;
 }
 
-.uc-menu {
+@mixin menu() {
   > a {
     display: inline-block;
     text-decoration: none;
@@ -17,9 +17,9 @@
       color: black;
     }
 
-    ._of-dark &,
-    ._of-black &,
-    ._of-ghost & {
+    .#{$modifier-prefix}dark &,
+    .#{$modifier-prefix}black &,
+    .#{$modifier-prefix}ghost & {
       color: color(white a(.7));
       &._is-current {
         color: white;
@@ -27,8 +27,8 @@
     }
   }
 
-  &._of-sidebar {
-    & + ._of-sidebar {
+  &.#{$modifier-prefix}sidebar {
+    & + .#{$modifier-prefix}sidebar {
       > p {
         margin-top: 16px;
       }
@@ -40,12 +40,12 @@
     }
     > a {
       display: block;
-      @include uc-font-size(14);
+      @include font-size(14);
       font-weight: normal;
       margin: 0;
       padding: 16px 40px;
       &._is-current {
-        background-color: $uc-color-bg;
+        background-color: $color-bg;
         font-weight: bold;
       }
       & + a {

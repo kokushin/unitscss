@@ -1,5 +1,15 @@
+/**
+ * import sanitize.css
+ */
+
 @import "~sanitize.css";
-// UNITS components
+
+
+/**
+ * import UNITS component set
+ */
+
+/* core files */
 @import "vars";
 @import "base";
 @import "typography";
@@ -20,3 +30,119 @@
 @import "embed";
 @import "loading";
 @import "utility";
+
+
+/* grid-units */
+
+.#{$component-prefix}grid { @include grid(); }
+.#{$component-prefix}grid-cell { @include grid-cell(); }
+
+
+/* header-units */
+
+.#{$component-prefix}header { @include header(); }
+.#{$component-prefix}header-logo { @include header-logo(); }
+
+
+/* footer-units */
+
+.#{$component-prefix}footer { @include footer(); }
+.#{$component-prefix}footer-logo { @include footer-logo(); }
+.#{$component-prefix}footer-link { @include footer-link(); }
+
+
+/* section-units */
+
+.#{$component-prefix}content { @include content(); }
+.#{$component-prefix}section { @include section(); }
+.#{$component-prefix}section-inner { @include section-inner(); }
+.#{$component-prefix}section-title { @include section-title(); }
+
+
+/* sidebar-units */
+
+.#{$component-prefix}sidebar { @include sidebar(); }
+
+
+/* hero-units */
+
+.#{$component-prefix}hero { @include hero(); }
+.#{$component-prefix}hero-title { @include hero-title(); }
+.#{$component-prefix}hero-bg { @include hero-bg(); }
+
+
+/* card-units */
+
+.#{$component-prefix}card-unit { @include card-unit(); }
+.#{$component-prefix}card { @include card(); }
+.#{$component-prefix}card-title { @include card-title(); }
+.#{$component-prefix}card-image { @include card-image(); }
+.#{$component-prefix}card-header { @include card-header(); }
+
+
+/* button-units */
+
+.#{$component-prefix}btn-unit { @include btn-unit(); }
+.#{$component-prefix}btn { @include btn(); }
+
+
+/* form-units */
+
+.#{$component-prefix}form { @include form(); }
+.#{$component-prefix}form-parts-unit { @include form-parts-unit(); }
+.#{$component-prefix}fform-parts { @include form-parts(); }
+
+
+/* list-units */
+
+.#{$component-prefix}list-unit { @include list-unit(); }
+.#{$component-prefix}list { @include list(); }
+
+
+/* table-units */
+
+.#{$component-prefix}table-unit { @include table-unit(); }
+.#{$component-prefix}table { @include table(); }
+
+
+/* menu-units */
+
+.#{$component-prefix}menu-unit { @include menu-unit(); }
+.#{$component-prefix}menu { @include menu(); }
+
+
+/* pager-units */
+
+.#{$component-prefix}pager-unit { @include pager-unit(); }
+
+
+/* embed-units */
+
+.#{$component-prefix}code-unit { @include code-unit(); }
+.#{$component-prefix}video-unit {}
+.#{$component-prefix}photo-unit {}
+.#{$component-prefix}slider-unit {}
+
+
+/* loading-units */
+
+.#{$component-prefix}loading {}
+
+
+/* utility-units */
+
+.#{$modifier-prefix}centering { @include centering(); }
+.#{$modifier-prefix}blind { @include blind(); }
+.#{$modifier-prefix}orig-width { @include orig-width(); }
+.#{$modifier-prefix}orig-height { @include orig-height(); }
+.#{$modifier-prefix}no-margin { @include no-margin(); }
+.#{$modifier-prefix}no-padding { @include no-padding(); }
+.#{$modifier-prefix}no-line-height { @include no-line-height(); }
+.#{$modifier-prefix}txt-bold { @include txt-bold(); }
+.#{$modifier-prefix}txt-left { @include txt-left(); }
+.#{$modifier-prefix}txt-center { @include txt-center(); }
+.#{$modifier-prefix}txt-right { @include txt-right(); }
+.#{$modifier-prefix}mt-step { @include mt-step(); }
+.#{$modifier-prefix}mr-step { @include mr-step(); }
+.#{$modifier-prefix}mb-step { @include mb-step(); }
+.#{$modifier-prefix}ml-step { @include ml-step(); }

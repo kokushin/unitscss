@@ -1,4 +1,4 @@
-.uc-footer {
+@mixin footer() {
   padding: 80px;
   display: flex;
   flex-wrap: wrap;
@@ -12,7 +12,7 @@
   }
   > p {
     margin: 24px 0 0;
-    @include uc-font-size(14);
+    @include font-size(14);
     @media (--small-screen) {
       margin: 16px 0 0;
     }
@@ -22,15 +22,15 @@
   }
   > small {
     display: block;
-    @include uc-font-size(12);
+    @include font-size(12);
     margin: 32px 0 0;
     @media (--small-screen) {
       margin: 16px 0 0;
     }
   }
 
-  &._of-dark,
-  &._of-black {
+  &.#{$modifier-prefix}dark,
+  &.#{$modifier-prefix}black {
     background-color: color(black a(.92));
     > p, > small, a {
       color: color(white a(.8));
@@ -38,8 +38,8 @@
   }
 }
 
-.uc-footer-logo {
-  @include uc-font-size(32);
+@mixin footer-logo() {
+  @include font-size(32);
   font-weight: bold;
   margin: 56px 0 0;
   @media (--small-screen) {
@@ -49,13 +49,13 @@
     font-style: normal;
   }
 
-  ._of-dark &,
-  ._of-black & {
+  .#{$modifier-prefix}dark &,
+  .#{$modifier-prefix}black & {
     color: white;
   }
 }
 
-.uc-footer-link {
+@mixin footer-link() {
   display: flex;
   margin: 0;
   padding: 0;
@@ -74,15 +74,16 @@
       left: -16px;
       margin-top: -8px;
 
-      ._of-dark &,
-      ._of-black & {
+      .#{$modifier-prefix}dark &,
+      .#{$modifier-prefix}black & {
         background-color: color(white a(.3));
       }
     }
     a {
-      color: $uc-color-txt;
+      color: $color-txt;
       text-decoration: none;
       font-weight: bold;
     }
   }
 }
+

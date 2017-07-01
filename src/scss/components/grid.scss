@@ -1,77 +1,76 @@
-.uc-grid {
+@mixin grid() {
   display: flex;
   flex-wrap: wrap;
 
-  &._of-gutters {
+  &.#{$modifier-prefix}gutters {
     margin: -32px 0 0 -32px;
-    .uc-grid-cell {
+    .#{$component-prefix}grid-cell {
       padding: 32px 0 0 32px;
     }
   }
 
-  &._of-nowrap {
+  &.#{$modifier-prefix}nowrap {
     flex-wrap: nowrap;
   }
 
-  &._of-top {
+  &.#{$modifier-prefix}top {
     align-items: flex-start;
   }
 
-  &._of-center {
+  &.#{$modifier-prefix}center {
     align-items: center;
   }
 
-  &._of-bottom {
+  &.#{$modifier-prefix}bottom {
     align-items: flex-end;
   }
 }
 
-.uc-grid-cell {
-
+@mixin grid-cell() {
   @for $i from 2 through 12 {
-    ._of-col-#{$i} > &,
-    &._of-col-#{$i} {
+    .#{$modifier-prefix}col-#{$i} > &,
+    &.#{$modifier-prefix}col-#{$i} {
       flex: 0 0 calc(100%/#{$i});
     }
     @media (--small-screen) {
-      ._of-small-col-#{$i} > &,
-      &._of-small-col-#{$i} {
+      .#{$modifier-prefix}small-col-#{$i} > &,
+      &.#{$modifier-prefix}small-col-#{$i} {
         flex: 0 0 calc(100%/#{$i});
       }
     }
   }
 
-  ._of-col-fit > &,
-  &._of-col-fit {
+  .#{$modifier-prefix}col-fit > &,
+  &.#{$modifier-prefix}col-fit {
     flex: 1;
   }
   @media (--small-screen) {
-    ._of-small-col-fit > &,
-    &._of-small-col-fit {
+    .#{$modifier-prefix}small-col-fit > &,
+    &.#{$modifier-prefix}small-col-fit {
       flex: 1;
     }
   }
 
-  ._of-col-full > &,
-  &._of-col-full {
+  .#{$modifier-prefix}col-full > &,
+  &.#{$modifier-prefix}col-full {
     flex: 0 0 100%;
   }
   @media (--small-screen) {
-    ._of-small-col-full > &,
-    &._of-small-col-full {
+    .#{$modifier-prefix}small-col-full > &,
+    &.#{$modifier-prefix}small-col-full {
       flex: 0 0 100%;
     }
   }
 
-  &._of-top {
+  &.#{$modifier-prefix}top {
     align-self: flex-start;
   }
 
-  &._of-center {
+  &.#{$modifier-prefix}center {
     align-self: center;
   }
 
-  &._of-bottom {
+  &.#{$modifier-prefix}bottom {
     align-self: flex-end;
   }
 }

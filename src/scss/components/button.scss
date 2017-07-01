@@ -1,14 +1,14 @@
-.uc-btn-unit {
+@mixin btn-unit() {
   margin: 56px 0 0;
 }
 
-.uc-btn {
+@mixin btn() {
   display: inline-block;
-  border-radius: $uc-border-radius;
-  box-shadow: $uc-box-shadow;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
   background-color: white;
   border: 2px solid white;
-  & + .uc-btn {
+  & + .#{$component-prefix}btn {
     margin-left: 16px;
   }
   > span,
@@ -20,21 +20,21 @@
     font-weight: bold;
   }
 
-  &._of-ghost > a,
-  &._of-ghost > span,
-  &._of-primary > a,
-  &._of-primary > span {
+  &.#{$modifier-prefix}ghost > a,
+  &.#{$modifier-prefix}ghost > span,
+  &.#{$modifier-prefix}primary > a,
+  &.#{$modifier-prefix}primary > span {
     color: white;
   }
 
-  &._of-ghost {
+  &.#{$modifier-prefix}ghost {
     background-color: transparent;
   }
 
-  &._of-primary {
-    background-color: $uc-color-primary;
-    border: 2px solid $uc-color-primary;
+  &.#{$modifier-prefix}primary {
+    background-color: $color-primary;
+    border: 2px solid $color-primary;
   }
 
-  &._of-icon {}
+  &.#{$modifier-prefix}icon {}
 }

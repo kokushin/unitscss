@@ -1,37 +1,37 @@
-.uc-form {
-  border-radius: $uc-border-radius;
-  box-shadow: $uc-box-shadow;
+@mixin form() {
+  border-radius: border-radius;
+  box-shadow: box-shadow;
   background-color: #fff;
   padding: 32px 24px;
 }
 
-.uc-form-parts-unit {
-  & + .uc-form-parts-unit {
+@mixin form-parts-unit() {
+  & + .#{$component-prefix}form-parts-unit {
     margin-top: 24px;
   }
   label {
     display: block;
     color: color(black a(.7));
     font-weight: bold;
-    @include uc-font-size(14);
+    @include font-size(14);
     margin-bottom: 8px;
   }
-  .uc-btn {
+  .#{$component-prefix}btn {
     margin: 0;
   }
 }
 
-.uc-form-parts {
+@mixin form-parts() {
   width: 100%;
   padding: 16px;
-  border: 1px solid $uc-color-border;
-  border-radius: $uc-border-radius;
+  border: 1px solid color-border;
+  border-radius: border-radius;
 
-  &._of-text {
+  &.#{$modifier-prefix}text {
     line-height: 1;
   }
 
-  &._of-textarea {
+  &.#{$modifier-prefix}textarea {
     height: 10em;
   }
 }

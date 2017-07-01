@@ -1,12 +1,12 @@
-.uc-card-unit {
+@mixin card-unit() {
   margin: 56px 0 0;
 }
 
-.uc-card {
+@mixin card() {
   max-width: 560px;
   height: 100%;
-  box-shadow: $uc-box-shadow;
-  border-radius: $uc-border-radius;
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
   padding: 32px 24px;
   background-color: white;
   text-align: left;
@@ -15,26 +15,26 @@
     margin: 12px 0 0;
     text-align: left;
   }
-  > a .uc-btn,
-  .uc-btn {
+  > a .#{$component-prefix}btn,
+  .#{$component-prefix}btn {
     margin: 24px 0 0;
     > span,
     > a {
       padding: 8px 32px;
-      @include uc-font-size(14);
+      @include font-size(14);
     }
   }
 
-  &._of-col-full,
-  .uc-grid-cell > & {
+  &.#{$modifier-prefix}col-full,
+  .#{$component-prefix}grid-cell > & {
     max-width: 100%;
   }
 
-  &._of-banner {
+  &.#{$modifier-prefix}banner {
     padding: 0;
-    transition: $uc-box-shadow-transition;
+    transition: $box-shadow-transition;
     &:hover {
-      box-shadow: $uc-box-shadow-hover;
+      box-shadow: $box-shadow-hover;
     }
     > a {
       display: block;
@@ -44,68 +44,70 @@
     }
   }
 
-  &._of-hover {
-    transition: $uc-box-shadow-transition;
+  &.#{$modifier-prefix}hover {
+    transition: $box-shadow-transition;
     &:hover {
-      box-shadow: $uc-box-shadow-hover;
+      box-shadow: $box-shadow-hover;
     }
   }
 
-  &._of-float {
-    box-shadow: $uc-box-shadow-hover;
+  &.#{$modifier-prefix}float {
+    box-shadow: $box-shadow-hover;
   }
 
-  &._of-thumb {
+  &.#{$modifier-prefix}thumb {
     display: flex;
-    .uc-card-image {
+    .#{$component-prefix}card-image {
       display: flex;
       margin: -32px 24px -32px -24px;
       width: 160px;
       height: auto;
-      border-radius: $uc-border-radius 0 0 $uc-border-radius;
+      border-radius: $border-radius 0 0 $border-radius;
     }
-    .uc-card-wrap {
+    .#{$component-prefix}card-wrap {
       flex: 1;
     }
   }
 }
 
-.uc-card-title {
+@mixin card-title() {
   margin: 0;
-  @include uc-font-size(20);
+  @include font-size(20);
   font-weight: bold;
-  color: $uc-color-dark;
+  color: $color-dark;
 }
 
-.uc-card-image {
+@mixin card-image() {
   margin: -32px -24px 24px;
   height: 180px;
   background-position: 50%;
   background-size: cover;
-  background-color: $uc-color-bg;
-  border-radius: $uc-border-radius $uc-border-radius 0 0;
+  background-color: $color-bg;
+  border-radius: $border-radius $border-radius 0 0;
 }
 
-.uc-card-header {
+@mixin card-icon() {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-position: 50%;
+  background-size: cover;
+  background-color: $color-bg;
+  margin-right: 16px;
+}
+
+@mixin card-header() {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   margin: -24px -24px 24px;
   padding: 16px 24px;
-  border-bottom: 1px solid $uc-color-border;
+  border-bottom: 1px solid $color-border;
 
-  .uc-card-icon {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    overflow: hidden;
-    background-position: 50%;
-    background-size: cover;
-    background-color: $uc-color-bg;
-    margin-right: 16px;
-  }
+  .#{$component-prefix}card-icon { @include card-icon(); }
 
-  .uc-card-title {
+  .#{$component-prefix}card-title {
     flex: 1;
   }
 }

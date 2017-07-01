@@ -1,4 +1,4 @@
-.uc-code-unit {
+@mixin code-unit() {
   height: 100%;
   margin: 56px 0 0;
   text-align: left;
@@ -16,21 +16,21 @@
   }
   > p {
     margin: 0;
-    color: $uc-color-txt;
+    color: $color-txt;
     & + * {
       margin: 24px 0 0;
     }
-    ._of-dark & {
+    .#{$modifier-prefix}dark & {
       color: color(white a(.7));
     }
   }
   > pre,
-  > .uc-code {
+  > .#{$component-prefix}code {
     background-color: color(black a(.92));
-    border-radius: $uc-border-radius;
+    border-radius: $border-radius;
     padding: 16px 24px;
     & + pre,
-    & + .uc-code {
+    & + .#{$component-prefix}code {
       margin-top: 16px;
     }
     & + p {
@@ -40,16 +40,7 @@
       margin: 0;
       padding: 0;
       color: white;
-      @include uc-font-size(14);
+      @include font-size(14);
     }
   }
 }
-
-
-.uc-video-unit {}
-
-
-.uc-photo-unit {}
-
-
-.uc-slider-unit {}

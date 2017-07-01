@@ -1,25 +1,25 @@
-.uc-hero {
+@mixin hero() {
   padding: 160px 0;
-  background-color: $uc-color-dark;
+  background-color: $color-dark;
   position: relative;
   text-align: center;
   > * {
     position: relative;
-    @include uc-z-index(1);
+    @include z-index(1);
   }
   > p {
     color: white;
-    @include uc-font-size(18);
+    @include font-size(18);
     margin: 24px 0 0;
   }
 
-  ._of-ghost + &,
-  ._of-fixed + & {
+  .#{$modifier-prefix}ghost + &,
+  .#{$modifier-prefix}fixed + & {
     margin-top: 0;
-    padding-top: calc(160px + #{$uc-header-height});
+    padding-top: calc(160px + #{$header-height});
   }
 
-  &._of-full {
+  &.#{$modifier-prefix}full {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -29,16 +29,16 @@
   }
 }
 
-.uc-hero-title {
+@mixin hero-title() {
   color: white;
-  @include uc-font-size(56);
+  @include font-size(56);
   font-weight: bold;
   line-height: 1.2;
   padding: 0 80px;
   margin: 0;
 }
 
-.uc-hero-bg {
+@mixin hero-bg() {
   background-position: center;
   background-size: cover;
   position: relative;

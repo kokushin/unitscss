@@ -1,4 +1,4 @@
-@mixin uc-list-dot() {
+@mixin list-dot() {
   content: " ";
   display: inline-block;
   vertical-align: top;
@@ -9,27 +9,27 @@
   margin-top: 8px;
 }
 
-.uc-list-unit {
+@mixin list-unit() {
   margin: 56px auto 0;
   text-align: left;
-  border-top: 1px solid $uc-color-border;
-  border-bottom: 1px solid $uc-color-border;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
   padding: 40px 24px;
-  @include uc-unit-margin();
+  @include unit-margin();
 }
 
-.uc-list {
+@mixin list() {
   margin: 0;
   padding: 0;
   list-style-type: none;
   > li {
-    color: $uc-color-txt;
+    color: $color-txt;
     & + li {
       margin: 16px 0 0;
     }
     &:before {
-      @include uc-list-dot();
-      background-color: $uc-color-primary;
+      @include list-dot();
+      background-color: $color-primary;
     }
     > ul,
     > ol {
@@ -40,9 +40,9 @@
           margin: 16px 0 0;
         }
         &:before {
-          @include uc-list-dot();
+          @include list-dot();
           background-color: transparent;
-          border: 2px solid $uc-color-primary;
+          border: 2px solid $color-primary;
         }
       }
     }

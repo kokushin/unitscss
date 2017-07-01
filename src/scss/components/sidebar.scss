@@ -1,21 +1,21 @@
-.uc-sidebar {
-  width: $uc-sidebar-width;
+@mixin sidebar() {
+  width: $sidebar-width;
   height: 100%;
-  box-shadow: $uc-box-shadow-hover;
+  box-shadow: $box-shadow-hover;
   background-color: white;
   position: relative;
-  @include uc-z-index(1);
+  @include z-index(1);
 
-  &._of-dark {
-    background-color: $uc-color-dark;
+  &.#{$modifier-prefix}dark {
+    background-color: $color-dark;
   }
 
-  &._of-black {
+  &.#{$modifier-prefix}black {
     background-color: color(black a(.92));
   }
 
-  &._of-dark,
-  &._of-black {
+  &.#{$modifier-prefix}dark,
+  &.#{$modifier-prefix}black {
     color: white;
   }
 }

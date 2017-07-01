@@ -1,8 +1,8 @@
-.uc-header {
+@mixin header() {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: $uc-header-height;
+  height: $header-height;
   padding: 0 80px;
   background-color: white;
   @media (--small-screen) {
@@ -12,37 +12,37 @@
     margin-right: auto;
     color: color(black a(.7));
   }
-  &._of-fixed,
-  &._of-ghost {
+  &.#{$modifier-prefix}fixed,
+  &.#{$modifier-prefix}ghost {
     top: 0;
     left: 0;
     width: 100%;
-    @include uc-z-index(4);
+    @include z-index(4);
     & + * {
-      margin-top: $uc-header-height;
+      margin-top: $header-height;
     }
   }
-  &._of-center {
+  &.#{$modifier-prefix}center {
     justify-content: center;
   }
-  &._of-fixed {
+  &.#{$modifier-prefix}fixed {
     position: fixed;
-    box-shadow: $uc-box-shadow-hover;
+    box-shadow: $box-shadow-hover;
   }
-  &._of-ghost {
+  &.#{$modifier-prefix}ghost {
     position: absolute;
     background-color: transparent;
     & > p {
       color: color(white a(.7));
     }
   }
-  &._of-dark {
-    background-color: $uc-color-dark;
+  &.#{$modifier-prefix}dark {
+    background-color: $color-dark;
     & > p {
       color: color(white a(.7));
     }
   }
-  &._of-black {
+  &.#{$modifier-prefix}black {
     background-color: black;
     & > p {
       color: color(white a(.7));
@@ -50,7 +50,7 @@
   }
 }
 
-.uc-header-logo {
+@mixin header-logo() {
   margin: 0 20px 0 0;
   color: black;
   a {
@@ -61,13 +61,13 @@
     vertical-align: top;
     display: inline-block;
     padding-top: 8px;
-    @include uc-font-size(12);
+    @include font-size(12);
     font-weight: normal;
     margin-left: -4px;
   }
-  ._of-ghost &,
-  ._of-dark &,
-  ._of-black & {
+  .#{$modifier-prefix}ghost &,
+  .#{$modifier-prefix}dark &,
+  .#{$modifier-prefix}black & {
     color: white;
     a {
       color: white;

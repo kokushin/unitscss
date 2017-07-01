@@ -1,11 +1,11 @@
-.uc-pager-unit {
+@mixin pager-unit() {
   margin: 0;
   padding: 80px;
-  background-color: $uc-color-bg;
+  background-color: $color-bg;
   > * {
     margin: 0;
   }
-  &._of-center {
+  &.#{$modifier-prefix}center {
     text-align: center;
   }
 }

@@ -3,25 +3,25 @@ html {
 }
 
 body {
-  font-family: $uc-fonts;
-  @include uc-font-size(16);
-  color: $uc-color-txt;
+  font-family: $fonts;
+  @include font-size(16);
+  color: $color-txt;
   letter-spacing: .05em;
   line-height: 1.6;
 }
 
 hr,
-.uc-hr {
+.#{$component-prefix}hr {
   height: 0;
   border: 0;
-  border-top: 1px solid $uc-color-border;
+  border-top: 1px solid $color-border;
   margin: 80px 0 40px;
   box-sizing: content-box;
   overflow: visible;
 }
 
 * + hr,
-* + .uc-hr {
+* + .#{$component-prefix}hr {
   margin-top: 80px;
 }
 
@@ -38,7 +38,7 @@ h6 {
 }
 
 p {
-  color: $uc-color-txt;
+  color: $color-txt;
   & + h1,
   & + h2,
   & + h3,
@@ -50,9 +50,9 @@ p {
 }
 
 a {
-  color: $uc-color-txt;
-  ._of-dark &,
-  ._of-black & {
+  color: $color-txt;
+  .#{$modifier-prefix}dark &,
+  .#{$modifier-prefix}black & {
     color: white;
   }
   &:hover {

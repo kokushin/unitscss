@@ -1,10 +1,10 @@
-._of-centering {
+@mixin centering() {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-._of-blind {
+@mixin blind() {
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -16,62 +16,70 @@
   white-space: nowrap;
 }
 
-._of-orig-width {
+@mixin orig-width() {
   width: auto !important;
 }
 
-._of-orig-height {
+@mixin orig-height() {
   height: auto !important;
 }
 
-._of-no-margin {
+@mixin no-margin() {
   margin: 0 !important;
 }
 
-._of-no-padding {
+@mixin no-padding() {
   padding: 0 !important;
 }
 
-._of-no-line-height {
+@mixin no-line-height() {
   line-height: 1 !important;
 }
 
-._of-bold {
+@mixin txt-bold() {
   font-weight: bold !important;
 }
 
-._of-txt-left {
+@mixin txt-left() {
   text-align: left !important;
 }
 
-._of-txt-center {
+@mixin txt-center() {
   text-align: center !important;
 }
 
-._of-txt-right {
+@mixin txt-right() {
   text-align: right !important;
 }
 
-@for $i from 0 through 10 {
-  ._of-mt-step-#{$i} {
-    margin-top: #{$i*8}px !important;
+@mixin mt-step() {
+  @for $i from 0 through 10 {
+    .#{$modifier-prefix}mt-step-#{$i} {
+      margin-top: #{$i*8}px !important;
+    }
   }
 }
 
-@for $i from 0 through 10 {
-  ._of-mr-step-#{$i} {
-    margin-right: #{$i*8}px !important;
+@mixin mr-step() {
+  @for $i from 0 through 10 {
+    .#{$modifier-prefix}mr-step-#{$i} {
+      margin-right: #{$i*8}px !important;
+    }
   }
 }
 
-@for $i from 0 through 10 {
-  ._of-mb-step-#{$i} {
-    margin-bottom: #{$i*8}px !important;
+@mixin mb-step() {
+  @for $i from 0 through 10 {
+    .#{$modifier-prefix}mb-step-#{$i} {
+      margin-bottom: #{$i*8}px !important;
+    }
   }
 }
 
-@for $i from 0 through 10 {
-  ._of-ml-step-#{$i} {
-    margin-left: #{$i*8}px !important;
+@mixin ml-step() {
+  @for $i from 0 through 10 {
+    .#{$modifier-prefix}ml-step-#{$i} {
+      margin-left: #{$i*8}px !important;
+    }
   }
 }

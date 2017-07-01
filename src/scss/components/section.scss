@@ -1,39 +1,39 @@
-.uc-content {
+@mixin content() {
   position: relative;
 }
 
 
-.uc-section {
+@mixin section() {
   position: relative;
   padding: 80px;
   @media (--small-screen) {
     padding: 40px 24px;
   }
 
-  & + .uc-section {
-    border-top: 1px solid $uc-color-border;
+  & + .#{$component-prefix}section {
+    border-top: 1px solid $color-border;
   }
 
-  &._of-center {
+  &.#{$modifier-prefix}center {
     text-align: center;
   }
 
-  &._of-dark {
-    background-color: $uc-color-dark;
+  &.#{$modifier-prefix}dark {
+    background-color: $color-dark;
     color: white;
   }
 }
 
-.uc-section-inner {
-  max-width: $uc-max-screen-width;
+@mixin section-inner() {
+  max-width: $max-screen-width;
   margin-left: auto;
   margin-right: auto;
 }
 
-.uc-section-title {
+@mixin section-title() {
   color: black;
-  @include uc-font-size(40);
-  ._of-dark & {
+  @include font-size(40);
+  .#{$modifier-prefix}dark & {
     color: white;
   }
 
@@ -45,18 +45,18 @@
     background-color: color(black a(.3));
     margin: 16px 0 0;
 
-    ._of-center & {
+    .#{$modifier-prefix}center & {
       margin: 16px auto 0;
     }
 
-    ._of-dark & {
+    .#{$modifier-prefix}dark & {
       background-color: color(white a(.3));
     }
   }
   & + p {
     margin: 32px 0 0;
 
-    ._of-dark & {
+    .#{$modifier-prefix}dark & {
       color: white;
     }
   }
