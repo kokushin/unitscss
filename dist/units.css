@@ -1399,13 +1399,16 @@ i {
       flex: 1;
 }
 
+.uc-btn-unit {
+  margin: 56px 0 0;
+}
+
 .uc-btn {
   display: inline-block;
   border-radius: 6px;
   box-shadow: 0 0 1px rgba(0, 0, 0, .26);
   background-color: white;
   border: 2px solid white;
-  margin: 56px 0 0;
 }
 
 .uc-btn + .uc-btn {
