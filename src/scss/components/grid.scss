@@ -1,5 +1,6 @@
 .uc-grid {
   display: flex;
+  flex-wrap: wrap;
 
   &._of-gutters {
     margin: -32px 0 0 -32px;
@@ -8,8 +9,8 @@
     }
   }
 
-  &._of-wrap {
-    flex-wrap: wrap;
+  &._of-nowrap {
+    flex-wrap: nowrap;
   }
 
   &._of-top {
@@ -27,20 +28,38 @@
 
 .uc-grid-cell {
 
+  @for $i from 2 through 12 {
+    ._of-col-#{$i} > &,
+    &._of-col-#{$i} {
+      flex: 0 0 calc(100%/#{$i});
+    }
+    @media (--small-screen) {
+      ._of-small-col-#{$i} > &,
+      &._of-small-col-#{$i} {
+        flex: 0 0 calc(100%/#{$i});
+      }
+    }
+  }
+
   ._of-col-fit > &,
   &._of-col-fit {
     flex: 1;
+  }
+  @media (--small-screen) {
+    ._of-small-col-fit > &,
+    &._of-small-col-fit {
+      flex: 1;
+    }
   }
 
   ._of-col-full > &,
   &._of-col-full {
     flex: 0 0 100%;
   }
-
-  @for $i from 2 through 12 {
-    ._of-col-#{$i} > &,
-    &._of-col-#{$i} {
-      flex: 0 0 calc(100%/#{$i});
+  @media (--small-screen) {
+    ._of-small-col-full > &,
+    &._of-small-col-full {
+      flex: 0 0 100%;
     }
   }
 

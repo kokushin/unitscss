@@ -511,7 +511,6 @@ textarea,
  */
 [aria-disabled] {
   cursor: default; }
-
 html {
   font-size: 100%; }
 
@@ -577,6 +576,9 @@ code {
   padding: 0 8px;
   color: #d81b60; }
 
+button {
+  padding: 0; }
+
 p,
 .uc-txt {
   line-height: 1.8; }
@@ -587,10 +589,16 @@ h1,
   font-weight: bold;
   line-height: 1; }
 
-h2,
-.uc-h2 {
-  font-size: 2.5rem;
-  line-height: 1.4; }
+h2 {
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4,
+h5,
+h6 {
+  font-size: 1.125rem; }
 
 i {
   display: inline-block;
@@ -598,14 +606,16 @@ i {
 
 .uc-grid {
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
   .uc-grid._of-gutters {
     margin: -32px 0 0 -32px; }
     .uc-grid._of-gutters .uc-grid-cell {
       padding: 32px 0 0 32px; }
-  .uc-grid._of-wrap {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+  .uc-grid._of-nowrap {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
   .uc-grid._of-top {
     -ms-flex-align: start;
         align-items: flex-start; }
@@ -616,57 +626,122 @@ i {
     -ms-flex-align: end;
         align-items: flex-end; }
 
-._of-col-fit > .uc-grid-cell, .uc-grid-cell._of-col-fit {
-  -ms-flex: 1;
-      flex: 1; }
-
-._of-col-full > .uc-grid-cell, .uc-grid-cell._of-col-full {
-  -ms-flex: 0 0 100%;
-      flex: 0 0 100%; }
-
 ._of-col-2 > .uc-grid-cell, .uc-grid-cell._of-col-2 {
   -ms-flex: 0 0 50%;
       flex: 0 0 50%; }
+
+@media (max-width: 768px) {
+  ._of-small-col-2 > .uc-grid-cell, .uc-grid-cell._of-small-col-2 {
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%; } }
 
 ._of-col-3 > .uc-grid-cell, .uc-grid-cell._of-col-3 {
   -ms-flex: 0 0 33.33333%;
       flex: 0 0 33.33333%; }
 
+@media (max-width: 768px) {
+  ._of-small-col-3 > .uc-grid-cell, .uc-grid-cell._of-small-col-3 {
+    -ms-flex: 0 0 33.33333%;
+        flex: 0 0 33.33333%; } }
+
 ._of-col-4 > .uc-grid-cell, .uc-grid-cell._of-col-4 {
   -ms-flex: 0 0 25%;
       flex: 0 0 25%; }
+
+@media (max-width: 768px) {
+  ._of-small-col-4 > .uc-grid-cell, .uc-grid-cell._of-small-col-4 {
+    -ms-flex: 0 0 25%;
+        flex: 0 0 25%; } }
 
 ._of-col-5 > .uc-grid-cell, .uc-grid-cell._of-col-5 {
   -ms-flex: 0 0 20%;
       flex: 0 0 20%; }
 
+@media (max-width: 768px) {
+  ._of-small-col-5 > .uc-grid-cell, .uc-grid-cell._of-small-col-5 {
+    -ms-flex: 0 0 20%;
+        flex: 0 0 20%; } }
+
 ._of-col-6 > .uc-grid-cell, .uc-grid-cell._of-col-6 {
   -ms-flex: 0 0 16.66667%;
       flex: 0 0 16.66667%; }
+
+@media (max-width: 768px) {
+  ._of-small-col-6 > .uc-grid-cell, .uc-grid-cell._of-small-col-6 {
+    -ms-flex: 0 0 16.66667%;
+        flex: 0 0 16.66667%; } }
 
 ._of-col-7 > .uc-grid-cell, .uc-grid-cell._of-col-7 {
   -ms-flex: 0 0 14.28571%;
       flex: 0 0 14.28571%; }
 
+@media (max-width: 768px) {
+  ._of-small-col-7 > .uc-grid-cell, .uc-grid-cell._of-small-col-7 {
+    -ms-flex: 0 0 14.28571%;
+        flex: 0 0 14.28571%; } }
+
 ._of-col-8 > .uc-grid-cell, .uc-grid-cell._of-col-8 {
   -ms-flex: 0 0 12.5%;
       flex: 0 0 12.5%; }
+
+@media (max-width: 768px) {
+  ._of-small-col-8 > .uc-grid-cell, .uc-grid-cell._of-small-col-8 {
+    -ms-flex: 0 0 12.5%;
+        flex: 0 0 12.5%; } }
 
 ._of-col-9 > .uc-grid-cell, .uc-grid-cell._of-col-9 {
   -ms-flex: 0 0 11.11111%;
       flex: 0 0 11.11111%; }
 
+@media (max-width: 768px) {
+  ._of-small-col-9 > .uc-grid-cell, .uc-grid-cell._of-small-col-9 {
+    -ms-flex: 0 0 11.11111%;
+        flex: 0 0 11.11111%; } }
+
 ._of-col-10 > .uc-grid-cell, .uc-grid-cell._of-col-10 {
   -ms-flex: 0 0 10%;
       flex: 0 0 10%; }
+
+@media (max-width: 768px) {
+  ._of-small-col-10 > .uc-grid-cell, .uc-grid-cell._of-small-col-10 {
+    -ms-flex: 0 0 10%;
+        flex: 0 0 10%; } }
 
 ._of-col-11 > .uc-grid-cell, .uc-grid-cell._of-col-11 {
   -ms-flex: 0 0 9.09091%;
       flex: 0 0 9.09091%; }
 
+@media (max-width: 768px) {
+  ._of-small-col-11 > .uc-grid-cell, .uc-grid-cell._of-small-col-11 {
+    -ms-flex: 0 0 9.09091%;
+        flex: 0 0 9.09091%; } }
+
 ._of-col-12 > .uc-grid-cell, .uc-grid-cell._of-col-12 {
   -ms-flex: 0 0 8.33333%;
       flex: 0 0 8.33333%; }
+
+@media (max-width: 768px) {
+  ._of-small-col-12 > .uc-grid-cell, .uc-grid-cell._of-small-col-12 {
+    -ms-flex: 0 0 8.33333%;
+        flex: 0 0 8.33333%; } }
+
+._of-col-fit > .uc-grid-cell, .uc-grid-cell._of-col-fit {
+  -ms-flex: 1;
+      flex: 1; }
+
+@media (max-width: 768px) {
+  ._of-small-col-fit > .uc-grid-cell, .uc-grid-cell._of-small-col-fit {
+    -ms-flex: 1;
+        flex: 1; } }
+
+._of-col-full > .uc-grid-cell, .uc-grid-cell._of-col-full {
+  -ms-flex: 0 0 100%;
+      flex: 0 0 100%; }
+
+@media (max-width: 768px) {
+  ._of-small-col-full > .uc-grid-cell, .uc-grid-cell._of-small-col-full {
+    -ms-flex: 0 0 100%;
+        flex: 0 0 100%; } }
 
 .uc-grid-cell._of-top {
   -ms-flex-item-align: start;
@@ -691,6 +766,9 @@ i {
   height: 80px;
   padding: 0 80px;
   background-color: white; }
+  @media (max-width: 768px) {
+    .uc-header {
+      padding: 0 24px; } }
   .uc-header > p {
     margin-right: auto;
     color: rgba(0, 0, 0, 0.7); }
@@ -757,28 +835,41 @@ i {
       flex-direction: column;
   background-color: white;
   text-align: center; }
+  @media (max-width: 768px) {
+    .uc-footer {
+      padding: 56px; } }
   .uc-footer > p {
     margin: 24px 0 0;
     font-size: 0.875rem; }
+    @media (max-width: 768px) {
+      .uc-footer > p {
+        margin: 16px 0 0; } }
     .uc-footer > p + p {
       margin: 16px 0 0; }
   .uc-footer > small {
     display: block;
     font-size: 0.75rem;
     margin: 32px 0 0; }
-  .uc-footer._of-dark {
+    @media (max-width: 768px) {
+      .uc-footer > small {
+        margin: 16px 0 0; } }
+  .uc-footer._of-dark, .uc-footer._of-black {
     background-color: rgba(0, 0, 0, 0.92); }
-    .uc-footer._of-dark > p, .uc-footer._of-dark > small, .uc-footer._of-dark a {
+    .uc-footer._of-dark > p, .uc-footer._of-dark > small, .uc-footer._of-dark a, .uc-footer._of-black > p, .uc-footer._of-black > small, .uc-footer._of-black a {
       color: rgba(255, 255, 255, 0.8); }
 
 .uc-footer-logo {
-  font-size: 2rem; }
-  ._of-dark .uc-footer-logo {
-    color: white;
-    font-weight: bold;
-    margin: 56px 0 0; }
-    ._of-dark .uc-footer-logo > cite {
-      font-style: normal; }
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 56px 0 0; }
+  @media (max-width: 768px) {
+    .uc-footer-logo {
+      margin: 32px 0 0; } }
+  .uc-footer-logo > cite {
+    font-style: normal; }
+  ._of-dark .uc-footer-logo,
+  ._of-black .uc-footer-logo {
+    color: white; }
 
 .uc-footer-link {
   display: -ms-flexbox;
@@ -799,7 +890,8 @@ i {
       top: 50%;
       left: -16px;
       margin-top: -8px; }
-      ._of-dark .uc-footer-link > li + li:before {
+      ._of-dark .uc-footer-link > li + li:before,
+      ._of-black .uc-footer-link > li + li:before {
         background-color: rgba(255, 255, 255, 0.3); }
     .uc-footer-link > li a {
       color: #333;
@@ -812,6 +904,9 @@ i {
 .uc-section {
   position: relative;
   padding: 80px; }
+  @media (max-width: 768px) {
+    .uc-section {
+      padding: 40px 24px; } }
   .uc-section + .uc-section {
     border-top: 1px solid rgba(0, 0, 0, .08); }
   .uc-section._of-center {
@@ -826,7 +921,8 @@ i {
   margin-right: auto; }
 
 .uc-section-title {
-  color: black; }
+  color: black;
+  font-size: 2.5rem; }
   ._of-dark .uc-section-title {
     color: white; }
   .uc-section-title:after {
@@ -1035,6 +1131,35 @@ i {
   .uc-btn._of-primary {
     background-color: #546e7a;
     border: 2px solid #546e7a; }
+
+.uc-form {
+  border-radius: 6px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .26);
+  background-color: #fff;
+  padding: 32px 24px; }
+
+.uc-form-parts-unit + .uc-form-parts-unit {
+  margin-top: 24px; }
+
+.uc-form-parts-unit label {
+  display: block;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  font-size: 0.875rem;
+  margin-bottom: 8px; }
+
+.uc-form-parts-unit .uc-btn {
+  margin: 0; }
+
+.uc-form-parts {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid rgba(0, 0, 0, .08);
+  border-radius: 6px; }
+  .uc-form-parts._of-text {
+    line-height: 1; }
+  .uc-form-parts._of-textarea {
+    height: 10em; }
 
 .uc-list-unit {
   margin: 56px auto 0;

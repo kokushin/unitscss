@@ -6,6 +6,9 @@
 .uc-section {
   position: relative;
   padding: 80px;
+  @media (--small-screen) {
+    padding: 40px 24px;
+  }
 
   & + .uc-section {
     border-top: 1px solid $uc-color-border;
@@ -29,6 +32,7 @@
 
 .uc-section-title {
   color: black;
+  @include uc-font-size(40);
   ._of-dark & {
     color: white;
   }

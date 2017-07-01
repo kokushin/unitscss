@@ -5,6 +5,9 @@
   height: $uc-header-height;
   padding: 0 80px;
   background-color: white;
+  @media (--small-screen) {
+    padding: 0 24px;
+  }
   > p {
     margin-right: auto;
     color: color(black a(.7));

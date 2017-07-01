@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Header | Components | UNITS Document</title>
+  <title>Form | Components | UNITS Document</title>
   <meta name="description" content="UNITS is a simple and beautiful CSS component set.">
   <meta name="author" content="kokushin">
 
   <meta property="og:site_name" content="UNITS - Simple and beautiful CSS component set.">
-  <meta property="og:title" content="Header | Components | UNITS Document">
+  <meta property="og:title" content="Form | Components | UNITS Document">
   <meta property="og:description" content="UNITS is a simple and beautiful CSS component set.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kokushin.github.io/units/">
@@ -51,7 +51,7 @@
           </div>
           <div class="uc-menu _of-sidebar">
             <p><strong>コンポーネント</strong></p>
-            <a href="/ja/docs/components/header.html" class="_is-current">ヘッダー</a>
+            <a href="/ja/docs/components/header.html">ヘッダー</a>
             <a href="/ja/docs/components/footer.html">フッター</a>
             <a href="/ja/docs/components/section.html">セクション</a>
             <a href="/ja/docs/components/sidebar.html">サイドバー</a>
@@ -59,7 +59,7 @@
             <a href="/ja/docs/components/hero.html">ヒーローエリア</a>
             <a href="/ja/docs/components/card.html">カード</a>
             <a href="/ja/docs/components/button.html">ボタン</a>
-            <a href="/ja/docs/components/form.html">フォーム</a>
+            <a href="/ja/docs/components/form.html" class="_is-current">フォーム</a>
             <a href="/ja/docs/components/list.html">リスト</a>
             <a href="/ja/docs/components/table.html">テーブル</a>
             <a href="/ja/docs/components/menu.html">メニュー</a>
@@ -90,8 +90,8 @@
       <main class="uc-content">
 
         <section class="uc-section">
-          <h2 class="uc-section-title">ヘッダー</h2>
-          <p>ヘッダーコンポーネントは、Webページの最上部に配置される要素を指します。<br>背景色を変更するオプションや、固定のON/OFFを切り替えるオプションなどが用意されています。</p>
+          <h2 class="uc-section-title">フォーム</h2>
+          <p>フォームコンポーネントは、テキストエリア・検索ボックスなどのフォーム要素を指します。</p>
 
           <div class="uc-list-unit">
             <ul class="uc-list">
@@ -120,46 +120,11 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>.uc-header</td>
+                    <td>.uc-form</td>
                     <td>コンポーネント</td>
                     <td>はい</td>
                     <td>-</td>
                     <td>基本クラス</td>
-                  </tr>
-                  <tr>
-                    <td>.uc-header-logo</td>
-                    <td>コンポーネント</td>
-                    <td>はい</td>
-                    <td>-</td>
-                    <td>基本のヘッダー用ロゴを適用する</td>
-                  </tr>
-                  <tr>
-                    <td>._of-fixed</td>
-                    <td>オプション</td>
-                    <td>いいえ</td>
-                    <td>不可</td>
-                    <td>ヘッダーを固定し、追従するようにする</td>
-                  </tr>
-                  <tr>
-                    <td>._of-ghost</td>
-                    <td>オプション</td>
-                    <td>いいえ</td>
-                    <td>不可</td>
-                    <td>ヘッダーの背景を透過する</td>
-                  </tr>
-                  <tr>
-                    <td>._of-dark</td>
-                    <td>テーマ</td>
-                    <td>いいえ</td>
-                    <td>可能</td>
-                    <td>ヘッダーの背景にダークテーマを適用する</td>
-                  </tr>
-                  <tr>
-                    <td>._of-black</td>
-                    <td>テーマ</td>
-                    <td>いいえ</td>
-                    <td>可能</td>
-                    <td>ヘッダーの背景にブラックテーマを適用する</td>
                   </tr>
                 </tbody>
               </table>
@@ -167,89 +132,45 @@
           </div>
 
           <div class="doc-component-box" id="c-1">
-            <h3>基本のヘッダー</h3>
-            <p>ベースとなるヘッダーです。</p>
+            <h3>基本のフォーム</h3>
+            <p>ベースとなるフォームです。</p>
 
             <div class="doc-component-preview">
-              <div class="uc-header">
-                <div class="uc-header-logo">Logo</div>
-                <p>Page description</p>
-              </div>
+              <!-- preview area -->
+
+              <form class="uc-form">
+                <div class="uc-form-parts-unit uc-grid _of-gutters">
+                  <div class="uc-grid-cell _of-col-fit">
+                    <label for="name">名前</label>
+                    <input type="text" class="uc-form-parts _of-text" id="name">
+                  </div>
+                  <div class="uc-grid-cell _of-col-fit">
+                    <label for="kana">フリガナ</label>
+                    <input type="text" class="uc-form-parts _of-text" id="kana">
+                  </div>
+                </div>
+                <div class="uc-form-parts-unit">
+                  <label for="tel">電話番号</label>
+                  <input type="text" class="uc-form-parts _of-text" id="tel">
+                </div>
+                <div class="uc-form-parts-unit">
+                  <label for="address">住所</label>
+                  <input type="text" class="uc-form-parts _of-text" id="address">
+                </div>
+                <div class="uc-form-parts-unit">
+                  <label for="message">メッセージ</label>
+                  <textarea class="uc-form-parts _of-textarea" id="message"></textarea>
+                </div>
+                <div class="uc-form-parts-unit">
+                  <button class="uc-btn _of-primary"><a href="#">送信</a></button>
+                </div>
+              </form>
+
+              <!-- /preview area -->
             </div>
             <div class="uc-code-unit">
 <pre><code class="html">&lt;header class="uc-header"&gt;
   &lt;div class="uc-header-logo"&gt;Logo&lt;/div&gt;
-  &lt;p&gt;Page description&lt;/p&gt;
-&lt;/header&gt;
-</code></pre>
-            </div>
-          </div>
-
-          <div class="doc-component-box" id="c-2">
-            <h3>テーマヘッダー</h3>
-            <p>ヘッダーの背景を各テーマごとに変更することが可能です。</p>
-
-            <div class="doc-component-preview">
-              <div class="uc-header _of-dark">
-                <div class="uc-header-logo">Dark</div>
-                <p>Page description</p>
-              </div>
-            </div>
-            <div class="uc-code-unit">
-<pre><code class="html">&lt;header class="uc-header _of-dark"&gt;
-  &lt;div class="uc-header-logo"&gt;Dark&lt;/div&gt;
-  &lt;p&gt;Page description&lt;/p&gt;
-&lt;/header&gt;
-</code></pre>
-            </div>
-          </div>
-
-          <div class="doc-component-box" id="c-3">
-            <h3>ゴーストヘッダー</h3>
-            <p>背景が透過されているヘッダーです。<br><code>.uc-hero</code>と組み合わせて使用することで、ビジュアルをより効果的に見せることができます。</p>
-
-            <div class="doc-component-preview">
-              <div class="doc-component-preview-inner">
-                <div class="uc-header _of-ghost">
-                  <div class="uc-header-logo">Ghost</div>
-                  <p>Page description</p>
-                </div>
-                <div class="uc-hero">
-                  <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
-                  <div class="uc-hero-title">Hero area</div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iste!</p>
-                </div>
-              </div>
-            </div>
-            <div class="uc-code-unit">
-<pre><code class="html">&lt;header class="uc-header _of-ghost"&gt;
-  &lt;div class="uc-header-logo"&gt;Ghost&lt;/div&gt;
-  &lt;p&gt;Page description&lt;/p&gt;
-&lt;/header&gt;
-&lt;div class="uc-hero"&gt;
-  &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
-  &lt;div class="uc-hero-title"&gt;Hero area&lt;/div&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iste!&lt;/p&gt;
-&lt;/div&gt;
-</code></pre>
-            </div>
-          </div>
-
-          <div class="doc-component-box" id="c-4">
-            <h3>固定ヘッダー</h3>
-            <p>ヘッダーの位置をページのスクロールに合わせて追従するように固定します。<br>ちょうど、このドキュメントページのヘッダーのような挙動になります。</p>
-
-            <div class="doc-component-preview">
-              <div class="doc-component-preview-inner">
-                <div class="uc-header _of-fixed" style="position:static">
-                  <div class="uc-header-logo">Fixed</div>
-                  <p>Page description</p>
-                </div>
-              </div>
-            </div>
-            <div class="uc-code-unit">
-<pre><code class="html">&lt;header class="uc-header _of-fixed"&gt;
-  &lt;div class="uc-header-logo"&gt;Fixed&lt;/div&gt;
   &lt;p&gt;Page description&lt;/p&gt;
 &lt;/header&gt;
 </code></pre>

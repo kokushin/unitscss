@@ -10,8 +10,16 @@ h1,
   line-height: 1;
 }
 
-h2,
-.uc-h2 {
-  @include uc-font-size(40);
-  line-height: 1.4;
+h2 {
+  @include uc-font-size(24);
+}
+
+h3 {
+  @include uc-font-size(20);
+}
+
+h4,
+h5,
+h6 {
+  @include uc-font-size(18);
 }
