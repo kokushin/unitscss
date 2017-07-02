@@ -27,7 +27,7 @@
 </head>
 <body>
 
-  <header class="uc-header _of-black _of-fixed">
+  <header class="uc-header _black _fixed">
     <h1 class="uc-header-logo"><a href="/">UNITS <sup>Beta</sup></a></h1>
     <div class="uc-menu" role="navigation">
       <a href="/docs/" class="_is-current">Document</a>
@@ -44,12 +44,12 @@
 
       <div class="uc-sidebar">
         <nav class="uc-menu-unit">
-          <div class="uc-menu _of-sidebar">
+          <div class="uc-menu _sidebar">
             <a href="/ja/docs/">はじめに</a>
             <a href="/ja/docs/install.html">インストール</a>
             <a href="/ja/docs/coding_guide.html">コーディングガイド</a>
           </div>
-          <div class="uc-menu _of-sidebar">
+          <div class="uc-menu _sidebar">
             <p><strong>コンポーネント</strong></p>
             <a href="/ja/docs/components/header.html" class="_is-current">ヘッダー</a>
             <a href="/ja/docs/components/footer.html">フッター</a>
@@ -68,7 +68,7 @@
             <a href="/ja/docs/components/typography.html">タイポグラフィー</a>
             <a href="/ja/docs/components/loading.html">ローディング</a>
           </div>
-          <div class="uc-menu _of-sidebar">
+          <div class="uc-menu _sidebar">
             <p><strong>関連リンク</strong></p>
             <a href="/">Home</a>
             <a href="https://github.com/kokushin/units" target="_blank">GitHub</a>
@@ -80,7 +80,7 @@
     </div>
 
 
-    <div class="uc-grid-cell _of-col-fit">
+    <div class="uc-grid-cell _col-fit">
 
       <div class="uc-hero">
         <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
@@ -108,7 +108,7 @@
             <p>基本クラスは必須となります。<br>その他、用途に応じてオプションクラスを指定することができます。</p>
 
             <div class="uc-table-unit">
-              <table class="uc-table _of-col-full">
+              <table class="uc-table _col-full">
                 <thead>
                   <tr>
                     <th>クラス名</th>
@@ -134,28 +134,28 @@
                     <td>基本のヘッダー用ロゴを適用する</td>
                   </tr>
                   <tr>
-                    <td>._of-fixed</td>
+                    <td>._fixed</td>
                     <td>オプション</td>
                     <td>いいえ</td>
                     <td>不可</td>
                     <td>ヘッダーを固定し、追従するようにする</td>
                   </tr>
                   <tr>
-                    <td>._of-ghost</td>
+                    <td>._ghost</td>
                     <td>オプション</td>
                     <td>いいえ</td>
                     <td>不可</td>
                     <td>ヘッダーの背景を透過する</td>
                   </tr>
                   <tr>
-                    <td>._of-dark</td>
+                    <td>._dark</td>
                     <td>テーマ</td>
                     <td>いいえ</td>
                     <td>可能</td>
                     <td>ヘッダーの背景にダークテーマを適用する</td>
                   </tr>
                   <tr>
-                    <td>._of-black</td>
+                    <td>._black</td>
                     <td>テーマ</td>
                     <td>いいえ</td>
                     <td>可能</td>
@@ -190,13 +190,13 @@
             <p>ヘッダーの背景を各テーマごとに変更することが可能です。</p>
 
             <div class="doc-component-preview">
-              <div class="uc-header _of-dark">
+              <div class="uc-header _dark">
                 <div class="uc-header-logo">Dark</div>
                 <p>Page description</p>
               </div>
             </div>
             <div class="uc-code-unit">
-<pre><code class="html">&lt;header class="uc-header _of-dark"&gt;
+<pre><code class="html">&lt;header class="uc-header _dark"&gt;
   &lt;div class="uc-header-logo"&gt;Dark&lt;/div&gt;
   &lt;p&gt;Page description&lt;/p&gt;
 &lt;/header&gt;
@@ -210,7 +210,7 @@
 
             <div class="doc-component-preview">
               <div class="doc-component-preview-inner">
-                <div class="uc-header _of-ghost">
+                <div class="uc-header _ghost">
                   <div class="uc-header-logo">Ghost</div>
                   <p>Page description</p>
                 </div>
@@ -222,7 +222,7 @@
               </div>
             </div>
             <div class="uc-code-unit">
-<pre><code class="html">&lt;header class="uc-header _of-ghost"&gt;
+<pre><code class="html">&lt;header class="uc-header _ghost"&gt;
   &lt;div class="uc-header-logo"&gt;Ghost&lt;/div&gt;
   &lt;p&gt;Page description&lt;/p&gt;
 &lt;/header&gt;
@@ -241,14 +241,14 @@
 
             <div class="doc-component-preview">
               <div class="doc-component-preview-inner">
-                <div class="uc-header _of-fixed" style="position:static">
+                <div class="uc-header _fixed" style="position:static">
                   <div class="uc-header-logo">Fixed</div>
                   <p>Page description</p>
                 </div>
               </div>
             </div>
             <div class="uc-code-unit">
-<pre><code class="html">&lt;header class="uc-header _of-fixed"&gt;
+<pre><code class="html">&lt;header class="uc-header _fixed"&gt;
   &lt;div class="uc-header-logo"&gt;Fixed&lt;/div&gt;
   &lt;p&gt;Page description&lt;/p&gt;
 &lt;/header&gt;
@@ -260,13 +260,13 @@
 
         <div class="uc-pager-unit">
           <div class="uc-btn"><a href="./coding_guide.html">← コーディングガイド</a></div>
-          <div class="uc-btn _of-primary"><a href="./footer.html">フッター →</a></div>
+          <div class="uc-btn _primary"><a href="./footer.html">フッター →</a></div>
         </div>
       </main>
     </div>
   </div>
 
-  <footer class="uc-footer _of-dark">
+  <footer class="uc-footer _dark">
     <ul class="uc-footer-link">
       <li><a href="https://github.com/kokushin/units" target="_blank">Document</a></li>
       <li><a href="https://github.com/kokushin/units" target="_blank">Demo</a></li>
