@@ -1,6 +1,9 @@
 p {
   @include font-size(16);
   line-height: 1.8;
+  @media (--small-screen) {
+    @include font-size(14);
+  }
 }
 
 h1 {
@@ -13,11 +16,17 @@ h1 {
 h2,
 .uc-h2 {
   @include font-size(24);
+  @media (--small-screen) {
+    @include font-size(20);
+  }
 }
 
 h3,
 .uc-h3 {
   @include font-size(20);
+  @media (--small-screen) {
+    @include font-size(18);
+  }
 }
 
 h4,
@@ -27,14 +36,7 @@ h5,
 h6
 .uc-h6 {
   @include font-size(18);
-}
-
-p,
-table th,
-table td,
-ul li,
-ol li {
-  @media (--medium-screen) {
-    @include font-size(14);
+  @media (--small-screen) {
+    @include font-size(16);
   }
 }

@@ -110,31 +110,38 @@
   > button {
     display: flex;
     align-items: center;
+    justify-content: center;
     border: none;
-    > span {
-      align-self: center;
-      display: block;
-      color: white;
-      @include font-size(14);
-      font-weight: bold;
-      text-transform: uppercase;
-    }
+    width: 48px;
+    height: 48px;
+    margin-right: -12px;
     > i {
       align-self: center;
       display: block;
       width: 24px;
       height: 2px;
-      background-color: white;
+      background-color: black;
       position: relative;
-      margin-right: 4px;
+
+      .#{$modifier-prefix}dark &,
+      .#{$modifier-prefix}black &,
+      .#{$modifier-prefix}ghost & {
+        color: white;
+      }
       &:before,
       &:after {
         content: " ";
         display: block;
         width: 24px;
         height: 2px;
-        background-color: white;
+        background-color: black;
         position: absolute;
+
+        .#{$modifier-prefix}dark &,
+        .#{$modifier-prefix}black &,
+        .#{$modifier-prefix}ghost & {
+          background-color: white;
+        }
       }
       &:before {
         top: -6px;
