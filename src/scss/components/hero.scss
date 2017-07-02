@@ -1,3 +1,7 @@
+@mixin hero-unit() {
+  @include unit-margin();
+}
+
 @mixin hero() {
   padding: 160px 0;
   background-color: $color-dark;

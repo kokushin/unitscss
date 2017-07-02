@@ -10,12 +10,11 @@
 }
 
 @mixin list-unit() {
-  margin: 56px auto 0;
+  @include unit-margin();
+  padding: 40px 24px;
   text-align: left;
   border-top: 1px solid $color-border;
   border-bottom: 1px solid $color-border;
-  padding: 40px 24px;
-  @include unit-margin();
 }
 
 @mixin list() {

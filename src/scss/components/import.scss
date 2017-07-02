@@ -34,6 +34,7 @@
 
 /* grid-units */
 .#{$component-prefix}grid { @include grid(); }
+.#{$component-prefix}grid-unit { @include grid-unit(); }
 .#{$component-prefix}grid-cell { @include grid-cell(); }
 
 
@@ -61,42 +62,44 @@
 
 /* hero-units */
 .#{$component-prefix}hero { @include hero(); }
+.#{$component-prefix}hero-unit { @include hero-unit(); }
 .#{$component-prefix}hero-title { @include hero-title(); }
 .#{$component-prefix}hero-bg { @include hero-bg(); }
 
 
 /* card-units */
-.#{$component-prefix}card-unit { @include card-unit(); }
 .#{$component-prefix}card { @include card(); }
+.#{$component-prefix}card-unit { @include card-unit(); }
 .#{$component-prefix}card-title { @include card-title(); }
 .#{$component-prefix}card-image { @include card-image(); }
 .#{$component-prefix}card-header { @include card-header(); }
 
 
 /* button-units */
-.#{$component-prefix}btn-unit { @include btn-unit(); }
 .#{$component-prefix}btn { @include btn(); }
+.#{$component-prefix}btn-unit { @include btn-unit(); }
 
 
 /* form-units */
 .#{$component-prefix}form { @include form(); }
+.#{$component-prefix}form-unit { @include form-unit(); }
 .#{$component-prefix}form-parts-unit { @include form-parts-unit(); }
 .#{$component-prefix}form-parts { @include form-parts(); }
 
 
 /* list-units */
-.#{$component-prefix}list-unit { @include list-unit(); }
 .#{$component-prefix}list { @include list(); }
+.#{$component-prefix}list-unit { @include list-unit(); }
 
 
 /* table-units */
-.#{$component-prefix}table-unit { @include table-unit(); }
 .#{$component-prefix}table { @include table(); }
+.#{$component-prefix}table-unit { @include table-unit(); }
 
 
 /* menu-units */
-.#{$component-prefix}menu-unit { @include menu-unit(); }
 .#{$component-prefix}menu { @include menu(); }
+.#{$component-prefix}menu-unit { @include menu-unit(); }
 
 
 /* pager-units */

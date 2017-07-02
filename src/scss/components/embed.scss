@@ -26,7 +26,7 @@
   }
   > pre,
   > .#{$component-prefix}code {
-    background-color: color(black a(.92));
+    background-color: $color-code-bg;
     border-radius: $border-radius;
     padding: 16px 24px;
     & + pre,

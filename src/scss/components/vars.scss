@@ -8,6 +8,7 @@ $color-danger: #f4511e;
 $color-warning: #fdd835;
 $color-dark: #37474f;
 $color-bg: #f2f2f2;
+$color-code-bg: #282c34;
 $color-txt: #333;
 $color-border: rgba(0,0,0,.08);
 $border-radius: 6px;
@@ -44,6 +45,7 @@ $grid-gutter: 40px;
 }
 
 @mixin unit-margin() {
+  margin: 56px auto 0;
   & + h1,
   & + h2,
   & + h3,
@@ -51,6 +53,6 @@ $grid-gutter: 40px;
   & + h5,
   & + h6,
   & + p {
-    margin: 56px 0 0;
+    margin: 56px auto 0;
   }
 }
