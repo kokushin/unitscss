@@ -10,6 +10,9 @@
   padding: 32px 24px;
   background-color: white;
   text-align: left;
+  @media (--small-screen) {
+    padding: 24px;
+  }
   > a p,
   p {
     margin: 12px 0 0;

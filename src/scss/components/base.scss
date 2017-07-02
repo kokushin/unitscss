@@ -20,6 +20,9 @@
 
 @mixin unit-margin() {
   margin: 56px auto 0;
+  @media (--small-screen) {
+    margin: 32px auto 0;
+  }
   & + h1,
   & + h2,
   & + h3,
@@ -28,6 +31,9 @@
   & + h6,
   & + p {
     margin: 56px auto 0;
+    @media (--small-screen) {
+      margin: 32px auto 0;
+    }
   }
 }
 
@@ -51,11 +57,17 @@ hr,
   margin: 80px 0 40px;
   box-sizing: content-box;
   overflow: visible;
+  @media (--small-screen) {
+    margin: 40px 24px;
+  }
 }
 
 * + hr,
 * + .#{$component-prefix}hr {
   margin-top: 80px;
+  @media (--small-screen) {
+    margin-top: 40px;
+  }
 }
 
 h1,
@@ -79,6 +91,9 @@ p {
   & + h5,
   & + h6 {
     margin: 56px 0 0;
+    @media (--small-screen) {
+      margin: 32px 0 0;
+    }
   }
 }
 
