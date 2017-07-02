@@ -1,56 +1,6 @@
 @mixin menu-unit() {
   margin: 0;
-  padding: 32px 0;
+  padding: 0;
 }
 
-@mixin menu() {
-  > a {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: bold;
-    line-height: 1;
-    color: color(black a(.7));
-    & + a {
-      margin: 0 0 0 16px;
-    }
-    &._is-current {
-      color: black;
-    }
-
-    .#{$modifier-prefix}dark &,
-    .#{$modifier-prefix}black &,
-    .#{$modifier-prefix}ghost & {
-      color: color(white a(.7));
-      &._is-current {
-        color: white;
-      }
-    }
-  }
-
-  &.#{$modifier-prefix}sidebar {
-    & + .#{$modifier-prefix}sidebar {
-      > p {
-        margin-top: 16px;
-      }
-    }
-    > p {
-      margin: 0;
-      line-height: 1;
-      padding: 16px 24px;
-    }
-    > a {
-      display: block;
-      @include font-size(14);
-      font-weight: normal;
-      margin: 0;
-      padding: 16px 40px;
-      &._is-current {
-        background-color: $color-bg;
-        font-weight: bold;
-      }
-      & + a {
-        margin: 0;
-      }
-    }
-  }
-}
+@mixin menu() {}

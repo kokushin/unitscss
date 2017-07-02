@@ -1,5 +1,6 @@
 @mixin table-unit() {
   @include unit-margin();
+  overflow-x: scroll;
 }
 
 @mixin table() {

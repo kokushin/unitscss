@@ -41,6 +41,7 @@
 /* header-units */
 .#{$component-prefix}header { @include header(); }
 .#{$component-prefix}header-logo { @include header-logo(); }
+.#{$component-prefix}header-menu { @include header-menu(); }
 
 
 /* footer-units */
@@ -58,6 +59,7 @@
 
 /* sidebar-units */
 .#{$component-prefix}sidebar { @include sidebar(); }
+.#{$component-prefix}sidebar-list { @include sidebar-list(); }
 
 
 /* hero-units */

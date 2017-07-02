@@ -74,3 +74,28 @@
     }
   }
 }
+
+@mixin header-menu() {
+  > a {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    color: color(black a(.7));
+    & + a {
+      margin: 0 0 0 16px;
+    }
+    &._is-current {
+      color: black;
+    }
+
+    .#{$modifier-prefix}dark &,
+    .#{$modifier-prefix}black &,
+    .#{$modifier-prefix}ghost & {
+      color: color(white a(.7));
+      &._is-current {
+        color: white;
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
-p,
-.#{$component-prefix}txt {
+p {
+  @include font-size(16);
   line-height: 1.8;
 }
 
@@ -10,16 +10,31 @@ h1,
   line-height: 1;
 }
 
-h2 {
+h2,
+.uc-h2 {
   @include font-size(24);
 }
 
-h3 {
+h3,
+.uc-h3 {
   @include font-size(20);
 }
 
 h4,
+.uc-h4,
 h5,
-h6 {
+.uc-h5,
+h6
+.uc-h6 {
   @include font-size(18);
+}
+
+p,
+table th,
+table td,
+ul li,
+ol li {
+  @media (--medium-screen) {
+    @include font-size(14);
+  }
 }

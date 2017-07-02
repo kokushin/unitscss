@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Header | Components | UNITS Document</title>
+  <title>Hero | Components | UNITS Document</title>
   <meta name="description" content="UNITS is a simple and beautiful CSS component set.">
   <meta name="author" content="kokushin">
 
   <meta property="og:site_name" content="UNITS - Simple and beautiful CSS component set.">
-  <meta property="og:title" content="Header | Components | UNITS Document">
+  <meta property="og:title" content="Hero | Components | UNITS Document">
   <meta property="og:description" content="UNITS is a simple and beautiful CSS component set.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://kokushin.github.io/units/">
@@ -50,12 +50,12 @@
         </div>
         <div class="uc-sidebar-list">
           <p><strong>コンポーネント</strong></p>
-          <a href="/ja/docs/components/header.html" class="_is-current">ヘッダー</a>
+          <a href="/ja/docs/components/header.html">ヘッダー</a>
           <a href="/ja/docs/components/footer.html">フッター</a>
           <a href="/ja/docs/components/section.html">セクション</a>
           <a href="/ja/docs/components/sidebar.html">サイドバー</a>
           <a href="/ja/docs/components/grid.html">グリッド</a>
-          <a href="/ja/docs/components/hero.html">ヒーローエリア</a>
+          <a href="/ja/docs/components/hero.html" class="_is-current">ヒーローエリア</a>
           <a href="/ja/docs/components/card.html">カード</a>
           <a href="/ja/docs/components/button.html">ボタン</a>
           <a href="/ja/docs/components/form.html">フォーム</a>
@@ -88,16 +88,14 @@
       <main class="uc-content">
 
         <section class="uc-section">
-          <h2 class="uc-section-title">ヘッダー</h2>
-          <p>ヘッダーコンポーネントは、Webページの最上部に配置される要素を指します。<br>背景色を変更するオプションや、固定のON/OFFを切り替えるオプションなどが用意されています。</p>
+          <h2 class="uc-section-title">ヒーローエリア</h2>
+          <p>ヒーローエリアは、ファーストビュー内に配置される大きなビジュアルの要素を指します。<br>ページを訪れたユーザーにインパクトを与えるだけでなく、キャッチコピーを伝える手段として最適です。</p>
 
           <div class="uc-list-unit">
             <ul class="uc-list">
               <li><a href="#c-0">クラス一覧</a></li>
-              <li><a href="#c-1">基本のヘッダー</a></li>
-              <li><a href="#c-2">テーマヘッダー</a></li>
-              <li><a href="#c-3">ゴーストヘッダー</a></li>
-              <li><a href="#c-4">固定ヘッダー</a></li>
+              <li><a href="#c-1">基本のヒーローエリア</a></li>
+              <li><a href="#c-2">全画面のヒーローエリア</a></li>
             </ul>
           </div>
 
@@ -119,7 +117,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td>uc-header</td>
+                    <td>uc-hero</td>
                     <td>ベース</td>
                     <td>基本クラス</td>
                     <td>はい</td>
@@ -127,41 +125,25 @@
                     <td>-</td>
                   </tr>
                   <tr>
-                    <td>uc-header-logo</td>
+                    <td>uc-hero-bg</td>
                     <td>パーツ</td>
-                    <td>基本のヘッダー用ロゴを適用する</td>
-                    <td>はい</td>
+                    <td>背景画像を設定する</td>
+                    <td>いいえ</td>
                     <td>ベースの直下</td>
                     <td>-</td>
                   </tr>
                   <tr>
-                    <td>_fixed</td>
+                    <td>uc-hero-title</td>
+                    <td>パーツ</td>
+                    <td>ヒーローエリア用の見出しのスタイルを適用する</td>
+                    <td>いいえ</td>
+                    <td>ベースの直下</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>_full</td>
                     <td>オプション</td>
-                    <td>ヘッダーを固定し、追従するようにする</td>
-                    <td>いいえ</td>
-                    <td>ベース</td>
-                    <td>不可</td>
-                  </tr>
-                  <tr>
-                    <td>_ghost</td>
-                    <td>オプション</td>
-                    <td>ヘッダーの背景を透過する</td>
-                    <td>いいえ</td>
-                    <td>ベース</td>
-                    <td>不可</td>
-                  </tr>
-                  <tr>
-                    <td>_dark</td>
-                    <td>テーマ</td>
-                    <td>ヘッダーの背景にダークテーマを適用する</td>
-                    <td>いいえ</td>
-                    <td>ベース</td>
-                    <td>可能</td>
-                  </tr>
-                  <tr>
-                    <td>_black</td>
-                    <td>テーマ</td>
-                    <td>ヘッダーの背景にブラックテーマを適用する</td>
+                    <td>ブラウザの高さいっぱいにヒーローエリアを表示させる</td>
                     <td>いいえ</td>
                     <td>ベース</td>
                     <td>可能</td>
@@ -172,91 +154,63 @@
           </div>
 
           <div class="doc-component-box" id="c-1">
-            <h3>基本のヘッダー</h3>
-            <p>ベースとなるヘッダーです。</p>
+            <h3>基本のヒーローエリア</h3>
+            <p>ベースとなるヒーローエリアです。</p>
 
             <div class="doc-component-preview">
-              <div class="uc-header">
-                <div class="uc-header-logo">Logo</div>
-                <p>Page description</p>
-              </div>
-            </div>
-            <div class="uc-code-unit">
-<pre><code class="html">&lt;header class="uc-header"&gt;
-  &lt;div class="uc-header-logo"&gt;Logo&lt;/div&gt;
-  &lt;p&gt;Page description&lt;/p&gt;
-&lt;/header&gt;
-</code></pre>
-            </div>
-          </div>
+            <!-- preview area -->
 
-          <div class="doc-component-box" id="c-2">
-            <h3>テーマヘッダー</h3>
-            <p>ヘッダーの背景を各テーマごとに変更することが可能です。</p>
-
-            <div class="doc-component-preview">
-              <div class="uc-header _dark">
-                <div class="uc-header-logo">Dark</div>
-                <p>Page description</p>
-              </div>
-            </div>
-            <div class="uc-code-unit">
-<pre><code class="html">&lt;header class="uc-header _dark"&gt;
-  &lt;div class="uc-header-logo"&gt;Dark&lt;/div&gt;
-  &lt;p&gt;Page description&lt;/p&gt;
-&lt;/header&gt;
-</code></pre>
-            </div>
-          </div>
-
-          <div class="doc-component-box" id="c-3">
-            <h3>ゴーストヘッダー</h3>
-            <p>背景が透過されているヘッダーです。<br><code>.uc-hero</code>と組み合わせて使用することで、ビジュアルをより効果的に見せることができます。</p>
-
-            <div class="doc-component-preview">
-              <div class="doc-component-preview-inner">
-                <div class="uc-header _ghost">
-                  <div class="uc-header-logo">Ghost</div>
-                  <p>Page description</p>
-                </div>
-                <div class="uc-hero">
-                  <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
-                  <div class="uc-hero-title">Hero area</div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iste!</p>
+              <div class="uc-hero">
+                <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+                <div class="uc-hero-title">Hero area</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iste!</p>
+                <div class="uc-btn-unit">
+                  <div class="uc-btn _ghost"><a href="#">Button</a></div>
                 </div>
               </div>
+
+            <!-- /preview area -->
             </div>
             <div class="uc-code-unit">
-<pre><code class="html">&lt;header class="uc-header _ghost"&gt;
-  &lt;div class="uc-header-logo"&gt;Ghost&lt;/div&gt;
-  &lt;p&gt;Page description&lt;/p&gt;
-&lt;/header&gt;
-&lt;div class="uc-hero"&gt;
+<pre><code class="html">&lt;div class="uc-hero"&gt;
   &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
   &lt;div class="uc-hero-title"&gt;Hero area&lt;/div&gt;
   &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iste!&lt;/p&gt;
+  &lt;div class="uc-btn-unit"&gt;
+    &lt;div class="uc-btn _ghost"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
             </div>
           </div>
 
-          <div class="doc-component-box" id="c-4">
-            <h3>固定ヘッダー</h3>
-            <p>ヘッダーの位置をページのスクロールに合わせて追従するように固定します。<br>ちょうど、このドキュメントページのヘッダーのような挙動になります。</p>
+          <div class="doc-component-box" id="c-2">
+            <h3>全画面のヒーローエリア</h3>
+            <p>ブラウザの高さいっぱいにヒーローエリアを表示させることが可能です。</p>
 
             <div class="doc-component-preview">
-              <div class="doc-component-preview-inner">
-                <div class="uc-header _fixed" style="position:static">
-                  <div class="uc-header-logo">Fixed</div>
-                  <p>Page description</p>
+            <!-- preview area -->
+
+              <div class="uc-hero _full">
+                <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+                <div class="uc-hero-title">Hero area</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iste!</p>
+                <div class="uc-btn-unit">
+                  <div class="uc-btn _ghost"><a href="#">Button</a></div>
                 </div>
               </div>
+
+            <!-- /preview area -->
             </div>
             <div class="uc-code-unit">
-<pre><code class="html">&lt;header class="uc-header _fixed"&gt;
-  &lt;div class="uc-header-logo"&gt;Fixed&lt;/div&gt;
-  &lt;p&gt;Page description&lt;/p&gt;
-&lt;/header&gt;
+<pre><code class="html">&lt;div class="uc-hero _full"&gt;
+  &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-hero-title"&gt;Hero area&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iste!&lt;/p&gt;
+  &lt;div class="uc-btn-unit"&gt;
+    &lt;div class="uc-btn _ghost"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
 </code></pre>
             </div>
           </div>

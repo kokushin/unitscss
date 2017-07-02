@@ -5,6 +5,7 @@
   background-color: white;
   position: relative;
   @include z-index(1);
+  padding: 32px 0;
 
   &.#{$modifier-prefix}dark {
     background-color: $color-dark;
@@ -17,5 +18,34 @@
   &.#{$modifier-prefix}dark,
   &.#{$modifier-prefix}black {
     color: white;
+  }
+}
+
+@mixin sidebar-list() {
+  & + .#{$component-prefix}sidebar-list {
+    > p {
+      margin-top: 16px;
+    }
+  }
+  > p {
+    margin: 0;
+    @include font-size(16);
+    line-height: 1;
+    padding: 16px 24px;
+  }
+  > a {
+    display: block;
+    @include font-size(14);
+    font-weight: normal;
+    text-decoration: none;
+    margin: 0;
+    padding: 16px 40px;
+    &._is-current {
+      background-color: $color-bg;
+      font-weight: bold;
+    }
+    & + a {
+      margin: 0;
+    }
   }
 }
