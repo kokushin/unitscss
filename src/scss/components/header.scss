@@ -52,6 +52,9 @@
 
 @mixin header-logo() {
   margin: 0 20px 0 0;
+  @include font-size(24);
+  font-weight: bold;
+  line-height: 1;
   color: black;
   a {
     display: inline-block;
@@ -82,6 +85,9 @@
     font-weight: bold;
     line-height: 1;
     color: color(black a(.7));
+    @media (--small-screen) {
+      @include font-size(14);
+    }
     & + a {
       margin: 0 0 0 16px;
     }
@@ -95,6 +101,46 @@
       color: color(white a(.7));
       &._is-current {
         color: white;
+      }
+    }
+  }
+}
+
+@mixin header-menu-btn() {
+  > button {
+    display: flex;
+    align-items: center;
+    border: none;
+    > span {
+      align-self: center;
+      display: block;
+      color: white;
+      @include font-size(14);
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    > i {
+      align-self: center;
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: white;
+      position: relative;
+      margin-right: 4px;
+      &:before,
+      &:after {
+        content: " ";
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+      }
+      &:before {
+        top: -6px;
+      }
+      &:after {
+        bottom: -6px;
       }
     }
   }

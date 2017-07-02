@@ -518,7 +518,7 @@ textarea,
 /**
  * import UNITS component set
  */
-/* core files */
+/* core */
 html {
   font-size: 100%; }
 
@@ -591,11 +591,11 @@ p {
   font-size: 1rem;
   line-height: 1.8; }
 
-h1,
-.uc-header-logo {
-  font-size: 2rem;
-  font-weight: bold;
-  line-height: 1; }
+h1 {
+  font-size: 2rem; }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem; } }
 
 h2,
 .uc-h2 {
@@ -835,6 +835,9 @@ i {
 
 .uc-header-logo {
   margin: 0 20px 0 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
   color: black; }
   .uc-header-logo a {
     display: inline-block;
@@ -861,6 +864,9 @@ i {
   font-weight: bold;
   line-height: 1;
   color: rgba(0, 0, 0, 0.7); }
+  @media (max-width: 768px) {
+    .uc-header-menu > a {
+      font-size: 0.875rem; } }
   .uc-header-menu > a + a {
     margin: 0 0 0 16px; }
   .uc-header-menu > a._is-current {
@@ -873,6 +879,43 @@ i {
     ._black .uc-header-menu > a._is-current,
     ._ghost .uc-header-menu > a._is-current {
       color: white; }
+
+.uc-header-menu-btn > button {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  border: none; }
+  .uc-header-menu-btn > button > span {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    display: block;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .uc-header-menu-btn > button > i {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    position: relative;
+    margin-right: 4px; }
+    .uc-header-menu-btn > button > i:before, .uc-header-menu-btn > button > i:after {
+      content: " ";
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: white;
+      position: absolute; }
+    .uc-header-menu-btn > button > i:before {
+      top: -6px; }
+    .uc-header-menu-btn > button > i:after {
+      bottom: -6px; }
 
 /* footer-units */
 .uc-footer {
@@ -1040,6 +1083,9 @@ i {
   background-color: #37474f;
   position: relative;
   text-align: center; }
+  @media (max-width: 768px) {
+    .uc-hero {
+      padding: 80px 0; } }
   .uc-hero > * {
     position: relative;
     z-index: 5999; }
@@ -1051,6 +1097,10 @@ i {
   ._fixed + .uc-hero {
     margin-top: 0;
     padding-top: 240px; }
+    @media (max-width: 768px) {
+      ._ghost + .uc-hero,
+      ._fixed + .uc-hero {
+        padding-top: 160px; } }
   .uc-hero._full {
     display: -ms-flexbox;
     display: flex;
@@ -1082,6 +1132,10 @@ i {
   line-height: 1.2;
   padding: 0 80px;
   margin: 0; }
+  @media (max-width: 768px) {
+    .uc-hero-title {
+      font-size: 2rem;
+      padding: 0 24px; } }
 
 .uc-hero-bg {
   background-position: center;
@@ -1437,17 +1491,6 @@ i {
   -ms-flex-pack: center;
       justify-content: center; }
 
-._blind {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 1px;
-  font-size: 1px;
-  line-height: 100px;
-  white-space: nowrap; }
-
 ._orig-width {
   width: auto !important; }
 
@@ -1606,5 +1649,28 @@ i {
 
 ._ml-step ._ml-step-10 {
   margin-left: 80px !important; }
+
+._content-hidden {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  line-height: 100px;
+  white-space: nowrap; }
+
+@media (max-width: 768px) {
+  ._small-hidden {
+    display: none !important; } }
+
+@media (min-width: 769px) and (max-width: 1199px) {
+  ._medium-hidden {
+    display: none !important; } }
+
+@media (max-width: 768px) {
+  ._large-hidden {
+    display: none !important; } }
 
 /*# sourceMappingURL=maps/units.css.map */

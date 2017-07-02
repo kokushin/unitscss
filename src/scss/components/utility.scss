@@ -4,18 +4,6 @@
   justify-content: center;
 }
 
-@mixin blind() {
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1px;
-  height: 1px;
-  font-size: 1px;
-  line-height: 100px;
-  white-space: nowrap;
-}
-
 @mixin orig-width() {
   width: auto !important;
 }
@@ -80,6 +68,34 @@
   @for $i from 0 through 10 {
     .#{$modifier-prefix}ml-step-#{$i} {
       margin-left: #{$i*8}px !important;
+    }
+  }
+}
+
+@mixin content-hidden() {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  line-height: 100px;
+  white-space: nowrap;
+}
+
+@mixin switch-hidden($size) {
+  @if $size == 'small' {
+    @media(--small-screen) {
+      display: none !important;
+    }
+  } @else if $size == 'medium' {
+    @media(--medium-screen) {
+      display: none !important;
+    }
+  } @else {
+    @media(--small-screen) {
+      display: none !important;
     }
   }
 }

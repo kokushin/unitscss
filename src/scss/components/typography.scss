@@ -3,11 +3,11 @@ p {
   line-height: 1.8;
 }
 
-h1,
-.#{$component-prefix}header-logo {
+h1 {
   @include font-size(32);
-  font-weight: bold;
-  line-height: 1;
+  @media (--small-screen) {
+    @include font-size(24);
+  }
 }
 
 h2,
