@@ -13,7 +13,7 @@
     padding: 0 24px;
   }
   > p {
-    margin-right: auto;
+    margin: 0 auto 0 24px;
     color: color(black a(.7));
   }
   &.#{$modifier-prefix}fixed,
@@ -23,7 +23,10 @@
     width: 100%;
     @include z-index(4);
     & + * {
-      margin-top: $header-height;
+      margin: $header-height 0 0;
+      @media (--small-screen) {
+        margin: calc(#{$header-height} - 16px) 0 0;
+      }
     }
   }
   &.#{$modifier-prefix}center {
@@ -55,7 +58,7 @@
 }
 
 @mixin header-logo() {
-  margin: 0 20px -1px 0;
+  margin: 0 0 -1px 0;
   @include font-size(32);
   font-weight: bold;
   line-height: 1;

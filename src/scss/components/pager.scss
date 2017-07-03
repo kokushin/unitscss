@@ -2,6 +2,9 @@
   margin: 0;
   padding: 80px;
   background-color: $color-bg;
+  @media (--small-screen) {
+    padding: 48px 24px;
+  }
   > * {
     margin: 0;
   }

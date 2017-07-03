@@ -10,7 +10,7 @@
     padding: 80px 40px;
   }
   @media (--small-screen) {
-    padding: 56px 24px;
+    padding: 40px 24px 48px;
   }
 
   & + .#{$component-prefix}section {
@@ -37,7 +37,10 @@
   color: black;
   @include font-size(40);
   @media (--small-screen) {
-    @include font-size(24);
+    @include font-size(32);
+    [lang=ja] & {
+      @include font-size(28);
+    }
   }
   .#{$modifier-prefix}dark & {
     color: white;
@@ -51,7 +54,7 @@
     background-color: color(black a(.3));
     margin: 16px 0 0;
     @media (--small-screen) {
-      margin: 12px 0 0;
+      margin: 8px 0 0;
     }
 
     .#{$modifier-prefix}center & {
