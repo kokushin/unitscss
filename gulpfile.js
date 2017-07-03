@@ -17,7 +17,7 @@ gulp.task('build', () => {
  * UNITS v${pkg.version}
  *
  * MIT License
- * https://unitscss.com
+ * http://unitscss.com
  * Copyright 2017 @kokushing
 */\r\n`;
 
