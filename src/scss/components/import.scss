@@ -40,12 +40,11 @@
 .#{$component-prefix}header { @include header(); }
 .#{$component-prefix}header-logo { @include header-logo(); }
 .#{$component-prefix}header-menu { @include header-menu(); }
-.#{$component-prefix}header-menu-btn { @include header-menu-btn(); }
 
 /* footer-units */
 .#{$component-prefix}footer { @include footer(); }
 .#{$component-prefix}footer-logo { @include footer-logo(); }
-.#{$component-prefix}footer-link { @include footer-link(); }
+.#{$component-prefix}footer-menu { @include footer-menu(); }
 
 /* section-units */
 .#{$component-prefix}content { @include content(); }
@@ -91,6 +90,7 @@
 /* menu-units */
 .#{$component-prefix}menu { @include menu(); }
 .#{$component-prefix}menu-unit { @include menu-unit(); }
+.#{$component-prefix}menu-btn { @include menu-btn(); }
 
 /* pager-units */
 .#{$component-prefix}pager-unit { @include pager-unit(); }
@@ -111,6 +111,7 @@
 .#{$modifier-prefix}no-margin { @include no-margin(); }
 .#{$modifier-prefix}no-padding { @include no-padding(); }
 .#{$modifier-prefix}no-line-height { @include no-line-height(); }
+.#{$modifier-prefix}no-box-shadow { @include no-box-shadow(); }
 .#{$modifier-prefix}txt-bold { @include txt-bold(); }
 .#{$modifier-prefix}txt-left { @include txt-left(); }
 .#{$modifier-prefix}txt-center { @include txt-center(); }

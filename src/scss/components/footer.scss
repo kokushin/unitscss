@@ -55,15 +55,19 @@
   }
 }
 
-@mixin footer-link() {
+@mixin footer-menu() {
   display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  > li {
+  > a {
+    display: block;
     margin: 0 16px;
     position: relative;
-    & + li:before {
+    color: $color-txt;
+    text-decoration: none;
+    font-weight: bold;
+    & + a:before {
       content: " ";
       display: inline-block;
       width: 1px;
@@ -78,11 +82,6 @@
       .#{$modifier-prefix}black & {
         background-color: color(white a(.3));
       }
-    }
-    a {
-      color: $color-txt;
-      text-decoration: none;
-      font-weight: bold;
     }
   }
 }
