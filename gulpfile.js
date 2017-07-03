@@ -17,7 +17,7 @@ gulp.task('build', () => {
  * UNITS v${pkg.version}
  *
  * MIT License
- * https://kokushin.github.io/units/
+ * https://unitscss.com
  * Copyright 2017 @kokushing
 */\r\n`;
 
@@ -44,13 +44,13 @@ gulp.task('default', ['build']);
 
 gulp.task('dev:serve', ['dev:build'], () => {
   browserSync.init({
-    server: './htdocs',
+    server: './public',
     notify: false,
     ghostMode: false
   });
 
   gulp.watch('./src/**/*.scss', ['dev:build']);
-  gulp.watch('./htdocs/**/*.html').on('change', browserSync.reload);
+  gulp.watch('./public/**/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('dev:build', ['build'], () => {
@@ -63,7 +63,7 @@ gulp.task('dev:build', ['build'], () => {
     }).on('error', $.sass.logError))
     .pipe($.postcss(processors))
     .pipe($.sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./htdocs/css'))
+    .pipe(gulp.dest('./public/css'))
     .pipe(browserSync.stream());
 });
 
