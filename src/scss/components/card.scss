@@ -25,6 +25,9 @@
     > a {
       padding: 8px 32px;
       @include font-size(14);
+      @media (--small-screen) {
+        min-width: initial;
+      }
     }
   }
 
@@ -44,6 +47,9 @@
       height: 100%;
       padding: 32px 24px;
       text-decoration: none;
+      @media (--small-screen) {
+        padding: 24px;
+      }
     }
   }
 
@@ -66,6 +72,9 @@
       width: 160px;
       height: auto;
       border-radius: $border-radius 0 0 $border-radius;
+      @media (--small-screen) {
+        margin: -24px;
+      }
     }
     .#{$component-prefix}card-wrap {
       flex: 1;
@@ -78,6 +87,11 @@
   @include font-size(20);
   font-weight: bold;
   color: $color-dark;
+  @media (--small-screen) {
+    [lang=ja] & {
+      @include font-size(16);
+    }
+  }
 }
 
 @mixin card-image() {
@@ -87,6 +101,9 @@
   background-size: cover;
   background-color: $color-bg;
   border-radius: $border-radius $border-radius 0 0;
+  @media (--small-screen) {
+    margin: -24px -24px 24px;
+  }
 }
 
 @mixin card-icon() {

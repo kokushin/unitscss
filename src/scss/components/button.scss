@@ -9,7 +9,10 @@
   background-color: white;
   border: 2px solid white;
   & + .#{$component-prefix}btn {
-    margin-left: 16px;
+    margin: 0 0 0 16px;
+    @media (--small-screen) {
+      margin: 16px 0 0;
+    }
   }
   > span,
   > a {
@@ -17,7 +20,13 @@
     padding: 14px 48px;
     text-decoration: none;
     text-transform: uppercase;
+    @include font-size(16);
     font-weight: bold;
+    @media (--small-screen) {
+      min-width: 240px;
+      padding: 12px 24px;
+      @include font-size(14);
+    }
   }
 
   &.#{$modifier-prefix}ghost > a,

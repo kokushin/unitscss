@@ -6,8 +6,11 @@
 @mixin section() {
   position: relative;
   padding: 80px;
+  @media (--medium-screen) {
+    padding: 80px 40px;
+  }
   @media (--small-screen) {
-    padding: 40px 24px;
+    padding: 56px 24px;
   }
 
   & + .#{$component-prefix}section {
@@ -33,6 +36,9 @@
 @mixin section-title() {
   color: black;
   @include font-size(40);
+  @media (--small-screen) {
+    @include font-size(24);
+  }
   .#{$modifier-prefix}dark & {
     color: white;
   }
@@ -44,9 +50,13 @@
     height: 2px;
     background-color: color(black a(.3));
     margin: 16px 0 0;
+    @media (--small-screen) {
+      margin: 12px 0 0;
+    }
 
     .#{$modifier-prefix}center & {
-      margin: 16px auto 0;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .#{$modifier-prefix}dark & {
@@ -55,6 +65,13 @@
   }
   & + p {
     margin: 32px 0 0;
+    @include font-size(16);
+    @media (--small-screen) {
+      margin: 24px 0 0;
+      [lang=ja] & {
+        @include font-size(14);
+      }
+    }
 
     .#{$modifier-prefix}dark & {
       color: white;

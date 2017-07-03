@@ -8,16 +8,23 @@
   margin-right: 16px;
   margin-top: 8px;
   @media (--small-screen) {
+    width: 6px;
+    height: 6px;
     margin-right: 8px;
+    [lang=ja] & {
+      margin-top: 6px;
+    }
   }
 }
 
 @mixin list-unit() {
   @include unit-margin();
-  padding: 0 0 0 24px;
+  padding: 56px 24px;
   text-align: left;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
   @media (--small-screen) {
-    padding: 0 0 0 8px;
+    padding: 32px 8px;
   }
 }
 
@@ -30,7 +37,9 @@
   > li {
     color: $color-txt;
     @media (--small-screen) {
-      @include font-size(14);
+      [lang=ja] & {
+        @include font-size(14);
+      }
     }
     & + li {
       margin: 16px 0 0;

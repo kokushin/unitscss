@@ -5,8 +5,11 @@
   height: $header-height;
   padding: 0 80px;
   background-color: white;
+  @media (--medium-screen) {
+    padding: 0 40px;
+  }
   @media (--small-screen) {
-    height: calc(#{$header-height} - 20px);
+    height: calc(#{$header-height} - 16px);
     padding: 0 24px;
   }
   > p {
@@ -52,7 +55,7 @@
 }
 
 @mixin header-logo() {
-  margin: 0 20px 0 0;
+  margin: 0 20px -1px 0;
   @include font-size(32);
   font-weight: bold;
   line-height: 1;
