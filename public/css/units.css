@@ -1027,7 +1027,7 @@ i {
       padding: 80px 40px; } }
   @media (max-width: 768px) {
     .uc-section {
-      padding: 40px 24px 48px; } }
+      padding: 40px 24px 56px; } }
   .uc-section + .uc-section {
     border-top: 1px solid #ebebeb; }
   .uc-section._center {
@@ -1532,10 +1532,8 @@ i {
 
 .uc-list-unit {
   margin: 56px auto 0;
-  padding: 56px 24px;
-  text-align: left;
-  border-top: 1px solid #ebebeb;
-  border-bottom: 1px solid #ebebeb; }
+  padding: 0 24px;
+  text-align: left; }
   @media (max-width: 768px) {
     .uc-list-unit {
       margin: 40px auto 0; } }
@@ -1558,7 +1556,14 @@ i {
         margin: 40px auto 0; } }
   @media (max-width: 768px) {
     .uc-list-unit {
-      padding: 32px 8px; } }
+      padding: 0 8px; } }
+  .uc-list-unit._border {
+    padding: 40px 24px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb; }
+    @media (max-width: 768px) {
+      .uc-list-unit._border {
+        padding: 32px 8px; } }
 
 /* table-units */
 .uc-table thead {

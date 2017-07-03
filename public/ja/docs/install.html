@@ -20,6 +20,10 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" href="/css/units.css">
   <link rel="stylesheet" href="/css/userstyles.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css" rel="stylesheet">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
 
@@ -85,31 +89,33 @@
 
         <section class="uc-section">
           <h2 class="uc-section-title">インストール</h2>
-          <p>インストールは<code>unit.min.css</code>を読み込むだけです！<br>CSS本体はGitHubよりクローンもしくはZIP形式で<a href="#" target="_blank">ダウンロード</a>するか、npmを経由してダウンロードすることが可能です。</p>
+          <p>インストールは<code>unit.css</code>または<code>unit.min.css</code>を読み込むだけです！<br>CSS本体はGitHubよりクローンもしくはZIP形式で<a href="#" target="_blank">ダウンロード</a>するか、npmを経由してダウンロードすることが可能です。</p>
           <div class="uc-code-unit">
             <h3>1．GitHubからクローンするか、npm経由でダウンロードする</h3>
-            <pre><code>$ git clone https://github.com/kokushin/units.git</code></pre>
-            <pre><code>$ npm install unitscss --save-dev</code></pre>
+            <pre><code class="bash">$ git clone https://github.com/kokushin/units.git</code></pre>
+            <pre><code class="bash">$ npm install unitscss --save-dev</code></pre>
           </div>
           <div class="uc-code-unit">
             <h3>2. unit.min.cssを読み込む</h3>
-            <pre><code>&lt;link rel="stylesheet" href="css/units.min.css"&gt;</code></pre>
+            <pre><code class="html">&lt;link rel="stylesheet" href="css/units.min.css"&gt;</code></pre>
           </div>
           <div class="uc-code-unit">
             <h3>3. 使用したいコンポーネントのHTMLを記述する</h3>
-<pre><code>&lt;div class="uc-card-unit"&gt;
-    &lt;div class="uc-card"&gt;
-      &lt;h3 class="uc-card-title"&gt;Simple card&lt;/h3&gt;
-      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.&lt;/p&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;</code></pre>
+<pre><code class="html">&lt;div class="uc-card _float"&gt;
+  &lt;div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;h3 class="uc-card-title"&gt;サンプルカード&lt;/h3&gt;
+  &lt;p&gt;この文章はダミーテキストです。実際にはこの箇所に任意のテキストが挿入されます。表示を確認してください&lt;/p&gt;
+  &lt;div class="uc-btn _primary"&gt;&lt;a href="#"&gt;ダミーボタン&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
           </div>
           <div class="uc-code-unit">
             <h3>4. 結果を確認してください！</h3>
             <div class="uc-card-unit">
-              <div class="uc-card">
-                <div class="uc-card-title">Simple card</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.</p>
+              <div class="uc-card _float">
+                <div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"></div>
+                <h3 class="uc-card-title">サンプルカード</h3>
+                <p>この文章はダミーテキストです。実際にはこの箇所に任意のテキストが挿入されます。表示を確認してください</p>
+                <div class="uc-btn _primary"><a href="#">ダミーボタン</a></div>
               </div>
             </div>
           </div>
