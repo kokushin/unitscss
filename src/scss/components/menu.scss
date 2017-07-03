@@ -4,3 +4,50 @@
 }
 
 @mixin menu() {}
+
+@mixin menu-btn() {
+  > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 48px;
+    height: 48px;
+    margin-right: -12px;
+    > i {
+      align-self: center;
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: black;
+      position: relative;
+
+      .#{$modifier-prefix}dark &,
+      .#{$modifier-prefix}black &,
+      .#{$modifier-prefix}ghost & {
+        background-color: white;
+      }
+      &:before,
+      &:after {
+        content: " ";
+        display: block;
+        width: 24px;
+        height: 2px;
+        background-color: black;
+        position: absolute;
+
+        .#{$modifier-prefix}dark &,
+        .#{$modifier-prefix}black &,
+        .#{$modifier-prefix}ghost & {
+          background-color: white;
+        }
+      }
+      &:before {
+        top: -6px;
+      }
+      &:after {
+        bottom: -6px;
+      }
+    }
+  }
+}

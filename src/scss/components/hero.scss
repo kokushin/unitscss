@@ -23,9 +23,9 @@
   .#{$modifier-prefix}ghost + &,
   .#{$modifier-prefix}fixed + & {
     margin-top: 0;
-    padding-top: calc(160px + #{$header-height});
+    padding-top: calc(#{$header-height} + 160px);
     @media (--small-screen) {
-      padding-top: calc(80px + #{$header-height});
+      padding-top: calc((#{$header-height} - 20px) + 80px);
     }
   }
 

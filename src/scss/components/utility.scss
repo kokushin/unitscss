@@ -24,6 +24,10 @@
   line-height: 1 !important;
 }
 
+@mixin no-box-shadow() {
+  box-shadow: none !important;
+}
+
 @mixin txt-bold() {
   font-weight: bold !important;
 }
@@ -94,7 +98,7 @@
       display: none !important;
     }
   } @else {
-    @media(--small-screen) {
+    @media(--large-screen) {
       display: none !important;
     }
   }
