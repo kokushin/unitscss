@@ -12,7 +12,10 @@
       margin: -#{calc(#{$grid-gutter} / 2)} 0 0 -#{calc(#{$grid-gutter} / 2)};
     }
     .#{$component-prefix}grid-cell {
-      padding: #{calc(#{$grid-gutter} / 2)} 0 0 #{calc(#{$grid-gutter} / 2)};
+      padding: #{$grid-gutter} 0 0 #{$grid-gutter};
+      @media (--small-screen) {
+        padding: #{calc(#{$grid-gutter} / 2)} 0 0 #{calc(#{$grid-gutter} / 2)};
+      }
     }
   }
 
@@ -37,12 +40,12 @@
   @for $i from 2 through 12 {
     .#{$modifier-prefix}col-#{$i} > &,
     &.#{$modifier-prefix}col-#{$i} {
-      flex: 0 0 calc(100%/#{$i});
+      width: calc(100%/#{$i});
     }
     @media (--small-screen) {
       .#{$modifier-prefix}small-col-#{$i} > &,
       &.#{$modifier-prefix}small-col-#{$i} {
-        flex: 0 0 calc(100%/#{$i});
+        width: calc(100%/#{$i});
       }
     }
   }
