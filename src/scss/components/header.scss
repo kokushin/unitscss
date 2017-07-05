@@ -89,8 +89,8 @@
 }
 
 @mixin header-menu() {
+  display: flex;
   > a {
-    display: inline-block;
     text-decoration: none;
     font-weight: bold;
     line-height: 1;

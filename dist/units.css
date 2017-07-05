@@ -1119,8 +1119,12 @@ i {
   color: white;
 }
 
+.uc-header-menu {
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .uc-header-menu > a {
-  display: inline-block;
   text-decoration: none;
   font-weight: bold;
   line-height: 1;
