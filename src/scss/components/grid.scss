@@ -68,6 +68,7 @@
   @media (--small-screen) {
     .#{$modifier-prefix}small-col-full > &,
     &.#{$modifier-prefix}small-col-full {
+      width: 100%;
       flex: 0 0 100%;
     }
   }

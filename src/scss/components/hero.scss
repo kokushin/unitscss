@@ -59,6 +59,10 @@
   @media (--small-screen) {
     @include font-size(48);
     line-height: 1.1;
+    [lang=ja] & {
+      @include font-size(40);
+      line-height: 1.3;
+    }
   }
 }
 

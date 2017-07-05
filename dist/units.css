@@ -975,6 +975,7 @@ i {
 
 @media (max-width: 768px) {
   ._small-col-full > .uc-grid-cell, .uc-grid-cell._small-col-full {
+    width: 100%;
     -ms-flex: 0 0 100%;
         flex: 0 0 100%;
   }
@@ -1580,6 +1581,10 @@ i {
   .uc-hero-title {
     font-size: 3rem;
     line-height: 1.1;
+  }
+  [lang=ja] .uc-hero-title {
+    font-size: 2.5rem;
+    line-height: 1.3;
   }
 }
 
