@@ -651,7 +651,8 @@ h6
       font-size: 1rem; } }
 
 i {
-  font-style: normal; }
+  font-style: normal;
+  line-height: 1; }
 
 /* grid-units */
 .uc-grid {
@@ -1037,7 +1038,7 @@ i {
     color: white; }
 
 .uc-section-inner {
-  max-width: 1000px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -1285,7 +1286,7 @@ i {
       border-radius: 6px 0 0 6px; }
       @media (max-width: 768px) {
         .uc-card._thumb .uc-card-image {
-          margin: -24px; } }
+          margin: -24px 24px -24px -24px; } }
     .uc-card._thumb .uc-card-wrap {
       -ms-flex: 1;
           flex: 1; }
@@ -1323,7 +1324,7 @@ i {
       font-size: 1rem; } }
 
 .uc-card-image {
-  margin: -32px -24px 24px;
+  margin: -32px -24px 32px;
   height: 180px;
   background-position: 50%;
   background-size: cover;
@@ -1340,9 +1341,12 @@ i {
       flex-wrap: nowrap;
   -ms-flex-align: center;
       align-items: center;
-  margin: -24px -24px 24px;
+  margin: -32px -24px 24px;
   padding: 16px 24px;
   border-bottom: 1px solid #ebebeb; }
+  @media (max-width: 768px) {
+    .uc-card-header {
+      margin: -24px -24px 24px; } }
   .uc-card-header .uc-card-icon {
     width: 48px;
     height: 48px;
@@ -1367,7 +1371,7 @@ i {
     margin: 0 0 0 16px; }
     @media (max-width: 768px) {
       .uc-btn + .uc-btn {
-        margin: 16px 0 0; } }
+        margin: 16px 8px 0; } }
   .uc-btn > span,
   .uc-btn > a {
     display: block;
@@ -1383,6 +1387,10 @@ i {
         padding: 12px 24px;
         text-align: center;
         font-size: 0.875rem; } }
+  .uc-btn._full {
+    display: block; }
+    .uc-btn._full + .uc-btn {
+      margin: 16px 0 0; }
   .uc-btn._ghost > a,
   .uc-btn._ghost > span,
   .uc-btn._primary > a,
@@ -1920,5 +1928,38 @@ i {
  * import UNITS theme styles
  */
 /* core */
+._theme-blog time {
+  display: block;
+  opacity: .7;
+  font-size: 14px;
+  margin-top: 16px; }
+
+._theme-blog .uc-sidebar {
+  margin-left: 40px;
+  box-shadow: none;
+  padding: 0; }
+  @media (max-width: 768px) {
+    ._theme-blog .uc-sidebar {
+      display: block;
+      margin-left: 0;
+      margin-top: 40px; } }
+  ._theme-blog .uc-sidebar .uc-card p {
+    font-size: 0.875rem; }
+
+._theme-blog .uc-btn a > i {
+  font-size: 1.125rem; }
+
+._theme-blog .uc-list {
+  margin-left: 0;
+  text-indent: 0; }
+  ._theme-blog .uc-list > li + li {
+    border-top: 1px solid #ebebeb; }
+  ._theme-blog .uc-list > li:before {
+    display: none; }
+  ._theme-blog .uc-list > li a {
+    display: block;
+    text-decoration: none; }
+  ._theme-blog .uc-list > li h3 {
+    font-size: 1rem; }
 
 /*# sourceMappingURL=maps/units.css.map */

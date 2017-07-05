@@ -73,7 +73,7 @@
       height: auto;
       border-radius: $border-radius 0 0 $border-radius;
       @media (--small-screen) {
-        margin: -24px;
+        margin: -24px 24px -24px -24px;
       }
     }
     .#{$component-prefix}card-wrap {
@@ -95,7 +95,7 @@
 }
 
 @mixin card-image() {
-  margin: -32px -24px 24px;
+  margin: -32px -24px 32px;
   height: 180px;
   background-position: 50%;
   background-size: cover;
@@ -121,9 +121,12 @@
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  margin: -24px -24px 24px;
+  margin: -32px -24px 24px;
   padding: 16px 24px;
   border-bottom: 1px solid $color-border;
+  @media (--small-screen) {
+    margin: -24px -24px 24px;
+  }
 
   .#{$component-prefix}card-icon { @include card-icon(); }
 
