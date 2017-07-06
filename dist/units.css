@@ -700,10 +700,11 @@ p {
 
 @media (max-width: 768px) {
   p {
-    line-height: 1.6;
+    line-height: 1.5;
   }
   [lang~=ja] p {
     font-size: 0.875rem;
+    line-height: 1.7;
   }
 }
 
@@ -1019,7 +1020,7 @@ i {
 @media (max-width: 768px) {
   .uc-header {
     height: 64px;
-    padding: 0 24px;
+    padding: 0 16px;
   }
 }
 
@@ -1177,7 +1178,7 @@ i {
 
 @media (max-width: 768px) {
   .uc-footer {
-    padding: 56px 24px;
+    padding: 56px 16px;
   }
 }
 
@@ -1324,7 +1325,7 @@ i {
 
 @media (max-width: 768px) {
   .uc-section {
-    padding: 40px 24px 56px;
+    padding: 40px 16px 56px;
   }
 }
 
@@ -1877,6 +1878,10 @@ i {
   border: 2px solid #546e7a;
 }
 
+.uc-btn._icon {
+  line-height: 1;
+}
+
 .uc-btn-unit {
   margin: 56px auto 0;
 }
@@ -2253,16 +2258,54 @@ i {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
 }
 
 .uc-pager li {
-  padding: 8px;
   background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .26);
+}
+
+.uc-pager li + li {
+  margin: 0 0 0 16px;
+}
+
+@media (max-width: 768px) {
+  .uc-pager li + li {
+    margin: 0 0 0 8px;
+  }
+}
+
+.uc-pager li > a,
+.uc-pager li > span {
+  display: block;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .uc-pager li > a,
+  .uc-pager li > span {
+    font-size: 0.875rem;
+  }
 }
 
 .uc-pager li._current {
   background-color: #546e7a;
+}
+
+.uc-pager li._current > span {
+  color: white;
+}
+
+.uc-pager li._ghost {
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .uc-pager-unit {
@@ -2273,12 +2316,13 @@ i {
 
 @media (max-width: 768px) {
   .uc-pager-unit {
-    padding: 48px 24px;
+    padding: 48px 16px;
   }
 }
 
 .uc-pager-unit > * {
   margin: 0;
+  padding: 0;
 }
 
 .uc-pager-unit._center {

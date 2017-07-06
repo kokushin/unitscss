@@ -2,9 +2,10 @@ p {
   @include font-size(16);
   line-height: 1.8;
   @media (--small-screen) {
-    line-height: 1.6;
+    line-height: 1.5;
     [lang~=ja] & {
       @include font-size(14);
+      line-height: 1.7;
     }
   }
 }

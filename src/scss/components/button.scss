@@ -52,4 +52,8 @@
     background-color: $color-primary;
     border: 2px solid $color-primary;
   }
+
+  &._icon {
+    line-height: 1;
+  }
 }

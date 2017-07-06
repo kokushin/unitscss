@@ -608,9 +608,10 @@ p {
   line-height: 1.8; }
   @media (max-width: 768px) {
     p {
-      line-height: 1.6; }
+      line-height: 1.5; }
       [lang~=ja] p {
-        font-size: 0.875rem; } }
+        font-size: 0.875rem;
+        line-height: 1.7; } }
 
 h1 {
   font-size: 2rem; }
@@ -832,7 +833,7 @@ i {
   @media (max-width: 768px) {
     .uc-header {
       height: 64px;
-      padding: 0 24px; } }
+      padding: 0 16px; } }
   .uc-header > p {
     margin: 0 auto 0 24px;
     color: rgba(0, 0, 0, 0.7); }
@@ -935,7 +936,7 @@ i {
   text-align: center; }
   @media (max-width: 768px) {
     .uc-footer {
-      padding: 56px 24px; } }
+      padding: 56px 16px; } }
   .uc-footer > p {
     margin: 24px 0 0;
     font-size: 0.875rem; }
@@ -1031,7 +1032,7 @@ i {
       padding: 80px 40px; } }
   @media (max-width: 768px) {
     .uc-section {
-      padding: 40px 24px 56px; } }
+      padding: 40px 16px 56px; } }
   .uc-section + .uc-section {
     border-top: 1px solid #ebebeb; }
   .uc-section._center {
@@ -1407,6 +1408,8 @@ i {
   .uc-btn._primary {
     background-color: #546e7a;
     border: 2px solid #546e7a; }
+  .uc-btn._icon {
+    line-height: 1; }
 
 .uc-btn-unit {
   margin: 56px auto 0; }
@@ -1683,12 +1686,36 @@ i {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none; }
   .uc-pager li {
-    padding: 8px;
-    background-color: white; }
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 0 1px rgba(0, 0, 0, .26); }
+    .uc-pager li + li {
+      margin: 0 0 0 16px; }
+      @media (max-width: 768px) {
+        .uc-pager li + li {
+          margin: 0 0 0 8px; } }
+    .uc-pager li > a,
+    .uc-pager li > span {
+      display: block;
+      padding: 8px 16px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none; }
+      @media (max-width: 768px) {
+        .uc-pager li > a,
+        .uc-pager li > span {
+          font-size: 0.875rem; } }
     .uc-pager li._current {
       background-color: #546e7a; }
+      .uc-pager li._current > span {
+        color: white; }
+    .uc-pager li._ghost {
+      background-color: transparent;
+      box-shadow: none; }
 
 .uc-pager-unit {
   margin: 0;
@@ -1696,9 +1723,10 @@ i {
   background-color: #f2f2f2; }
   @media (max-width: 768px) {
     .uc-pager-unit {
-      padding: 48px 24px; } }
+      padding: 48px 16px; } }
   .uc-pager-unit > * {
-    margin: 0; }
+    margin: 0;
+    padding: 0; }
   .uc-pager-unit._center {
     text-align: center; }
 
