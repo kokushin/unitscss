@@ -888,7 +888,7 @@ i {
   @media (max-width: 768px) {
     .uc-header {
       height: 64px;
-      padding: 0 16px; } }
+      padding: 0 24px; } }
   .uc-header > p {
     margin: 0 auto 0 24px;
     color: rgba(0, 0, 0, 0.7); }
@@ -991,7 +991,7 @@ i {
   text-align: center; }
   @media (max-width: 768px) {
     .uc-footer {
-      padding: 56px 16px; } }
+      padding: 56px 24px; } }
   .uc-footer > p {
     margin: 24px 0 0;
     font-size: 0.875rem; }
