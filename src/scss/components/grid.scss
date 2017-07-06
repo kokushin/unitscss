@@ -43,14 +43,14 @@
       width: calc(100%/#{$i});
     }
     @media (--medium-screen) {
-      ._medium-col-#{$i} > &,
-      &._medium-col-#{$i} {
+      [class*=_col-]._medium-col-#{$i} > &,
+      &[class*=_col-]._medium-col-#{$i} {
         width: calc(100%/#{$i});
       }
     }
     @media (--small-screen) {
-      ._small-col-#{$i} > &,
-      &._small-col-#{$i} {
+      [class*=_col-]._small-col-#{$i} > &,
+      &[class*=_col-]._small-col-#{$i} {
         width: calc(100%/#{$i});
       }
     }
