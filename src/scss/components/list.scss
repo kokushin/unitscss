@@ -11,7 +11,7 @@
     width: 6px;
     height: 6px;
     margin-right: 8px;
-    [lang=ja] & {
+    [lang~=ja] & {
       margin-top: 6px;
     }
   }
@@ -24,7 +24,7 @@
   @media (--small-screen) {
     padding: 0 8px;
   }
-  &.#{$modifier-prefix}border {
+  &._border {
     padding: 40px 24px;
     border-top: 1px solid $color-border;
     border-bottom: 1px solid $color-border;
@@ -43,7 +43,7 @@
   > li {
     color: $color-txt;
     @media (--small-screen) {
-      [lang=ja] & {
+      [lang~=ja] & {
         @include font-size(14);
       }
     }

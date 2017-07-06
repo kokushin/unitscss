@@ -46,7 +46,7 @@
 
 @mixin mt-step() {
   @for $i from 0 through 10 {
-    .#{$modifier-prefix}mt-step-#{$i} {
+    ._mt-step-#{$i} {
       margin-top: #{$i*8}px !important;
     }
   }
@@ -54,7 +54,7 @@
 
 @mixin mr-step() {
   @for $i from 0 through 10 {
-    .#{$modifier-prefix}mr-step-#{$i} {
+    ._mr-step-#{$i} {
       margin-right: #{$i*8}px !important;
     }
   }
@@ -62,7 +62,7 @@
 
 @mixin mb-step() {
   @for $i from 0 through 10 {
-    .#{$modifier-prefix}mb-step-#{$i} {
+    ._mb-step-#{$i} {
       margin-bottom: #{$i*8}px !important;
     }
   }
@@ -70,7 +70,7 @@
 
 @mixin ml-step() {
   @for $i from 0 through 10 {
-    .#{$modifier-prefix}ml-step-#{$i} {
+    ._ml-step-#{$i} {
       margin-left: #{$i*8}px !important;
     }
   }

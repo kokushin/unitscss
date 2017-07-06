@@ -50,7 +50,7 @@ body {
 }
 
 hr,
-.#{$component-prefix}hr {
+.#{$prefix}hr {
   height: 0;
   border: 0;
   border-top: 1px solid $color-border;
@@ -63,7 +63,7 @@ hr,
 }
 
 * + hr,
-* + .#{$component-prefix}hr {
+* + .#{$prefix}hr {
   margin-top: 80px;
   @media (--small-screen) {
     margin-top: 40px;
@@ -99,8 +99,8 @@ p {
 
 a {
   color: $color-txt;
-  .#{$modifier-prefix}dark &,
-  .#{$modifier-prefix}black & {
+  ._dark &,
+  ._black & {
     color: white;
   }
   &:hover {

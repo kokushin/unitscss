@@ -32,95 +32,96 @@
 @import "utility";
 
 /* grid-units */
-.#{$component-prefix}grid { @include grid(); }
-.#{$component-prefix}grid-unit { @include grid-unit(); }
-.#{$component-prefix}grid-cell { @include grid-cell(); }
+.#{$prefix}grid { @include grid(); }
+.#{$prefix}grid-unit { @include grid-unit(); }
+.#{$prefix}grid-cell { @include grid-cell(); }
 
 /* header-units */
-.#{$component-prefix}header { @include header(); }
-.#{$component-prefix}header-logo { @include header-logo(); }
-.#{$component-prefix}header-menu { @include header-menu(); }
+.#{$prefix}header { @include header(); }
+.#{$prefix}header-logo { @include header-logo(); }
+.#{$prefix}header-menu { @include header-menu(); }
 
 /* footer-units */
-.#{$component-prefix}footer { @include footer(); }
-.#{$component-prefix}footer-logo { @include footer-logo(); }
-.#{$component-prefix}footer-menu { @include footer-menu(); }
+.#{$prefix}footer { @include footer(); }
+.#{$prefix}footer-logo { @include footer-logo(); }
+.#{$prefix}footer-menu { @include footer-menu(); }
 
 /* section-units */
-.#{$component-prefix}content { @include content(); }
-.#{$component-prefix}section { @include section(); }
-.#{$component-prefix}section-inner { @include section-inner(); }
-.#{$component-prefix}section-title { @include section-title(); }
+.#{$prefix}content { @include content(); }
+.#{$prefix}section { @include section(); }
+.#{$prefix}section-inner { @include section-inner(); }
+.#{$prefix}section-title { @include section-title(); }
 
 /* sidebar-units */
-.#{$component-prefix}sidebar { @include sidebar(); }
-.#{$component-prefix}sidebar-list { @include sidebar-list(); }
+.#{$prefix}sidebar { @include sidebar(); }
+.#{$prefix}sidebar-list { @include sidebar-list(); }
 
 /* hero-units */
-.#{$component-prefix}hero { @include hero(); }
-.#{$component-prefix}hero-unit { @include hero-unit(); }
-.#{$component-prefix}hero-title { @include hero-title(); }
-.#{$component-prefix}hero-bg { @include hero-bg(); }
+.#{$prefix}hero { @include hero(); }
+.#{$prefix}hero-unit { @include hero-unit(); }
+.#{$prefix}hero-title { @include hero-title(); }
+.#{$prefix}hero-bg { @include hero-bg(); }
 
 /* card-units */
-.#{$component-prefix}card { @include card(); }
-.#{$component-prefix}card-unit { @include card-unit(); }
-.#{$component-prefix}card-title { @include card-title(); }
-.#{$component-prefix}card-image { @include card-image(); }
-.#{$component-prefix}card-header { @include card-header(); }
+.#{$prefix}card { @include card(); }
+.#{$prefix}card-unit { @include card-unit(); }
+.#{$prefix}card-title { @include card-title(); }
+.#{$prefix}card-image { @include card-image(); }
+.#{$prefix}card-header { @include card-header(); }
 
 /* button-units */
-.#{$component-prefix}btn { @include btn(); }
-.#{$component-prefix}btn-unit { @include btn-unit(); }
+.#{$prefix}btn { @include btn(); }
+.#{$prefix}btn-unit { @include btn-unit(); }
 
 /* form-units */
-.#{$component-prefix}form { @include form(); }
-.#{$component-prefix}form-unit { @include form-unit(); }
-.#{$component-prefix}form-parts-unit { @include form-parts-unit(); }
-.#{$component-prefix}form-parts { @include form-parts(); }
+.#{$prefix}form { @include form(); }
+.#{$prefix}form-unit { @include form-unit(); }
+.#{$prefix}form-parts-unit { @include form-parts-unit(); }
+.#{$prefix}form-parts { @include form-parts(); }
 
 /* list-units */
-.#{$component-prefix}list { @include list(); }
-.#{$component-prefix}list-unit { @include list-unit(); }
+.#{$prefix}list { @include list(); }
+.#{$prefix}list-unit { @include list-unit(); }
 
 /* table-units */
-.#{$component-prefix}table { @include table(); }
-.#{$component-prefix}table-unit { @include table-unit(); }
+.#{$prefix}table { @include table(); }
+.#{$prefix}table-unit { @include table-unit(); }
 
 /* menu-units */
-.#{$component-prefix}menu { @include menu(); }
-.#{$component-prefix}menu-unit { @include menu-unit(); }
-.#{$component-prefix}menu-btn { @include menu-btn(); }
+.#{$prefix}menu { @include menu(); }
+.#{$prefix}menu-unit { @include menu-unit(); }
+.#{$prefix}menu-btn { @include menu-btn(); }
 
 /* pager-units */
-.#{$component-prefix}pager-unit { @include pager-unit(); }
+.#{$prefix}pager { @include pager(); }
+.#{$prefix}pager-unit { @include pager-unit(); }
 
 /* embed-units */
-.#{$component-prefix}code-unit { @include code-unit(); }
-.#{$component-prefix}video-unit {}
-.#{$component-prefix}photo-unit {}
-.#{$component-prefix}slider-unit {}
+.#{$prefix}code-unit { @include code-unit(); }
+.#{$prefix}video-unit {}
+.#{$prefix}photo-unit {}
+.#{$prefix}slider-unit {}
 
 /* loading-units */
-.#{$component-prefix}loading {}
+.#{$prefix}loading {}
 
 /* utility-units */
-.#{$modifier-prefix}centering { @include centering(); }
-.#{$modifier-prefix}orig-width { @include orig-width(); }
-.#{$modifier-prefix}orig-height { @include orig-height(); }
-.#{$modifier-prefix}no-margin { @include no-margin(); }
-.#{$modifier-prefix}no-padding { @include no-padding(); }
-.#{$modifier-prefix}no-line-height { @include no-line-height(); }
-.#{$modifier-prefix}no-box-shadow { @include no-box-shadow(); }
-.#{$modifier-prefix}txt-bold { @include txt-bold(); }
-.#{$modifier-prefix}txt-left { @include txt-left(); }
-.#{$modifier-prefix}txt-center { @include txt-center(); }
-.#{$modifier-prefix}txt-right { @include txt-right(); }
-.#{$modifier-prefix}mt-step { @include mt-step(); }
-.#{$modifier-prefix}mr-step { @include mr-step(); }
-.#{$modifier-prefix}mb-step { @include mb-step(); }
-.#{$modifier-prefix}ml-step { @include ml-step(); }
-.#{$modifier-prefix}content-hidden { @include content-hidden(); }
-.#{$modifier-prefix}small-hidden { @include switch-hidden(small); }
-.#{$modifier-prefix}medium-hidden { @include switch-hidden(medium); }
-.#{$modifier-prefix}large-hidden { @include switch-hidden(large); }
+._centering { @include centering(); }
+._orig-width { @include orig-width(); }
+._orig-height { @include orig-height(); }
+._no-margin { @include no-margin(); }
+._no-padding { @include no-padding(); }
+._no-line-height { @include no-line-height(); }
+._no-box-shadow { @include no-box-shadow(); }
+._txt-bold { @include txt-bold(); }
+._txt-left { @include txt-left(); }
+._txt-center { @include txt-center(); }
+._txt-right { @include txt-right(); }
+._mt-step { @include mt-step(); }
+._mr-step { @include mr-step(); }
+._mb-step { @include mb-step(); }
+._ml-step { @include ml-step(); }
+._content-hidden { @include content-hidden(); }
+._small-hidden { @include switch-hidden(small); }
+._medium-hidden { @include switch-hidden(medium); }
+._large-hidden { @include switch-hidden(large); }

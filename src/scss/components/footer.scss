@@ -31,8 +31,8 @@
     }
   }
 
-  &.#{$modifier-prefix}dark,
-  &.#{$modifier-prefix}black {
+  &._dark,
+  &._black {
     background-color: color(black a(.92));
     > p, > small, a {
       color: color(white a(.8));
@@ -49,8 +49,8 @@
     font-style: normal;
   }
 
-  .#{$modifier-prefix}dark &,
-  .#{$modifier-prefix}black & {
+  ._dark &,
+  ._black & {
     color: white;
   }
 }
@@ -93,8 +93,8 @@
         display: none;
       }
 
-      .#{$modifier-prefix}dark &,
-      .#{$modifier-prefix}black & {
+      ._dark &,
+      ._black & {
         background-color: color(white a(.3));
       }
     }

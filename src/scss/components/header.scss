@@ -16,8 +16,8 @@
     margin: 0 auto 0 24px;
     color: color(black a(.7));
   }
-  &.#{$modifier-prefix}fixed,
-  &.#{$modifier-prefix}ghost {
+  &._fixed,
+  &._ghost {
     top: 0;
     left: 0;
     width: 100%;
@@ -29,27 +29,27 @@
       }
     }
   }
-  &.#{$modifier-prefix}center {
+  &._center {
     justify-content: center;
   }
-  &.#{$modifier-prefix}fixed {
+  &._fixed {
     position: fixed;
     box-shadow: $box-shadow-hover;
   }
-  &.#{$modifier-prefix}ghost {
+  &._ghost {
     position: absolute;
     background-color: transparent;
     & > p {
       color: color(white a(.7));
     }
   }
-  &.#{$modifier-prefix}dark {
+  &._dark {
     background-color: $color-dark;
     & > p {
       color: color(white a(.7));
     }
   }
-  &.#{$modifier-prefix}black {
+  &._black {
     background-color: black;
     & > p {
       color: color(white a(.7));
@@ -78,9 +78,9 @@
     font-weight: normal;
     margin-left: -4px;
   }
-  .#{$modifier-prefix}ghost &,
-  .#{$modifier-prefix}dark &,
-  .#{$modifier-prefix}black & {
+  ._ghost &,
+  ._dark &,
+  ._black & {
     color: white;
     a {
       color: white;
@@ -105,9 +105,9 @@
       color: black;
     }
 
-    .#{$modifier-prefix}dark &,
-    .#{$modifier-prefix}black &,
-    .#{$modifier-prefix}ghost & {
+    ._dark &,
+    ._black &,
+    ._ghost & {
       color: color(white a(.7));
       &._is-current {
         color: white;

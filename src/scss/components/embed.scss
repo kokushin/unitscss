@@ -23,17 +23,17 @@
     & + * {
       margin: 16px 0 0;
     }
-    .#{$modifier-prefix}dark & {
+    ._dark & {
       color: color(white a(.7));
     }
   }
   > pre,
-  > .#{$component-prefix}code {
+  > .#{$prefix}code {
     background-color: $color-code-bg;
     border-radius: $border-radius;
     padding: 16px 24px;
     & + pre,
-    & + .#{$component-prefix}code {
+    & + .#{$prefix}code {
       margin-top: 16px;
     }
     & + p {

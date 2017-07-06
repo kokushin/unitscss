@@ -10,22 +10,22 @@
     display: none;
   }
 
-  &.#{$modifier-prefix}dark {
+  &._dark {
     background-color: $color-dark;
   }
 
-  &.#{$modifier-prefix}black {
+  &._black {
     background-color: color(black a(.92));
   }
 
-  &.#{$modifier-prefix}dark,
-  &.#{$modifier-prefix}black {
+  &._dark,
+  &._black {
     color: white;
   }
 }
 
 @mixin sidebar-list() {
-  & + .#{$component-prefix}sidebar-list {
+  & + .#{$prefix}sidebar-list {
     > p {
       margin-top: 16px;
     }

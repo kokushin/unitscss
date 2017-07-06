@@ -13,15 +13,15 @@
     padding: 40px 24px 56px;
   }
 
-  & + .#{$component-prefix}section {
+  & + .#{$prefix}section {
     border-top: 1px solid $color-border;
   }
 
-  &.#{$modifier-prefix}center {
+  &._center {
     text-align: center;
   }
 
-  &.#{$modifier-prefix}dark {
+  &._dark {
     background-color: $color-dark;
     color: white;
   }
@@ -38,11 +38,11 @@
   @include font-size(40);
   @media (--small-screen) {
     @include font-size(32);
-    [lang=ja] & {
+    [lang~=ja] & {
       @include font-size(28);
     }
   }
-  .#{$modifier-prefix}dark & {
+  ._dark & {
     color: white;
   }
 
@@ -57,12 +57,12 @@
       margin: 8px 0 0;
     }
 
-    .#{$modifier-prefix}center & {
+    ._center & {
       margin-left: auto;
       margin-right: auto;
     }
 
-    .#{$modifier-prefix}dark & {
+    ._dark & {
       background-color: color(white a(.3));
     }
   }
@@ -71,12 +71,12 @@
     @include font-size(16);
     @media (--small-screen) {
       margin: 24px 0 0;
-      [lang=ja] & {
+      [lang~=ja] & {
         @include font-size(14);
       }
     }
 
-    .#{$modifier-prefix}dark & {
+    ._dark & {
       color: white;
     }
   }

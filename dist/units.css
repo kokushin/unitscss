@@ -702,7 +702,7 @@ p {
   p {
     line-height: 1.6;
   }
-  [lang=ja] p {
+  [lang~=ja] p {
     font-size: 0.875rem;
   }
 }
@@ -1356,7 +1356,7 @@ i {
   .uc-section-title {
     font-size: 2rem;
   }
-  [lang=ja] .uc-section-title {
+  [lang~=ja] .uc-section-title {
     font-size: 1.75rem;
   }
 }
@@ -1398,7 +1398,7 @@ i {
   .uc-section-title + p {
     margin: 24px 0 0;
   }
-  [lang=ja] .uc-section-title + p {
+  [lang~=ja] .uc-section-title + p {
     font-size: 0.875rem;
   }
 }
@@ -1582,7 +1582,7 @@ i {
     font-size: 3rem;
     line-height: 1.1;
   }
-  [lang=ja] .uc-hero-title {
+  [lang~=ja] .uc-hero-title {
     font-size: 2.5rem;
     line-height: 1.3;
   }
@@ -1760,7 +1760,7 @@ i {
 }
 
 @media (max-width: 768px) {
-  [lang=ja] .uc-card-title {
+  [lang~=ja] .uc-card-title {
     font-size: 1rem;
   }
 }
@@ -1994,7 +1994,7 @@ i {
 }
 
 @media (max-width: 768px) {
-  [lang=ja] .uc-list > li {
+  [lang~=ja] .uc-list > li {
     font-size: 0.875rem;
   }
 }
@@ -2021,7 +2021,7 @@ i {
     height: 6px;
     margin-right: 8px;
   }
-  [lang=ja] .uc-list > li:before {
+  [lang~=ja] .uc-list > li:before {
     margin-top: 6px;
   }
 }
@@ -2058,7 +2058,7 @@ i {
     height: 6px;
     margin-right: 8px;
   }
-  [lang=ja] .uc-list > li > ul > li:before, [lang=ja]
+  [lang~=ja] .uc-list > li > ul > li:before, [lang~=ja]
   .uc-list > li > ol > li:before {
     margin-top: 6px;
   }
@@ -2246,6 +2246,25 @@ i {
 }
 
 /* pager-units */
+.uc-pager {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  list-style: none;
+}
+
+.uc-pager li {
+  padding: 8px;
+  background-color: white;
+}
+
+.uc-pager li._current {
+  background-color: #546e7a;
+}
+
 .uc-pager-unit {
   margin: 0;
   padding: 80px;

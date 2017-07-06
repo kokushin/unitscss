@@ -18,8 +18,8 @@
     margin: 12px 0 0;
     text-align: left;
   }
-  > a .#{$component-prefix}btn,
-  .#{$component-prefix}btn {
+  > a .#{$prefix}btn,
+  .#{$prefix}btn {
     margin: 24px 0 0;
     > span,
     > a {
@@ -31,12 +31,12 @@
     }
   }
 
-  &.#{$modifier-prefix}col-full,
-  .#{$component-prefix}grid-cell > & {
+  &._col-full,
+  .#{$prefix}grid-cell > & {
     max-width: 100%;
   }
 
-  &.#{$modifier-prefix}banner {
+  &._banner {
     padding: 0;
     transition: $box-shadow-transition;
     &:hover {
@@ -53,20 +53,20 @@
     }
   }
 
-  &.#{$modifier-prefix}hover {
+  &._hover {
     transition: $box-shadow-transition;
     &:hover {
       box-shadow: $box-shadow-hover;
     }
   }
 
-  &.#{$modifier-prefix}float {
+  &._float {
     box-shadow: $box-shadow-hover;
   }
 
-  &.#{$modifier-prefix}thumb {
+  &._thumb {
     display: flex;
-    .#{$component-prefix}card-image {
+    .#{$prefix}card-image {
       display: flex;
       margin: -32px 24px -32px -24px;
       width: 160px;
@@ -76,7 +76,7 @@
         margin: -24px 24px -24px -24px;
       }
     }
-    .#{$component-prefix}card-wrap {
+    .#{$prefix}card-wrap {
       flex: 1;
     }
   }
@@ -88,7 +88,7 @@
   font-weight: bold;
   color: $color-dark;
   @media (--small-screen) {
-    [lang=ja] & {
+    [lang~=ja] & {
       @include font-size(16);
     }
   }
@@ -128,9 +128,9 @@
     margin: -24px -24px 24px;
   }
 
-  .#{$component-prefix}card-icon { @include card-icon(); }
+  .#{$prefix}card-icon { @include card-icon(); }
 
-  .#{$component-prefix}card-title {
+  .#{$prefix}card-title {
     flex: 1;
   }
 }

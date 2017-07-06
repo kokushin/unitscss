@@ -11,9 +11,9 @@ i {
   background-color: black;
   position: relative;
 
-  .#{$modifier-prefix}dark &,
-  .#{$modifier-prefix}black &,
-  .#{$modifier-prefix}ghost & {
+  ._dark &,
+  ._black &,
+  ._ghost & {
     background-color: white;
   }
   &:before,
@@ -25,9 +25,9 @@ i {
     background-color: black;
     position: absolute;
 
-    .#{$modifier-prefix}dark &,
-    .#{$modifier-prefix}black &,
-    .#{$modifier-prefix}ghost & {
+    ._dark &,
+    ._black &,
+    ._ghost & {
       background-color: white;
     }
   }

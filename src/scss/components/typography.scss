@@ -3,7 +3,7 @@ p {
   line-height: 1.8;
   @media (--small-screen) {
     line-height: 1.6;
-    [lang=ja] & {
+    [lang~=ja] & {
       @include font-size(14);
     }
   }

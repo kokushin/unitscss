@@ -27,8 +27,8 @@
     }
   }
 
-  .#{$modifier-prefix}ghost + &,
-  .#{$modifier-prefix}fixed + & {
+  ._ghost + &,
+  ._fixed + & {
     margin-top: 0;
     padding-top: calc(#{$header-height} + 160px);
     @media (--small-screen) {
@@ -36,7 +36,7 @@
     }
   }
 
-  &.#{$modifier-prefix}full {
+  &._full {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -59,7 +59,7 @@
   @media (--small-screen) {
     @include font-size(48);
     line-height: 1.1;
-    [lang=ja] & {
+    [lang~=ja] & {
       @include font-size(40);
       line-height: 1.3;
     }
