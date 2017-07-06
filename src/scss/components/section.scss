@@ -36,6 +36,7 @@
 @mixin section-title() {
   color: black;
   @include font-size(40);
+  font-weight: bold;
   @media (--small-screen) {
     @include font-size(32);
     [lang~=ja] & {
