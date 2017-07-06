@@ -42,6 +42,12 @@
     &._col-#{$i} {
       width: calc(100%/#{$i});
     }
+    @media (--medium-screen) {
+      ._medium-col-#{$i} > &,
+      &._medium-col-#{$i} {
+        width: calc(100%/#{$i});
+      }
+    }
     @media (--small-screen) {
       ._small-col-#{$i} > &,
       &._small-col-#{$i} {
@@ -54,6 +60,12 @@
   &._col-fit {
     flex: 1;
   }
+  @media (--medium-screen) {
+    ._medium-col-fit > &,
+    &._medium-col-fit {
+      flex: 1;
+    }
+  }
   @media (--small-screen) {
     ._small-col-fit > &,
     &._small-col-fit {
@@ -64,6 +76,13 @@
   ._col-full > &,
   &._col-full {
     flex: 0 0 100%;
+  }
+  @media (--medium-screen) {
+    ._medium-col-full > &,
+    &._medium-col-full {
+      width: 100%;
+      flex: 0 0 100%;
+    }
   }
   @media (--small-screen) {
     ._small-col-full > &,
