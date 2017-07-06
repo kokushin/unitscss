@@ -1,2 +1,5 @@
-@import "components/import";
-@import "themes/import";
+@import "vars";
+@import "mixins";
+
+@import "components/_import";
+@import "themes/_import";
