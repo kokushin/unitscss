@@ -1466,6 +1466,8 @@ i {
     border: 2px solid #546e7a; }
   .uc-btn._icon {
     line-height: 1; }
+    .uc-btn._icon i {
+      font-size: 1.125rem; }
 
 .uc-btn-unit {
   margin: 56px auto 0; }

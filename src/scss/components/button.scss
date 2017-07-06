@@ -55,5 +55,8 @@
 
   &._icon {
     line-height: 1;
+    i {
+      @include font-size(18);
+    }
   }
 }

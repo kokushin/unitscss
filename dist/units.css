@@ -1964,6 +1964,10 @@ i {
   line-height: 1;
 }
 
+.uc-btn._icon i {
+  font-size: 1.125rem;
+}
+
 .uc-btn-unit {
   margin: 56px auto 0;
 }
