@@ -781,7 +781,7 @@ i {
 
 @media (max-width: 768px) {
   .uc-grid._gutter {
-    margin: -20px 0 0 -20px;
+    margin: -32px 0 0 -32px;
   }
 }
 
@@ -791,7 +791,7 @@ i {
 
 @media (max-width: 768px) {
   .uc-grid._gutter .uc-grid-cell {
-    padding: 20px 0 0 20px;
+    padding: 32px 0 0 32px;
   }
 }
 

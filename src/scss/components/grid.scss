@@ -9,12 +9,12 @@
   &._gutter {
     margin: -#{$grid-gutter} 0 0 -#{$grid-gutter};
     @media (--small-screen) {
-      margin: -#{calc(#{$grid-gutter} / 2)} 0 0 -#{calc(#{$grid-gutter} / 2)};
+      margin: -#{calc(#{$grid-gutter} / 1.25)} 0 0 -#{calc(#{$grid-gutter} / 1.25)};
     }
     .#{$prefix}grid-cell {
       padding: #{$grid-gutter} 0 0 #{$grid-gutter};
       @media (--small-screen) {
-        padding: #{calc(#{$grid-gutter} / 2)} 0 0 #{calc(#{$grid-gutter} / 2)};
+        padding: #{calc(#{$grid-gutter} / 1.25)} 0 0 #{calc(#{$grid-gutter} / 1.25)};
       }
     }
   }
