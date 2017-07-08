@@ -112,7 +112,7 @@
 ._no-margin { @include no-margin(); }
 ._no-padding { @include no-padding(); }
 ._no-line-height { @include no-line-height(); }
-._no-box-shadow { @include no-box-shadow(); }
+._no-shadow { @include no-shadow(); }
 ._txt-bold { @include txt-bold(); }
 ._txt-left { @include txt-left(); }
 ._txt-center { @include txt-center(); }
