@@ -44,38 +44,6 @@
   text-align: right !important;
 }
 
-@mixin mt-step() {
-  @for $i from 0 through 10 {
-    ._mt-step-#{$i} {
-      margin-top: #{$i*8}px !important;
-    }
-  }
-}
-
-@mixin mr-step() {
-  @for $i from 0 through 10 {
-    ._mr-step-#{$i} {
-      margin-right: #{$i*8}px !important;
-    }
-  }
-}
-
-@mixin mb-step() {
-  @for $i from 0 through 10 {
-    ._mb-step-#{$i} {
-      margin-bottom: #{$i*8}px !important;
-    }
-  }
-}
-
-@mixin ml-step() {
-  @for $i from 0 through 10 {
-    ._ml-step-#{$i} {
-      margin-left: #{$i*8}px !important;
-    }
-  }
-}
-
 @mixin content-hidden() {
   overflow: hidden;
   position: absolute;

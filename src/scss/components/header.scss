@@ -10,7 +10,7 @@
   }
   @media (--small-screen) {
     height: calc(#{$header-height} - 16px);
-    padding: 0 24px;
+    padding: 0 20px;
   }
   > p {
     margin: 0 auto 0 24px;

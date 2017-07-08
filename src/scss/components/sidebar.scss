@@ -1,3 +1,23 @@
+@mixin sidebar-unit() {
+  @media (--small-screen) {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    padding: calc(#{$header-height} - 16px) 0 0;
+    @include z-index(2);
+
+    &._left {
+      left: 0;
+      transform: translate3d(calc(-#{$sidebar-width} - 16px), 0, 0);
+    }
+
+    &._right {
+      right: 0;
+      transform: translate3d(calc(#{$sidebar-width} + 16px), 0, 0);
+    }
+  }
+}
+
 @mixin sidebar() {
   width: $sidebar-width;
   height: 100%;
@@ -7,7 +27,10 @@
   @include z-index(1);
   padding: 32px 0;
   @media (--small-screen) {
-    display: none;
+    .#{$prefix}sidebar-unit > & {
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
   }
 
   &._dark {
@@ -15,7 +38,7 @@
   }
 
   &._black {
-    background-color: color(black a(.92));
+    background-color: #141414;
   }
 
   &._dark,
@@ -35,6 +58,11 @@
     @include font-size(16);
     line-height: 1;
     padding: 16px 24px;
+
+    ._black &,
+    ._dark & {
+      color: white;
+    }
   }
   > a {
     display: block;
@@ -43,9 +71,17 @@
     text-decoration: none;
     margin: 0;
     padding: 16px 40px;
+    @media (--small-screen) {
+      padding: 16px 32px;
+    }
     &._is-current {
       background-color: $color-bg;
       font-weight: bold;
+
+      ._black &,
+      ._dark & {
+        background-color: color(white a(.08));
+      }
     }
     & + a {
       margin: 0;

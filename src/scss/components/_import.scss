@@ -53,6 +53,7 @@
 
 /* sidebar-units */
 .#{$prefix}sidebar { @include sidebar(); }
+.#{$prefix}sidebar-unit { @include sidebar-unit(); }
 .#{$prefix}sidebar-list { @include sidebar-list(); }
 
 /* hero-units */
@@ -116,10 +117,6 @@
 ._txt-left { @include txt-left(); }
 ._txt-center { @include txt-center(); }
 ._txt-right { @include txt-right(); }
-._mt-step { @include mt-step(); }
-._mr-step { @include mr-step(); }
-._mb-step { @include mb-step(); }
-._ml-step { @include ml-step(); }
 ._content-hidden { @include content-hidden(); }
 ._small-hidden { @include switch-hidden(small); }
 ._medium-hidden { @include switch-hidden(medium); }
