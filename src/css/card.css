@@ -39,6 +39,8 @@
 
     > span,
     > a {
+      padding: 12px 32px;
+      font-size: .875rem;
       @media (--small-screen) {
         min-width: initial;
       }

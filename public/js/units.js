@@ -70,13 +70,13 @@
 "use strict";
 
 
-var _Hello = __webpack_require__(1);
+var _menu = __webpack_require__(1);
 
-var _Hello2 = _interopRequireDefault(_Hello);
+var _menu2 = _interopRequireDefault(_menu);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-new _Hello2.default();
+new _menu2.default();
 
 /***/ }),
 /* 1 */
@@ -91,26 +91,94 @@ Object.defineProperty(exports, "__esModule", {
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _querySelector = __webpack_require__(2);
+
+var _querySelector2 = _interopRequireDefault(_querySelector);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var Hello = function () {
-  function Hello() {
-    _classCallCheck(this, Hello);
+var Menu = function () {
+  function Menu() {
+    _classCallCheck(this, Menu);
 
+    this.options = {
+      btnClassName: 'uc-menu-btn',
+      activeClassName: '_active',
+      openTargetDataName: 'data-open-target'
+    };
     this._init();
   }
 
-  _createClass(Hello, [{
+  _createClass(Menu, [{
     key: '_init',
     value: function _init() {
-      console.log('hello, wolrd!!');
+      (0, _querySelector2.default)('.' + this.options.btnClassName, 'click', this.openMenu.bind(this));
+    }
+  }, {
+    key: 'openMenu',
+    value: function openMenu(e) {
+      e.preventDefault();
+
+      var btn = e.currentTarget;
+      var menu = (0, _querySelector2.default)(btn.getAttribute(this.options.openTargetDataName))[0];
+
+      this.toggleClass(menu, this.options.activeClassName);
+      this.toggleClass(btn, this.options.activeClassName);
+    }
+  }, {
+    key: 'toggleClass',
+    value: function toggleClass(element, className) {
+      if (element.classList) {
+        element.classList.toggle(className);
+      } else {
+        var classes = element.className.split(' ');
+        var existingIndex = classes.indexOf(className);
+
+        if (existingIndex >= 0) {
+          classes.splice(existingIndex, 1);
+        } else {
+          classes.push(className);
+        }
+
+        element.className = classes.join(' ');
+      }
     }
   }]);
 
-  return Hello;
+  return Menu;
 }();
 
-exports.default = Hello;
+exports.default = Menu;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var $ = function $(element) {
+  var event = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+  var callback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+  var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+
+  var nodeList = document.querySelectorAll(element);
+
+  if (!event) {
+    return nodeList;
+  } else {
+    for (var i = nodeList.length; i--;) {
+      nodeList[i].addEventListener(event, callback, options);
+    }
+  }
+};
+
+exports.default = $;
 
 /***/ })
 /******/ ]);

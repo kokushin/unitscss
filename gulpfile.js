@@ -63,7 +63,7 @@ gulp.task('dev:serve', ['dev:styles', 'dev:javascripts'], () => {
     ghostMode: false
   });
   gulp.watch('./src/css/*.css', ['dev:styles']);
-  gulp.watch('./src/js/*.js', ['dev:js-reload']);
+  gulp.watch('./src/js/**/*.js', ['dev:js-reload']);
   gulp.watch('./public/**/*.html').on('change', browserSync.reload);
 });
 

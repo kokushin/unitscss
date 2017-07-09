@@ -1,3 +1,3 @@
-import Hello from './Hello';
+import Menu from './partial/menu';
 
-new Hello();
+new Menu();
