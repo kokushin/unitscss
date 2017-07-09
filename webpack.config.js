@@ -1,7 +1,7 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
-  entry: './src/js/entry.js',
+  entry: './src/js/_import.js',
   output: {
     filename: '[name].js'
   },

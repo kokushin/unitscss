@@ -2,8 +2,11 @@ const gulp = require('gulp');
 const $ = require('gulp-load-plugins')();
 const cleanCSS = require('gulp-clean-css');
 const browserSync = require('browser-sync').create();
+const webpack = require('webpack');
+const webpackStream = require('webpack-stream');
+const webpackConfig = require('./webpack.config');
 const pkg = require('./package.json');
-const banner = `/*! UNITS v${pkg.version} | MIT License | Copyright 2017 @kokushing | http://unitscss.com */\n\n`;
+const banner = `/*! UNITS v${pkg.version} | MIT License | Copyright 2017 @kokushing | http://unitscss.com */\n`;
 const processors = [
   require('postcss-import')(),
   require('postcss-nested')(),
@@ -39,7 +42,16 @@ gulp.task('styles:partial', () => {
     .pipe(gulp.dest('./dist/partial'));
 });
 
-gulp.task('default', ['styles']);
+gulp.task('javascripts', () => {
+  return gulp.src('./src/js/_import.js')
+    .pipe(webpackStream(webpackConfig, webpack))
+    .pipe($.uglify())
+    .pipe($.header(banner))
+    .pipe($.rename('units.min.js'))
+    .pipe(gulp.dest('./dist'));
+});
+
+gulp.task('default', ['styles', 'javascripts']);
 
 
 /* Development task */
