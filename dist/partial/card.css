@@ -38,6 +38,12 @@
     color: #333;
   }
 
+@media (max-width: 768px) {
+      [lang~=ja] .uc-card p {
+        font-size: .875rem;
+      }
+    }
+
 .uc-card .uc-btn {
     margin: 24px 0 0;
   }

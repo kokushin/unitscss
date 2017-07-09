@@ -1275,7 +1275,7 @@ p + h2,
 @media (max-width: 768px) {
 
 .uc-section {
-    padding: 40px 20px 56px
+    padding: 48px 20px 56px
 }
   }
 
@@ -1468,6 +1468,10 @@ p + h2,
   margin: 0;
 }
 
+[lang~=ja] .uc-hero-title {
+    font-size: 3.5rem;
+  }
+
 @media (max-width: 768px) {
 
 .uc-hero-title {
@@ -1651,6 +1655,12 @@ p + h2,
     text-align: left;
     color: #333;
   }
+
+@media (max-width: 768px) {
+      [lang~=ja] .uc-card p {
+        font-size: .875rem;
+      }
+    }
 
 .uc-card .uc-btn {
     margin: 24px 0 0;
@@ -1917,6 +1927,13 @@ p + h2,
     font-size: 1rem;
     line-height: 1.6;
   }
+
+@media (max-width: 768px) {
+
+.uc-code-unit pre > code, .uc-code > code {
+      font-size: .875rem
+  }
+    }
 
 .uc-code-unit {
   height: 100%;

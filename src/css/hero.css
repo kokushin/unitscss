@@ -76,6 +76,10 @@
   line-height: 1.2;
   margin: 0;
 
+  [lang~=ja] & {
+    font-size: 3.5rem;
+  }
+
   @media (--small-screen) {
     font-size: 3rem;
     line-height: 1.1;

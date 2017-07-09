@@ -23,7 +23,7 @@
   }
 
   @media (--small-screen) {
-    padding: 40px 20px 56px;
+    padding: 48px 20px 56px;
   }
 
   & + ._section {

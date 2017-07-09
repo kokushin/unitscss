@@ -39,6 +39,13 @@
     line-height: 1.6;
   }
 
+@media (max-width: 768px) {
+
+.uc-code-unit pre > code, .uc-code > code {
+      font-size: .875rem
+  }
+    }
+
 .uc-code-unit {
   height: 100%;
   text-align: left;

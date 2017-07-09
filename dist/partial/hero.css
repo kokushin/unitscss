@@ -102,6 +102,10 @@
   margin: 0;
 }
 
+[lang~=ja] .uc-hero-title {
+    font-size: 3.5rem;
+  }
+
 @media (max-width: 768px) {
 
 .uc-hero-title {
