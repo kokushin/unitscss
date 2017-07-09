@@ -118,6 +118,6 @@
 ._txt-center { @include txt-center(); }
 ._txt-right { @include txt-right(); }
 ._content-hidden { @include content-hidden(); }
-._small-hidden { @include switch-hidden(small); }
-._medium-hidden { @include switch-hidden(medium); }
-._large-hidden { @include switch-hidden(large); }
+._small-hidden { @include small-hidden(); }
+._medium-hidden { @include medium-hidden(); }
+._large-hidden { @include large-hidden(); }

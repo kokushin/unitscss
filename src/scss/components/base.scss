@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: $fonts;
+  font-family: Roboto, $font-set;
   @include font-size(16);
   color: $color-txt;
   letter-spacing: .05em;
