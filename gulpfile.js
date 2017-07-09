@@ -56,13 +56,14 @@ gulp.task('default', ['styles', 'javascripts']);
 
 /* Development task */
 
-gulp.task('dev:serve', ['dev:styles'], () => {
+gulp.task('dev:serve', ['dev:styles', 'dev:javascripts'], () => {
   browserSync.init({
     server: './public',
     notify: false,
     ghostMode: false
   });
   gulp.watch('./src/css/*.css', ['dev:styles']);
+  gulp.watch('./src/js/*.js', ['dev:js-reload']);
   gulp.watch('./public/**/*.html').on('change', browserSync.reload);
 });
 
@@ -74,6 +75,18 @@ gulp.task('dev:styles', ['styles'], () => {
     .pipe($.sourcemaps.write('./maps'))
     .pipe(gulp.dest('./public/css'))
     .pipe(browserSync.stream());
+});
+
+gulp.task('dev:javascripts', ['javascripts'], () => {
+  return gulp.src('./src/js/_import.js')
+    .pipe(webpackStream(webpackConfig, webpack))
+    .pipe($.rename('units.js'))
+    .pipe(gulp.dest('./public/js'));
+});
+
+gulp.task('dev:js-reload', ['dev:javascripts'], (done) => {
+  browserSync.reload();
+  done();
 });
 
 gulp.task('dev', ['dev:serve']);
