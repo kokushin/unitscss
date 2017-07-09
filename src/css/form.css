@@ -1,0 +1,82 @@
+@import "./variables.css";
+
+/**
+ * UNITS form components
+ *
+ * ==================================
+ * @base:   [.uc-form]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-form {
+  max-width: 800px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: #fff;
+  padding: 40px 40px;
+}
+
+.uc-form-parts-unit {
+  & + .uc-form-parts-unit {
+    margin-top: 24px;
+  }
+
+  &._gutter {
+    margin: calc(-var(--grid-gutter) * .6) 0 0 calc(-var(--grid-gutter) * .6);
+
+    @media (--small-screen) {
+      margin: calc(-var(--grid-gutter) * .6) 0 0 calc(-var(--grid-gutter) * .6);
+    }
+
+    .uc-grid-cell {
+      padding: calc(var(--grid-gutter) * .6) 0 0 calc(var(--grid-gutter) * .6);
+
+      @media (--small-screen) {
+        padding: calc(var(--grid-gutter) * .6) 0 0 calc(var(--grid-gutter) * .6);
+      }
+    }
+  }
+
+  label {
+    display: block;
+    color: color(black a(.7));
+    font-weight: bold;
+    font-size: .875rem;
+    margin-bottom: 14px;
+
+    > span {
+      display: inline-block;
+      background-color: var(--color-bg);
+      border-radius: calc(var(--border-radius) / 2);
+      font-size: .75rem;
+      padding: 2px 8px;
+      margin: 0 4px;
+      color: var(--color-code);
+    }
+  }
+
+  .uc-btn {
+    margin: 0;
+  }
+}
+
+.uc-form-parts {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+
+  &._text {
+    line-height: 1;
+  }
+
+  &._textarea {
+    height: 10em;
+  }
+}

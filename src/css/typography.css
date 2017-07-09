@@ -1,0 +1,81 @@
+@import "./variables.css";
+
+/**
+ * UNITS typography
+ *
+ * ==================================
+ * @base:   [.uc-h*]
+ *          [.uc-text]
+ * ==================================
+ */
+
+h2,
+.uc-h2 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+h3,
+.uc-h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+h4,
+.uc-h4,
+h5,
+.uc-h5,
+h6,
+.uc-h6 {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+p,
+.uc-text {
+  font-size: 1rem;
+  line-height: 1.6;
+
+  [lang~=ja] & {
+    line-height: 1.8;
+  }
+
+  @media (--small-screen) {
+    [lang~=ja] & {
+      font-size: .875rem;
+    }
+  }
+
+  & + h2,
+  & + .uc-h2,
+  & + h3,
+  & + .uc-h3,
+  & + h4,
+  & + .uc-h4,
+  & + h5,
+  & + .uc-h5,
+  & + h6,
+  & + .uc-h6 {
+    margin: 80px auto 0;
+
+    @media (--small-screen) {
+      margin: 56px auto 0;
+    }
+  }
+}
+
+.uc-list {
+  li {
+    line-height: 1.6;
+
+    [lang~=ja] & {
+      line-height: 1.8;
+    }
+
+    @media (--small-screen) {
+      [lang~=ja] & {
+        font-size: .875rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+@import "./variables.css";
+
+/**
+ * UNITS sidebar components
+ *
+ * ==================================
+ * @base:   [.uc-sidebar]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-sidebar {
+  width: var(--sidebar-width);
+  height: 100%;
+  box-shadow: var(--box-shadow-hover);
+  background-color: white;
+  position: relative;
+  z-index: var(--z-index-lv1);
+  padding: 32px 0;
+
+  @media (--small-screen) {
+    .uc-sidebar-unit > & {
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+
+  &._dark {
+    background-color: var(--color-dark);
+  }
+
+  &._black {
+    background-color: #141414;
+  }
+
+  &._dark,
+  &._black {
+    color: white;
+  }
+}
+
+.uc-sidebar-list {
+  & + .uc-sidebar-list {
+    > p {
+      margin-top: 16px;
+    }
+  }
+
+  > p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 16px 24px;
+
+    ._black &,
+    ._dark & {
+      color: white;
+    }
+  }
+
+  > a {
+    display: block;
+    font-size: .875rem;
+    font-weight: normal;
+    text-decoration: none;
+    margin: 0;
+    padding: 16px 40px;
+
+    @media (--small-screen) {
+      padding: 16px 32px;
+    }
+
+    &._is-current {
+      background-color: var(--color-bg);
+      font-weight: bold;
+
+      ._black &,
+      ._dark & {
+        background-color: color(white a(.08));
+      }
+    }
+    & + a {
+      margin: 0;
+    }
+  }
+}
+
+.uc-sidebar-unit {
+  @media (--small-screen) {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    padding: calc(var(--header-height) - 16px) 0 0;
+    z-index: var(--z-index-lv2);
+
+    &._left {
+      left: 0;
+      transform: translate3d(calc(-var(--sidebar-width) - 16px), 0, 0);
+    }
+
+    &._right {
+      right: 0;
+      transform: translate3d(calc(var(--sidebar-width) + 16px), 0, 0);
+    }
+
+    &._active {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}

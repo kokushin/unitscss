@@ -1,0 +1,138 @@
+/*! UNITS v1.0.0-beta | MIT License | Copyright 2017 @kokushing | http://unitscss.com */
+
+/**
+ * UNITS hero components
+ *
+ * ==================================
+ * @base:   [.uc-hero]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-hero {
+  padding: 160px 80px;
+  background-color: #37474f;
+  position: relative;
+  text-align: center;
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+
+.uc-hero {
+    padding: 144px 64px
+}
+  }
+
+@media (max-width: 768px) {
+
+.uc-hero {
+    padding: 64px 24px 72px
+}
+  }
+
+.uc-hero > * {
+    position: relative;
+    z-index: 5999;
+  }
+
+.uc-hero > p {
+    color: white;
+    font-size: 1.125rem;
+    margin: 24px 0 0;
+  }
+
+@media (max-width: 768px) {
+
+.uc-hero > p {
+      margin: 16px 0 0;
+      font-size: 1rem
+  }
+    }
+
+._ghost + .uc-hero,
+  ._fixed + .uc-hero {
+    margin-top: 0;
+    padding-top: 240px;
+  }
+
+@media (max-width: 768px) {
+
+._ghost + .uc-hero,
+  ._fixed + .uc-hero {
+      padding-top: 128px
+  }
+    }
+
+.uc-hero._full {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 64px;
+    height: 100vh;
+  }
+
+@media (max-width: 768px) {
+
+.uc-hero._full {
+      padding: 0 24px
+  }
+    }
+
+.uc-hero-title {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+
+.uc-hero-title {
+    font-size: 3rem;
+    line-height: 1.1
+}
+
+    [lang~=ja] .uc-hero-title {
+      font-size: 2.5rem;
+      line-height: 1.3;
+    }
+  }
+
+.uc-hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.uc-hero-bg:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }

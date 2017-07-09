@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,11 +19,19 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" href="/css/units.css">
+  <style>
+    time {
+      display: block;
+      opacity: .7;
+      font-size: 14px;
+      margin-top: 16px;
+    }
+  </style>
 </head>
-<body>
+<body class="_theme-blog">
 
-  <header class="uc-header _black _fixed">
-    <div class="uc-header-logo"><a href="/">Blog</a></div>
+  <header class="uc-header _ghost">
+    <div class="uc-header-logo"><a href="./blog.html">Blog</a></div>
     <div class="uc-header-menu _small-hidden" role="navigation">
       <a href="#">About</a>
       <a href="#">Contact</a>
@@ -35,17 +43,16 @@
 
   <div class="uc-hero">
     <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
-    <h1 class="uc-hero-title">Entry title here.</h1>
+    <h1 class="uc-hero-title">Lorem ipsum dolor sit amet.</h1>
   </div>
 
-  <main class="uc-content content">
-
+  <main class="uc-content">
     <div class="uc-section">
 
       <div class="uc-grid _small-col-full">
         <div class="uc-grid-cell _col-fit">
 
-          <article class="uc-card _col-full">
+          <article>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Possimus beatae sequi qui laborum voluptates temporibus nulla dolor maiores assumenda, animi?</p>
 
             <h2>Lorem ipsum dolor sit amet.</h2>
@@ -55,6 +62,10 @@
             <h3>Lorem ipsum dolor sit amet.</h3>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum esse perspiciatis numquam nisi et, natus in eius odit a necessitatibus iure delectus voluptas officia unde soluta sunt distinctio ipsam quibusdam minima amet atque accusamus similique. Reiciendis quibusdam dolore blanditiis vitae, cum dolorem dolor ratione voluptate facere, ad corrupti molestias, nemo delectus quam ipsa doloremque, deserunt sapiente. Unde quod eos maiores.</p>
+
+            <div class="uc-code-unit">
+              <pre><code>$ Lorem ipsum dolor sit amet.</code></pre>
+            </div>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum esse perspiciatis numquam nisi et, natus in eius odit a necessitatibus iure delectus voluptas officia unde soluta sunt distinctio ipsam quibusdam minima amet atque accusamus similique. Reiciendis quibusdam dolore blanditiis vitae, cum dolorem dolor ratione voluptate facere, ad corrupti molestias, nemo delectus quam ipsa doloremque, deserunt sapiente. Unde quod eos maiores.</p>
 
@@ -130,10 +141,9 @@
         </div>
 
 
-        <div class="sidebar uc-grid-cell _col-4">
+        <div class="uc-sidebar uc-grid-cell _col-4">
 
           <div class="uc-card _orig-height">
-            <div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"></div>
             <div class="uc-card-header">
               <div class="uc-card-icon" style="background-image:url(https://source.unsplash.com/random)"></div>
               <div class="uc-card-title">kokushin</div>

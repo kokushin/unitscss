@@ -1,0 +1,105 @@
+@import "./variables.css";
+
+/**
+ * UNITS section components
+ *
+ * ==================================
+ * @base:   [.uc-section]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-section {
+  position: relative;
+  padding: 80px;
+
+  @media (--medium-screen) {
+    padding: 80px 40px;
+  }
+
+  @media (--small-screen) {
+    padding: 40px 20px 56px;
+  }
+
+  & + ._section {
+    border-top: 1px solid var(--color-border);
+  }
+
+  &._center {
+    text-align: center;
+  }
+
+  &._dark {
+    background-color: var(--color-dark);
+    color: white;
+  }
+}
+
+.uc-section-inner {
+  max-width: var(--max-screen-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uc-section-title {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+
+  @media (--small-screen) {
+    font-size: 2rem;
+
+    [lang~=ja] & {
+      font-size: 1.75rem;
+    }
+  }
+
+  ._dark & {
+    color: white;
+  }
+
+  &:after {
+    content: " ";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: color(black a(.3));
+    margin: 16px 0 0;
+
+    @media (--small-screen) {
+      margin: 8px 0 0;
+    }
+
+    ._center & {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    ._dark & {
+      background-color: color(white a(.3));
+    }
+  }
+
+  & + p {
+    margin: 32px 0 0;
+    font-size: 1rem;
+
+    @media (--small-screen) {
+      margin: 24px 0 0;
+
+      [lang~=ja] & {
+        font-size: .875rem;
+      }
+    }
+
+    ._dark & {
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,177 @@
+/*! UNITS v1.0.0-beta | MIT License | Copyright 2017 @kokushing | http://unitscss.com */
+
+/**
+ * UNITS footer components
+ *
+ * ==================================
+ * @base:   [.uc-footer]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-footer {
+  padding: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+
+.uc-footer {
+    padding: 56px 20px
+}
+  }
+
+.uc-footer > p {
+    margin: 24px 0 0;
+    font-size: .875rem;
+    line-height: 1.8;
+  }
+
+@media (max-width: 768px) {
+
+.uc-footer > p {
+      margin: 16px 0 0;
+      font-size: .75rem
+  }
+    }
+
+.uc-footer > p + p {
+      margin: 16px 0 0;
+    }
+
+.uc-footer > small {
+    display: block;
+    font-size: .75rem;
+    margin: 32px 0 0;
+  }
+
+@media (max-width: 768px) {
+
+.uc-footer > small {
+      margin: 16px 0 0;
+      font-size: .625rem
+  }
+    }
+
+.uc-footer._dark,
+  .uc-footer._black {
+    background-color: rgba(0, 0, 0, 0.92);
+  }
+
+.uc-footer._dark > p, .uc-footer._dark > small, .uc-footer._dark a, .uc-footer._black > p, .uc-footer._black > small, .uc-footer._black a {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+.uc-footer-logo {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: bold;
+  margin: 56px 0 0;
+}
+
+.uc-footer-logo > cite {
+    font-style: normal;
+  }
+
+._dark .uc-footer-logo,
+  ._black .uc-footer-logo {
+    color: white;
+  }
+
+.uc-footer-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+
+.uc-footer-menu {
+    width: 100%;
+    margin: -16px 0 0
+}
+  }
+
+.uc-footer-menu > a {
+    display: block;
+    margin: 0 16px;
+    position: relative;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+@media (max-width: 768px) {
+
+.uc-footer-menu > a {
+      width: 100%;
+      margin: 0;
+      padding: 16px 24px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08)
+  }
+    }
+
+.uc-footer-menu > a:after {
+      content: " ";
+      display: inline-block;
+      width: 1px;
+      height: 16px;
+      background-color: rgba(0, 0, 0, 0.3);
+      position: absolute;
+      top: 50%;
+      right: -16px;
+      margin-top: -8px;
+    }
+
+@media (max-width: 768px) {
+
+.uc-footer-menu > a:after {
+        display: none
+    }
+      }
+
+._dark .uc-footer-menu > a:after,
+      ._black .uc-footer-menu > a:after {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+.uc-footer-menu > a:first-child {
+      margin-left: 0;
+    }
+
+.uc-footer-menu > a:last-child {
+      margin-right: 0;
+    }
+
+.uc-footer-menu > a:last-child:after {
+      display: none;
+    }

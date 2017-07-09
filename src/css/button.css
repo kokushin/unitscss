@@ -1,0 +1,89 @@
+@import "./variables.css";
+
+/**
+ * UNITS btn components
+ *
+ * ==================================
+ * @base:   [.uc-btn]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-btn {
+  display: inline-block;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: white;
+  border: 2px solid white;
+
+  & + .uc-btn {
+    margin: 0 0 0 16px;
+
+    @media (--small-screen) {
+      margin: 16px 8px 0;
+    }
+  }
+
+  > span,
+  > a {
+    display: block;
+    padding: 14px 48px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+
+    @media (--small-screen) {
+      min-width: 240px;
+      padding: 12px 24px;
+      text-align: center;
+      font-size: .875rem;
+    }
+  }
+
+  &._full {
+    display: block;
+
+    & + .uc-btn {
+      margin: 16px 0 0;
+    }
+  }
+
+  &._ghost > a,
+  &._ghost > span,
+  &._primary > a,
+  &._primary > span {
+    color: white;
+  }
+
+  &._ghost {
+    background-color: transparent;
+  }
+
+  &._primary {
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+  }
+
+  &._icon {
+    line-height: 1;
+    i {
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.uc-btn-unit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  @media (--small-screen) {
+    flex-direction: column;
+  }
+}

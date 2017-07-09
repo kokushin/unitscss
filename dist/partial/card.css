@@ -1,0 +1,202 @@
+/*! UNITS v1.0.0-beta | MIT License | Copyright 2017 @kokushing | http://unitscss.com */
+
+/**
+ * UNITS card components
+ *
+ * ==================================
+ * @base:   [.uc-card]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-card {
+  max-width: 560px;
+  height: 100%;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+  border-radius: 6px;
+  padding: 32px 24px;
+  background-color: white;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+
+.uc-card {
+    padding: 24px
+}
+  }
+
+.uc-card p {
+    margin: 12px 0 0;
+    font-size: 1rem;
+    text-align: left;
+    color: #333;
+  }
+
+.uc-card .uc-btn {
+    margin: 24px 0 0;
+  }
+
+@media (max-width: 768px) {
+
+.uc-card .uc-btn > span,
+    .uc-card .uc-btn > a {
+        min-width: 0;
+        min-width: initial
+    }
+      }
+
+.uc-card._col-full,
+  .uc-grid-cell > .uc-card {
+    max-width: 100%;
+  }
+
+.uc-card._banner {
+    padding: 0;
+    -webkit-transition: -webkit-box-shadow .3s cubic-bezier(.25, .8, .25, 1);
+    transition: -webkit-box-shadow .3s cubic-bezier(.25, .8, .25, 1);
+    transition: box-shadow .3s cubic-bezier(.25, .8, .25, 1);
+    transition: box-shadow .3s cubic-bezier(.25, .8, .25, 1), -webkit-box-shadow .3s cubic-bezier(.25, .8, .25, 1);
+  }
+
+.uc-card._banner:hover {
+      -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
+              box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
+    }
+
+.uc-card._banner > a {
+      display: block;
+      height: 100%;
+      padding: 32px 24px;
+      text-decoration: none;
+    }
+
+@media (max-width: 768px) {
+
+.uc-card._banner > a {
+        padding: 24px
+    }
+      }
+
+.uc-card._hover {
+    -webkit-transition: -webkit-box-shadow .3s cubic-bezier(.25, .8, .25, 1);
+    transition: -webkit-box-shadow .3s cubic-bezier(.25, .8, .25, 1);
+    transition: box-shadow .3s cubic-bezier(.25, .8, .25, 1);
+    transition: box-shadow .3s cubic-bezier(.25, .8, .25, 1), -webkit-box-shadow .3s cubic-bezier(.25, .8, .25, 1);
+  }
+
+.uc-card._hover:hover {
+      -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
+              box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
+    }
+
+.uc-card._float {
+    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
+  }
+
+.uc-card._thumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+.uc-card._thumb .uc-card-image {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin: -32px 24px -32px -24px;
+      width: 160px;
+      height: auto;
+      border-radius: 6px 0 0 6px;
+    }
+
+@media (max-width: 768px) {
+
+.uc-card._thumb .uc-card-image {
+        margin: -24px 24px -24px -24px
+    }
+      }
+
+.uc-card._thumb .uc-card-wrap {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+    }
+
+.uc-card-title {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #37474f;
+}
+
+@media (max-width: 768px) {
+    [lang~=ja] .uc-card-title {
+      font-size: 1rem;
+    }
+  }
+
+.uc-card-image {
+  margin: -32px -24px 32px;
+  height: 180px;
+  background-position: 50%;
+  background-size: cover;
+  background-color: #f2f2f2;
+  border-radius: 6px 6px 0 0;
+}
+
+@media (max-width: 768px) {
+
+.uc-card-image {
+    margin: -24px -24px 24px
+}
+  }
+
+.uc-card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-position: 50%;
+  background-size: cover;
+  background-color: #f2f2f2;
+  margin-right: 16px;
+}
+
+.uc-card-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -32px -24px 24px;
+  padding: 16px 24px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+@media (max-width: 768px) {
+
+.uc-card-header {
+    margin: -24px -24px 24px
+}
+  }
+
+.uc-card-header .uc-card-icon {
+    margin-right: 16px;
+  }
+
+.uc-card-header .uc-card-title {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }

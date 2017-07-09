@@ -1,0 +1,84 @@
+/*! UNITS v1.0.0-beta | MIT License | Copyright 2017 @kokushing | http://unitscss.com */
+
+/**
+ * UNITS menu components
+ *
+ * ==================================
+ * @base:   [.uc-menu]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-menu-btn > button {
+    display: block;
+    border: none;
+    width: 48px;
+    height: 48px;
+    margin: 0 -12px;
+  }
+
+.uc-menu-btn._text {
+    margin: 0 -12px;
+  }
+
+.uc-menu-btn._text > button {
+      width: 100%;
+      margin: 0;
+      padding: 0 12px;
+    }
+
+._black .uc-menu-btn._text > button,
+      ._dark .uc-menu-btn._text > button,
+      ._ghost .uc-menu-btn._text > button {
+        color: white;
+        font-size: .875rem;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+.uc-menu-btn-icon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: black;
+  position: relative;
+}
+
+._dark .uc-menu-btn-icon,
+  ._black .uc-menu-btn-icon,
+  ._ghost .uc-menu-btn-icon {
+    background-color: white;
+  }
+
+.uc-menu-btn-icon:before,
+  .uc-menu-btn-icon:after {
+    content: " ";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+  }
+
+._dark .uc-menu-btn-icon:before,
+    ._black .uc-menu-btn-icon:before,
+    ._ghost .uc-menu-btn-icon:before,
+    ._dark .uc-menu-btn-icon:after,
+    ._black .uc-menu-btn-icon:after,
+    ._ghost .uc-menu-btn-icon:after {
+      background-color: white;
+    }
+
+.uc-menu-btn-icon:before {
+    top: -6px;
+  }
+
+.uc-menu-btn-icon:after {
+    bottom: -6px;
+  }

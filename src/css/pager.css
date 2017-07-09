@@ -1,0 +1,82 @@
+@import "./variables.css";
+
+/**
+ * UNITS pager components
+ *
+ * ==================================
+ * @base:   [.uc-pager]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+
+  li {
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+
+    & + li {
+      margin: 0 0 0 16px;
+
+      @media (--small-screen) {
+        margin: 0 0 0 8px;
+      }
+    }
+
+    > a,
+    > span {
+      display: block;
+      padding: 8px 16px;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+
+      @media (--small-screen) {
+        font-size: .875rem;
+      }
+    }
+
+    &._current {
+      background-color: var(--color-primary);
+
+      > span {
+        color: white;
+      }
+    }
+
+    &._ghost {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}
+
+.uc-pager-unit {
+  margin: 0;
+  padding: 80px;
+  background-color: var(--color-bg);
+
+  @media (--small-screen) {
+    padding: 48px 16px;
+  }
+
+  > * {
+    margin: 0;
+    padding: 0;
+  }
+
+  &._center {
+    text-align: center;
+  }
+}

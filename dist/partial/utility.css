@@ -1,0 +1,23 @@
+/*! UNITS v1.0.0-beta | MIT License | Copyright 2017 @kokushing | http://unitscss.com */
+
+/**
+ * UNITS utility class
+ *
+ * ==================================
+ * @option: [._small-hidden]
+ *          [._medium-hidden]
+ *          [._large-hidden]
+ * ==================================
+ */
+
+@media(max-width: 768px) {
+  ._small-hidden { display: none !important; }
+}
+
+@media(min-width: 769px) and (max-width: 1199px) {
+  ._medium-hidden { display: none !important; }
+}
+
+@media(min-width: 1200px) {
+  ._large-hidden { display: none !important; }
+}

@@ -1,0 +1,33 @@
+/*! UNITS v1.0.0-beta | MIT License | Copyright 2017 @kokushing | http://unitscss.com */
+
+/**
+ * UNITS blog theme
+ *
+ * ==================================
+ * @required: [body._theme-blog]
+ * ==================================
+ */
+
+._theme-blog .uc-sidebar {
+    margin-left: 40px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    padding: 0;
+  }
+
+@media (max-width: 768px) {
+
+._theme-blog .uc-sidebar {
+      display: block;
+      margin-left: 0;
+      margin-top: 40px
+  }
+    }
+
+._theme-blog .uc-sidebar .uc-card p {
+      font-size: .875rem;
+    }
+
+._theme-blog .uc-btn a > i {
+      font-size: 1.125rem;
+    }

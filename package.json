@@ -1,9 +1,9 @@
 {
-  "name": "mono.css",
+  "name": "UNITS",
   "version": "1.0.0-beta",
-  "description": "Mono CSS is a simple and lightweight CSS framework.",
+  "description": "UNITS is a simple and beautiful CSS component set.",
   "main": "index.js",
-  "repository": "https://github.com/kokushin/mono.css.git",
+  "repository": "https://github.com/kokushin/units.git",
   "author": "kokushin <mail@kokush.in>",
   "license": "MIT",
   "scripts": {
@@ -23,14 +23,12 @@
     "gulp-load-plugins": "^1.5.0",
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
-    "node-sass-package-importer": "^3.0.4",
-    "postcss-cssnext": "^2.11.0",
+    "postcss-cssnext": "^3.0.0",
+    "postcss-for": "^2.1.1",
+    "postcss-import": "^10.0.0",
+    "postcss-nested": "^2.0.2",
     "webpack": "^3.1.0",
     "webpack-stream": "^3.2.0"
-  },
-  "dependencies": {
-    "sanitize.css": "^5.0.0"
   }
 }
