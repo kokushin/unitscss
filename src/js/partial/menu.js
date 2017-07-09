@@ -7,6 +7,7 @@ class Menu {
       activeClassName: '_active',
       openTargetDataName: 'data-open-target',
     };
+
     this._init();
   }
 
@@ -17,8 +18,8 @@ class Menu {
   openMenu(e) {
     e.preventDefault();
 
-    let btn = e.currentTarget;
-    let menu = $(btn.getAttribute(this.options.openTargetDataName))[0];
+    const btn = e.currentTarget;
+    const menu = $(btn.getAttribute(this.options.openTargetDataName))[0];
 
     this.toggleClass(menu, this.options.activeClassName);
     this.toggleClass(btn, this.options.activeClassName);

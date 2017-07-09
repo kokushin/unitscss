@@ -108,6 +108,7 @@ var Menu = function () {
       activeClassName: '_active',
       openTargetDataName: 'data-open-target'
     };
+
     this._init();
   }
 
