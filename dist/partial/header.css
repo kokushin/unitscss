@@ -79,13 +79,6 @@
       margin: 0;
     }
 
-@media (max-width: 768px) {
-
-.uc-header._fixed + .uc-menu, .uc-header._ghost + .uc-menu {
-        margin: 0
-    }
-      }
-
 .uc-header._center {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

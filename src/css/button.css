@@ -39,7 +39,7 @@
     font-weight: bold;
 
     @media (--small-screen) {
-      min-width: 240px;
+      min-width: 160px;
       padding: 16px 24px;
       text-align: center;
       font-size: .875rem;

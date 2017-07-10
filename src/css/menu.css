@@ -15,39 +15,49 @@
  */
 
 .uc-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: var(--menu-width);
+  height: 100%;
+  padding: var(--header-height) 0 0;
   background-color: white;
   box-shadow: var(--box-shadow-hover);
-  position: relative;
   z-index: var(--z-index-lv3);
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  /* sidebar-unit transform animation */
+  transition: all .35s var(--Power3_easeInOut);
+  transform: translate3d(calc(var(--menu-width) + 16px), 0, 0);
 
   @media (--small-screen) {
-    position: fixed;
-    top: 0;
-    right: 0;
     width: var(--menu-small-width);
-    height: 100%;
     padding: calc(var(--header-height) - 16px) 0 0;
-    /* sidebar-unit transform animation */
-    transition: all .35s var(--Power3_easeInOut);
     transform: translate3d(calc(var(--menu-small-width) + 16px), 0, 0);
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+  }
 
-    &._left {
-      left: 0;
-      right: auto;
+  &._left {
+    left: 0;
+    right: auto;
+    transform: translate3d(calc(-var(--menu-width) - 16px), 0, 0);
+
+    @media (--small-screen) {
       transform: translate3d(calc(-var(--menu-small-width) - 16px), 0, 0);
     }
+  }
 
-    &._right {
-      left: auto;
-      right: 0;
+  &._right {
+    left: auto;
+    right: 0;
+    transform: translate3d(calc(var(--menu-width) + 16px), 0, 0);
+
+    @media (--small-screen) {
       transform: translate3d(calc(var(--menu-small-width) + 16px), 0, 0);
     }
+  }
 
-    &._is-active {
-      transform: translate3d(0, 0, 0);
-    }
+  &._is-active {
+    transform: translate3d(0, 0, 0);
   }
 
   &._dark {
@@ -65,37 +75,36 @@
 }
 
 .uc-menu-wrap {
-  padding: 32px 0;
+  padding: 32px 16px;
 }
 
 .uc-menu-list {
-  @media (--small-screen) {
+  text-align: center;
 
-    a {
-      display: block;
-      padding: 16px 32px;
-      text-decoration: none;
-      color: color(black a(.7));
-      font-size: .875rem;
-      font-weight: bold;
-      border-bottom: 1px solid color(white a(.08));
+  a {
+    display: block;
+    padding: 24px 32px;
+    margin: 0 -16px;
+    text-decoration: none;
+    color: color(black a(.7));
+    font-size: 1rem;
+    font-weight: bold;
+
+    ._black &,
+    ._dark & {
+      color: color(white a(.7));
+
+      ._is-current & {
+        color: white;
+      }
+    }
+
+    &._is-current {
+      color: black;
 
       ._black &,
       ._dark & {
-        color: color(white a(.7));
-
-        ._is-current & {
-          color: white;
-        }
-      }
-
-      &._is-current {
-        color: black;
-
-        ._black &,
-        ._dark & {
-          color: white;
-        }
+        color: white;
       }
     }
   }

@@ -56,10 +56,6 @@
 
     & + .uc-menu {
       margin: 0;
-
-      @media (--small-screen) {
-        margin: 0;
-      }
     }
   }
 

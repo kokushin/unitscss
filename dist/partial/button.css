@@ -47,7 +47,7 @@
 
 .uc-btn > span,
   .uc-btn > a {
-      min-width: 240px;
+      min-width: 160px;
       padding: 16px 24px;
       text-align: center;
       font-size: .875rem
