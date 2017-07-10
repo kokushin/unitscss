@@ -1,9 +1,15 @@
-const $ = (element, event = false, callback = null, options = false) => {
+/**
+ * querySelector.js
+ *
+ * @example $('button', 'click', this.callback, false);
+ */
+
+const $ = (element, eventType = false, callback = null, options = false) => {
   const nodeList = document.querySelectorAll(element);
 
-  if (event) {
+  if (eventType) {
     for (let i = nodeList.length; i--;) {
-      nodeList[i].addEventListener(event, callback, options);
+      nodeList[i].addEventListener(eventType, callback, options);
     }
   } else {
     return nodeList;

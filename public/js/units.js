@@ -163,16 +163,22 @@ exports.default = Menu;
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+/**
+ * querySelector.js
+ *
+ * @example $('button', 'click', this.callback, false);
+ */
+
 var $ = function $(element) {
-  var event = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+  var eventType = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
   var callback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
   var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
 
   var nodeList = document.querySelectorAll(element);
 
-  if (event) {
+  if (eventType) {
     for (var i = nodeList.length; i--;) {
-      nodeList[i].addEventListener(event, callback, options);
+      nodeList[i].addEventListener(eventType, callback, options);
     }
   } else {
     return nodeList;
