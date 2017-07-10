@@ -170,12 +170,12 @@ var $ = function $(element) {
 
   var nodeList = document.querySelectorAll(element);
 
-  if (!event) {
-    return nodeList;
-  } else {
+  if (event) {
     for (var i = nodeList.length; i--;) {
       nodeList[i].addEventListener(event, callback, options);
     }
+  } else {
+    return nodeList;
   }
 };
 
