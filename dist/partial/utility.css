@@ -3,20 +3,20 @@
  * UNITS utility class
  *
  * ==================================
- * @option: [._small-hidden]
- *          [._medium-hidden]
- *          [._large-hidden]
+ * @option: [._hide-small]
+ *          [._hide-medium]
+ *          [._hide-large]
  * ==================================
  */
 
 @media(max-width: 768px) {
-  ._small-hidden { display: none !important; }
+  ._hide-small { display: none !important; }
 }
 
 @media(min-width: 769px) and (max-width: 1199px) {
-  ._medium-hidden { display: none !important; }
+  ._hide-medium { display: none !important; }
 }
 
 @media(min-width: 1200px) {
-  ._large-hidden { display: none !important; }
+  ._hide-large { display: none !important; }
 }

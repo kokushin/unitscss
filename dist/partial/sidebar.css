@@ -33,8 +33,8 @@
     padding: 64px 0 0;
     z-index: 9999;
     /* sidebar-unit transform animation */
-    -webkit-transition: all .3s cubic-bezier(.76, 0, .24, 1);
-    transition: all .3s cubic-bezier(.76, 0, .24, 1);
+    -webkit-transition: all .35s cubic-bezier(.76, 0, .24, 1);
+    transition: all .35s cubic-bezier(.76, 0, .24, 1);
     -webkit-transform: translate3d(-256px, 0, 0);
             transform: translate3d(-256px, 0, 0);
     overflow-y: scroll;

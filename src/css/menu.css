@@ -70,20 +70,31 @@
 
 .uc-menu-list {
   @media (--small-screen) {
-    text-align: center;
 
     a {
       display: block;
-      padding: 20px 32px;
+      padding: 16px 32px;
       text-decoration: none;
+      color: color(black a(.7));
+      font-size: .875rem;
+      font-weight: bold;
+      border-bottom: 1px solid color(white a(.08));
+
+      ._black &,
+      ._dark & {
+        color: color(white a(.7));
+
+        ._is-current & {
+          color: white;
+        }
+      }
 
       &._is-current {
-        font-weight: bold;
-        background-color: var(--color-bg);
+        color: black;
 
         ._black &,
         ._dark & {
-          background-color: color(white a(.08));
+          color: white;
         }
       }
     }

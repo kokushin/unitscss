@@ -30,7 +30,7 @@
     padding: calc(var(--header-height) - 16px) 0 0;
     z-index: var(--z-index-lv2);
     /* sidebar-unit transform animation */
-    transition: all .3s var(--Power3_easeInOut);
+    transition: all .35s var(--Power3_easeInOut);
     transform: translate3d(calc(-var(--sidebar-small-width) - 16px), 0, 0);
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
