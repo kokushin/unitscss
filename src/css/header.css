@@ -45,11 +45,20 @@
     width: 100%;
     z-index: var(--z-index-lv4);
 
-    & + * {
+    & + *,
+    & + .uc-menu + * {
       margin: var(--header-height) 0 0;
 
       @media (--small-screen) {
         margin: calc(var(--header-height) - 16px) 0 0;
+      }
+    }
+
+    & + .uc-menu {
+      margin: 0;
+
+      @media (--small-screen) {
+        margin: 0;
       }
     }
   }
@@ -128,9 +137,7 @@
 .uc-header-menu {
   display: flex;
 
-  &
-
-  > a {
+  a {
     text-decoration: none;
     font-weight: bold;
     line-height: 1;

@@ -13,6 +13,97 @@
  * ==================================
  */
 
+.uc-menu {
+  background-color: white;
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
+  position: relative;
+  z-index: 15999;
+}
+
+@media (max-width: 768px) {
+
+.uc-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    padding: 64px 0 0;
+    /* sidebar-unit transform animation */
+    -webkit-transition: all .35s cubic-bezier(.76, 0, .24, 1);
+    transition: all .35s cubic-bezier(.76, 0, .24, 1);
+    -webkit-transform: translate3d(336px, 0, 0);
+            transform: translate3d(336px, 0, 0);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch
+}
+
+    .uc-menu._left {
+      left: 0;
+      right: auto;
+      -webkit-transform: translate3d(-336px, 0, 0);
+              transform: translate3d(-336px, 0, 0);
+    }
+
+    .uc-menu._right {
+      left: auto;
+      right: 0;
+      -webkit-transform: translate3d(336px, 0, 0);
+              transform: translate3d(336px, 0, 0);
+    }
+
+    .uc-menu._is-active {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+  }
+
+.uc-menu._dark {
+    background-color: #37474f;
+  }
+
+.uc-menu._black {
+    background-color: #141414;
+  }
+
+.uc-menu._dark,
+  .uc-menu._black {
+    color: white;
+  }
+
+.uc-menu-wrap {
+  padding: 32px 0;
+}
+
+@media (max-width: 768px) {
+
+.uc-menu-list {
+    text-align: center
+}
+
+    .uc-menu-list a {
+      display: block;
+      padding: 20px 32px;
+      text-decoration: none;
+    }
+
+      .uc-menu-list a._is-current {
+        font-weight: bold;
+        background-color: #f2f2f2;
+      }
+
+        ._black .uc-menu-list a._is-current,
+        ._dark .uc-menu-list a._is-current {
+          background-color: rgba(255, 255, 255, 0.08);
+        }
+  }
+
+.uc-menu-btn {
+  position: relative;
+  z-index: 15999;
+}
+
 .uc-menu-btn > button {
     display: block;
     border: none;
@@ -58,7 +149,7 @@
     background-color: white;
   }
 
-._active .uc-menu-btn-icon {
+._is-active .uc-menu-btn-icon {
     background-color: transparent;
   }
 
@@ -90,7 +181,7 @@
     top: -6px;
   }
 
-._active .uc-menu-btn-icon:before {
+._is-active .uc-menu-btn-icon:before {
       -webkit-transform: translate3d(0, 6px, 0) rotate(45deg);
               transform: translate3d(0, 6px, 0) rotate(45deg);
     }
@@ -99,7 +190,7 @@
     bottom: -6px;
   }
 
-._active .uc-menu-btn-icon:after {
+._is-active .uc-menu-btn-icon:after {
       -webkit-transform: translate3d(0, -6px, 0) rotate(-45deg);
               transform: translate3d(0, -6px, 0) rotate(-45deg);
     }

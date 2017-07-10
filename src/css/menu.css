@@ -14,7 +14,85 @@
  * ==================================
  */
 
+.uc-menu {
+  background-color: white;
+  box-shadow: var(--box-shadow-hover);
+  position: relative;
+  z-index: var(--z-index-lv3);
+
+  @media (--small-screen) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: var(--menu-small-width);
+    height: 100%;
+    padding: calc(var(--header-height) - 16px) 0 0;
+    /* sidebar-unit transform animation */
+    transition: all .35s var(--Power3_easeInOut);
+    transform: translate3d(calc(var(--menu-small-width) + 16px), 0, 0);
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    &._left {
+      left: 0;
+      right: auto;
+      transform: translate3d(calc(-var(--menu-small-width) - 16px), 0, 0);
+    }
+
+    &._right {
+      left: auto;
+      right: 0;
+      transform: translate3d(calc(var(--menu-small-width) + 16px), 0, 0);
+    }
+
+    &._is-active {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  &._dark {
+    background-color: var(--color-dark);
+  }
+
+  &._black {
+    background-color: #141414;
+  }
+
+  &._dark,
+  &._black {
+    color: white;
+  }
+}
+
+.uc-menu-wrap {
+  padding: 32px 0;
+}
+
+.uc-menu-list {
+  @media (--small-screen) {
+    text-align: center;
+
+    a {
+      display: block;
+      padding: 20px 32px;
+      text-decoration: none;
+
+      &._is-current {
+        font-weight: bold;
+        background-color: var(--color-bg);
+
+        ._black &,
+        ._dark & {
+          background-color: color(white a(.08));
+        }
+      }
+    }
+  }
+}
+
 .uc-menu-btn {
+  position: relative;
+  z-index: var(--z-index-lv3);
 
   > button {
     display: block;
@@ -60,7 +138,7 @@
     background-color: white;
   }
 
-  ._active & {
+  ._is-active & {
     background-color: transparent;
   }
 
@@ -85,7 +163,7 @@
   &:before {
     top: -6px;
 
-    ._active & {
+    ._is-active & {
       transform: translate3d(0, 6px, 0) rotate(45deg);
     }
   }
@@ -93,7 +171,7 @@
   &:after {
     bottom: -6px;
 
-    ._active & {
+    ._is-active & {
       transform: translate3d(0, -6px, 0) rotate(-45deg);
     }
   }

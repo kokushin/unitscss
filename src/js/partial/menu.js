@@ -4,7 +4,7 @@ class Menu {
   constructor() {
     this.options = {
       btnClassName:       'uc-menu-btn',
-      activeClassName:    '_active',
+      activeClassName:    '_is-active',
       openTargetDataName: 'data-open-target',
     };
 
