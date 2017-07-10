@@ -29,8 +29,8 @@ class Menu {
     if (element.classList) {
       element.classList.toggle(className);
     } else {
-      let classes = element.className.split(' ');
-      let existingIndex = classes.indexOf(className);
+      const classes = element.className.split(' ');
+      const existingIndex = classes.indexOf(className);
 
       if (existingIndex >= 0) {
         classes.splice(existingIndex, 1);
