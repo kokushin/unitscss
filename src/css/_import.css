@@ -20,4 +20,4 @@
  * Overwrite theme styles.
  * Please delete it when it is unnecessary.
  */
-@import "./theme_blog.css";
+@import "./themes/blog.css";
