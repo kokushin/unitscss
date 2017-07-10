@@ -58,7 +58,9 @@
   &._black {
     background-color: color(black a(.92));
 
-    > p, > small, a {
+    > p,
+    > small,
+    a {
       color: color(white a(.8));
     }
   }

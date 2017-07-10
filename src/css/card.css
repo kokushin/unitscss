@@ -47,6 +47,7 @@
     > a {
       padding: 12px 32px;
       font-size: .875rem;
+
       @media (--small-screen) {
         min-width: initial;
       }
@@ -66,6 +67,7 @@
       height: 100%;
       padding: 32px 24px;
       text-decoration: none;
+
       @media (--small-screen) {
         padding: 24px;
       }
@@ -111,6 +113,7 @@
   font-size: 1.25rem;
   font-weight: bold;
   color: var(--color-dark);
+
   @media (--small-screen) {
     [lang~=ja] & {
       font-size: 1rem;
@@ -125,6 +128,7 @@
   background-size: cover;
   background-color: var(--color-bg);
   border-radius: var(--border-radius) var(--border-radius) 0 0;
+
   @media (--small-screen) {
     margin: -24px -24px 24px;
   }
@@ -148,6 +152,7 @@
   margin: -32px -24px 24px;
   padding: 16px 24px;
   border-bottom: 1px solid var(--color-border);
+
   @media (--small-screen) {
     margin: -24px -24px 24px;
   }

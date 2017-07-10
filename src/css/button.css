@@ -72,6 +72,7 @@
 
   &._icon {
     line-height: 1;
+
     i {
       font-size: 1.125rem;
     }
@@ -83,6 +84,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+
   @media (--small-screen) {
     flex-direction: column;
   }

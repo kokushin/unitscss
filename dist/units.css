@@ -1150,7 +1150,12 @@ p + h2,
     background-color: rgba(0, 0, 0, 0.92);
   }
 
-.uc-footer._dark > p, .uc-footer._dark > small, .uc-footer._dark a, .uc-footer._black > p, .uc-footer._black > small, .uc-footer._black a {
+.uc-footer._dark > p,
+    .uc-footer._dark > small,
+    .uc-footer._dark a,
+    .uc-footer._black > p,
+    .uc-footer._black > small,
+    .uc-footer._black a {
       color: rgba(255, 255, 255, 0.8);
     }
 

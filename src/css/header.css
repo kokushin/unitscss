@@ -27,6 +27,7 @@
   @media (--medium-screen) {
     padding: 0 40px;
   }
+
   @media (--small-screen) {
     height: calc(var(--header-height) - 16px);
     padding: 0 20px;
