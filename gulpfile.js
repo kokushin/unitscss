@@ -24,6 +24,7 @@ const processors = [
 
 gulp.task('styles', ['styles:partial'], () => {
   return gulp.src('./src/css/_import.css')
+    .pipe($.plumber())
     .pipe($.postcss(processors))
     .pipe($.header(banner))
     .pipe($.rename('units.css'))
@@ -37,6 +38,7 @@ gulp.task('styles', ['styles:partial'], () => {
 
 gulp.task('styles:partial', () => {
   return gulp.src(['./src/css/*.css', '!./src/css/_import.css', '!./src/css/variables.css'])
+    .pipe($.plumber())
     .pipe($.postcss(processors))
     .pipe($.header(banner))
     .pipe(gulp.dest('./dist/partial'));
@@ -44,6 +46,7 @@ gulp.task('styles:partial', () => {
 
 gulp.task('javascripts', () => {
   return gulp.src('./src/js/_import.js')
+    .pipe($.plumber())
     .pipe(webpackStream(webpackConfig, webpack))
     .pipe($.uglify())
     .pipe($.header(banner))
@@ -69,6 +72,7 @@ gulp.task('dev:serve', ['dev:styles', 'dev:javascripts'], () => {
 
 gulp.task('dev:styles', ['styles'], () => {
   return gulp.src('./src/css/_import.css')
+    .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.postcss(processors))
     .pipe($.rename('units.css'))
@@ -79,6 +83,7 @@ gulp.task('dev:styles', ['styles'], () => {
 
 gulp.task('dev:javascripts', ['javascripts'], () => {
   return gulp.src('./src/js/_import.js')
+    .pipe($.plumber())
     .pipe(webpackStream(webpackConfig, webpack))
     .pipe($.rename('units.js'))
     .pipe(gulp.dest('./public/js'));
