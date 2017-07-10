@@ -55,6 +55,10 @@
     background-color: white;
   }
 
+._active .uc-menu-btn-icon {
+    background-color: transparent;
+  }
+
 .uc-menu-btn-icon:before,
   .uc-menu-btn-icon:after {
     content: " ";
@@ -63,6 +67,9 @@
     height: 2px;
     background-color: black;
     position: absolute;
+    /* menu-btn transform animation */
+    -webkit-transition: all .3s cubic-bezier(.26, 1, .48, 1);
+    transition: all .3s cubic-bezier(.26, 1, .48, 1);
   }
 
 ._dark .uc-menu-btn-icon:before,
@@ -78,6 +85,16 @@
     top: -6px;
   }
 
+._active .uc-menu-btn-icon:before {
+      -webkit-transform: translate3d(0, 6px, 0) rotate(45deg);
+              transform: translate3d(0, 6px, 0) rotate(45deg);
+    }
+
 .uc-menu-btn-icon:after {
     bottom: -6px;
   }
+
+._active .uc-menu-btn-icon:after {
+      -webkit-transform: translate3d(0, -6px, 0) rotate(-45deg);
+              transform: translate3d(0, -6px, 0) rotate(-45deg);
+    }

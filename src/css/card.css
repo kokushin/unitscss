@@ -60,7 +60,7 @@
 
   &._banner {
     padding: 0;
-    transition: var(--box-shadow-transition);
+    transition: var(--transition-hover);
     &:hover {
       box-shadow: var(--box-shadow-hover);
     }
@@ -76,7 +76,7 @@
   }
 
   &._hover {
-    transition: var(--box-shadow-transition);
+    transition: var(--transition-hover);
 
     &:hover {
       box-shadow: var(--box-shadow-hover);

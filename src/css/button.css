@@ -40,7 +40,7 @@
 
     @media (--small-screen) {
       min-width: 240px;
-      padding: 12px 24px;
+      padding: 16px 24px;
       text-align: center;
       font-size: .875rem;
     }

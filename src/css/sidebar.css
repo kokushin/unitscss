@@ -97,6 +97,8 @@
     height: 100%;
     padding: calc(var(--header-height) - 16px) 0 0;
     z-index: var(--z-index-lv2);
+    /* menu-btn transform animation */
+    transition: var(--transition-menu);
 
     &._left {
       left: 0;

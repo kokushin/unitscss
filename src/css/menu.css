@@ -58,6 +58,10 @@
     background-color: white;
   }
 
+  ._active & {
+    background-color: transparent;
+  }
+
   &:before,
   &:after {
     content: " ";
@@ -66,6 +70,8 @@
     height: 2px;
     background-color: black;
     position: absolute;
+    /* menu-btn transform animation */
+    transition: var(--transition-menu);
 
     ._dark &,
     ._black &,
@@ -76,9 +82,17 @@
 
   &:before {
     top: -6px;
+
+    ._active & {
+      transform: translate3d(0, 6px, 0) rotate(45deg);
+    }
   }
 
   &:after {
     bottom: -6px;
+
+    ._active & {
+      transform: translate3d(0, -6px, 0) rotate(-45deg);
+    }
   }
 }

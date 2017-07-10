@@ -1555,7 +1555,7 @@ p + h2,
 .uc-btn > span,
   .uc-btn > a {
       min-width: 240px;
-      padding: 12px 24px;
+      padding: 16px 24px;
       text-align: center;
       font-size: .875rem
   }
@@ -2142,7 +2142,10 @@ p + h2,
     top: 0;
     height: 100%;
     padding: 64px 0 0;
-    z-index: 9999
+    z-index: 9999;
+    /* menu-btn transform animation */
+    -webkit-transition: all .3s cubic-bezier(.26, 1, .48, 1);
+    transition: all .3s cubic-bezier(.26, 1, .48, 1)
 }
 
     .uc-sidebar-unit._left {
@@ -2345,6 +2348,10 @@ p + h2,
     background-color: white;
   }
 
+._active .uc-menu-btn-icon {
+    background-color: transparent;
+  }
+
 .uc-menu-btn-icon:before,
   .uc-menu-btn-icon:after {
     content: " ";
@@ -2353,6 +2360,9 @@ p + h2,
     height: 2px;
     background-color: black;
     position: absolute;
+    /* menu-btn transform animation */
+    -webkit-transition: all .3s cubic-bezier(.26, 1, .48, 1);
+    transition: all .3s cubic-bezier(.26, 1, .48, 1);
   }
 
 ._dark .uc-menu-btn-icon:before,
@@ -2368,9 +2378,19 @@ p + h2,
     top: -6px;
   }
 
+._active .uc-menu-btn-icon:before {
+      -webkit-transform: translate3d(0, 6px, 0) rotate(45deg);
+              transform: translate3d(0, 6px, 0) rotate(45deg);
+    }
+
 .uc-menu-btn-icon:after {
     bottom: -6px;
   }
+
+._active .uc-menu-btn-icon:after {
+      -webkit-transform: translate3d(0, -6px, 0) rotate(-45deg);
+              transform: translate3d(0, -6px, 0) rotate(-45deg);
+    }
 
 /**
  * UNITS loading components
