@@ -128,6 +128,8 @@
 .uc-header-menu {
   display: flex;
 
+  &
+
   > a {
     text-decoration: none;
     font-weight: bold;

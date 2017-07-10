@@ -11,6 +11,7 @@
 ._theme-blog {
 
   .uc-sidebar {
+    height: 100%;
     margin-left: 40px;
     box-shadow: none;
     padding: 0;
