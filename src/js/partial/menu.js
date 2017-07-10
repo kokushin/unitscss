@@ -3,8 +3,8 @@ import $ from '../lib/querySelector';
 class Menu {
   constructor() {
     this.options = {
-      btnClassName: 'uc-menu-btn',
-      activeClassName: '_active',
+      btnClassName:       'uc-menu-btn',
+      activeClassName:    '_active',
       openTargetDataName: 'data-open-target',
     };
 
