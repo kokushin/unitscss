@@ -23,9 +23,9 @@
   background-color: white;
   -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
           box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
-  z-index: 15999;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  z-index: 15999;
   /* sidebar-unit transform animation */
   -webkit-transition: all .35s cubic-bezier(.76, 0, .24, 1);
   transition: all .35s cubic-bezier(.76, 0, .24, 1);

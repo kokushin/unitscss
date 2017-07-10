@@ -23,9 +23,9 @@
   padding: var(--header-height) 0 0;
   background-color: white;
   box-shadow: var(--box-shadow-hover);
-  z-index: var(--z-index-lv3);
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
+  z-index: var(--z-index-lv3);
   /* sidebar-unit transform animation */
   transition: all .35s var(--Power3_easeInOut);
   transform: translate3d(calc(var(--menu-width) + 16px), 0, 0);
