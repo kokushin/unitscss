@@ -51,6 +51,8 @@
   margin: 0 auto;
   background-color: black;
   position: relative;
+  /* menu-btn-icon transform animation */
+  transition: background .3s var(--Power3_easeInOut);
 
   ._dark &,
   ._black &,
@@ -70,8 +72,8 @@
     height: 2px;
     background-color: black;
     position: absolute;
-    /* menu-btn transform animation */
-    transition: var(--transition-menu);
+    /* menu-btn-icon transform animation */
+    transition: transform .3s var(--Power3_easeInOut);
 
     ._dark &,
     ._black &,

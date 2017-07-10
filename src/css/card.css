@@ -60,10 +60,7 @@
 
   &._banner {
     padding: 0;
-    transition: var(--transition-hover);
-    &:hover {
-      box-shadow: var(--box-shadow-hover);
-    }
+
     > a {
       display: block;
       height: 100%;
@@ -75,8 +72,9 @@
     }
   }
 
+  &._banner,
   &._hover {
-    transition: var(--transition-hover);
+    transition: box-shadow .3s var(--Hover_easeOut);
 
     &:hover {
       box-shadow: var(--box-shadow-hover);

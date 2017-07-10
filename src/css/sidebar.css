@@ -97,8 +97,8 @@
     height: 100%;
     padding: calc(var(--header-height) - 16px) 0 0;
     z-index: var(--z-index-lv2);
-    /* menu-btn transform animation */
-    transition: var(--transition-menu);
+    /* sidebar-unit transform animation */
+    transition: all .3s var(--Power3_easeInOut);
 
     &._left {
       left: 0;

@@ -98,9 +98,9 @@
     height: 100%;
     padding: 64px 0 0;
     z-index: 9999;
-    /* menu-btn transform animation */
-    -webkit-transition: all .3s cubic-bezier(.26, 1, .48, 1);
-    transition: all .3s cubic-bezier(.26, 1, .48, 1)
+    /* sidebar-unit transform animation */
+    -webkit-transition: all .3s cubic-bezier(.76, 0, .24, 1);
+    transition: all .3s cubic-bezier(.76, 0, .24, 1)
 }
 
     .uc-sidebar-unit._left {

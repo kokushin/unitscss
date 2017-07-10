@@ -70,16 +70,7 @@
 
 .uc-card._banner {
     padding: 0;
-    -webkit-transition: -webkit-box-shadow .3s cubic-bezier(.25, .8, .25, 1);
-    transition: -webkit-box-shadow .3s cubic-bezier(.25, .8, .25, 1);
-    transition: box-shadow .3s cubic-bezier(.25, .8, .25, 1);
-    transition: box-shadow .3s cubic-bezier(.25, .8, .25, 1), -webkit-box-shadow .3s cubic-bezier(.25, .8, .25, 1);
   }
-
-.uc-card._banner:hover {
-      -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
-              box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
-    }
 
 .uc-card._banner > a {
       display: block;
@@ -95,14 +86,15 @@
     }
       }
 
-.uc-card._hover {
+.uc-card._banner,
+  .uc-card._hover {
     -webkit-transition: -webkit-box-shadow .3s cubic-bezier(.25, .8, .25, 1);
     transition: -webkit-box-shadow .3s cubic-bezier(.25, .8, .25, 1);
     transition: box-shadow .3s cubic-bezier(.25, .8, .25, 1);
     transition: box-shadow .3s cubic-bezier(.25, .8, .25, 1), -webkit-box-shadow .3s cubic-bezier(.25, .8, .25, 1);
   }
 
-.uc-card._hover:hover {
+.uc-card._banner:hover, .uc-card._hover:hover {
       -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
               box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
     }

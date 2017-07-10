@@ -47,6 +47,9 @@
   margin: 0 auto;
   background-color: black;
   position: relative;
+  /* menu-btn-icon transform animation */
+  -webkit-transition: background .3s cubic-bezier(.76, 0, .24, 1);
+  transition: background .3s cubic-bezier(.76, 0, .24, 1);
 }
 
 ._dark .uc-menu-btn-icon,
@@ -67,9 +70,11 @@
     height: 2px;
     background-color: black;
     position: absolute;
-    /* menu-btn transform animation */
-    -webkit-transition: all .3s cubic-bezier(.26, 1, .48, 1);
-    transition: all .3s cubic-bezier(.26, 1, .48, 1);
+    /* menu-btn-icon transform animation */
+    -webkit-transition: -webkit-transform .3s cubic-bezier(.76, 0, .24, 1);
+    transition: -webkit-transform .3s cubic-bezier(.76, 0, .24, 1);
+    transition: transform .3s cubic-bezier(.76, 0, .24, 1);
+    transition: transform .3s cubic-bezier(.76, 0, .24, 1), -webkit-transform .3s cubic-bezier(.76, 0, .24, 1);
   }
 
 ._dark .uc-menu-btn-icon:before,
