@@ -45,7 +45,7 @@
   }
 
   ._ghost + &,
-  ._fixed + & {
+  ._ghost + .uc-menu._slide + & {
     margin-top: 0;
     padding-top: calc(var(--header-height) + 160px);
 
@@ -61,7 +61,7 @@
     align-items: center;
     flex-direction: column;
     padding: 0 64px;
-    height: 100vh;
+    height: calc(100vh - var(--header-height));
 
     @media (--small-viewport) {
       padding: 0 24px;

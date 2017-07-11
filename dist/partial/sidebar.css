@@ -24,46 +24,42 @@
 
 @media (max-width: 768px) {
 
-.uc-sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 240px;
-    height: 100%;
-    padding: 64px 0 0;
-    z-index: 9999;
-    /* sidebar-unit transform animation */
-    -webkit-transition: all .35s cubic-bezier(.76, 0, .24, 1);
-    transition: all .35s cubic-bezier(.76, 0, .24, 1);
-    -webkit-transform: translate3d(-256px, 0, 0);
-            transform: translate3d(-256px, 0, 0);
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch
-}
-
-    .uc-sidebar._left {
+.uc-sidebar._slide {
+      position: fixed;
+      top: 0;
       left: 0;
-      right: auto;
+      width: 240px;
+      height: 100%;
+      padding: 64px 0 0;
+      z-index: 9999;
+      /* sidebar-unit transform animation */
+      -webkit-transition: all .35s cubic-bezier(.76, 0, .24, 1);
+      transition: all .35s cubic-bezier(.76, 0, .24, 1);
       -webkit-transform: translate3d(-256px, 0, 0);
               transform: translate3d(-256px, 0, 0);
-    }
-
-    .uc-sidebar._right {
-      left: auto;
-      right: 0;
-      -webkit-transform: translate3d(256px, 0, 0);
-              transform: translate3d(256px, 0, 0);
-    }
-
-    .uc-sidebar._is-active {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-    }
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch
   }
 
-.uc-sidebar .uc-sidebar-wrap {
-    padding: 32px 0;
-  }
+      .uc-sidebar._slide._left {
+        left: 0;
+        right: auto;
+        -webkit-transform: translate3d(-256px, 0, 0);
+                transform: translate3d(-256px, 0, 0);
+      }
+
+      .uc-sidebar._slide._right {
+        left: auto;
+        right: 0;
+        -webkit-transform: translate3d(256px, 0, 0);
+                transform: translate3d(256px, 0, 0);
+      }
+
+      .uc-sidebar._slide._is-active {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+      }
+    }
 
 .uc-sidebar._dark {
     background-color: #37474f;
@@ -77,6 +73,10 @@
   .uc-sidebar._black {
     color: white;
   }
+
+.uc-sidebar-wrap {
+  padding: 32px 0;
+}
 
 .uc-sidebar-list + .uc-sidebar-list > p {
       margin-top: 16px;

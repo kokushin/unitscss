@@ -22,6 +22,14 @@
   border: 2px solid white;
 }
 
+@media (max-width: 768px) {
+
+.uc-btn {
+    max-width: 240px;
+    width: 100%
+}
+  }
+
 .uc-btn + .uc-btn {
     margin: 0 0 0 16px;
   }
@@ -47,7 +55,7 @@
 
 .uc-btn > span,
   .uc-btn > a {
-      min-width: 160px;
+      width: 100%;
       padding: 16px 24px;
       text-align: center;
       font-size: .875rem

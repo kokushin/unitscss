@@ -43,6 +43,10 @@
   .uc-btn {
     margin: 24px 0 0;
 
+    @media (--small-viewport) {
+      max-width: 160px;
+    }
+
     > span,
     > a {
       padding: 12px 32px;

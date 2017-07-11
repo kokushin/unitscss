@@ -48,6 +48,13 @@
     margin: 24px 0 0;
   }
 
+@media (max-width: 768px) {
+
+.uc-card .uc-btn {
+      max-width: 160px
+  }
+    }
+
 .uc-card .uc-btn > span,
     .uc-card .uc-btn > a {
       padding: 12px 32px;

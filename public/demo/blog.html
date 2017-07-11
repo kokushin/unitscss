@@ -32,19 +32,30 @@
 <body class="_theme-blog">
 
   <header class="uc-header _ghost">
-    <div class="uc-header-logo"><a href="./blog.html">Blog</a></div>
+    <div class="uc-header-logo"><a href="./blog.html">Blog Theme</a></div>
     <div class="uc-header-menu _hide-small" role="navigation">
       <a href="#">About</a>
       <a href="#">Contact</a>
     </div>
-    <div class="uc-menu-btn _hide-medium _hide-large">
+    <div class="uc-menu-btn _hide-medium _hide-large" data-open-target="#menu">
       <button><i class="uc-menu-btn-icon"></i></button>
     </div>
   </header>
 
+  <nav class="uc-menu _slide _black" id="menu">
+    <div class="uc-menu-wrap">
+      <div class="uc-menu-list">
+        <a href="/ja/docs/" class="_is-current">Document</a>
+        <a href="#">Themes</a>
+        <a href="#">GitHub</a>
+        <a href="#">Twitter</a>
+      </div>
+    </div>
+  </nav>
+
   <div class="uc-hero">
     <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
-    <h1 class="uc-hero-title">Welcome to my blog</h1>
+    <h1 class="uc-hero-title">Welcome to my  Theme</h1>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, voluptatem.</p>
   </div>
 
@@ -168,10 +179,11 @@
       <a href="#">About</a>
       <a href="#">Contact</a>
     </div>
-    <div class="uc-footer-logo"><cite>Blog</cite></div>
+    <div class="uc-footer-logo"><cite>Blog Theme</cite></div>
     <p>This page was made using <a href="http://unitscss.com" target="_blank">UNITS</a>.</p>
     <small>&copy; 2017 Blog Demo</small>
   </footer>
 
+  <script src="/js/units.js"></script>
 </body>
 </html>
