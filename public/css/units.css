@@ -1042,6 +1042,7 @@ p + h2,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 0 0 24px;
 }
 
 .uc-header-menu a {
@@ -2203,7 +2204,7 @@ p + h2,
 
 .uc-table thead {
     border-top: 1px solid #ebebeb;
-    border-bottom: 2px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
   }
 
 .uc-table tbody > tr:nth-child(even) {

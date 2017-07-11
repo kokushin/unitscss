@@ -15,7 +15,7 @@
 
 .uc-table thead {
     border-top: 1px solid #ebebeb;
-    border-bottom: 2px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
   }
 
 .uc-table tbody > tr:nth-child(even) {

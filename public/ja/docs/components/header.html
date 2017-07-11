@@ -39,10 +39,8 @@
 
   <div class="uc-grid _nowrap">
 
-
-    <div class="uc-grid-cell">
-
-      <nav class="uc-sidebar">
+    <nav class="uc-sidebar _slide uc-grid-cell">
+      <div class="uc-sidebar-wrap">
         <div class="uc-sidebar-list">
           <a href="/ja/docs/">はじめに</a>
           <a href="/ja/docs/install.html">インストール</a>
@@ -73,9 +71,8 @@
           <a href="https://github.com/kokushin/units" target="_blank">GitHub</a>
           <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
         </div>
-      </nav>
-
-    </div>
+      </div>
+    </nav>
 
 
     <div class="uc-grid-cell _col-fit">
@@ -135,6 +132,14 @@
                     <td>-</td>
                   </tr>
                   <tr>
+                    <td>uc-header-menu</td>
+                    <td>パーツ</td>
+                    <td>基本のヘッダー用メニューを適用する</td>
+                    <td>いいえ</td>
+                    <td>ベースの直下</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
                     <td>_fixed</td>
                     <td>オプション</td>
                     <td>ヘッダーを固定し、追従するようにする</td>
@@ -179,6 +184,12 @@
               <div class="uc-header">
                 <div class="uc-header-logo">Logo</div>
                 <p>Page description</p>
+                <div class="uc-header-menu _hide-small" role="navigation">
+                  <a href="/ja/docs/" class="_is-current">Document</a>
+                  <a href="#">Demo</a>
+                  <a href="#">GitHub</a>
+                  <a href="#">Twitter</a>
+                </div>
               </div>
             </div>
             <div class="uc-code-unit">

@@ -155,6 +155,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 0 0 24px;
 }
 
 .uc-header-menu a {
