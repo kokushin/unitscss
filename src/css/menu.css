@@ -30,7 +30,7 @@
   transition: all .35s var(--Power3_easeInOut);
   transform: translate3d(calc(var(--menu-width) + 16px), 0, 0);
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     width: var(--menu-small-width);
     padding: calc(var(--header-height) - 16px) 0 0;
     transform: translate3d(calc(var(--menu-small-width) + 16px), 0, 0);
@@ -41,7 +41,7 @@
     right: auto;
     transform: translate3d(calc(-var(--menu-width) - 16px), 0, 0);
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       transform: translate3d(calc(-var(--menu-small-width) - 16px), 0, 0);
     }
   }
@@ -51,7 +51,7 @@
     right: 0;
     transform: translate3d(calc(var(--menu-width) + 16px), 0, 0);
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       transform: translate3d(calc(var(--menu-small-width) + 16px), 0, 0);
     }
   }

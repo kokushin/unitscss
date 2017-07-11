@@ -36,7 +36,7 @@
     font-size: 1rem;
     line-height: 1.6;
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       font-size: .875rem;
     }
   }

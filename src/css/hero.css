@@ -20,11 +20,11 @@
   position: relative;
   text-align: center;
 
-  @media (--medium-screen) {
+  @media (--medium-viewport) {
     padding: 144px 64px;
   }
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     padding: 64px 24px 72px;
   }
 
@@ -38,7 +38,7 @@
     font-size: 1.125rem;
     margin: 24px 0 0;
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       margin: 16px 0 0;
       font-size: 1rem;
     }
@@ -49,7 +49,7 @@
     margin-top: 0;
     padding-top: calc(var(--header-height) + 160px);
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       padding-top: calc(var(--header-height) - 16px + 64px);
     }
   }
@@ -63,7 +63,7 @@
     padding: 0 64px;
     height: 100vh;
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       padding: 0 24px;
     }
   }
@@ -80,7 +80,7 @@
     font-size: 3.5rem;
   }
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     font-size: 3rem;
     line-height: 1.1;
 

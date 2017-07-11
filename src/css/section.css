@@ -18,11 +18,11 @@
   position: relative;
   padding: 80px;
 
-  @media (--medium-screen) {
+  @media (--medium-viewport) {
     padding: 80px 40px;
   }
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     padding: 48px 20px 56px;
   }
 
@@ -52,7 +52,7 @@
   font-weight: bold;
   margin: 0;
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     font-size: 2rem;
 
     [lang~=ja] & {
@@ -72,7 +72,7 @@
     background-color: color(black a(.3));
     margin: 16px 0 0;
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       margin: 8px 0 0;
     }
 
@@ -90,7 +90,7 @@
     margin: 32px 0 0;
     font-size: 1rem;
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       margin: 24px 0 0;
 
       [lang~=ja] & {

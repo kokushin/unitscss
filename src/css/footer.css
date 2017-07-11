@@ -24,7 +24,7 @@
   background-color: white;
   text-align: center;
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     padding: 56px 20px;
   }
 
@@ -33,7 +33,7 @@
     font-size: .875rem;
     line-height: 1.8;
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       margin: 16px 0 0;
       font-size: .75rem;
     }
@@ -48,7 +48,7 @@
     font-size: .75rem;
     margin: 32px 0 0;
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       margin: 16px 0 0;
       font-size: .625rem;
     }
@@ -90,7 +90,7 @@
   padding: 0;
   list-style-type: none;
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     width: 100%;
     margin: -16px 0 0;
   }
@@ -103,7 +103,7 @@
     text-decoration: none;
     font-weight: bold;
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       width: 100%;
       margin: 0;
       padding: 16px 24px;
@@ -121,7 +121,7 @@
       right: -16px;
       margin-top: -8px;
 
-      @media (--small-screen) {
+      @media (--small-viewport) {
         display: none;
       }
 

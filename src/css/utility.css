@@ -10,14 +10,14 @@
  * ==================================
  */
 
-@media(--small-screen) {
+@media(--small-viewport) {
   ._hide-small { display: none !important; }
 }
 
-@media(--medium-screen) {
+@media(--medium-viewport) {
   ._hide-medium { display: none !important; }
 }
 
-@media(--large-screen) {
+@media(--large-viewport) {
   ._hide-large { display: none !important; }
 }

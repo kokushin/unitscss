@@ -21,7 +21,7 @@
   position: relative;
   z-index: var(--z-index-lv1);
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     position: fixed;
     top: 0;
     left: 0;
@@ -97,7 +97,7 @@
     margin: 0;
     padding: 16px 40px;
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       padding: 16px 32px;
     }
 

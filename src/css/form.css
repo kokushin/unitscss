@@ -30,14 +30,14 @@
   &._gutter {
     margin: calc(-var(--grid-gutter) * .6) 0 0 calc(-var(--grid-gutter) * .6);
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       margin: calc(-var(--grid-gutter) * .6) 0 0 calc(-var(--grid-gutter) * .6);
     }
 
     .uc-grid-cell {
       padding: calc(var(--grid-gutter) * .6) 0 0 calc(var(--grid-gutter) * .6);
 
-      @media (--small-screen) {
+      @media (--small-viewport) {
         padding: calc(var(--grid-gutter) * .6) 0 0 calc(var(--grid-gutter) * .6);
       }
     }

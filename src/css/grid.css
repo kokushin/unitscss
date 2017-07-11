@@ -21,14 +21,14 @@
   &._gutter {
     margin: -var(--grid-gutter) 0 0 -var(--grid-gutter);
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       margin: calc(-var(--grid-gutter) / 1.25) 0 0 calc(-var(--grid-gutter) / 1.25);
     }
 
     .uc-grid-cell {
       padding: var(--grid-gutter) 0 0 var(--grid-gutter);
 
-      @media (--small-screen) {
+      @media (--small-viewport) {
         padding: calc(var(--grid-gutter) / 1.25) 0 0 calc(var(--grid-gutter) / 1.25);
       }
     }
@@ -69,14 +69,14 @@
     width: calc(100% / $(i));
   }
 
-  @media (--medium-screen) {
+  @media (--medium-viewport) {
     [class*=_col-]._medium-col-$(i) > .uc-grid-cell,
     .uc-grid-cell[class*=_col-]._medium-col-$(i) {
       width: calc(100% / $(i));
     }
   }
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     [class*=_col-]._small-col-$(i) > .uc-grid-cell,
     .uc-grid-cell[class*=_col-]._small-col-$(i) {
       width: calc(100% / $(i));
@@ -90,14 +90,14 @@
     flex: 1;
   }
 
-  @media (--medium-screen) {
+  @media (--medium-viewport) {
     ._medium-col-fit > &,
     &._medium-col-fit {
       flex: 1;
     }
   }
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     ._small-col-fit > &,
     &._small-col-fit {
       flex: 1;
@@ -109,7 +109,7 @@
     flex: 0 0 100%;
   }
 
-  @media (--medium-screen) {
+  @media (--medium-viewport) {
     ._medium-col-full > &,
     &._medium-col-full {
       width: 100%;
@@ -117,7 +117,7 @@
     }
   }
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     ._small-col-full > &,
     &._small-col-full {
       width: 100%;

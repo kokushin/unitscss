@@ -360,7 +360,7 @@ hr,
   box-sizing: content-box;
   overflow: visible;
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     margin: 40px 24px;
   }
 }
@@ -379,14 +379,14 @@ hr,
 .uc-form-unit {
   margin: 56px auto 0;
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     margin: 40px auto 0;
   }
 
   & + * {
     margin: 56px auto 0;
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       margin: 40px auto 0;
     }
   }

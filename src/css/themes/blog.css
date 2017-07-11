@@ -16,7 +16,7 @@
     box-shadow: none;
     padding: 0;
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       display: block;
       margin-left: 0;
       margin-top: 40px;

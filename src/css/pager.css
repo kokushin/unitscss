@@ -29,7 +29,7 @@
     & + li {
       margin: 0 0 0 16px;
 
-      @media (--small-screen) {
+      @media (--small-viewport) {
         margin: 0 0 0 8px;
       }
     }
@@ -42,7 +42,7 @@
       font-weight: bold;
       text-decoration: none;
 
-      @media (--small-screen) {
+      @media (--small-viewport) {
         font-size: .875rem;
       }
     }
@@ -67,7 +67,7 @@
   padding: 80px;
   background-color: var(--color-bg);
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     padding: 48px 16px;
   }
 

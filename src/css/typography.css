@@ -40,7 +40,7 @@ p,
     line-height: 1.8;
   }
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     [lang~=ja] & {
       font-size: .875rem;
     }
@@ -58,7 +58,7 @@ p,
   & + .uc-h6 {
     margin: 80px auto 0;
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       margin: 56px auto 0;
     }
   }
@@ -72,7 +72,7 @@ p,
       line-height: 1.8;
     }
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       [lang~=ja] & {
         font-size: .875rem;
       }

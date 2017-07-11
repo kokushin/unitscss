@@ -24,7 +24,7 @@
   & + .uc-btn {
     margin: 0 0 0 16px;
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       margin: 16px 8px 0;
     }
   }
@@ -38,7 +38,7 @@
     font-size: 1rem;
     font-weight: bold;
 
-    @media (--small-screen) {
+    @media (--small-viewport) {
       min-width: 160px;
       padding: 16px 24px;
       text-align: center;
@@ -85,7 +85,7 @@
   align-items: center;
   justify-content: center;
 
-  @media (--small-screen) {
+  @media (--small-viewport) {
     flex-direction: column;
   }
 }
