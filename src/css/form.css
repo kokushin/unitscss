@@ -16,6 +16,7 @@
 
 .uc-form {
   max-width: 800px;
+  margin: 0 auto;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
   background-color: #fff;
