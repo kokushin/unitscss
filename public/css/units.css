@@ -62,8 +62,12 @@ pre {
 	font-size: 1em;
   margin: 0;
   height: 100%;
-  white-space: pre-wrap;
 }
+
+pre code {
+    display: block;
+    overflow-x: auto;
+  }
 
 a {
 	-webkit-text-decoration-skip: objects;
@@ -915,6 +919,8 @@ p + h2,
   height: 80px;
   padding: 0 80px;
   background-color: white;
+  position: relative;
+  z-index: 19999;
 }
 
 @media (min-width: 769px) and (max-width: 1199px) {
@@ -942,7 +948,6 @@ p + h2,
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 19999;
   }
 
 .uc-header._center {
@@ -1341,13 +1346,6 @@ p + h2,
     margin: 16px 0 0;
   }
 
-@media (max-width: 768px) {
-
-.uc-section-title:after {
-      margin: 8px 0 0
-  }
-    }
-
 ._center .uc-section-title:after {
       margin-left: auto;
       margin-right: auto;
@@ -1408,7 +1406,7 @@ p + h2,
 @media (max-width: 768px) {
 
 .uc-hero {
-    padding: 64px 24px 72px
+    padding: 64px 20px 72px
 }
   }
 
@@ -1583,6 +1581,7 @@ p + h2,
 
 .uc-btn._full {
     display: block;
+    width: 100%;
   }
 
 .uc-btn._full + .uc-btn {

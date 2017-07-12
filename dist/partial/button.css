@@ -64,6 +64,7 @@
 
 .uc-btn._full {
     display: block;
+    width: 100%;
   }
 
 .uc-btn._full + .uc-btn {

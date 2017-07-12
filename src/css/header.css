@@ -23,6 +23,8 @@
   height: var(--header-height);
   padding: 0 80px;
   background-color: white;
+  position: relative;
+  z-index: var(--z-index-lv4);
 
   @media (--medium-viewport) {
     padding: 0 40px;
@@ -43,7 +45,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: var(--z-index-lv4);
   }
 
   &._center {

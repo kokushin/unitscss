@@ -82,13 +82,6 @@
     margin: 16px 0 0;
   }
 
-@media (max-width: 768px) {
-
-.uc-section-title:after {
-      margin: 8px 0 0
-  }
-    }
-
 ._center .uc-section-title:after {
       margin-left: auto;
       margin-right: auto;

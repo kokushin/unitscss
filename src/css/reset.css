@@ -61,7 +61,11 @@ pre {
 	font-size: 1em;
   margin: 0;
   height: 100%;
-  white-space: pre-wrap;
+
+  code {
+    display: block;
+    overflow-x: auto;
+  }
 }
 
 a {

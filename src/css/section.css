@@ -72,10 +72,6 @@
     background-color: color(black a(.3));
     margin: 16px 0 0;
 
-    @media (--small-viewport) {
-      margin: 8px 0 0;
-    }
-
     ._center & {
       margin-left: auto;
       margin-right: auto;
