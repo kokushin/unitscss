@@ -59,13 +59,9 @@
     background-color: color(black a(.92));
 
     > p,
-    > small {
-      color: color(white a(.8));
-    }
-
+    > small,
     a {
-      color: white;
-      text-decoration: none;
+      color: color(white a(.8));
     }
   }
 }

@@ -80,14 +80,11 @@
 
 .uc-footer._dark > p,
     .uc-footer._dark > small,
+    .uc-footer._dark a,
     .uc-footer._black > p,
-    .uc-footer._black > small {
+    .uc-footer._black > small,
+    .uc-footer._black a {
       color: rgba(255, 255, 255, 0.8);
-    }
-
-.uc-footer._dark a, .uc-footer._black a {
-      color: white;
-      text-decoration: none;
     }
 
 .uc-footer-logo {
