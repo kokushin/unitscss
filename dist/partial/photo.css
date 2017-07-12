@@ -1,0 +1,18 @@
+/*! UNITS v1.0.0-beta | MIT License | Copyright 2017 @kokushing | mail@kokush.in | http://unitscss.com */
+/**
+ * UNITS photo components
+ *
+ * ==================================
+ * @base:   [.uc-photo]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-photo { }
+
+.uc-photo-unit { }
