@@ -34,7 +34,7 @@
     line-height: 1.8;
 
     @media (--small-viewport) {
-      margin: 16px 0 0;
+      margin: 32px 0 0;
       font-size: .75rem;
     }
 
@@ -49,7 +49,7 @@
     margin: 48px 0 0;
 
     @media (--small-viewport) {
-      margin: 16px 0 0;
+      margin: 32px 0 0;
       font-size: .625rem;
     }
   }

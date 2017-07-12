@@ -50,7 +50,7 @@
 @media (max-width: 768px) {
 
 .uc-footer > p {
-      margin: 16px 0 0;
+      margin: 32px 0 0;
       font-size: .75rem
   }
     }
@@ -68,7 +68,7 @@
 @media (max-width: 768px) {
 
 .uc-footer > small {
-      margin: 16px 0 0;
+      margin: 32px 0 0;
       font-size: .625rem
   }
     }
