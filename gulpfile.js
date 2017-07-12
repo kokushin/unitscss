@@ -71,7 +71,7 @@ gulp.task('dev:serve', ['dev:styles', 'dev:javascripts'], () => {
   gulp.watch('./public/**/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('dev:styles', ['styles'], () => {
+gulp.task('dev:styles', () => {
   return gulp.src('./src/css/_import.css')
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
@@ -82,7 +82,7 @@ gulp.task('dev:styles', ['styles'], () => {
     .pipe(browserSync.stream());
 });
 
-gulp.task('dev:javascripts', ['javascripts'], () => {
+gulp.task('dev:javascripts', () => {
   return gulp.src('./src/js/_import.js')
     .pipe($.plumber())
     .pipe(webpackStream(webpackConfig, webpack))
