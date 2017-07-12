@@ -46,7 +46,7 @@
   > small {
     display: block;
     font-size: .75rem;
-    margin: 32px 0 0;
+    margin: 48px 0 0;
 
     @media (--small-viewport) {
       margin: 16px 0 0;
@@ -59,9 +59,13 @@
     background-color: color(black a(.92));
 
     > p,
-    > small,
-    a {
+    > small {
       color: color(white a(.8));
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
     }
   }
 }

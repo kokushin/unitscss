@@ -62,7 +62,7 @@
 .uc-footer > small {
     display: block;
     font-size: .75rem;
-    margin: 32px 0 0;
+    margin: 48px 0 0;
   }
 
 @media (max-width: 768px) {
@@ -80,11 +80,14 @@
 
 .uc-footer._dark > p,
     .uc-footer._dark > small,
-    .uc-footer._dark a,
     .uc-footer._black > p,
-    .uc-footer._black > small,
-    .uc-footer._black a {
+    .uc-footer._black > small {
       color: rgba(255, 255, 255, 0.8);
+    }
+
+.uc-footer._dark a, .uc-footer._black a {
+      color: white;
+      text-decoration: none;
     }
 
 .uc-footer-logo {
