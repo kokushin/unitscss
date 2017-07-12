@@ -16,10 +16,10 @@
 
 :root {
   --spinner-size: 56px;
-  --spinner-line-size: 2px;
+  --spinner-line-size: 4px;
   --spinner-line-color-bg: color(black a(.08));
   --spinner-line-color-before: var(--color-primary);
-  --spinner-line-color-after: color(var(--color-primary) a(.5));
+  --spinner-line-color-after: color(var(--color-primary) a(.64));
 }
 
 .uc-loading {
@@ -70,6 +70,18 @@
       border-left: var(--spinner-line-size) solid var(--spinner-line-color-after);
       border-right: var(--spinner-line-size) solid transparent;
       animation: spinner var(--Power3_easeInOut) 1s 0s infinite;
+    }
+  }
+
+  ._spinner._light & {
+    border: var(--spinner-line-size) solid color(white a(.08));
+
+    &:before {
+      border-top: var(--spinner-line-size) solid white;
+    }
+
+    &:after {
+      border-left: var(--spinner-line-size) solid color(white a(.64));
     }
   }
 }

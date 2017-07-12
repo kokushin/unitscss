@@ -29,7 +29,7 @@
     width: 56px;
     height: 56px;
     background-color: transparent;
-    border: 2px solid rgba(0, 0, 0, 0.08);
+    border: 4px solid rgba(0, 0, 0, 0.08);
     border-radius: 50%;
     position: relative;
     z-index: 5999;
@@ -45,27 +45,39 @@
       height: 56px;
       background-color: transparent;
       position: absolute;
-      top: -2px;
-      left: -2px;
+      top: -4px;
+      left: -4px;
       border-radius: 50%;
     }
 
 ._spinner .uc-loading-icon:before {
-      border-top: 2px solid #546e7a;
-      border-bottom: 2px solid transparent;
-      border-left: 2px solid transparent;
-      border-right: 2px solid transparent;
+      border-top: 4px solid #546e7a;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
       -webkit-animation: spinner cubic-bezier(.76, 0, .24, 1) 1s .1s infinite;
               animation: spinner cubic-bezier(.76, 0, .24, 1) 1s .1s infinite;
     }
 
 ._spinner .uc-loading-icon:after {
-      border-top: 2px solid transparent;
-      border-bottom: 2px solid transparent;
-      border-left: 2px solid rgba(84, 110, 122, 0.5);
-      border-right: 2px solid transparent;
+      border-top: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-left: 4px solid rgba(84, 110, 122, 0.64);
+      border-right: 4px solid transparent;
       -webkit-animation: spinner cubic-bezier(.76, 0, .24, 1) 1s 0s infinite;
               animation: spinner cubic-bezier(.76, 0, .24, 1) 1s 0s infinite;
+    }
+
+._spinner._light .uc-loading-icon {
+    border: 4px solid rgba(255, 255, 255, 0.08);
+  }
+
+._spinner._light .uc-loading-icon:before {
+      border-top: 4px solid white;
+    }
+
+._spinner._light .uc-loading-icon:after {
+      border-left: 4px solid rgba(255, 255, 255, 0.64);
     }
 
 @-webkit-keyframes spinner {
