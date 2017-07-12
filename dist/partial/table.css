@@ -13,6 +13,10 @@
  * ==================================
  */
 
+.uc-table {
+  background-color: white;
+}
+
 .uc-table thead {
     border-top: 1px solid #ebebeb;
     border-bottom: 1px solid #ebebeb;
@@ -23,12 +27,12 @@
       }
 
 .uc-table th {
-    padding: 20px 24px;
+    padding: 20px 32px;
     text-align: left;
   }
 
 .uc-table td {
-    padding: 16px 24px;
+    padding: 24px 32px;
   }
 
 .uc-table._col-full {

@@ -115,7 +115,7 @@
       display: inline-block;
       width: 1px;
       height: 16px;
-      background-color: color(black a(.3));
+      background-color: var(--color-black);
       position: absolute;
       top: 50%;
       right: -16px;

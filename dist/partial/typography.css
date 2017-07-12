@@ -66,7 +66,7 @@ p + h2,
   .uc-text + .uc-h5,
   .uc-text + h6,
   .uc-text + .uc-h6 {
-    margin: 80px auto 0;
+    margin: 64px auto 0;
   }
 
 @media (max-width: 768px) {
@@ -105,6 +105,20 @@ p + h2,
 
 @media (max-width: 768px) {
       [lang~=ja] .uc-list li {
+        font-size: .875rem;
+      }
+    }
+
+.uc-table td {
+    line-height: 1.6;
+  }
+
+[lang~=ja] .uc-table td {
+      line-height: 1.8;
+    }
+
+@media (max-width: 768px) {
+      [lang~=ja] .uc-table td {
         font-size: .875rem;
       }
     }

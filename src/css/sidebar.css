@@ -59,7 +59,7 @@
   }
 
   &._black {
-    background-color: #141414;
+    background-color: var(--color-black);
   }
 
   &._dark,
