@@ -14,6 +14,30 @@
  * ==================================
  */
 
-.uc-photo { }
+.uc-photo {
+  max-width: var(--max-screen-width);
+  margin: 0 auto;
 
-.uc-photo-unit { }
+  &._full {
+    max-width: initial;
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    background-color: var(--color-bg);
+  }
+}
+
+figcaption,
+.uc-photo-caption {
+  margin: 1em 0 0;
+  font-size: .875rem;
+  line-height: 1.6;
+
+  @media (--small-viewport) {
+    line-height: 1.4;
+  }
+}

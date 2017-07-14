@@ -178,7 +178,6 @@ select,
 textarea {
 	margin: 0;
   padding: 0;
-  appearance: none;
 }
 
 button,
@@ -381,6 +380,8 @@ hr,
 .uc-code-unit,
 .uc-table-unit,
 .uc-form-unit,
+.uc-photo-unit,
+.uc-video-unit,
 .uc-loading-unit {
   margin: 56px auto 0;
 

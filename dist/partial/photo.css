@@ -13,6 +13,35 @@
  * ==================================
  */
 
-.uc-photo { }
+.uc-photo {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-.uc-photo-unit { }
+.uc-photo._full {
+    max-width: none;
+    max-width: initial;
+    width: 100%;
+  }
+
+.uc-photo img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    background-color: #f2f2f2;
+  }
+
+figcaption,
+.uc-photo-caption {
+  margin: 1em 0 0;
+  font-size: .875rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+
+figcaption,
+.uc-photo-caption {
+    line-height: 1.4
+}
+  }

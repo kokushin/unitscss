@@ -181,9 +181,6 @@ select,
 textarea {
 	margin: 0;
   padding: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 
 button,
@@ -392,6 +389,8 @@ hr,
 .uc-code-unit,
 .uc-table-unit,
 .uc-form-unit,
+.uc-photo-unit,
+.uc-video-unit,
 .uc-loading-unit {
   margin: 56px auto 0;
 }
@@ -406,18 +405,20 @@ hr,
 .uc-code-unit,
 .uc-table-unit,
 .uc-form-unit,
+.uc-photo-unit,
+.uc-video-unit,
 .uc-loading-unit {
     margin: 40px auto 0
 }
   }
 
-.uc-grid-unit + *, .uc-hero-unit + *, .uc-btn-unit + *, .uc-card-unit + *, .uc-list-unit + *, .uc-code-unit + *, .uc-table-unit + *, .uc-form-unit + *, .uc-loading-unit + * {
+.uc-grid-unit + *, .uc-hero-unit + *, .uc-btn-unit + *, .uc-card-unit + *, .uc-list-unit + *, .uc-code-unit + *, .uc-table-unit + *, .uc-form-unit + *, .uc-photo-unit + *, .uc-video-unit + *, .uc-loading-unit + * {
     margin: 56px auto 0;
   }
 
 @media (max-width: 768px) {
 
-.uc-grid-unit + *, .uc-hero-unit + *, .uc-btn-unit + *, .uc-card-unit + *, .uc-list-unit + *, .uc-code-unit + *, .uc-table-unit + *, .uc-form-unit + *, .uc-loading-unit + * {
+.uc-grid-unit + *, .uc-hero-unit + *, .uc-btn-unit + *, .uc-card-unit + *, .uc-list-unit + *, .uc-code-unit + *, .uc-table-unit + *, .uc-form-unit + *, .uc-photo-unit + *, .uc-video-unit + *, .uc-loading-unit + * {
       margin: 40px auto 0
   }
     }

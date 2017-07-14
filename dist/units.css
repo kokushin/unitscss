@@ -181,9 +181,6 @@ select,
 textarea {
 	margin: 0;
   padding: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
 }
 
 button,
@@ -392,6 +389,8 @@ hr,
 .uc-code-unit,
 .uc-table-unit,
 .uc-form-unit,
+.uc-photo-unit,
+.uc-video-unit,
 .uc-loading-unit {
   margin: 56px auto 0;
 }
@@ -406,18 +405,20 @@ hr,
 .uc-code-unit,
 .uc-table-unit,
 .uc-form-unit,
+.uc-photo-unit,
+.uc-video-unit,
 .uc-loading-unit {
     margin: 40px auto 0
 }
   }
 
-.uc-grid-unit + *, .uc-hero-unit + *, .uc-btn-unit + *, .uc-card-unit + *, .uc-list-unit + *, .uc-code-unit + *, .uc-table-unit + *, .uc-form-unit + *, .uc-loading-unit + * {
+.uc-grid-unit + *, .uc-hero-unit + *, .uc-btn-unit + *, .uc-card-unit + *, .uc-list-unit + *, .uc-code-unit + *, .uc-table-unit + *, .uc-form-unit + *, .uc-photo-unit + *, .uc-video-unit + *, .uc-loading-unit + * {
     margin: 56px auto 0;
   }
 
 @media (max-width: 768px) {
 
-.uc-grid-unit + *, .uc-hero-unit + *, .uc-btn-unit + *, .uc-card-unit + *, .uc-list-unit + *, .uc-code-unit + *, .uc-table-unit + *, .uc-form-unit + *, .uc-loading-unit + * {
+.uc-grid-unit + *, .uc-hero-unit + *, .uc-btn-unit + *, .uc-card-unit + *, .uc-list-unit + *, .uc-code-unit + *, .uc-table-unit + *, .uc-form-unit + *, .uc-photo-unit + *, .uc-video-unit + *, .uc-loading-unit + * {
       margin: 40px auto 0
   }
     }
@@ -1564,6 +1565,7 @@ p + h2,
           box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
   background-color: white;
   border: 2px solid white;
+  line-height: 1;
 }
 
 @media (max-width: 768px) {
@@ -1588,7 +1590,7 @@ p + h2,
 .uc-btn > span,
   .uc-btn > a {
     display: block;
-    padding: 16px 48px;
+    padding: 18px 48px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1rem;
@@ -2022,9 +2024,38 @@ p + h2,
  * ==================================
  */
 
-.uc-photo { }
+.uc-photo {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-.uc-photo-unit { }
+.uc-photo._full {
+    max-width: none;
+    max-width: initial;
+    width: 100%;
+  }
+
+.uc-photo img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+    background-color: #f2f2f2;
+  }
+
+figcaption,
+.uc-photo-caption {
+  margin: 1em 0 0;
+  font-size: .875rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+
+figcaption,
+.uc-photo-caption {
+    line-height: 1.4
+}
+  }
 
 /**
  * UNITS pager components
@@ -2366,6 +2397,13 @@ p + h2,
 .uc-form-parts-unit .uc-btn {
     margin: 0;
   }
+
+@media (max-width: 768px) {
+
+.uc-form-parts-unit .uc-btn {
+      max-width: 160px
+  }
+    }
 
 .uc-form-parts {
   width: 100%;
