@@ -25,15 +25,15 @@
   }
 
 .uc-photo img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 800px;
     vertical-align: bottom;
     background-color: #f2f2f2;
   }
 
 figcaption,
 .uc-photo-caption {
-  margin: 1em 0 0;
+  padding: 1em 0 0;
   font-size: .875rem;
   line-height: 1.6;
 }

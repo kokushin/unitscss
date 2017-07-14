@@ -14,7 +14,34 @@
  * ==================================
  */
 
-.uc-video iframe,
-.uc-video video { }
+.uc-video {
+  @media (--small-viewport) {
+    position: relative;
+    width: 100%;
+    padding: 56.25% 0 0;
 
-.uc-video-unit { }
+    iframe,
+    video {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &._full {
+    position: relative;
+    width: 100%;
+    padding: 56.25% 0 0;
+
+    iframe,
+    video {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -2004,10 +2004,38 @@ p + h2,
  * ==================================
  */
 
-.uc-video iframe,
-.uc-video video { }
+@media (max-width: 768px) {
 
-.uc-video-unit { }
+.uc-video {
+    position: relative;
+    width: 100%;
+    padding: 56.25% 0 0
+}
+
+    .uc-video iframe,
+    .uc-video video {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+.uc-video._full {
+    position: relative;
+    width: 100%;
+    padding: 56.25% 0 0;
+  }
+
+.uc-video._full iframe,
+    .uc-video._full video {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
 
 /**
  * UNITS photo components
@@ -2035,15 +2063,15 @@ p + h2,
   }
 
 .uc-photo img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 800px;
     vertical-align: bottom;
     background-color: #f2f2f2;
   }
 
 figcaption,
 .uc-photo-caption {
-  margin: 1em 0 0;
+  padding: 1em 0 0;
   font-size: .875rem;
   line-height: 1.6;
 }
