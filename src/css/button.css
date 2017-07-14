@@ -21,6 +21,8 @@
   background-color: white;
   border: 2px solid white;
   line-height: 1;
+  outline: transparent;
+  cursor: pointer;
 
   @media (--small-viewport) {
     max-width: 240px;

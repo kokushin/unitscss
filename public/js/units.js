@@ -95,6 +95,10 @@ var _querySelector = __webpack_require__(2);
 
 var _querySelector2 = _interopRequireDefault(_querySelector);
 
+var _toggleClass = __webpack_require__(3);
+
+var _toggleClass2 = _interopRequireDefault(_toggleClass);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -125,26 +129,8 @@ var Menu = function () {
       var btn = e.currentTarget;
       var menu = (0, _querySelector2.default)(btn.getAttribute(this.options.openTargetDataName))[0];
 
-      this.toggleClass(menu, this.options.activeClassName);
-      this.toggleClass(btn, this.options.activeClassName);
-    }
-  }, {
-    key: 'toggleClass',
-    value: function toggleClass(element, className) {
-      if (element.classList) {
-        element.classList.toggle(className);
-      } else {
-        var classes = element.className.split(' ');
-        var existingIndex = classes.indexOf(className);
-
-        if (existingIndex >= 0) {
-          classes.splice(existingIndex, 1);
-        } else {
-          classes.push(className);
-        }
-
-        element.className = classes.join(' ');
-      }
+      (0, _toggleClass2.default)(menu, this.options.activeClassName);
+      (0, _toggleClass2.default)(btn, this.options.activeClassName);
     }
   }]);
 
@@ -186,6 +172,41 @@ var $ = function $(element) {
 };
 
 exports.default = $;
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+/**
+ * toggleClass.js
+ *
+ * @example toggleClass('button', 'is-active');
+ */
+
+var toggleClass = function toggleClass(element, className) {
+  if (element.classList) {
+    element.classList.toggle(className);
+  } else {
+    var classes = element.className.split(' ');
+    var existingIndex = classes.indexOf(className);
+
+    if (existingIndex >= 0) {
+      classes.splice(existingIndex, 1);
+    } else {
+      classes.push(className);
+    }
+
+    element.className = classes.join(' ');
+  }
+};
+
+exports.default = toggleClass;
 
 /***/ })
 /******/ ]);

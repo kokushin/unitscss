@@ -1,4 +1,5 @@
-import $ from '../lib/querySelector';
+import $ from '../method/querySelector';
+import toggleClass from '../method/toggleClass';
 
 class Menu {
   constructor() {
@@ -21,25 +22,8 @@ class Menu {
     const btn = e.currentTarget;
     const menu = $(btn.getAttribute(this.options.openTargetDataName))[0];
 
-    this.toggleClass(menu, this.options.activeClassName);
-    this.toggleClass(btn, this.options.activeClassName);
-  }
-
-  toggleClass(element, className) {
-    if (element.classList) {
-      element.classList.toggle(className);
-    } else {
-      const classes = element.className.split(' ');
-      const existingIndex = classes.indexOf(className);
-
-      if (existingIndex >= 0) {
-        classes.splice(existingIndex, 1);
-      } else {
-        classes.push(className);
-      }
-
-      element.className = classes.join(' ');
-    }
+    toggleClass(menu, this.options.activeClassName);
+    toggleClass(btn, this.options.activeClassName);
   }
 }
 

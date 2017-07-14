@@ -1565,6 +1565,8 @@ p + h2,
   background-color: white;
   border: 2px solid white;
   line-height: 1;
+  outline: transparent;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -2367,41 +2369,83 @@ figcaption,
  * ==================================
  */
 
-.uc-form {
-  max-width: 800px;
-  margin: 0 auto;
-  border-radius: 6px;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
-  background-color: #fff;
-  padding: 40px 40px;
-}
-
-.uc-form-parts-unit + .uc-form-parts-unit {
-    margin-top: 24px;
+.uc-form._group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-radius: 6px;
+    border: 1px solid #ebebeb;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    overflow: hidden;
   }
 
-.uc-form-parts-unit._gutter {
-    margin: -24px 0 0 -24px;
+.uc-form._set {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 6px;
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    background-color: #fff;
+    padding: 40px 40px;
   }
 
-@media (max-width: 768px) {
-
-.uc-form-parts-unit._gutter {
-      margin: -24px 0 0 -24px
-  }
-    }
-
-.uc-form-parts-unit._gutter .uc-grid-cell {
-      padding: 24px 0 0 24px;
+.uc-form .uc-grid._gutter {
+      margin: -24px 0 0 -24px;
     }
 
 @media (max-width: 768px) {
 
-.uc-form-parts-unit._gutter .uc-grid-cell {
-        padding: 24px 0 0 24px
+.uc-form .uc-grid._gutter {
+        margin: -24px 0 0 -24px
     }
       }
+
+.uc-form .uc-grid._gutter .uc-grid-cell {
+        padding: 24px 0 0 24px;
+      }
+
+@media (max-width: 768px) {
+
+.uc-form .uc-grid._gutter .uc-grid-cell {
+          padding: 24px 0 0 24px
+      }
+        }
+
+.uc-form-parts {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  outline: transparent;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #ebebeb;
+}
+
+.uc-form-parts._text {
+    line-height: 1;
+  }
+
+.uc-form-parts._textarea {
+    height: 10em;
+  }
+
+._group .uc-form-parts {
+    border-radius: 0;
+    border: none;
+  }
+
+._group .uc-form-parts + .uc-btn {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
+    border-radius: 0;
+    border-left: 1px solid #ebebeb;
+  }
+
+.uc-form-parts-unit + .uc-form-parts-unit {
+    margin-top: 32px;
+  }
 
 .uc-form-parts-unit label {
     display: block;
@@ -2431,21 +2475,6 @@ figcaption,
       max-width: 160px
   }
     }
-
-.uc-form-parts {
-  width: 100%;
-  padding: 16px;
-  border: 1px solid #ebebeb;
-  border-radius: 6px;
-}
-
-.uc-form-parts._text {
-    line-height: 1;
-  }
-
-.uc-form-parts._textarea {
-    height: 10em;
-  }
 
 /**
  * UNITS menu components
