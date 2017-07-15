@@ -109,8 +109,8 @@ var Menu = function () {
 
     this.options = {
       btnClassName: 'uc-menu-btn',
-      activeClassName: '_is-active',
-      openTargetDataName: 'data-open-target'
+      stateClassName: '_is-active',
+      targetDataName: 'data-open-target'
     };
 
     this._init();
@@ -127,10 +127,10 @@ var Menu = function () {
       e.preventDefault();
 
       var btn = e.currentTarget;
-      var menu = (0, _querySelector2.default)(btn.getAttribute(this.options.openTargetDataName))[0];
+      var menu = (0, _querySelector2.default)(btn.getAttribute(this.options.targetDataName))[0];
 
-      (0, _toggleClass2.default)(menu, this.options.activeClassName);
-      (0, _toggleClass2.default)(btn, this.options.activeClassName);
+      (0, _toggleClass2.default)(menu, this.options.stateClassName);
+      (0, _toggleClass2.default)(btn, this.options.stateClassName);
     }
   }]);
 

@@ -4,9 +4,9 @@ import toggleClass from '../method/toggleClass';
 class Menu {
   constructor() {
     this.options = {
-      btnClassName:       'uc-menu-btn',
-      activeClassName:    '_is-active',
-      openTargetDataName: 'data-open-target',
+      btnClassName:   'uc-menu-btn',
+      stateClassName: '_is-active',
+      targetDataName: 'data-open-target',
     };
 
     this._init();
@@ -20,10 +20,10 @@ class Menu {
     e.preventDefault();
 
     const btn = e.currentTarget;
-    const menu = $(btn.getAttribute(this.options.openTargetDataName))[0];
+    const menu = $(btn.getAttribute(this.options.targetDataName))[0];
 
-    toggleClass(menu, this.options.activeClassName);
-    toggleClass(btn, this.options.activeClassName);
+    toggleClass(menu, this.options.stateClassName);
+    toggleClass(btn, this.options.stateClassName);
   }
 }
 
