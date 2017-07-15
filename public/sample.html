@@ -26,7 +26,7 @@
 </head>
 <body>
 
-  <header class="uc-header _dark">
+  <header class="uc-header _ghost">
     <h1 class="uc-header-logo">Sample Web Site</h1>
     <div class="uc-header-menu _hide-small" role="navigation">
       <a href="/docs/">Document</a>
@@ -51,12 +51,15 @@
   </nav>
 
   <div class="uc-hero">
+    <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
     <div class="uc-hero-title">Super Demo Page ✋</div>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>Doloribus corporis id enim modi culpa. Delectus, assumenda fugiat, <br>neque similique voluptates obcaecati, eius id unde minima voluptatibus doloribus. Quod rem, labore!</p>
     <div class="uc-form-unit">
-      <form class="uc-form _group">
-        <input type="text" class="uc-form-parts _text" id="name" required>
-        <button class="uc-btn"><span>Search</span></button>
+      <form class="uc-form">
+        <div class="uc-form-group">
+          <input type="text" class="uc-form-parts _text" id="name" required>
+          <button class="uc-btn"><span>Search</span></button>
+        </div>
       </form>
     </div>
     <div class="uc-loading-unit">
@@ -71,9 +74,11 @@
     <section class="uc-section _center">
       <h2 class="uc-section-title">Features</h2>
       <div class="uc-form-unit">
-        <form class="uc-form _group">
-          <input type="text" class="uc-form-parts _text" id="name" required>
-          <button class="uc-btn"><span>Search</span></button>
+        <form class="uc-form">
+          <div class="uc-form-group">
+            <input type="text" class="uc-form-parts _text" id="name" required>
+            <button class="uc-btn"><span>Search</span></button>
+          </div>
         </form>
       </div>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
@@ -287,7 +292,10 @@
           </div>
           <div class="uc-form-parts-unit">
             <label for="address">住所</label>
-            <input type="text" class="uc-form-parts _text" id="address">
+            <div class="uc-form-group">
+              <input type="text" class="uc-form-parts _text" id="name" required>
+              <button class="uc-btn"><span>Search</span></button>
+            </div>
           </div>
           <div class="uc-form-parts-unit">
             <label for="message">メッセージ</label>

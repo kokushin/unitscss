@@ -15,17 +15,6 @@
  */
 
 .uc-form {
-  &._group {
-    display: flex;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    overflow: hidden;
-    transition: box-shadow .3s var(--Hover_easeOut);
-
-    &:hover {
-      box-shadow: var(--box-shadow-hover);
-    }
-  }
 
   &._set {
     max-width: 800px;
@@ -55,6 +44,19 @@
   }
 }
 
+.uc-form-group {
+  display: flex;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  overflow: hidden;
+
+  .uc-btn {
+    @media (--small-viewport) {
+      max-width: 120px;
+    }
+  }
+}
+
 .uc-form-parts {
   width: 100%;
   padding: 16px;
@@ -72,12 +74,12 @@
     height: 10em;
   }
 
-  ._group & {
+  .uc-form-group & {
     border-radius: 0;
     border: none;
   }
 
-  ._group & + .uc-btn {
+  .uc-form-group & + .uc-btn {
     box-shadow: none;
     border: none;
     border-radius: 0;

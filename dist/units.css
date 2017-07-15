@@ -2370,25 +2370,6 @@ figcaption,
  * ==================================
  */
 
-.uc-form._group {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border-radius: 6px;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
-    overflow: hidden;
-    -webkit-transition: -webkit-box-shadow .3s cubic-bezier(.25, .8, .25, 1);
-    transition: -webkit-box-shadow .3s cubic-bezier(.25, .8, .25, 1);
-    transition: box-shadow .3s cubic-bezier(.25, .8, .25, 1);
-    transition: box-shadow .3s cubic-bezier(.25, .8, .25, 1), -webkit-box-shadow .3s cubic-bezier(.25, .8, .25, 1);
-  }
-
-.uc-form._group:hover {
-      -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
-              box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
-    }
-
 .uc-form._set {
     max-width: 800px;
     margin: 0 auto;
@@ -2421,6 +2402,22 @@ figcaption,
       }
         }
 
+.uc-form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 6px;
+  border: 1px solid #ebebeb;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+
+.uc-form-group .uc-btn {
+      max-width: 120px
+  }
+    }
+
 .uc-form-parts {
   width: 100%;
   padding: 16px;
@@ -2439,12 +2436,12 @@ figcaption,
     height: 10em;
   }
 
-._group .uc-form-parts {
+.uc-form-group .uc-form-parts {
     border-radius: 0;
     border: none;
   }
 
-._group .uc-form-parts + .uc-btn {
+.uc-form-group .uc-form-parts + .uc-btn {
     -webkit-box-shadow: none;
             box-shadow: none;
     border: none;
