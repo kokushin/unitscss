@@ -18,9 +18,13 @@
   &._group {
     display: flex;
     border-radius: var(--border-radius);
-    border: 1px solid var(--color-border);
     box-shadow: var(--box-shadow);
     overflow: hidden;
+    transition: box-shadow .3s var(--Hover_easeOut);
+
+    &:hover {
+      box-shadow: var(--box-shadow-hover);
+    }
   }
 
   &._set {
