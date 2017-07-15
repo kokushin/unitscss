@@ -1619,6 +1619,7 @@ p + h2,
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: bold;
+    letter-spacing: .05em;
   }
 
 @media (max-width: 768px) {
@@ -2980,5 +2981,15 @@ figcaption,
  * @required: [body._theme-light]
  * ==================================
  */
+
+._theme-light {
+  font-family: 'Source Sans Pro';
+
+}
+
+._theme-light .uc-btn {
+    font-family: 'Source Sans Pro';
+    border-radius: 50px;
+  }
 
 /*# sourceMappingURL=maps/units.css.map */

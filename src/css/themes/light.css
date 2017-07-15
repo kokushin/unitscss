@@ -8,3 +8,12 @@
  * ==================================
  */
 
+._theme-light {
+  font-family: 'Source Sans Pro';
+
+  .uc-btn {
+    font-family: 'Source Sans Pro';
+    border-radius: 50px;
+  }
+
+}
