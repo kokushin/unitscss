@@ -28,7 +28,7 @@
       left: 0;
       width: var(--sidebar-small-width);
       height: 100%;
-      padding: calc(var(--header-height) - 16px) 0 0;
+      padding: calc(var(--header-small-height)) 0 0;
       z-index: var(--z-index-lv2);
       /* sidebar-unit transform animation */
       transition: all .35s var(--Power3_easeInOut);

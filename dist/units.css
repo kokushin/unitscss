@@ -1503,10 +1503,21 @@ p + h2,
   }
     }
 
+.uc-header ~ .uc-menu._bar + .uc-hero._full {
+      height: calc(100vh - 148px);
+    }
+
+@media (max-width: 768px) {
+
+.uc-header ~ .uc-menu._bar + .uc-hero._full {
+        height: calc(100vh - 114px)
+    }
+      }
+
 ._ghost + .uc-hero._full,
     ._fixed + .uc-hero._full,
-    ._ghost + .uc-menu._slide + .uc-hero._full,
-    ._fixed + .uc-menu._slide + .uc-hero._full {
+    ._ghost ~ .uc-menu._slide + .uc-hero._full,
+    ._fixed ~ .uc-menu._slide + .uc-hero._full {
       height: 100vh;
       padding-top: 80px;
     }
@@ -1515,9 +1526,22 @@ p + h2,
 
 ._ghost + .uc-hero._full,
     ._fixed + .uc-hero._full,
-    ._ghost + .uc-menu._slide + .uc-hero._full,
-    ._fixed + .uc-menu._slide + .uc-hero._full {
+    ._ghost ~ .uc-menu._slide + .uc-hero._full,
+    ._fixed ~ .uc-menu._slide + .uc-hero._full {
         padding-top: 64px
+    }
+      }
+
+._ghost ~ .uc-menu._bar + .uc-hero._full,
+    ._fixed ~ .uc-menu._bar + .uc-hero._full {
+      height: calc(100vh - 148px);
+    }
+
+@media (max-width: 768px) {
+
+._ghost ~ .uc-menu._bar + .uc-hero._full,
+    ._fixed ~ .uc-menu._bar + .uc-hero._full {
+        height: calc(100vh - 114px)
     }
       }
 
@@ -1642,6 +1666,10 @@ p + h2,
 .uc-btn._full + .uc-btn {
       margin: 16px 0 0;
     }
+
+.uc-btn._round {
+    border-radius: 80px;
+  }
 
 .uc-btn._ghost > a,
   .uc-btn._ghost > span,
@@ -2535,8 +2563,16 @@ figcaption,
 ._ghost + .uc-menu._bar,
     ._ghost + .uc-menu + .uc-menu._bar {
       padding-top: 80px;
-      background-color: #141414;
+      background-color: black;
     }
+
+@media (max-width: 768px) {
+
+._ghost + .uc-menu._bar,
+    ._ghost + .uc-menu + .uc-menu._bar {
+        padding-top: 64px
+    }
+      }
 
 ._ghost + .uc-menu._bar a, ._ghost + .uc-menu + .uc-menu._bar a {
         color: white;
@@ -2618,13 +2654,24 @@ figcaption,
   }
 
 .uc-menu._black {
-    background-color: #141414;
+    background-color: black;
   }
 
 .uc-menu._dark,
   .uc-menu._black {
     color: white;
   }
+
+.bar .uc-menu-wrap {
+    height: 68px;
+  }
+
+@media (max-width: 768px) {
+
+.bar .uc-menu-wrap {
+      height: 50px
+  }
+    }
 
 ._slide .uc-menu-wrap {
     padding: 32px 16px;

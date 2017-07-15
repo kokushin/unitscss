@@ -75,6 +75,10 @@
       margin: 16px 0 0;
     }
 
+.uc-btn._round {
+    border-radius: 80px;
+  }
+
 .uc-btn._ghost > a,
   .uc-btn._ghost > span,
   .uc-btn._primary > a,

@@ -31,7 +31,7 @@
   }
 
   @media (--small-viewport) {
-    height: calc(var(--header-height) - 16px);
+    height: var(--header-small-height);
     padding: 0 20px;
   }
 
@@ -60,7 +60,7 @@
       margin: var(--header-height) 0 0;
 
       @media (--small-viewport) {
-        margin: calc(var(--header-height) - 16px) 0 0;
+        margin: calc(var(--header-small-height)) 0 0;
       }
     }
 

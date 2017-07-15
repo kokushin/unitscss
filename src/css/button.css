@@ -64,6 +64,10 @@
     }
   }
 
+  &._round {
+    border-radius: 80px;
+  }
+
   &._ghost > a,
   &._ghost > span,
   &._primary > a,

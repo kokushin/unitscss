@@ -28,8 +28,16 @@
 ._ghost + .uc-menu._bar,
     ._ghost + .uc-menu + .uc-menu._bar {
       padding-top: 80px;
-      background-color: #141414;
+      background-color: black;
     }
+
+@media (max-width: 768px) {
+
+._ghost + .uc-menu._bar,
+    ._ghost + .uc-menu + .uc-menu._bar {
+        padding-top: 64px
+    }
+      }
 
 ._ghost + .uc-menu._bar a, ._ghost + .uc-menu + .uc-menu._bar a {
         color: white;
@@ -111,13 +119,24 @@
   }
 
 .uc-menu._black {
-    background-color: #141414;
+    background-color: black;
   }
 
 .uc-menu._dark,
   .uc-menu._black {
     color: white;
   }
+
+.bar .uc-menu-wrap {
+    height: 68px;
+  }
+
+@media (max-width: 768px) {
+
+.bar .uc-menu-wrap {
+      height: 50px
+  }
+    }
 
 ._slide .uc-menu-wrap {
     padding: 32px 16px;

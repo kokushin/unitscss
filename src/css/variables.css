@@ -3,10 +3,13 @@
 
   --max-screen-width: 1200px;
   --header-height: 80px;
+  --header-small-height: 64px;
   --sidebar-width: 240px;
   --sidebar-small-width: 240px;
   --menu-width: 320px;
   --menu-small-width: 240px;
+  --menu-height: 68px;
+  --menu-small-height: 50px;
   --grid-gutter: 40px;
   --border-radius: 6px;
   --box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
