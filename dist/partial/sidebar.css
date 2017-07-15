@@ -15,8 +15,8 @@
 
 .uc-sidebar {
   width: 240px;
-  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
-          box-shadow: 0 8px 16px rgba(0, 0, 0, .25), 0 5px 5px rgba(0, 0, 0, .22);
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .12), 0 3px 3px rgba(0, 0, 0, .11);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, .12), 0 3px 3px rgba(0, 0, 0, .11);
   background-color: white;
   position: relative;
   z-index: 5999;
