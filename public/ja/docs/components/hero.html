@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hero | Components | UNITS Document</title>
+  <meta name="description" content="UNITS is a simple and beautiful CSS component set.">
+  <meta name="author" content="kokushin">
+
+  <meta property="og:site_name" content="UNITS - Simple and beautiful CSS component set.">
+  <meta property="og:title" content="Hero | Components | UNITS Document">
+  <meta property="og:description" content="UNITS is a simple and beautiful CSS component set.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kokushin.github.io/units/">
+  <meta property="og:image" content="https://kokushin.github.io/units/img/share.png">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@kokushing">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/css/units.css">
+  <link rel="stylesheet" href="/css/userstyles.css">
+
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+
+  <header class="uc-header _black _fixed">
+    <h1 class="uc-header-logo"><a href="/">UNITS <sup>Beta</sup></a></h1>
+    <div class="uc-header-menu" role="navigation">
+      <a href="/docs/" class="_is-current">Document</a>
+      <a href="#">Demo</a>
+      <a href="#">GitHub</a>
+      <a href="#">Twitter</a>
+    </div>
+  </header>
+
+  <div class="uc-grid _nowrap">
+
+
+    <div class="uc-sidebar-unit _left uc-grid-cell">
+
+      <nav class="uc-sidebar">
+        <div class="uc-sidebar-list">
+          <a href="/ja/docs/">はじめに</a>
+          <a href="/ja/docs/install.html">インストール</a>
+          <a href="/ja/docs/coding_guide.html">コーディングガイド</a>
+        </div>
+        <div class="uc-sidebar-list">
+          <p><strong>コンポーネント</strong></p>
+          <a href="/ja/docs/components/header.html">ヘッダー</a>
+          <a href="/ja/docs/components/footer.html">フッター</a>
+          <a href="/ja/docs/components/section.html">セクション</a>
+          <a href="/ja/docs/components/sidebar.html">サイドバー</a>
+          <a href="/ja/docs/components/grid.html">グリッド</a>
+          <a href="/ja/docs/components/hero.html" class="_is-current">ヒーローエリア</a>
+          <a href="/ja/docs/components/card.html">カード</a>
+          <a href="/ja/docs/components/button.html">ボタン</a>
+          <a href="/ja/docs/components/form.html">フォーム</a>
+          <a href="/ja/docs/components/list.html">リスト</a>
+          <a href="/ja/docs/components/table.html">テーブル</a>
+          <a href="/ja/docs/components/menu.html">メニュー</a>
+          <a href="/ja/docs/components/embed.html">埋め込み</a>
+          <a href="/ja/docs/components/pager.html">ページャー</a>
+          <a href="/ja/docs/components/typography.html">タイポグラフィー</a>
+          <a href="/ja/docs/components/loading.html">ローディング</a>
+        </div>
+        <div class="uc-sidebar-list">
+          <p><strong>関連リンク</strong></p>
+          <a href="/">Home</a>
+          <a href="https://github.com/kokushin/units" target="_blank">GitHub</a>
+          <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
+        </div>
+      </nav>
+
+    </div>
+
+
+    <div class="uc-grid-cell _col-fit">
+
+      <div class="uc-hero">
+        <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+        <div class="uc-hero-title">Components</div>
+      </div>
+
+      <main class="uc-content">
+
+        <section class="uc-section">
+          <h2 class="uc-section-title">ヒーローエリア</h2>
+          <p>ヒーローエリアは、ファーストビュー内に配置される大きなビジュアルの要素を指します。<br>ページを訪れたユーザーにインパクトを与えるだけでなく、キャッチコピーを伝える手段として最適です。</p>
+
+          <div class="uc-list-unit">
+            <ul class="uc-list">
+              <li><a href="#c-0">クラス一覧</a></li>
+              <li><a href="#c-1">基本のヒーローエリア</a></li>
+              <li><a href="#c-2">全画面のヒーローエリア</a></li>
+            </ul>
+          </div>
+
+          <div class="doc-component-box" id="c-0">
+            <h3>クラス一覧</h3>
+            <p>基本クラスは必須となります。<br>その他、用途に応じてオプションクラスを指定することができます。</p>
+
+            <div class="uc-table-unit">
+              <table class="uc-table _col-full">
+                <thead>
+                  <tr>
+                    <th>クラス名</th>
+                    <th>種類</th>
+                    <th>説明</th>
+                    <th>必須</th>
+                    <th>指定箇所</th>
+                    <th>併用</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>uc-hero</td>
+                    <td>ベース</td>
+                    <td>基本クラス</td>
+                    <td>はい</td>
+                    <td>-</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>uc-hero-bg</td>
+                    <td>パーツ</td>
+                    <td>背景画像を設定する</td>
+                    <td>いいえ</td>
+                    <td>ベースの直下</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>uc-hero-title</td>
+                    <td>パーツ</td>
+                    <td>ヒーローエリア用の見出しのスタイルを適用する</td>
+                    <td>いいえ</td>
+                    <td>ベースの直下</td>
+                    <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>_full</td>
+                    <td>オプション</td>
+                    <td>ブラウザの高さいっぱいにヒーローエリアを表示させる</td>
+                    <td>いいえ</td>
+                    <td>ベース</td>
+                    <td>可能</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="doc-component-box" id="c-1">
+            <h3>基本のヒーローエリア</h3>
+            <p>ベースとなるヒーローエリアです。</p>
+
+            <div class="doc-component-preview">
+            <!-- preview area -->
+
+              <div class="uc-hero">
+                <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+                <div class="uc-hero-title">Hero area</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iste!</p>
+                <div class="uc-btn-unit">
+                  <div class="uc-btn _ghost"><a href="#">Button</a></div>
+                </div>
+              </div>
+
+            <!-- /preview area -->
+            </div>
+            <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-hero"&gt;
+  &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-hero-title"&gt;Hero area&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iste!&lt;/p&gt;
+  &lt;div class="uc-btn-unit"&gt;
+    &lt;div class="uc-btn _ghost"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+            </div>
+          </div>
+
+          <div class="doc-component-box" id="c-2">
+            <h3>全画面のヒーローエリア</h3>
+            <p>ブラウザの高さいっぱいにヒーローエリアを表示させることが可能です。</p>
+
+            <div class="doc-component-preview">
+            <!-- preview area -->
+
+              <div class="uc-hero _full">
+                <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+                <div class="uc-hero-title">Hero area</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iste!</p>
+                <div class="uc-btn-unit">
+                  <div class="uc-btn _ghost"><a href="#">Button</a></div>
+                </div>
+              </div>
+
+            <!-- /preview area -->
+            </div>
+            <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-hero _full"&gt;
+  &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-hero-title"&gt;Hero area&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, iste!&lt;/p&gt;
+  &lt;div class="uc-btn-unit"&gt;
+    &lt;div class="uc-btn _ghost"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+            </div>
+          </div>
+
+        </section>
+
+        <div class="uc-pager-unit">
+          <div class="uc-btn"><a href="./coding_guide.html">← コーディングガイド</a></div>
+          <div class="uc-btn _primary"><a href="./footer.html">フッター →</a></div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <footer class="uc-footer _dark">
+    <div class="uc-footer-menu">
+      <a href="https://github.com/kokushin/units" target="_blank">Document</a>
+      <a href="https://github.com/kokushin/units" target="_blank">Demo</a>
+      <a href="https://github.com/kokushin/units" target="_blank">GitHub</a>
+      <a href="https://github.com/kokushin/units" target="_blank">Twitter</a>
+    </div>
+    <div class="uc-footer-logo"><cite>UNITS</cite></div>
+    <p>Made by <a href="#" target="_blank">@kokushing</a>,
+    Licensed under MIT license.<br>
+    Inspired by <a href="https://material.io/guidelines/" target="_blank">Google Material Design.</a><br>
+    Photo by <a href="https://unsplash.com/" target="_blank">unsplash.com.</a></p>
+    <small>&copy; 2017 UNITS v1.0.0-beta</small>
+  </footer>
+
+</body>
+</html>

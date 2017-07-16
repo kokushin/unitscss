@@ -1,0 +1,133 @@
+/*! UNITS v1.0.0-beta | MIT License | Copyright 2017 @kokushing | mail@kokush.in | http://unitscss.com */
+/**
+ * UNITS section components
+ *
+ * ==================================
+ * @base:   [.uc-section]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-section {
+  position: relative;
+  padding: 80px;
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+
+.uc-section {
+    padding: 80px 40px
+}
+  }
+
+@media (max-width: 768px) {
+
+.uc-section {
+    padding: 48px 20px 56px
+}
+  }
+
+.uc-section + ._section {
+    border-top: 1px solid #ebebeb;
+  }
+
+.uc-section._center {
+    text-align: center;
+  }
+
+.uc-section._gray {
+    background-color: #f2f2f2;
+  }
+
+.uc-section._dark {
+    background-color: #37474f;
+  }
+
+.uc-section._black {
+    background-color: #141414;
+  }
+
+.uc-section._dark,
+  .uc-section._black {
+    color: white;
+  }
+
+.uc-section-inner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uc-section-title {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+
+.uc-section-title {
+    font-size: 2rem
+}
+
+    [lang~=ja] .uc-section-title {
+      font-size: 1.75rem;
+    }
+  }
+
+.uc-section-title:not(:first-of-type) {
+    margin: 56px 0 0;
+  }
+
+@media (max-width: 768px) {
+
+.uc-section-title:not(:first-of-type) {
+      margin: 40px 0 0
+  }
+    }
+
+._dark .uc-section-title,
+  ._black .uc-section-title {
+    color: white;
+  }
+
+.uc-section-title:after {
+    content: " ";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #141414;
+    margin: 16px 0 0;
+  }
+
+._center .uc-section-title:after {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+._dark .uc-section-title:after,
+    ._black .uc-section-title:after {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+.uc-section-title + p {
+    margin: 32px 0 0;
+    font-size: 1rem;
+  }
+
+@media (max-width: 768px) {
+
+.uc-section-title + p {
+      margin: 24px 0 0
+  }
+
+      [lang~=ja] .uc-section-title + p {
+        font-size: .875rem;
+      }
+    }

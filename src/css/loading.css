@@ -1,0 +1,149 @@
+@import "./variables.css";
+
+/**
+ * UNITS loading components
+ *
+ * ==================================
+ * @base:   [.uc-loading]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+:root {
+  --spinner-size: 56px;
+  --spinner-line-size: 4px;
+  --bar-size: 4px;
+  --bar-line-size: 80px;
+}
+
+.uc-loading {
+  display: none;
+  background-color: transparent;
+
+  &._is-active {
+    display: inline-block;
+  }
+
+  &._bar._is-active {
+    display: block;
+  }
+}
+
+.uc-loading-icon {
+  display: block;
+  position: relative;
+  z-index: var(--z-index-lv1);
+
+  &:before,
+  &:after {
+    content: " ";
+    display: block;
+  }
+
+  /**
+   * Spinner icon
+   */
+  ._spinner & {
+    width: var(--spinner-size);
+    height: var(--spinner-size);
+    background-color: transparent;
+    border: var(--spinner-line-size) solid color(white a(.08));
+    border-radius: 50%;
+    animation: spinner linear 2s 0s infinite;
+
+    &:before {
+      width: var(--spinner-size);
+      height: var(--spinner-size);
+      background-color: transparent;
+      position: absolute;
+      top: -var(--spinner-line-size);
+      left: -var(--spinner-line-size);
+      border-radius: 50%;
+    }
+
+    &:before {
+      border-top: var(--spinner-line-size) solid white;
+      border-bottom: var(--spinner-line-size) solid transparent;
+      border-left: var(--spinner-line-size) solid transparent;
+      border-right: var(--spinner-line-size) solid transparent;
+      animation: spinner var(--Power3_easeInOut) 1s .1s infinite;
+    }
+  }
+
+  ._spinner._dark & {
+    border: var(--spinner-line-size) solid color(var(--color-primary) a(.08));
+
+    &:before {
+      border-top: var(--spinner-line-size) solid var(--color-primary);
+    }
+  }
+
+  /**
+   * Bar icon
+   */
+  ._bar & {
+    width: 100%;
+    height: var(--bar-size);
+    background-color: color(white a(.08));
+    overflow: hidden;
+
+    &:before,
+    &:after {
+      width: 110%;
+      height:  var(--bar-size);
+      position: absolute;
+      top: 0;
+      left: -5%;
+    }
+
+    &:before {
+      background-color: white;
+      animation: bar var(--Power3_easeInOut) 1s .05s infinite normal;
+    }
+
+    &:after {
+      background-color: color(white a(.72));
+      animation: bar var(--Power3_easeInOut) 1s 0s infinite normal;
+    }
+  }
+
+  ._bar._dark & {
+    background-color: color(var(--color-primary) a(.08));
+
+    &:before {
+      background-color: var(--color-primary);
+    }
+
+    &:after {
+      background-color: color(var(--color-primary) a(.72));
+    }
+  }
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bar {
+  0% {
+    transform: scaleX(0);
+    transform-origin: left top;
+  }
+  50% {
+  transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: right top;
+  }
+}

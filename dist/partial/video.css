@@ -1,0 +1,47 @@
+/*! UNITS v1.0.0-beta | MIT License | Copyright 2017 @kokushing | mail@kokush.in | http://unitscss.com */
+/**
+ * UNITS video components
+ *
+ * ==================================
+ * @base:   [.uc-video]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+@media (max-width: 768px) {
+
+.uc-video {
+    position: relative;
+    width: 100%;
+    padding: 56.25% 0 0
+}
+
+    .uc-video iframe,
+    .uc-video video {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+.uc-video._full {
+    position: relative;
+    width: 100%;
+    padding: 56.25% 0 0;
+  }
+
+.uc-video._full iframe,
+    .uc-video._full video {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }

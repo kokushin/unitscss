@@ -1,0 +1,19 @@
+@import "../variables.css";
+
+/**
+ * UNITS light theme
+ *
+ * ==================================
+ * @required: [body._theme-light]
+ * ==================================
+ */
+
+._theme-light {
+  font-family: 'Source Sans Pro';
+
+  .uc-btn {
+    font-family: 'Source Sans Pro';
+    border-radius: 50px;
+  }
+
+}

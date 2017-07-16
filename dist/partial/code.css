@@ -1,0 +1,56 @@
+/*! UNITS v1.0.0-beta | MIT License | Copyright 2017 @kokushing | mail@kokush.in | http://unitscss.com */
+/**
+ * UNITS code components
+ *
+ * ==================================
+ * @base:   [.uc-code]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-code-unit pre,
+.uc-code {
+  background-color: #282c34;
+  border-radius: 6px;
+  padding: 16px 24px;
+}
+
+.uc-code-unit pre + pre,
+  .uc-code-unit pre + .uc-code,
+  .uc-code + pre,
+  .uc-code + .uc-code {
+    margin-top: 16px;
+  }
+
+.uc-code-unit pre + p, .uc-code + p {
+    margin: 24px 0 0;
+  }
+
+.uc-code-unit pre > code, .uc-code > code {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+@media (max-width: 768px) {
+
+.uc-code-unit pre > code, .uc-code > code {
+      font-size: .875rem
+  }
+    }
+
+.uc-code-unit {
+  height: 100%;
+  text-align: left;
+}
+
+._dark .uc-code-unit > p {
+      color: rgba(255, 255, 255, 0.7);
+    }

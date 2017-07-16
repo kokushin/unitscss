@@ -1,0 +1,44 @@
+/*! UNITS v1.0.0-beta | MIT License | Copyright 2017 @kokushing | mail@kokush.in | http://unitscss.com */
+/**
+ * UNITS table components
+ *
+ * ==================================
+ * @base:   [.uc-table]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-table {
+  background-color: white;
+}
+
+.uc-table thead {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+  }
+
+.uc-table tbody > tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+.uc-table th {
+    padding: 20px 32px;
+    text-align: left;
+  }
+
+.uc-table td {
+    padding: 24px 32px;
+  }
+
+.uc-table._col-full {
+    width: 100%;
+  }
+
+.uc-table-unit {
+  overflow-x: scroll;
+}

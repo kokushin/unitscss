@@ -1,0 +1,171 @@
+@import "./variables.css";
+
+/**
+ * UNITS header components
+ *
+ * ==================================
+ * @base:   [.uc-header]
+ * ==================================
+ * @parts:  [.uc-header-logo]
+ *          [.uc-header-menu]
+ * ==================================
+ * @option: [._black]
+ *          [._dark]
+ *          [._ghost]
+ *          [._fixed]
+ * ==================================
+ */
+
+.uc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+  padding: 0 80px;
+  background-color: white;
+  position: relative;
+  z-index: var(--z-index-lv4);
+
+  @media (--medium-viewport) {
+    padding: 0 40px;
+  }
+
+  @media (--small-viewport) {
+    height: var(--header-small-height);
+    padding: 0 20px;
+  }
+
+  > p {
+    margin: 0 auto 0 24px;
+    color: color(black a(.7));
+  }
+
+  &._fixed,
+  &._ghost {
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  &._center {
+    justify-content: center;
+  }
+
+  &._fixed {
+    position: fixed;
+    box-shadow: var(--box-shadow-hover);
+
+    & + *,
+    & + .uc-menu._slide + * {
+      margin: var(--header-height) 0 0;
+
+      @media (--small-viewport) {
+        margin: calc(var(--header-small-height)) 0 0;
+      }
+    }
+
+    & + .uc-menu._slide {
+      margin: 0;
+    }
+  }
+
+  &._ghost {
+    position: absolute;
+    background-color: transparent;
+
+    & > p {
+      color: color(white a(.7));
+    }
+  }
+
+  &._dark {
+    background-color: var(--color-dark);
+
+    & > p {
+      color: color(white a(.7));
+    }
+  }
+
+  &._black {
+    background-color: black;
+
+    & > p {
+      color: color(white a(.7));
+    }
+  }
+}
+
+.uc-header-logo {
+  margin: 0 0 -1px 0;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+  color: black;
+
+  @media (--small-viewport) {
+    font-size: 1.5rem;
+  }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  sup {
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 8px;
+    font-size: .75rem;
+    font-weight: normal;
+    margin-left: -4px;
+  }
+
+  ._ghost &,
+  ._dark &,
+  ._black & {
+    color: white;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.uc-header-menu {
+  display: flex;
+  margin: 0 0 0 24px;
+
+  a {
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+    color: color(black a(.7));
+    transition: opacity .35s var(--Hover_easeOut);
+
+    &:hover {
+      opacity: .7;
+    }
+
+    @media (--small-viewport) {
+      font-size: .875rem;
+    }
+
+    & + a {
+      margin: 0 0 0 24px;
+    }
+
+    &._is-current {
+      color: black;
+    }
+
+    ._dark &,
+    ._black &,
+    ._ghost & {
+      color: color(white a(.7));
+
+      &._is-current {
+        color: white;
+      }
+    }
+  }
+}

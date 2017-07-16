@@ -1,0 +1,139 @@
+@import "./variables.css";
+
+/**
+ * UNITS grid components
+ *
+ * ==================================
+ * @base:   [.uc-grid]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &._gutter {
+    margin: -var(--grid-gutter) 0 0 -var(--grid-gutter);
+
+    @media (--small-viewport) {
+      margin: calc(-var(--grid-gutter) / 1.25) 0 0 calc(-var(--grid-gutter) / 1.25);
+    }
+
+    .uc-grid-cell {
+      padding: var(--grid-gutter) 0 0 var(--grid-gutter);
+
+      @media (--small-viewport) {
+        padding: calc(var(--grid-gutter) / 1.25) 0 0 calc(var(--grid-gutter) / 1.25);
+      }
+    }
+  }
+
+  &._nowrap {
+    flex-wrap: nowrap;
+  }
+
+  &._top {
+    align-items: flex-start;
+  }
+
+  &._middle {
+    align-items: center;
+  }
+
+  &._bottom {
+    align-items: flex-end;
+  }
+
+  &._left {
+    justify-content: left;
+  }
+
+  &._center {
+    justify-content: center;
+  }
+
+  &._right {
+    justify-content: right;
+  }
+}
+
+@for $i from 2 to 12 {
+  ._col-$(i) > .uc-grid-cell,
+  .uc-grid-cell._col-$(i) {
+    width: calc(100% / $(i));
+  }
+
+  @media (--medium-viewport) {
+    [class*=_col-]._medium-col-$(i) > .uc-grid-cell,
+    .uc-grid-cell[class*=_col-]._medium-col-$(i) {
+      width: calc(100% / $(i));
+    }
+  }
+
+  @media (--small-viewport) {
+    [class*=_col-]._small-col-$(i) > .uc-grid-cell,
+    .uc-grid-cell[class*=_col-]._small-col-$(i) {
+      width: calc(100% / $(i));
+    }
+  }
+}
+
+.uc-grid-cell {
+  ._col-fit > &,
+  &._col-fit {
+    flex: 1;
+  }
+
+  @media (--medium-viewport) {
+    ._medium-col-fit > &,
+    &._medium-col-fit {
+      flex: 1;
+    }
+  }
+
+  @media (--small-viewport) {
+    ._small-col-fit > &,
+    &._small-col-fit {
+      flex: 1;
+    }
+  }
+
+  ._col-full > &,
+  &._col-full {
+    flex: 0 0 100%;
+  }
+
+  @media (--medium-viewport) {
+    ._medium-col-full > &,
+    &._medium-col-full {
+      width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+
+  @media (--small-viewport) {
+    ._small-col-full > &,
+    &._small-col-full {
+      width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+
+  &._top {
+    align-self: flex-start;
+  }
+
+  &._center {
+    align-self: center;
+  }
+
+  &._bottom {
+    align-self: flex-end;
+  }
+}

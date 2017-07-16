@@ -1,0 +1,124 @@
+/*! UNITS v1.0.0-beta | MIT License | Copyright 2017 @kokushing | mail@kokush.in | http://unitscss.com */
+/**
+ * UNITS typography
+ *
+ * ==================================
+ * @base:   [.uc-h*]
+ *          [.uc-text]
+ * ==================================
+ */
+
+h2,
+.uc-h2 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+}
+
+h3,
+.uc-h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+h4,
+.uc-h4,
+h5,
+.uc-h5,
+h6,
+.uc-h6 {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+p,
+.uc-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+[lang~=ja] p, [lang~=ja] .uc-text {
+    line-height: 1.8;
+  }
+
+@media (max-width: 768px) {
+    [lang~=ja] p, [lang~=ja] .uc-text {
+      font-size: .875rem;
+    }
+  }
+
+p + h2,
+  p + .uc-h2,
+  p + h3,
+  p + .uc-h3,
+  p + h4,
+  p + .uc-h4,
+  p + h5,
+  p + .uc-h5,
+  p + h6,
+  p + .uc-h6,
+  .uc-text + h2,
+  .uc-text + .uc-h2,
+  .uc-text + h3,
+  .uc-text + .uc-h3,
+  .uc-text + h4,
+  .uc-text + .uc-h4,
+  .uc-text + h5,
+  .uc-text + .uc-h5,
+  .uc-text + h6,
+  .uc-text + .uc-h6 {
+    margin: 64px auto 0;
+  }
+
+@media (max-width: 768px) {
+
+p + h2,
+  p + .uc-h2,
+  p + h3,
+  p + .uc-h3,
+  p + h4,
+  p + .uc-h4,
+  p + h5,
+  p + .uc-h5,
+  p + h6,
+  p + .uc-h6,
+  .uc-text + h2,
+  .uc-text + .uc-h2,
+  .uc-text + h3,
+  .uc-text + .uc-h3,
+  .uc-text + h4,
+  .uc-text + .uc-h4,
+  .uc-text + h5,
+  .uc-text + .uc-h5,
+  .uc-text + h6,
+  .uc-text + .uc-h6 {
+      margin: 56px auto 0
+  }
+    }
+
+.uc-list li {
+    line-height: 1.6;
+  }
+
+[lang~=ja] .uc-list li {
+      line-height: 1.8;
+    }
+
+@media (max-width: 768px) {
+      [lang~=ja] .uc-list li {
+        font-size: .875rem;
+      }
+    }
+
+.uc-table td {
+    line-height: 1.6;
+  }
+
+[lang~=ja] .uc-table td {
+      line-height: 1.8;
+    }
+
+@media (max-width: 768px) {
+      [lang~=ja] .uc-table td {
+        font-size: .875rem;
+      }
+    }

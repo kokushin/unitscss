@@ -1,0 +1,35 @@
+@import "../variables.css";
+
+/**
+ * UNITS blog theme
+ *
+ * ==================================
+ * @required: [body._theme-blog]
+ * ==================================
+ */
+
+._theme-blog {
+
+  .uc-sidebar {
+    height: 100%;
+    margin-left: 40px;
+    box-shadow: none;
+    padding: 0;
+
+    @media (--small-viewport) {
+      display: block;
+      margin-left: 0;
+      margin-top: 40px;
+    }
+
+    .uc-card p {
+      font-size: .875rem;
+    }
+  }
+
+  .uc-btn {
+    a > i {
+      font-size: 1.125rem;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import "./variables.css";
+
+/**
+ * UNITS utility class
+ *
+ * ==================================
+ * @option: [._hide-small]
+ *          [._hide-medium]
+ *          [._hide-large]
+ * ==================================
+ */
+
+@media(--small-viewport) {
+  ._hide-small { display: none !important; }
+}
+
+@media(--medium-viewport) {
+  ._hide-medium { display: none !important; }
+}
+
+@media(--large-viewport) {
+  ._hide-large { display: none !important; }
+}

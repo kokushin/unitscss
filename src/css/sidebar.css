@@ -1,0 +1,120 @@
+@import "./variables.css";
+
+/**
+ * UNITS sidebar components
+ *
+ * ==================================
+ * @base:   [.uc-sidebar]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-sidebar {
+  width: var(--sidebar-width);
+  box-shadow: var(--box-shadow-hover);
+  background-color: white;
+  position: relative;
+  z-index: var(--z-index-lv1);
+
+  &._slide {
+    @media (--small-viewport) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: var(--sidebar-small-width);
+      height: 100%;
+      padding: calc(var(--header-small-height)) 0 0;
+      z-index: var(--z-index-lv2);
+      /* sidebar-unit transform animation */
+      transition: all .35s var(--Power3_easeInOut);
+      transform: translate3d(calc(-var(--sidebar-small-width) - 16px), 0, 0);
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
+
+      &._left {
+        left: 0;
+        right: auto;
+        transform: translate3d(calc(-var(--sidebar-small-width) - 16px), 0, 0);
+      }
+
+      &._right {
+        left: auto;
+        right: 0;
+        transform: translate3d(calc(var(--sidebar-small-width) + 16px), 0, 0);
+      }
+
+      &._is-active {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+
+  &._dark {
+    background-color: var(--color-dark);
+  }
+
+  &._black {
+    background-color: var(--color-black);
+  }
+
+  &._dark,
+  &._black {
+    color: white;
+  }
+}
+
+.uc-sidebar-wrap {
+  padding: 32px 0;
+}
+
+.uc-sidebar-list {
+  & + .uc-sidebar-list {
+    > p {
+      margin-top: 16px;
+    }
+  }
+
+  > p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 16px 24px;
+
+    ._black &,
+    ._dark & {
+      color: white;
+    }
+  }
+
+  > a {
+    display: block;
+    font-size: .875rem;
+    font-weight: normal;
+    text-decoration: none;
+    margin: 0;
+    padding: 16px 40px;
+
+    @media (--small-viewport) {
+      padding: 16px 32px;
+    }
+
+    &._is-current {
+      background-color: var(--color-bg);
+      font-weight: bold;
+
+      ._black &,
+      ._dark & {
+        background-color: color(white a(.08));
+      }
+    }
+
+    & + a {
+      margin: 0;
+    }
+  }
+}

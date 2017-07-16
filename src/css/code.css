@@ -1,0 +1,54 @@
+@import "./variables.css";
+
+/**
+ * UNITS code components
+ *
+ * ==================================
+ * @base:   [.uc-code]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-code-unit pre,
+.uc-code {
+  background-color: var(--color-code-bg);
+  border-radius: var(--border-radius);
+  padding: 16px 24px;
+
+  & + pre,
+  & + .uc-code {
+    margin-top: 16px;
+  }
+
+  & + p {
+    margin: 24px 0 0;
+  }
+
+  > code {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.6;
+
+    @media (--small-viewport) {
+      font-size: .875rem;
+    }
+  }
+}
+
+.uc-code-unit {
+  height: 100%;
+  text-align: left;
+
+  > p {
+    ._dark & {
+      color: color(white a(.7));
+    }
+  }
+}

@@ -1,0 +1,119 @@
+@import "./variables.css";
+
+/**
+ * UNITS section components
+ *
+ * ==================================
+ * @base:   [.uc-section]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-section {
+  position: relative;
+  padding: 80px;
+
+  @media (--medium-viewport) {
+    padding: 80px 40px;
+  }
+
+  @media (--small-viewport) {
+    padding: 48px 20px 56px;
+  }
+
+  & + ._section {
+    border-top: 1px solid var(--color-border);
+  }
+
+  &._center {
+    text-align: center;
+  }
+
+  &._gray {
+    background-color: var(--color-bg);
+  }
+
+  &._dark {
+    background-color: var(--color-dark);
+  }
+
+  &._black {
+    background-color: var(--color-black);
+  }
+
+  &._dark,
+  &._black {
+    color: white;
+  }
+}
+
+.uc-section-inner {
+  max-width: var(--max-screen-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.uc-section-title {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+
+  @media (--small-viewport) {
+    font-size: 2rem;
+
+    [lang~=ja] & {
+      font-size: 1.75rem;
+    }
+  }
+
+  &:not(:first-of-type) {
+    margin: 56px 0 0;
+
+    @media (--small-viewport) {
+      margin: 40px 0 0;
+    }
+  }
+
+  ._dark &,
+  ._black & {
+    color: white;
+  }
+
+  &:after {
+    content: " ";
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: var(--color-black);
+    margin: 16px 0 0;
+
+    ._center & {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    ._dark &,
+    ._black & {
+      background-color: color(white a(.3));
+    }
+  }
+
+  & + p {
+    margin: 32px 0 0;
+    font-size: 1rem;
+
+    @media (--small-viewport) {
+      margin: 24px 0 0;
+
+      [lang~=ja] & {
+        font-size: .875rem;
+      }
+    }
+  }
+}

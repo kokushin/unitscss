@@ -1,0 +1,125 @@
+/*! UNITS v1.0.0-beta | MIT License | Copyright 2017 @kokushing | mail@kokush.in | http://unitscss.com */
+/**
+ * UNITS sidebar components
+ *
+ * ==================================
+ * @base:   [.uc-sidebar]
+ * ==================================
+ * @parts:  [.uc-***]
+ *          [.uc-***]
+ * ==================================
+ * @option: [._***]
+ *          [._***]
+ * ==================================
+ */
+
+.uc-sidebar {
+  width: 240px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .12), 0 3px 3px rgba(0, 0, 0, .11);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, .12), 0 3px 3px rgba(0, 0, 0, .11);
+  background-color: white;
+  position: relative;
+  z-index: 5999;
+}
+
+@media (max-width: 768px) {
+
+.uc-sidebar._slide {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 240px;
+      height: 100%;
+      padding: 64px 0 0;
+      z-index: 9999;
+      /* sidebar-unit transform animation */
+      -webkit-transition: all .35s cubic-bezier(.76, 0, .24, 1);
+      transition: all .35s cubic-bezier(.76, 0, .24, 1);
+      -webkit-transform: translate3d(-256px, 0, 0);
+              transform: translate3d(-256px, 0, 0);
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch
+  }
+
+      .uc-sidebar._slide._left {
+        left: 0;
+        right: auto;
+        -webkit-transform: translate3d(-256px, 0, 0);
+                transform: translate3d(-256px, 0, 0);
+      }
+
+      .uc-sidebar._slide._right {
+        left: auto;
+        right: 0;
+        -webkit-transform: translate3d(256px, 0, 0);
+                transform: translate3d(256px, 0, 0);
+      }
+
+      .uc-sidebar._slide._is-active {
+        -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0);
+      }
+    }
+
+.uc-sidebar._dark {
+    background-color: #37474f;
+  }
+
+.uc-sidebar._black {
+    background-color: #141414;
+  }
+
+.uc-sidebar._dark,
+  .uc-sidebar._black {
+    color: white;
+  }
+
+.uc-sidebar-wrap {
+  padding: 32px 0;
+}
+
+.uc-sidebar-list + .uc-sidebar-list > p {
+      margin-top: 16px;
+    }
+
+.uc-sidebar-list > p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1;
+    padding: 16px 24px;
+  }
+
+._black .uc-sidebar-list > p,
+    ._dark .uc-sidebar-list > p {
+      color: white;
+    }
+
+.uc-sidebar-list > a {
+    display: block;
+    font-size: .875rem;
+    font-weight: normal;
+    text-decoration: none;
+    margin: 0;
+    padding: 16px 40px;
+  }
+
+@media (max-width: 768px) {
+
+.uc-sidebar-list > a {
+      padding: 16px 32px
+  }
+    }
+
+.uc-sidebar-list > a._is-current {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+._black .uc-sidebar-list > a._is-current,
+      ._dark .uc-sidebar-list > a._is-current {
+        background-color: rgba(255, 255, 255, 0.08);
+      }
+
+.uc-sidebar-list > a + a {
+      margin: 0;
+    }
