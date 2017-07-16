@@ -21,3 +21,11 @@
 @media(--large-viewport) {
   ._hide-large { display: none !important; }
 }
+
+._shadow {
+  box-shadow: var(--box-shadow);
+}
+
+._shadow-float {
+  box-shadow: var(--box-shadow-hover);
+}
