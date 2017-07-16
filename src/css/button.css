@@ -23,6 +23,7 @@
   line-height: 1;
   outline: transparent;
   cursor: pointer;
+  transition: all .35s var(--Hover_easeOut);
 
   @media (--small-viewport) {
     max-width: 240px;
@@ -46,6 +47,7 @@
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: .05em;
+    transition: all .35s var(--Hover_easeOut);
 
     @media (--small-viewport) {
       width: 100%;
@@ -77,11 +79,25 @@
 
   &._ghost {
     background-color: transparent;
+
+    &:hover {
+      background-color: white;
+
+      > a,
+      > span {
+        color: var(--color-text);
+      }
+    }
   }
 
   &._primary {
     background-color: var(--color-primary);
     border: 2px solid var(--color-primary);
+
+    &:hover {
+      background-color: var(--color-primary-hover);
+      border: 2px solid var(--color-primary-hover);
+    }
   }
 
   &._icon {

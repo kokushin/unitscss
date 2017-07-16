@@ -140,6 +140,11 @@
     font-weight: bold;
     line-height: 1;
     color: color(black a(.7));
+    transition: opacity .35s var(--Hover_easeOut);
+
+    &:hover {
+      opacity: .7;
+    }
 
     @media (--small-viewport) {
       font-size: .875rem;

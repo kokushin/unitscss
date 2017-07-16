@@ -102,6 +102,11 @@
     color: var(--color-text);
     text-decoration: none;
     font-weight: bold;
+    transition: opacity .35s var(--Hover_easeOut);
+
+    &:hover {
+      opacity: .7;
+    }
 
     @media (--small-viewport) {
       width: 100%;

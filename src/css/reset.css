@@ -336,6 +336,7 @@ i {
 body {
   font-family: Roboto, var(--font-stack);
   font-size: 1rem;
+  font-weight: 300;
   color: var(--color-text);
   letter-spacing: .05em;
 }

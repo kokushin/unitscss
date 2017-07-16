@@ -23,6 +23,8 @@
   line-height: 1;
   outline: transparent;
   cursor: pointer;
+  -webkit-transition: all .35s cubic-bezier(.25, .8, .25, 1);
+  transition: all .35s cubic-bezier(.25, .8, .25, 1);
 }
 
 @media (max-width: 768px) {
@@ -53,6 +55,8 @@
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: .05em;
+    -webkit-transition: all .35s cubic-bezier(.25, .8, .25, 1);
+    transition: all .35s cubic-bezier(.25, .8, .25, 1);
   }
 
 @media (max-width: 768px) {
@@ -90,10 +94,24 @@
     background-color: transparent;
   }
 
+.uc-btn._ghost:hover {
+      background-color: white;
+    }
+
+.uc-btn._ghost:hover > a,
+      .uc-btn._ghost:hover > span {
+        color: #333;
+      }
+
 .uc-btn._primary {
     background-color: #546e7a;
     border: 2px solid #546e7a;
   }
+
+.uc-btn._primary:hover {
+      background-color: #37474f;
+      border: 2px solid #37474f;
+    }
 
 .uc-btn._icon {
     line-height: 1;

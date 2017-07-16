@@ -132,7 +132,13 @@
     color: #333;
     text-decoration: none;
     font-weight: bold;
+    -webkit-transition: opacity .35s cubic-bezier(.25, .8, .25, 1);
+    transition: opacity .35s cubic-bezier(.25, .8, .25, 1);
   }
+
+.uc-footer-menu > a:hover {
+      opacity: .7;
+    }
 
 @media (max-width: 768px) {
 
