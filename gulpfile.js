@@ -71,7 +71,6 @@ gulp.task('dev:serve', ['dev:styles', 'dev:javascripts', 'dev:htmls'], () => {
   gulp.watch('./src/ejs/**/*.ejs', ['dev:html-reload']);
   gulp.watch('./src/ejs/_config.json', ['dev:html-reload']);
   gulp.watch('./src/js/**/*.js', ['dev:js-reload']);
-  gulp.watch('./public/**/*.html').on('change', browserSync.reload);
 });
 
 gulp.task('dev:styles', ['styles'], () => {
