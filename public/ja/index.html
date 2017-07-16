@@ -1,169 +1,120 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>UNITS - Simple and beautiful CSS component set.</title>
-  <meta name="description" content="UNITS is a simple and beautiful CSS component set.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNITS</title>
+  <link rel="canonical" href="https://unitscss.com/">
+  <meta name="description" content="UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。">
   <meta name="author" content="kokushin">
-
-  <meta property="og:site_name" content="UNITS">
-  <meta property="og:title" content="UNITS - Simple and beautiful CSS component set.">
-  <meta property="og:description" content="UNITS is a simple and beautiful CSS component set.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://kokushin.github.io/units/">
-  <meta property="og:image" content="https://kokushin.github.io/units/img/share.png">
-
-  <meta name="twitter:card" content="summary">
+  <meta property="og:site_name" content="UNITS">
+  <meta property="og:title" content="UNITS">
+  <meta property="og:description" content="UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。">
+  <meta property="og:url" content="https://unitscss.com/">
+  <meta property="og:image" content="https://unitscss.com//assets/img/share/facebook.png">
   <meta name="twitter:site" content="@kokushing">
-
+  <meta name="twitter:creator" content="@kokushing">
+  <meta name="twitter:url" content="https://unitscss.com/">
+  <meta name="twitter:title" content="UNITS">
+  <meta name="twitter:description" content="UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://unitscss.com//assets/img/share/twitter.png">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="UNITS">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/share/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/share/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/share/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/share/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/share/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/share/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/share/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/share/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/share/apple-touch-icon-180x180.png">
+  <link rel="icon" sizes="32x32" type="image/png" href="/assets/share/favicon-32x32.png">
+  <link rel="shortcut icon" href="/assets/share/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
   <link rel="stylesheet" href="/css/units.css">
-
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css" rel="stylesheet">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <style>
+    /* Document Page */
+    .doc-component-box {
+      padding: 100px 0 0;
+      margin-top: 0;
+    }
+    .doc-component-box h3 {
+      margin-top: 0;
+    }
+    .doc-component-box .doc-component-preview {
+      margin: 40px -80px 0;
+      padding: 40px 80px;
+      background-color:#f2f2f2;
+    }
+    .doc-component-box .doc-component-preview-inner {
+      position: relative;
+    }
+    .doc-component-box .uc-code-unit {
+      margin: 0 -80px;
+      background-color: white;
+      border-bottom: 1px solid rgba(0,0,0,.08);
+    }
+    .doc-component-box pre {
+      border-radius: 0;
+      margin: 0 80px;
+      padding: 40px 0;
+      background-color: white;
+    }
+    .doc-component-box pre > code {
+      color: black;
+      background-color: white;
+    }
+  </style>
 </head>
-<body>
+<body class="page-index">
 
-  <header class="uc-header _black _fixed">
-    <h1 class="uc-header-logo">UNITS <sup>Beta</sup></h1>
-    <div class="uc-header-menu _hide-small" role="navigation">
-      <a href="/ja/docs/">Document</a>
-      <a href="#">Themes</a>
-      <a href="#">GitHub</a>
-      <a href="#">Twitter</a>
-    </div>
-    <div class="uc-menu-btn _text _hide-medium _hide-large" data-open-target="#menu">
-      <button>Menu</button>
-    </div>
-  </header>
 
-  <nav class="uc-menu _slide _black" id="menu">
-    <div class="uc-menu-wrap">
-      <div class="uc-menu-list">
-        <a href="/ja/docs/" class="_is-current">Document</a>
-        <a href="#">Themes</a>
-        <a href="#">GitHub</a>
-        <a href="#">Twitter</a>
-      </div>
-    </div>
-  </nav>
-
-  <div class="uc-hero">
-    <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
-    <div class="uc-hero-title">シンプルで美しいコンポーネント。</div>
-    <p>UNITS v1.0.0-beta / 早期アクセス</p>
-    <div class="uc-btn-unit">
-      <div class="uc-btn _ghost"><a href="#">ダウンロード</a></div>
-      <div class="uc-btn"><a href="/ja/docs/">使いはじめる</a></div>
-    </div>
+<header class="uc-header _black _fixed">
+  <div class="uc-menu-btn _hide-medium _hide-large" data-open-target="#sidebar">
+    <button><i class="uc-menu-btn-icon"></i></button>
   </div>
+  <h1 class="uc-header-logo"><a href="/">UNITS</a></h1>
+  <div class="uc-header-menu _hide-small">
+    <a href="/ja/docs/" class="_is-current">Document</a>
+    <a href="#">Themes</a>
+    <a href="#">GitHub</a>
+    <a href="#">Twitter</a>
+  </div>
+  <div class="uc-menu-btn _text _hide-medium _hide-large" data-open-target="#menu">
+    <button>Menu</button>
+  </div>
+</header>
 
-  <main class="uc-content">
 
-    <section class="uc-section _center">
-      <h2 class="uc-section-title">UNITSについて</h2>
-      <p>UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。<br>CSSを読み込み、UNITS Componentとして定められたHTMLをコピー&amp;ペーストするだけで<br>誰でも簡単に利用することができます。</p>
-      <div class="uc-card-unit">
-        <div class="uc-grid _gutter _col-3 _small-col-full">
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">素早く利用できます</h3>
-              <p>units.cssを読み込むだけ。あらかじめ様々なコンポーネントが用意されているので、必要なものだけを選択しあなたのWebサイトに組み込むことが可能です。</p>
-            </div>
-          </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">シンプルで美しいビジュアル</h3>
-              <p>各コンポーネントは美しくデザインされています。デザインは定期的にアップデートされますが、大きな変更は加えず、細かいマージンの調整を中心に行われます。</p>
-            </div>
-          </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">モダンブラウザサポート</h3>
-              <p>UNITSはMicrosoft Edge, Google Chrome, Firefox, Safariなど各ブラウザの最新バージョンに最適化されています。古いブラウザの動作は...ごめんなさい。</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="uc-btn-unit">
-        <div class="uc-btn _primary"><a href="/ja/docs/">もっと詳しく</a></div>
-      </div>
-    </section>
+<main class="content">
+  <p>Velit non dolor cillum quis ea mollit ipsum est proident est sint ad. Proident nostrud cupidatat pariatur mollit do excepteur incididunt ad eu Lorem eu. Do magna ut sint dolore consequat consectetur sunt. Voluptate officia sunt excepteur magna. Esse ad est sint minim eu veniam aliquip proident. Do ut enim commodo sit consequat cillum mollit. Irure ea fugiat adipisicing dolore cillum pariatur sit pariatur ea.</p>
+  <p><a href="#">link</a></p>
+</main>
 
-    <section class="uc-section _dark _center">
-      <div class="uc-section-inner">
-        <h2 class="uc-section-title">使用方法</h2>
-        <p>UNITSは簡単にインストールでき、すぐに使い始めることが可能です！</p>
-        <div class="uc-code-unit">
-          <p>1. CSS本体はGitHubよりクローンもしくはZIP形式でダウンロードするか、npmを経由してダウンロードすることが可能です。</p>
-          <pre><code>$ git clone https://github.com/kokushin/units.git</code></pre>
-          <pre><code>$ npm install unitscss --save-dev</code></pre>
-        </div>
-        <div class="uc-code-unit">
-          <p>2. units.min.cssをあなたのWebページで読み込ませてください。</p>
-          <pre><code>&lt;link rel="stylesheet" href="css/units.min.css"&gt;</code></pre>
-        </div>
-        <div class="uc-code-unit">
-          <p>3. 定められたHTMLを組み、<code style="color:white">uc-</code>からはじまるコンポーネントクラスを付与して下さい。例えば下記のサンプルでは、カバー画像カードのコンポーネントを適用させることができます。</p>
-<pre><code>&lt;div class="uc-card _float"&gt;
-  &lt;div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
-  &lt;h3 class="uc-card-title"&gt;サンプルカード&lt;/h3&gt;
-  &lt;p&gt;この文章はダミーテキストです。実際にはこの箇所に任意のテキストが挿入されます。表示を確認してください&lt;/p&gt;
-  &lt;div class="uc-btn _primary"&gt;&lt;a href="#"&gt;ダミーボタン&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-</code></pre>
-        </div>
-        <div class="uc-code-unit">
-          <p>4. 表示をブラウザ上で確認してみてください！</p>
-          <div class="uc-card-unit">
-            <div class="uc-card _float" style="margin-left:auto;margin-right:auto">
-              <div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"></div>
-              <h3 class="uc-card-title">サンプルカード</h3>
-              <p>この文章はダミーテキストです。実際にはこの箇所に任意のテキストが挿入されます。表示を確認してください</p>
-              <div class="uc-btn _primary"><a href="#">ダミーボタン</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<footer class="uc-footer _dark">
+  <div class="uc-footer-menu">
+    <a href="#" target="_blank">Document</a>
+    <a href="#" target="_blank">Themes</a>
+    <a href="#" target="_blank">GitHub</a>
+    <a href="#" target="_blank">Twitter</a>
+  </div>
+  <div class="uc-footer-logo"><cite>UNITS</cite></div>
+  <p>Made by <a href="https://twitter.com/kokushing" target="_blank">@kokushing</a>,
+  Licensed under MIT license.<br>
+  Inspired by <a href="https://material.io/guidelines/" target="_blank">Google Material Design.</a><br>
+  Photo by <a href="https://unsplash.com/" target="_blank">unsplash.com.</a></p>
+  <small>&copy; 2017 UNITS v1.0.0-beta</small>
+</footer>
 
-    <section class="uc-section _center">
-      <h2 class="uc-section-title">アップデート</h2>
-      <p>UNITSはまだベータ版です。<br>新しいコンポーネントの追加、ソースコードの最適化、デザインの見直しは定期的に行われます。<br>
-      ご意見やご要望をぜひお寄せください！</p>
-      <div class="uc-list-unit _border uc-section-inner">
-        <ul class="uc-list">
-          <li>さまざまなシーンで利用できる、UNITS専用のJavaScriptライブラリを追加します。</li>
-          <li>マイクロインタラクションを追加します。</li>
-          <li>より高度なコンポーネントの組み合わせパターンに対応させます。</li>
-          <li>React.jsやVue.js向けの “UNITS for SPA” も開発準備を進めています。</li>
-          <li>開発環境、ソースコードを最適化していきます。</li>
-        </ul>
-      </div>
-      <div class="uc-btn-unit">
-        <div class="uc-btn _primary"><a href="https://github.com/kokushin/units" target="_blank"><span style="text-transform:initial">GitHubをフォローしてください！</span></a></div>
-      </div>
-    </section>
 
-  </main>
 
-  <footer class="uc-footer _dark">
-    <div class="uc-footer-menu">
-      <a href="https://github.com/kokushin/units" target="_blank">Document</a>
-      <a href="https://github.com/kokushin/units" target="_blank">Demo</a>
-      <a href="https://github.com/kokushin/units" target="_blank">GitHub</a>
-      <a href="https://github.com/kokushin/units" target="_blank">Twitter</a>
-    </div>
-    <div class="uc-footer-logo"><cite>UNITS</cite></div>
-    <p>Made by <a href="#" target="_blank">@kokushing</a>,
-    Licensed under MIT license.<br>
-    Inspired by <a href="https://material.io/guidelines/" target="_blank">Google Material Design.</a><br>
-    Photo by <a href="https://unsplash.com/" target="_blank">unsplash.com.</a></p>
-    <small>&copy; 2017 UNITS v1.0.0-beta</small>
-  </footer>
-
-  <script src="/js/units.js"></script>
+<script src="/js/units.js"></script>
 </body>
 </html>
+

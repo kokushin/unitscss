@@ -20,6 +20,7 @@
     "eslint-loader": "^1.9.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.4.2",
+    "gulp-ejs": "^3.0.1",
     "gulp-header": "^1.8.8",
     "gulp-load-plugins": "^1.5.0",
     "gulp-plumber": "^1.1.0",
