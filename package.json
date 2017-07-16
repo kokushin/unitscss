@@ -1,6 +1,6 @@
 {
   "name": "UNITS",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "UNITS is a simple and beautiful CSS component set.",
   "main": "index.js",
   "repository": "https://github.com/kokushin/units.git",
