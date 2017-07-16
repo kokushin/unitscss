@@ -1,5 +1,9 @@
 # UNITS
 
+[![npm version](https://badge.fury.io/js/unitscss.svg)](https://badge.fury.io/js/unitscss)
+[![npm download](http://img.shields.io/npm/dm/unitscss.svg)](https://www.npmjs.com/package/unitscss)
+[![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://raw.githubusercontent.com/kokushin/unitscss/master/LICENSE)
+
 Simple and beautiful component set.
 
 ![sample](https://raw.githubusercontent.com/kokushin/units/develop/public/img/README/img_visual_01.png)
