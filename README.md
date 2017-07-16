@@ -17,7 +17,7 @@ UNITS is a simple and beautiful component set. All you have to do is just load c
 UNITS itself can be downloaded from GitHub by cloning it or as a ZIP format, or you can download it via npm.
 
 ```
-$ git clone https://github.com/kokushin/units.git
+$ git clone https://github.com/kokushin/unitscss.git
 ```
 
 ```
