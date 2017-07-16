@@ -1,6 +1,8 @@
 # UNITS
 
-UNITS is a simple and beautiful component set.
+Simple and beautiful component set.
+
+![sample](https://raw.githubusercontent.com/kokushin/units/develop/public/img/README/img_visual_01.png)
 
 ## Feature
 
@@ -42,11 +44,11 @@ Complete the defined HTML and give the component class starting with "uc-". For 
 
 It is displayed on the browser like this:
 
-![sample](https://raw.githubusercontent.com/kokushin/units/624b0d2166229bdac3ba0808ecee793082dd9422/public/img/README/img_sample_card_01.png)
+<img src="https://raw.githubusercontent.com/kokushin/units/develop/public/img/README/img_sample_card_01.png" width="560">
 
-## Document
+## Document & Snippets
 
-Coming Soon 😂
+Sorry, Coming Soon 😂
 
 ## Download
 [Download ZIP](https://github.com/kokushin/units/archive/master.zip)
