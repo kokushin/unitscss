@@ -1,4 +1,5 @@
 const gulp = require('gulp');
+const fs = require('fs');
 const $ = require('gulp-load-plugins')();
 const cleanCSS = require('gulp-clean-css');
 const browserSync = require('browser-sync').create();
@@ -59,7 +60,7 @@ gulp.task('default', ['styles', 'javascripts']);
 
 /* Development task */
 
-gulp.task('dev:serve', ['dev:styles', 'dev:javascripts'], () => {
+gulp.task('dev:serve', ['dev:styles', 'dev:javascripts', 'dev:htmls'], () => {
   browserSync.init({
     server: './public',
     notify: false,
@@ -67,6 +68,8 @@ gulp.task('dev:serve', ['dev:styles', 'dev:javascripts'], () => {
   });
 
   gulp.watch('./src/css/**/*.css', ['dev:styles']);
+  gulp.watch('./src/ejs/**/*.ejs', ['dev:html-reload']);
+  gulp.watch('./src/ejs/_config.json', ['dev:html-reload']);
   gulp.watch('./src/js/**/*.js', ['dev:js-reload']);
   gulp.watch('./public/**/*.html').on('change', browserSync.reload);
 });
@@ -88,6 +91,29 @@ gulp.task('dev:javascripts', ['javascripts'], () => {
     .pipe(webpackStream(webpackConfig, webpack))
     .pipe($.rename('units.js'))
     .pipe(gulp.dest('./public/js'));
+});
+
+gulp.task('dev:htmls', () => {
+  const configFile = './src/ejs/_config.json';
+  const config = JSON.parse(fs.readFileSync(configFile, 'utf8'));
+  return gulp.src(
+    [
+      './src/ejs/**/*.ejs',
+      '!./src/ejs/**/_*.ejs',
+    ]
+  )
+    .pipe($.plumber())
+    .pipe($.ejs({
+      config: config,
+    }, {}, {
+      ext: '.html'
+    }))
+    .pipe(gulp.dest('public'));
+});
+
+gulp.task('dev:html-reload', ['dev:htmls'], (done) => {
+  browserSync.reload();
+  done();
 });
 
 gulp.task('dev:js-reload', ['dev:javascripts'], (done) => {
