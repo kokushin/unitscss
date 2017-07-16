@@ -14,7 +14,7 @@ UNITS is a simple and beautiful component set. All you have to do is just load c
 
 ## Installation
 
-UNITS itself can be downloaded from GitHub in clone or in ZIP format, or it can be downloaded via npm.
+UNITS itself can be downloaded from GitHub by cloning it or as a ZIP format, or you can download it via npm.
 
 ```
 $ git clone https://github.com/kokushin/units.git
@@ -35,7 +35,7 @@ Let's load the necessary files.
 
 ## Usage
 
-Complete the defined HTML and give the component class starting with `uc-`. For example in the sample below you can apply the components of the cover image card.
+Write exact html snippets and give it the right classes starting with `uc-`. For example in the sample below you can make a card component attached with covered image.
 
 ```html
 <div class="uc-card _float">
