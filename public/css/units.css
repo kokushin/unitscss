@@ -976,8 +976,8 @@ p + h2,
 
 .uc-header._fixed {
     position: fixed;
-    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .12), 0 3px 3px rgba(0, 0, 0, .11);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, .12), 0 3px 3px rgba(0, 0, 0, .11);
+    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .24), 0 6px 6px rgba(0, 0, 0, .22);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, .24), 0 6px 6px rgba(0, 0, 0, .22);
   }
 
 .uc-header._fixed + *,
@@ -1863,13 +1863,13 @@ p + h2,
   }
 
 .uc-card._banner:hover, .uc-card._hover:hover {
-      -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .12), 0 3px 3px rgba(0, 0, 0, .11);
-              box-shadow: 0 4px 8px rgba(0, 0, 0, .12), 0 3px 3px rgba(0, 0, 0, .11);
+      -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .24), 0 6px 6px rgba(0, 0, 0, .22);
+              box-shadow: 0 8px 16px rgba(0, 0, 0, .24), 0 6px 6px rgba(0, 0, 0, .22);
     }
 
 .uc-card._float {
-    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .12), 0 3px 3px rgba(0, 0, 0, .11);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, .12), 0 3px 3px rgba(0, 0, 0, .11);
+    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .24), 0 6px 6px rgba(0, 0, 0, .22);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, .24), 0 6px 6px rgba(0, 0, 0, .22);
   }
 
 .uc-card._thumb {
@@ -2296,8 +2296,8 @@ figcaption,
 
 .uc-sidebar {
   width: 240px;
-  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .12), 0 3px 3px rgba(0, 0, 0, .11);
-          box-shadow: 0 4px 8px rgba(0, 0, 0, .12), 0 3px 3px rgba(0, 0, 0, .11);
+  -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .24), 0 6px 6px rgba(0, 0, 0, .22);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, .24), 0 6px 6px rgba(0, 0, 0, .22);
   background-color: white;
   position: relative;
   z-index: 5999;
@@ -2630,8 +2630,8 @@ figcaption,
     width: 320px;
     height: 100%;
     padding: 80px 0 0;
-    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .12), 0 3px 3px rgba(0, 0, 0, .11);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, .12), 0 3px 3px rgba(0, 0, 0, .11);
+    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .24), 0 6px 6px rgba(0, 0, 0, .22);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, .24), 0 6px 6px rgba(0, 0, 0, .22);
     overflow-y: scroll;
     z-index: 15999;
     /* sidebar-unit transform animation */
