@@ -72,6 +72,14 @@
     }
   }
 
+  &:not(:first-of-type) {
+    margin: 56px 0 0;
+
+    @media (--small-viewport) {
+      margin: 40px 0 0;
+    }
+  }
+
   ._dark &,
   ._black & {
     color: white;

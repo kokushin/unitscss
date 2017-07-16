@@ -81,6 +81,17 @@
     }
   }
 
+.uc-section-title:not(:first-of-type) {
+    margin: 56px 0 0;
+  }
+
+@media (max-width: 768px) {
+
+.uc-section-title:not(:first-of-type) {
+      margin: 40px 0 0
+  }
+    }
+
 ._dark .uc-section-title,
   ._black .uc-section-title {
     color: white;
