@@ -46,7 +46,7 @@ Write exact html snippets and give it the right classes starting with `uc-`. For
 </div>
 ```
 
-It is displayed on the browser like this:
+It will be displayed on the browser like this:
 
 <img src="https://raw.githubusercontent.com/kokushin/units/develop/public/img/README/img_sample_card_01.png" width="560">
 
