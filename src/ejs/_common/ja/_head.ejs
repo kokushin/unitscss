@@ -1,0 +1,77 @@
+<%
+  var config = config
+%>
+<!DOCTYPE html>
+<html lang="<%= config.default.lang_ja %>">
+<head>
+  <meta charset="<%= config.default.charset %>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><% if (key !== 'index') { %><%= pagetitle + ' | ' %><% } %><%= config.default.title %></title>
+  <link rel="canonical" href="<%= config.default.publicPath %>">
+  <meta name="description" content="<%= config.default.description_ja %>">
+  <meta name="author" content="<%= config.default.author %>">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="<%= config.default.title %>">
+  <meta property="og:title" content="<% if (key !== 'index') { %><%= pagetitle + ' | ' %><% } %><%= config.default.title %>">
+  <meta property="og:description" content="<%= config.default.description_ja %>">
+  <meta property="og:url" content="<%= config.default.publicPath %>">
+  <meta property="og:image" content="<%= config.default.publicPath %>/assets/img/share/facebook.png">
+  <meta name="twitter:site" content="<%= config.default.twitter %>">
+  <meta name="twitter:creator" content="<%= config.default.twitter %>">
+  <meta name="twitter:url" content="<%= config.default.publicPath %>">
+  <meta name="twitter:title" content="<% if (key !== 'index') { %><%= pagetitle + ' | ' %><% } %><%= config.default.title %>">
+  <meta name="twitter:description" content="<%= config.default.description_ja %>">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="<%= config.default.publicPath %>/assets/img/share/twitter.png">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="<%= config.default.title %>">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/share/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/share/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/share/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/share/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/share/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/share/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/share/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/share/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/share/apple-touch-icon-180x180.png">
+  <link rel="icon" sizes="32x32" type="image/png" href="/assets/share/favicon-32x32.png">
+  <link rel="shortcut icon" href="/assets/share/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/css/units.css">
+  <style>
+    /* Document Page */
+    .doc-component-box {
+      padding: 100px 0 0;
+      margin-top: 0;
+    }
+    .doc-component-box h3 {
+      margin-top: 0;
+    }
+    .doc-component-box .doc-component-preview {
+      margin: 40px -80px 0;
+      padding: 40px 80px;
+      background-color:#f2f2f2;
+    }
+    .doc-component-box .doc-component-preview-inner {
+      position: relative;
+    }
+    .doc-component-box .uc-code-unit {
+      margin: 0 -80px;
+      background-color: white;
+      border-bottom: 1px solid rgba(0,0,0,.08);
+    }
+    .doc-component-box pre {
+      border-radius: 0;
+      margin: 0 80px;
+      padding: 40px 0;
+      background-color: white;
+    }
+    .doc-component-box pre > code {
+      color: black;
+      background-color: white;
+    }
+  </style>
+</head>
+<body class="page-<%= key %>">

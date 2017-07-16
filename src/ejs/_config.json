@@ -1,0 +1,18 @@
+{
+  "default": {
+    "lang": "en",
+    "lang_ja": "ja",
+    "charset": "UTF-8",
+    "title": "UNITS",
+    "description": "UNITS is a simple and beautiful CSS component set.",
+    "description_ja": "UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。",
+    "keywords": "",
+    "author": "kokushin",
+    "publicPath": "https://unitscss.com/",
+    "publicPath_ja": "https://unitscss.com/ja/",
+    "analytics": "",
+    "twitter": "@kokushing",
+    "facebook": "",
+    "instagram": ""
+  }
+}
