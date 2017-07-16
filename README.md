@@ -35,7 +35,7 @@ Let's load the necessary files.
 
 ## Usage
 
-Complete the defined HTML and give the component class starting with "uc-". For example in the sample below you can apply the components of the cover image card.
+Complete the defined HTML and give the component class starting with `uc-`. For example in the sample below you can apply the components of the cover image card.
 
 ```html
 <div class="uc-card _float">
