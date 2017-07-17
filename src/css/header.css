@@ -53,7 +53,7 @@
 
   &._fixed {
     position: fixed;
-    box-shadow: var(--box-shadow-hover);
+    box-shadow: var(--box-shadow);
 
     & + *,
     & + .uc-menu._slide + * {

@@ -40,6 +40,25 @@
     }
   }
 
+  .uc-btn-unit {
+    margin: 8px -8px 0;
+
+    @media (--small-viewport) {
+      flex-direction: row;
+    }
+
+    .uc-btn {
+      flex: 1;
+      display: block;
+      text-align: center;
+      margin: 16px 8px 0;
+
+      @media (--small-viewport) {
+        max-width: initial;
+      }
+    }
+  }
+
   .uc-btn {
     margin: 24px 0 0;
 
@@ -61,6 +80,10 @@
   &._col-full,
   .uc-grid-cell > & {
     max-width: 100%;
+  }
+
+  &._orig-height {
+    height: auto;
   }
 
   &._banner {

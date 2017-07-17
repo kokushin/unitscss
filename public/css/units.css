@@ -976,8 +976,8 @@ p + h2,
 
 .uc-header._fixed {
     position: fixed;
-    -webkit-box-shadow: 0 8px 16px rgba(0, 0, 0, .24), 0 6px 6px rgba(0, 0, 0, .22);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, .24), 0 6px 6px rgba(0, 0, 0, .22);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
   }
 
 .uc-header._fixed + *,
@@ -1805,6 +1805,37 @@ p + h2,
       }
     }
 
+.uc-card .uc-btn-unit {
+    margin: 8px -8px 0;
+  }
+
+@media (max-width: 768px) {
+
+.uc-card .uc-btn-unit {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row
+  }
+    }
+
+.uc-card .uc-btn-unit .uc-btn {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      display: block;
+      text-align: center;
+      margin: 16px 8px 0;
+    }
+
+@media (max-width: 768px) {
+
+.uc-card .uc-btn-unit .uc-btn {
+        max-width: none;
+        max-width: initial
+    }
+      }
+
 .uc-card .uc-btn {
     margin: 24px 0 0;
   }
@@ -1834,6 +1865,10 @@ p + h2,
 .uc-card._col-full,
   .uc-grid-cell > .uc-card {
     max-width: 100%;
+  }
+
+.uc-card._orig-height {
+    height: auto;
   }
 
 .uc-card._banner {
