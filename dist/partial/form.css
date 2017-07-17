@@ -102,6 +102,7 @@
     font-weight: bold;
     font-size: .875rem;
     margin-bottom: 14px;
+    text-align: left;
   }
 
 .uc-form-parts-unit label > span {
