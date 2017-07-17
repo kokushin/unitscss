@@ -1,1 +1,3 @@
-public/* linguist-documentation=false
+public/** linguist-documentation=false
+src/ejs/** linguist-documentation=false
+src/js/** linguist-documentation=false
