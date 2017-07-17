@@ -69,11 +69,11 @@
   text-align: center;
 
   @media (--small-viewport) {
-    padding: 48px 16px;
+    padding: 32px 0 48px;
 
     .uc-btn {
       & + .uc-btn {
-        margin: 16px 0 0;
+        margin: 16px 8px 0;
       }
     }
   }

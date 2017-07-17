@@ -1,0 +1,71 @@
+<%- include('../_common/_head', {
+  key: 'docs',
+  pagetitle: 'Install | Document'
+}) %>
+
+<%- include('../_component/docs/_header') %>
+
+<%- include('../_component/docs/_menu') %>
+
+<div class="uc-grid _small-col-full _nowrap">
+
+<%- include('../_component/docs/_sidebar', {
+  current: 'install'
+}) %>
+
+  <div class="uc-grid-cell _col-fit">
+
+  <main class="uc-content">
+    <section class="uc-section">
+
+      <h2 class="uc-section-title">Install</h2>
+      <p>UNITS can be installed easily, it is possible to start using immediately!</p>
+
+      <div class="uc-code-unit">
+        <p>1. UNITS itself can be downloaded from GitHub by cloning it or as a ZIP format, or you can download it via npm.</p>
+        <pre><code class="bash">$ git clone https://github.com/kokushin/unitscss.git</code></pre>
+        <pre><code class="bash">$ npm install unitscss --save</code></pre>
+      </div>
+      <div class="uc-code-unit">
+        <p>2. Let's load the necessary files.</p>
+<pre><code>&lt;link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"&gt;
+&lt;link rel="stylesheet" href="path/to/units.min.css"&gt;
+
+&lt;script src="path/to/units.min.js"&gt;&lt;/script&gt;
+</code></pre>
+      </div>
+      <div class="uc-code-unit">
+        <p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut eos laudantium perferendis voluptatem sunt totam, esse mollitia officia! Ipsam numquam ducimus necessitatibus, nesciunt eos.</p>
+<pre><code>&lt;div class="uc-card _float"&gt;
+  &lt;div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;h3 class="uc-card-title"&gt;Sample card&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.&lt;/p&gt;
+  &lt;div class="uc-btn _primary"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+      <div class="uc-code-unit">
+        <p>4. It will be displayed on the browser like this:</p>
+        <div class="uc-card _float" style="margin-left:auto;margin-right:auto">
+          <div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"></div>
+          <h3 class="uc-card-title">Sample card</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.</p>
+          <div class="uc-btn _primary"><a href="#">Button</a></div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="uc-pager-unit">
+      <div class="uc-btn"><a href="./">← Introduction</a></div>
+      <div class="uc-btn _primary"><a href="./guide.html">Coding guide →</a></div>
+    </div>
+  </main>
+
+  </div>
+
+</div>
+
+<%- include('../_component/_footer') %>
+
+<%- include('../_common/_foot') %>
