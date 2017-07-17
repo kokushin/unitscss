@@ -20,6 +20,15 @@
   padding: 16px 24px;
 }
 
+@media (max-width: 768px) {
+
+.uc-code-unit pre,
+.uc-code {
+    width: 280px;
+    margin: 0 auto
+}
+  }
+
 .uc-code-unit pre + pre,
   .uc-code-unit pre + .uc-code,
   .uc-code + pre,
