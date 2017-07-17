@@ -1,4 +1,4 @@
-/*! UNITS v0.1.7 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
+/*! UNITS v0.1.8 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
 *,
 ::before,
 ::after {
@@ -2553,6 +2553,10 @@ figcaption,
   border: 1px solid #ebebeb;
   overflow: hidden;
 }
+
+.uc-form-group .uc-btn {
+    margin: 0;
+  }
 
 @media (max-width: 768px) {
 

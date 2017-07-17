@@ -2553,6 +2553,10 @@ figcaption,
   overflow: hidden;
 }
 
+.uc-form-group .uc-btn {
+    margin: 0;
+  }
+
 @media (max-width: 768px) {
 
 .uc-form-group .uc-btn {
