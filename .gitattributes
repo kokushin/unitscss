@@ -1,2 +1,1 @@
-$ cat .gitattributes
-public/*.html linguist-documentation=false
+public/* linguist-documentation
