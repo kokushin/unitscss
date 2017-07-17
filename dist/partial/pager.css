@@ -81,6 +81,7 @@
   margin: 0;
   padding: 80px;
   background-color: #f2f2f2;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -88,13 +89,12 @@
 .uc-pager-unit {
     padding: 48px 16px
 }
+      .uc-pager-unit .uc-btn + .uc-btn {
+        margin: 16px 0 0;
+      }
   }
 
 .uc-pager-unit > * {
     margin: 0;
     padding: 0;
-  }
-
-.uc-pager-unit._center {
-    text-align: center;
   }

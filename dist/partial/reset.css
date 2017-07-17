@@ -59,15 +59,12 @@ nav ul {
 }
 
 pre {
-	font-family: monospace, monospace;
-	font-size: 1em;
   margin: 0;
   height: 100%;
 }
 
 pre code {
     display: block;
-    overflow-x: auto;
   }
 
 a {
@@ -91,11 +88,12 @@ strong {
 	font-weight: bold;
 }
 
+pre,
 code,
 kbd,
 samp {
 	font-family: monospace, monospace;
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 dfn {
