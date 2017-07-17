@@ -422,6 +422,17 @@ hr,
   }
     }
 
+p + .uc-btn {
+  margin: 32px 0 0;
+}
+
+@media (max-width: 768px) {
+
+p + .uc-btn {
+    margin: 24px 0 0
+}
+  }
+
 /**
  * UNITS typography
  *
@@ -1744,9 +1755,6 @@ p + h2,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -1757,6 +1765,13 @@ p + h2,
         -ms-flex-direction: column;
             flex-direction: column
 }
+  }
+
+._center .uc-btn-unit,
+  .uc-btn-unit._center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
 /**
@@ -2586,6 +2601,7 @@ figcaption,
     font-weight: bold;
     font-size: .875rem;
     margin-bottom: 14px;
+    text-align: left;
   }
 
 .uc-form-parts-unit label > span {
