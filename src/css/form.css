@@ -51,6 +51,8 @@
   overflow: hidden;
 
   .uc-btn {
+    margin: 0;
+
     @media (--small-viewport) {
       max-width: 120px;
     }
