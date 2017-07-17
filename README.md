@@ -74,7 +74,11 @@ It will be displayed on the browser like this:
 
 ## Document & Snippets
 
+**Document**  
 Sorry, Coming Soon 😂
+
+**Snippets**  
+[Please check codepen.](https://codepen.io/search/pens/?q=units&limit=kokushin)
 
 ## Download
 [Download ZIP](https://github.com/kokushin/units/archive/master.zip)
