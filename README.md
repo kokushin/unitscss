@@ -12,12 +12,30 @@ Simple and beautiful component set.
 
 UNITS is a simple and beautiful component set. All you have to do is just load css files, copy and paste snippets, so easy that anyone can use.
 
+- **Use Quickly**  
+All you have to do is just put units.css. Several components have been prepared already and you can choose components you want to use and apply it on your website.
+
+- **Simple and Beautiful**  
+Each components are beautifully designed. The design will be updated periodically, We wont't apply big changes, but apply only a small changes such as adjusting margins.
+
+- **Support Modern Browser**  
+UNITS is optimized to be used on th modern browser such as Microsoft Edge, Google Chrome, Firefox, Safari, How about old browsers? ... I'm sorry.
+
+- **Responsive Web design**  
+We uses responsive web design approches to display optimized design on all devices.
+
+- **Periodical Update**  
+UNITS is still a beta version, it will be updated periodically to a major version. Unitil the major version, We will add new components, optimize the source codes, adjusting its design.
+
+- **Support Japanese**  
+Because the developers are Japanese that we can support in Japanese. We have been optimizing web pages and updating documents written in japanese.
+
 ## Installation
 
 UNITS itself can be downloaded from GitHub by cloning it or as a ZIP format, or you can download it via npm.
 
 ```
-$ git clone https://github.com/kokushin/units.git
+$ git clone https://github.com/kokushin/unitscss.git
 ```
 
 ```
@@ -27,7 +45,7 @@ $ npm install unitscss --save
 Let's load the necessary files.
 
 ```html
-<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
 <link rel="stylesheet" href="path/to/units.min.css">
 
 <script src="path/to/units.min.js"></script>
@@ -49,6 +67,10 @@ Write exact html snippets and give it the right classes starting with `uc-`. For
 It will be displayed on the browser like this:
 
 <img src="https://raw.githubusercontent.com/kokushin/units/develop/public/img/readme/img_02.png" width="560">
+
+## Demo
+
+👉 [https://unitscss.com/themes/](https://unitscss.com/themes/)
 
 ## Document & Snippets
 
