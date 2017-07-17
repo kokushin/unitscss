@@ -7,7 +7,7 @@ const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const webpackConfig = require('./webpack.config');
 const pkg = require('./package.json');
-const banner = `/*! UNITS v${pkg.version} | MIT License | Copyright 2017 @kokushing | mail@kokush.in | http://unitscss.com */\n`;
+const banner = `/*! UNITS v${pkg.version} | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */\n`;
 const processors = [
   require('postcss-import')(),
   require('postcss-nested')(),
