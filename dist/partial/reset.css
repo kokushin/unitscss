@@ -65,6 +65,7 @@ pre {
 
 pre code {
     display: block;
+    overflow-x: auto;
   }
 
 a {
