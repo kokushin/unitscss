@@ -422,3 +422,14 @@ hr,
       margin: 40px auto 0
   }
     }
+
+p + .uc-btn {
+  margin: 32px 0 0;
+}
+
+@media (max-width: 768px) {
+
+p + .uc-btn {
+    margin: 24px 0 0
+}
+  }

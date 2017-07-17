@@ -130,9 +130,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media (max-width: 768px) {
@@ -143,4 +140,11 @@
         -ms-flex-direction: column;
             flex-direction: column
 }
+  }
+
+._center .uc-btn-unit,
+  .uc-btn-unit._center {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }

@@ -397,3 +397,11 @@ hr,
     }
   }
 }
+
+p + .uc-btn {
+  margin: 32px 0 0;
+
+  @media (--small-viewport) {
+    margin: 24px 0 0;
+  }
+}
