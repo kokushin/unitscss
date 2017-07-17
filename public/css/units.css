@@ -58,15 +58,12 @@ nav ul {
 }
 
 pre {
-	font-family: monospace, monospace;
-	font-size: 1em;
   margin: 0;
   height: 100%;
 }
 
 pre code {
     display: block;
-    overflow-x: auto;
   }
 
 a {
@@ -90,11 +87,12 @@ strong {
 	font-weight: bold;
 }
 
+pre,
 code,
 kbd,
 samp {
 	font-family: monospace, monospace;
-	font-size: 1em;
+	font-size: 1rem;
 }
 
 dfn {
@@ -2086,6 +2084,15 @@ p + h2,
   padding: 16px 24px;
 }
 
+@media (max-width: 768px) {
+
+.uc-code-unit pre,
+.uc-code {
+    width: 280px;
+    margin: 0 auto
+}
+  }
+
 .uc-code-unit pre + pre,
   .uc-code-unit pre + .uc-code,
   .uc-code + pre,
@@ -2297,6 +2304,7 @@ figcaption,
   margin: 0;
   padding: 80px;
   background-color: #f2f2f2;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -2304,15 +2312,14 @@ figcaption,
 .uc-pager-unit {
     padding: 48px 16px
 }
+      .uc-pager-unit .uc-btn + .uc-btn {
+        margin: 16px 0 0;
+      }
   }
 
 .uc-pager-unit > * {
     margin: 0;
     padding: 0;
-  }
-
-.uc-pager-unit._center {
-    text-align: center;
   }
 
 /**
