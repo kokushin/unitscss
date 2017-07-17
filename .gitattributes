@@ -1,4 +1,1 @@
-public/*.html linguist-documentation=false
-public/docs/*.html linguist-documentation=false
-public/themes/*.html linguist-documentation=false
-public/themes/**/*.html linguist-documentation=false
+public/** linguist-documentation

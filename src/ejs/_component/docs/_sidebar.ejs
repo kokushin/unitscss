@@ -1,31 +1,33 @@
 <div class="uc-sidebar _slide uc-grid-cell" id="sidebar">
   <div class="uc-sidebar-wrap">
     <div class="uc-sidebar-list">
-      <a href="/docs/" class="_is-current">Introduction</a>
-      <a href="/docs/">Install</a>
-      <a href="/docs/">Coding guide</a>
+      <a href="/docs/" <% if (current === 'index') { %>class="_is-current"<% } %>>Introduction</a>
+      <a href="/docs/install.html" <% if (current === 'install') { %>class="_is-current"<% } %>>Install</a>
+      <a href="/docs/guide.html" <% if (current === 'guide') { %>class="_is-current"<% } %>>Coding guide</a>
     </div>
     <div class="uc-sidebar-list">
       <p><strong>Components</strong></p>
-      <a href="/docs/">Layout</a>
-      <a href="/docs/">Grid</a>
-      <a href="/docs/">Hero</a>
-      <a href="/docs/">Card</a>
-      <a href="/docs/">Button</a>
-      <a href="/docs/">Form</a>
-      <a href="/docs/">List</a>
-      <a href="/docs/">Table</a>
-      <a href="/docs/">Menu</a>
-      <a href="/docs/">Embed</a>
-      <a href="/docs/">Pager</a>
-      <a href="/docs/">Typography</a>
-      <a href="/docs/">Loading</a>
+      <a href="/docs/header.html" <% if (current === 'header') { %>class="_is-current"<% } %>>Header</a>
+      <a href="/docs/footer.html" <% if (current === 'footer') { %>class="_is-current"<% } %>>Footer</a>
+      <a href="/docs/content.html" <% if (current === 'content') { %>class="_is-current"<% } %>>Content/Section</a>
+      <a href="/docs/grid.html" <% if (current === 'grid') { %>class="_is-current"<% } %>>Grid</a>
+      <a href="/docs/grid.html" <% if (current === 'hero') { %>class="_is-current"<% } %>>Hero</a>
+      <a href="/docs/card.html" <% if (current === 'card') { %>class="_is-current"<% } %>>Card</a>
+      <a href="/docs/button.html" <% if (current === 'button') { %>class="_is-current"<% } %>>Button</a>
+      <a href="/docs/form.html" <% if (current === 'form') { %>class="_is-current"<% } %>>Form</a>
+      <a href="/docs/list.html" <% if (current === 'list') { %>class="_is-current"<% } %>>List</a>
+      <a href="/docs/table.html" <% if (current === 'table') { %>class="_is-current"<% } %>>Table</a>
+      <a href="/docs/menu.html" <% if (current === 'menu') { %>class="_is-current"<% } %>>Menu</a>
+      <a href="/docs/embed.html" <% if (current === 'embed') { %>class="_is-current"<% } %>>Embed</a>
+      <a href="/docs/pager.html" <% if (current === 'pager') { %>class="_is-current"<% } %>>Pager</a>
+      <a href="/docs/typography.html" <% if (current === 'typography') { %>class="_is-current"<% } %>>Typography</a>
+      <a href="/docs/loading.html" <% if (current === 'loading') { %>class="_is-current"<% } %>>Loading</a>
     </div>
     <div class="uc-sidebar-list">
       <p><strong>Links</strong></p>
-      <a href="/docs/">Home</a>
-      <a href="/docs/">GitHub</a>
-      <a href="/docs/">Twitter</a>
+      <a href="/">Home</a>
+      <a href="/https://github.com/kokushin/unitscss">GitHub</a>
+      <a href="/https://twitter.com/kokushing">Twitter</a>
     </div>
   </div>
 </div>
