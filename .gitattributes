@@ -1,3 +1,4 @@
-public/** linguist-documentation=false
-src/ejs/** linguist-documentation=false
-src/js/** linguist-documentation=false
+public/*.html linguist-documentation=false
+public/docs/*.html linguist-documentation=false
+public/themes/*.html linguist-documentation=false
+public/themes/**/*.html linguist-documentation=false
