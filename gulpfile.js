@@ -104,6 +104,7 @@ gulp.task('dev:htmls', () => {
     .pipe($.plumber())
     .pipe($.ejs({
       config: config,
+      pkg: pkg,
     }, {}, {
       ext: '.html'
     }))
