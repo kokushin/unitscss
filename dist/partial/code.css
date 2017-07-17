@@ -1,4 +1,4 @@
-/*! UNITS v0.1.5 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
+/*! UNITS v0.1.7 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
 /**
  * UNITS code components
  *
@@ -19,15 +19,6 @@
   border-radius: 6px;
   padding: 16px 24px;
 }
-
-@media (max-width: 768px) {
-
-.uc-code-unit pre,
-.uc-code {
-    width: 280px;
-    margin: 0 auto
-}
-  }
 
 .uc-code-unit pre + pre,
   .uc-code-unit pre + .uc-code,

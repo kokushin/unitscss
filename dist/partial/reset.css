@@ -1,4 +1,4 @@
-/*! UNITS v0.1.5 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
+/*! UNITS v0.1.7 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
 *,
 ::before,
 ::after {
@@ -65,6 +65,7 @@ pre {
 
 pre code {
     display: block;
+    overflow-x: auto;
   }
 
 a {

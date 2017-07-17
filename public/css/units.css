@@ -64,6 +64,7 @@ pre {
 
 pre code {
     display: block;
+    overflow-x: auto;
   }
 
 a {
@@ -2084,15 +2085,6 @@ p + h2,
   padding: 16px 24px;
 }
 
-@media (max-width: 768px) {
-
-.uc-code-unit pre,
-.uc-code {
-    width: 280px;
-    margin: 0 auto
-}
-  }
-
 .uc-code-unit pre + pre,
   .uc-code-unit pre + .uc-code,
   .uc-code + pre,
@@ -2310,10 +2302,10 @@ figcaption,
 @media (max-width: 768px) {
 
 .uc-pager-unit {
-    padding: 48px 16px
+    padding: 32px 0 48px
 }
       .uc-pager-unit .uc-btn + .uc-btn {
-        margin: 16px 0 0;
+        margin: 16px 8px 0;
       }
   }
 

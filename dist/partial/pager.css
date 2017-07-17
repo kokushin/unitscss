@@ -1,4 +1,4 @@
-/*! UNITS v0.1.5 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
+/*! UNITS v0.1.7 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
 /**
  * UNITS pager components
  *
@@ -87,10 +87,10 @@
 @media (max-width: 768px) {
 
 .uc-pager-unit {
-    padding: 48px 16px
+    padding: 32px 0 48px
 }
       .uc-pager-unit .uc-btn + .uc-btn {
-        margin: 16px 0 0;
+        margin: 16px 8px 0;
       }
   }
 
