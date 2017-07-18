@@ -34,6 +34,12 @@
     text-align: center;
   }
 
+  &._zebra {
+    &:nth-of-type(even) {
+      background-color: var(--color-bg);
+    }
+  }
+
   &._gray {
     background-color: var(--color-bg);
   }
@@ -77,6 +83,19 @@
 
     @media (--small-viewport) {
       margin: 40px 0 0;
+    }
+  }
+
+  &._center {
+    text-align: center;
+
+    &:after {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    & + p {
+      text-align: center;
     }
   }
 
