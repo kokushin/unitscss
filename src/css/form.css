@@ -19,13 +19,13 @@
   &._set {
     max-width: 800px;
     margin: 0 auto;
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    background-color: #fff;
-    padding: 40px 40px;
   }
 
   .uc-grid {
+    @media (--small-viewport) {
+      flex-direction: column;
+    }
+
     &._gutter {
       margin: calc(-var(--grid-gutter) * .6) 0 0 calc(-var(--grid-gutter) * .6);
 
@@ -74,6 +74,10 @@
 
   &._textarea {
     height: 10em;
+
+    @media (--small-viewport) {
+      height: 8em;
+    }
   }
 
   .uc-form-group & {

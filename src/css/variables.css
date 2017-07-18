@@ -21,7 +21,6 @@
   --z-index-lv4: 19999;
   --z-index-lv5: 25999;
 
-  --color-border: #ebebeb;
   --color-primary: #546e7a;
   --color-primary-hover: #37474f;
   --color-secondary: #333;
@@ -31,10 +30,13 @@
   --color-dark: #37474f;
   --color-black: #141414;
   --color-gray: #999;
+  --color-border: #ebebeb;
   --color-bg: #f2f2f2;
+  --color-code: #d81b60;
   --color-code-bg: #282c34;
   --color-text: #333;
-  --color-code: #d81b60;
+  --color-btn: white;
+  --color-btn-hover: #eee;
 
   --Power0_easeNone: cubic-bezier(0, 0, 1, 1);
   --Power1_easeIn: cubic-bezier(.26, 0, .6, .2);

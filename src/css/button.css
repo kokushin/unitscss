@@ -18,8 +18,8 @@
   display: inline-block;
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
-  background-color: white;
-  border: 2px solid white;
+  background-color: var(--color-btn);
+  border: 2px solid var(--color-btn);
   line-height: 1;
   outline: transparent;
   cursor: pointer;
@@ -28,6 +28,11 @@
   @media (--small-viewport) {
     max-width: 240px;
     width: 100%;
+  }
+
+  &:hover {
+    background-color: var(--color-btn-hover);
+    border: 2px solid var(--color-btn-hover);
   }
 
   & + .uc-btn {

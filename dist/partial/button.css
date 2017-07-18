@@ -35,6 +35,11 @@
 }
   }
 
+.uc-btn:hover {
+    background-color: #eee;
+    border: 2px solid #eee;
+  }
+
 .uc-btn + .uc-btn {
     margin: 0 0 0 16px;
   }
