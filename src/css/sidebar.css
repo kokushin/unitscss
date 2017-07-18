@@ -30,11 +30,12 @@
       height: 100%;
       padding: calc(var(--header-small-height)) 0 0;
       z-index: var(--z-index-lv2);
-      /* sidebar-unit transform animation */
-      transition: all .35s var(--Power3_easeInOut);
-      transform: translate3d(calc(-var(--sidebar-small-width) - 16px), 0, 0);
       overflow-y: scroll;
       -webkit-overflow-scrolling: touch;
+      /* sidebar-unit transform animation */
+      opacity: 0;
+      transition: all .35s var(--Power3_easeInOut);
+      transform: translate3d(calc(-var(--sidebar-small-width) - 16px), 0, 0);
 
       &._left {
         left: 0;
@@ -49,6 +50,7 @@
       }
 
       &._is-active {
+        opacity: 1;
         transform: translate3d(0, 0, 0);
       }
     }

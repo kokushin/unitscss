@@ -1,4 +1,4 @@
-/*! UNITS v0.1.8 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
+/*! UNITS v0.1.9 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
 /**
  * UNITS grid components
  *
@@ -28,7 +28,7 @@
 @media (max-width: 768px) {
 
 .uc-grid._gutter {
-      margin: -32px 0 0 -32px
+      margin: -20px 0 0 -20px
   }
     }
 
@@ -39,7 +39,7 @@
 @media (max-width: 768px) {
 
 .uc-grid._gutter .uc-grid-cell {
-        padding: 32px 0 0 32px
+        padding: 20px 0 0 20px
     }
       }
 

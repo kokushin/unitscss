@@ -1,4 +1,4 @@
-/*! UNITS v0.1.8 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
+/*! UNITS v0.1.9 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
 /**
  * UNITS form components
  *
@@ -16,12 +16,17 @@
 .uc-form._set {
     max-width: 800px;
     margin: 0 auto;
-    border-radius: 6px;
-    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
-            box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
-    background-color: #fff;
-    padding: 40px 40px;
   }
+
+@media (max-width: 768px) {
+
+.uc-form .uc-grid {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column
+  }
+    }
 
 .uc-form .uc-grid._gutter {
       margin: -24px 0 0 -24px;
@@ -82,6 +87,13 @@
 .uc-form-parts._textarea {
     height: 10em;
   }
+
+@media (max-width: 768px) {
+
+.uc-form-parts._textarea {
+      height: 8em
+  }
+    }
 
 .uc-form-group .uc-form-parts {
     border-radius: 0;

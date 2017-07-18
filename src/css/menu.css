@@ -54,6 +54,7 @@
     overflow-y: scroll;
     z-index: var(--z-index-lv3);
     /* sidebar-unit transform animation */
+    opacity: 0;
     transition: all .35s var(--Power3_easeInOut);
     transform: translate3d(calc(var(--menu-width) + 16px), 0, 0);
 
@@ -84,6 +85,7 @@
     }
 
     &._is-active {
+      opacity: 1;
       transform: translate3d(0, 0, 0);
     }
   }
