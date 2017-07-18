@@ -40,6 +40,10 @@
     text-align: center;
   }
 
+.uc-section._zebra:nth-of-type(even) {
+      background-color: #f2f2f2;
+    }
+
 .uc-section._gray {
     background-color: #f2f2f2;
   }
@@ -90,6 +94,19 @@
 .uc-section-title:not(:first-of-type) {
       margin: 40px 0 0
   }
+    }
+
+.uc-section-title._center {
+    text-align: center;
+  }
+
+.uc-section-title._center:after {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+.uc-section-title._center + p {
+      text-align: center;
     }
 
 ._dark .uc-section-title,
