@@ -68,16 +68,17 @@
   border-radius: var(--border-radius);
   border: 1px solid var(--color-border);
 
+  &[type="text"],
   &._text {
     line-height: 1;
   }
 
-  &._textarea {
-    height: 10em;
-
-    @media (--small-viewport) {
-      height: 8em;
-    }
+  &[type="checkbox"],
+  &._checkbox,
+  &[type="radio"],
+  &._radio {
+    width: auto;
+    margin-right: 8px;
   }
 
   .uc-form-group & {
@@ -93,18 +94,59 @@
   }
 }
 
+textarea.uc-form-parts,
+.uc-form-parts._textarea {
+  height: 10em;
+
+  @media (--small-viewport) {
+    height: 8em;
+  }
+}
+
+select.uc-form-parts,
+.uc-form-parts._select {
+  -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
 .uc-form-parts-unit {
+  text-align: left;
+
   & + .uc-form-parts-unit {
     margin-top: 32px;
   }
 
+  & + .uc-form-parts-unit.uc-grid {
+    margin-top: 8px;
+  }
+
+  &._center {
+    text-align: center;
+  }
+
   label {
-    display: block;
+    display: inline-block;
     color: color(black a(.7));
     font-weight: bold;
     font-size: .875rem;
-    margin-bottom: 14px;
+    line-height: 1;
     text-align: left;
+    cursor: pointer;
+
+    & + label {
+      margin-left: 32px;
+    }
+
+    & + .uc-form-group,
+    & + .uc-form-parts {
+      margin-top: 16px;
+    }
+
+    ._black &,
+    ._dark & {
+      color: white;
+    }
 
     > span {
       display: inline-block;
