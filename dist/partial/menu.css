@@ -59,6 +59,7 @@
     overflow-y: scroll;
     z-index: 15999;
     /* sidebar-unit transform animation */
+    opacity: 0;
     -webkit-transition: all .35s cubic-bezier(.76, 0, .24, 1);
     transition: all .35s cubic-bezier(.76, 0, .24, 1);
     -webkit-transform: translate3d(336px, 0, 0);
@@ -106,6 +107,7 @@
       }
 
 .uc-menu._slide._is-active {
+      opacity: 1;
       -webkit-transform: translate3d(0, 0, 0);
               transform: translate3d(0, 0, 0);
     }

@@ -22,14 +22,14 @@
     margin: -var(--grid-gutter) 0 0 -var(--grid-gutter);
 
     @media (--small-viewport) {
-      margin: calc(-var(--grid-gutter) / 1.25) 0 0 calc(-var(--grid-gutter) / 1.25);
+      margin: calc(-var(--grid-gutter) / 2) 0 0 calc(-var(--grid-gutter) / 2);
     }
 
     .uc-grid-cell {
       padding: var(--grid-gutter) 0 0 var(--grid-gutter);
 
       @media (--small-viewport) {
-        padding: calc(var(--grid-gutter) / 1.25) 0 0 calc(var(--grid-gutter) / 1.25);
+        padding: calc(var(--grid-gutter) / 2) 0 0 calc(var(--grid-gutter) / 2);
       }
     }
   }

@@ -32,13 +32,14 @@
       height: 100%;
       padding: 64px 0 0;
       z-index: 9999;
+      overflow-y: scroll;
+      -webkit-overflow-scrolling: touch;
       /* sidebar-unit transform animation */
+      opacity: 0;
       -webkit-transition: all .35s cubic-bezier(.76, 0, .24, 1);
       transition: all .35s cubic-bezier(.76, 0, .24, 1);
       -webkit-transform: translate3d(-256px, 0, 0);
-              transform: translate3d(-256px, 0, 0);
-      overflow-y: scroll;
-      -webkit-overflow-scrolling: touch
+              transform: translate3d(-256px, 0, 0)
   }
 
       .uc-sidebar._slide._left {
@@ -56,6 +57,7 @@
       }
 
       .uc-sidebar._slide._is-active {
+        opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
                 transform: translate3d(0, 0, 0);
       }

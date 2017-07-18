@@ -15,7 +15,12 @@
 
 .uc-table {
   background-color: white;
+  min-width: 560px;
 }
+
+.uc-table._col-full {
+    width: 100%;
+  }
 
 .uc-table thead {
     border-top: 1px solid #ebebeb;
@@ -33,10 +38,6 @@
 
 .uc-table td {
     padding: 24px 32px;
-  }
-
-.uc-table._col-full {
-    width: 100%;
   }
 
 .uc-table-unit {
