@@ -58,6 +58,4 @@ typings/
 .env
 
 # demo
-public/demo/
-public/ja/
-public/docs/
+public/test.html

@@ -1,4 +1,4 @@
-/*! UNITS v0.1.9 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
+/*! UNITS v0.1.10 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
 *,
 ::before,
 ::after {
@@ -1345,6 +1345,10 @@ p + h2,
     text-align: center;
   }
 
+.uc-section._zebra:nth-of-type(even) {
+      background-color: #f2f2f2;
+    }
+
 .uc-section._gray {
     background-color: #f2f2f2;
   }
@@ -1395,6 +1399,19 @@ p + h2,
 .uc-section-title:not(:first-of-type) {
       margin: 40px 0 0
   }
+    }
+
+.uc-section-title._center {
+    text-align: center;
+  }
+
+.uc-section-title._center:after {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+.uc-section-title._center + p {
+      text-align: center;
     }
 
 ._dark .uc-section-title,
@@ -2588,20 +2605,18 @@ figcaption,
   border: 1px solid #ebebeb;
 }
 
-.uc-form-parts._text {
+.uc-form-parts[type="text"],
+  .uc-form-parts._text {
     line-height: 1;
   }
 
-.uc-form-parts._textarea {
-    height: 10em;
+.uc-form-parts[type="checkbox"],
+  .uc-form-parts._checkbox,
+  .uc-form-parts[type="radio"],
+  .uc-form-parts._radio {
+    width: auto;
+    margin-right: 8px;
   }
-
-@media (max-width: 768px) {
-
-.uc-form-parts._textarea {
-      height: 8em
-  }
-    }
 
 .uc-form-group .uc-form-parts {
     border-radius: 0;
@@ -2616,18 +2631,65 @@ figcaption,
     border-left: 1px solid #ebebeb;
   }
 
+textarea.uc-form-parts,
+.uc-form-parts._textarea {
+  height: 10em;
+}
+
+@media (max-width: 768px) {
+
+textarea.uc-form-parts,
+.uc-form-parts._textarea {
+    height: 8em
+}
+  }
+
+select.uc-form-parts,
+.uc-form-parts._select {
+  -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.uc-form-parts-unit {
+  text-align: left;
+}
+
 .uc-form-parts-unit + .uc-form-parts-unit {
     margin-top: 32px;
   }
 
+.uc-form-parts-unit + .uc-form-parts-unit.uc-grid {
+    margin-top: 8px;
+  }
+
+.uc-form-parts-unit._center {
+    text-align: center;
+  }
+
 .uc-form-parts-unit label {
-    display: block;
+    display: inline-block;
     color: rgba(0, 0, 0, 0.7);
     font-weight: bold;
     font-size: .875rem;
-    margin-bottom: 14px;
+    line-height: 1;
     text-align: left;
+    cursor: pointer;
   }
+
+.uc-form-parts-unit label + label {
+      margin-left: 32px;
+    }
+
+.uc-form-parts-unit label + .uc-form-group,
+    .uc-form-parts-unit label + .uc-form-parts {
+      margin-top: 16px;
+    }
+
+._black .uc-form-parts-unit label,
+    ._dark .uc-form-parts-unit label {
+      color: white;
+    }
 
 .uc-form-parts-unit label > span {
       display: inline-block;
