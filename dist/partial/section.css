@@ -1,4 +1,4 @@
-/*! UNITS v0.1.11 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
+/*! UNITS v0.1.12 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
 /**
  * UNITS section components
  *
@@ -60,6 +60,14 @@
   .uc-section._black {
     color: white;
   }
+
+.uc-section p a {
+    color: #1e88e5;
+  }
+
+.uc-section._black p a, .uc-section._dark p a {
+      color: rgba(255, 255, 255, 0.8);
+    }
 
 .uc-section-inner {
   max-width: 1200px;

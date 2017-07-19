@@ -1,4 +1,4 @@
-/*! UNITS v0.1.11 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
+/*! UNITS v0.1.12 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
 *,
 ::before,
 ::after {
@@ -345,7 +345,7 @@ body {
 }
 
 a {
-  color: #1e88e5;
+  color: #333;
 	background-color: transparent;
   text-decoration: underline;
 }
@@ -1372,6 +1372,14 @@ p + h2,
     color: white;
   }
 
+.uc-section p a {
+    color: #1e88e5;
+  }
+
+.uc-section._black p a, .uc-section._dark p a {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
 .uc-section-inner {
   max-width: 1200px;
   margin-left: auto;
@@ -1727,7 +1735,6 @@ p + h2,
     letter-spacing: .05em;
     -webkit-transition: all .35s cubic-bezier(.25, .8, .25, 1);
     transition: all .35s cubic-bezier(.25, .8, .25, 1);
-    color: #333;
   }
 
 @media (max-width: 768px) {

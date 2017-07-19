@@ -56,6 +56,17 @@
   &._black {
     color: white;
   }
+
+  p a {
+    color: var(--color-link);
+  }
+
+  &._black,
+  &._dark {
+    p a {
+      color: color(white a(.8));
+    }
+  }
 }
 
 .uc-section-inner {

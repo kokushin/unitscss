@@ -1,4 +1,4 @@
-/*! UNITS v0.1.11 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
+/*! UNITS v0.1.12 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
 /**
  * UNITS btn components
  *
@@ -62,7 +62,6 @@
     letter-spacing: .05em;
     -webkit-transition: all .35s cubic-bezier(.25, .8, .25, 1);
     transition: all .35s cubic-bezier(.25, .8, .25, 1);
-    color: #333;
   }
 
 @media (max-width: 768px) {
