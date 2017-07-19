@@ -341,8 +341,9 @@ body {
 }
 
 a {
-  color: var(--color-text);
+  color: var(--color-link);
 	background-color: transparent;
+  text-decoration: underline;
 
   ._dark &,
   ._black & {
