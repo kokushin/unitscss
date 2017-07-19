@@ -61,6 +61,14 @@
     color: white;
   }
 
+.uc-section p a {
+    color: #1e88e5;
+  }
+
+.uc-section._black p a, .uc-section._dark p a {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
 .uc-section-inner {
   max-width: 1200px;
   margin-left: auto;
