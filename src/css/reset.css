@@ -341,7 +341,7 @@ body {
 }
 
 a {
-  color: var(--color-link);
+  color: var(--color-text);
 	background-color: transparent;
   text-decoration: underline;
 

@@ -53,7 +53,6 @@
     font-weight: bold;
     letter-spacing: .05em;
     transition: all .35s var(--Hover_easeOut);
-    color: var(--color-text);
 
     @media (--small-viewport) {
       width: 100%;
