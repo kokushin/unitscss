@@ -344,8 +344,9 @@ body {
 }
 
 a {
-  color: #333;
+  color: #1e88e5;
 	background-color: transparent;
+  text-decoration: underline;
 }
 
 ._dark a,
@@ -1201,7 +1202,7 @@ p + h2,
     .uc-footer._black > p,
     .uc-footer._black > small,
     .uc-footer._black a {
-      color: rgba(255, 255, 255, 0.8);
+      color: rgba(255, 255, 255, 0.5);
     }
 
 .uc-footer-logo {
@@ -1253,10 +1254,6 @@ p + h2,
     transition: opacity .35s cubic-bezier(.25, .8, .25, 1);
   }
 
-.uc-footer-menu > a:hover {
-      opacity: .7;
-    }
-
 @media (max-width: 768px) {
 
 .uc-footer-menu > a {
@@ -1265,6 +1262,15 @@ p + h2,
       padding: 16px 24px;
       border-bottom: 1px solid rgba(255, 255, 255, 0.08)
   }
+    }
+
+._dark .uc-footer-menu > a,
+    ._black .uc-footer-menu > a {
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+.uc-footer-menu > a:hover {
+      opacity: .7;
     }
 
 .uc-footer-menu > a:after {
@@ -1493,20 +1499,6 @@ p + h2,
     z-index: 5999;
   }
 
-.uc-hero > p {
-    color: white;
-    font-size: 1.125rem;
-    margin: 24px 0 0;
-  }
-
-@media (max-width: 768px) {
-
-.uc-hero > p {
-      margin: 16px 0 0;
-      font-size: 1rem
-  }
-    }
-
 ._ghost + .uc-hero,
   ._fixed + .uc-hero,
   ._ghost + .uc-menu._slide + .uc-hero,
@@ -1523,6 +1515,16 @@ p + h2,
   ._fixed + .uc-menu._slide + .uc-hero {
       padding-top: 128px
   }
+    }
+
+.uc-hero._left {
+    text-align: left;
+  }
+
+.uc-hero._left .uc-btn-unit {
+      -webkit-box-pack: left;
+          -ms-flex-pack: left;
+              justify-content: left;
     }
 
 .uc-hero._full {
@@ -1594,6 +1596,26 @@ p + h2,
         height: calc(100vh - 114px)
     }
       }
+
+.uc-hero > p {
+    color: white;
+    font-size: 1.125rem;
+    margin: 24px 0 0;
+  }
+
+@media (max-width: 768px) {
+
+.uc-hero > p {
+      margin: 16px 0 0;
+      font-size: 1rem
+  }
+    }
+
+.uc-hero .uc-btn-unit {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 
 .uc-hero-title {
   color: white;
@@ -1704,6 +1726,7 @@ p + h2,
     letter-spacing: .05em;
     -webkit-transition: all .35s cubic-bezier(.25, .8, .25, 1);
     transition: all .35s cubic-bezier(.25, .8, .25, 1);
+    color: #333;
   }
 
 @media (max-width: 768px) {

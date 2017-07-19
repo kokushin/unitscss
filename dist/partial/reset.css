@@ -1,4 +1,4 @@
-/*! UNITS v0.1.10 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
+/*! UNITS v0.1.11 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
 *,
 ::before,
 ::after {
@@ -345,8 +345,9 @@ body {
 }
 
 a {
-  color: #333;
+  color: #1e88e5;
 	background-color: transparent;
+  text-decoration: underline;
 }
 
 ._dark a,

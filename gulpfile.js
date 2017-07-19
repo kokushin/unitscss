@@ -55,7 +55,7 @@ gulp.task('javascripts', () => {
     .pipe(gulp.dest('./dist'));
 });
 
-gulp.task('default', ['styles', 'javascripts']);
+gulp.task('default', ['styles', 'javascripts', 'dev:styles', 'dev:javascripts', 'dev:htmls']);
 
 
 /* Development task */
