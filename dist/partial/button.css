@@ -62,6 +62,7 @@
     letter-spacing: .05em;
     -webkit-transition: all .35s cubic-bezier(.25, .8, .25, 1);
     transition: all .35s cubic-bezier(.25, .8, .25, 1);
+    color: #333;
   }
 
 @media (max-width: 768px) {

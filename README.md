@@ -34,11 +34,11 @@ Because the developers are Japanese that we can support in Japanese. We have bee
 
 UNITS itself can be downloaded from GitHub by cloning it or as a ZIP format, or you can download it via npm.
 
-```
+```shell
 $ git clone https://github.com/kokushin/unitscss.git
 ```
 
-```
+```shell
 $ npm install unitscss --save
 ```
 

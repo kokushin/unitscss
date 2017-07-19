@@ -61,7 +61,7 @@
     > p,
     > small,
     a {
-      color: color(white a(.8));
+      color: color(white a(.5));
     }
   }
 }
@@ -104,15 +104,20 @@
     font-weight: bold;
     transition: opacity .35s var(--Hover_easeOut);
 
-    &:hover {
-      opacity: .7;
-    }
-
     @media (--small-viewport) {
       width: 100%;
       margin: 0;
       padding: 16px 24px;
       border-bottom: 1px solid color(white a(.08));
+    }
+
+    ._dark &,
+    ._black & {
+      color: color(white a(.8));
+    }
+
+    &:hover {
+      opacity: .7;
     }
 
     &:after {
