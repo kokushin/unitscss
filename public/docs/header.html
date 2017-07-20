@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Install | Document | UNITS - Simple and beautiful CSS component set.</title>
+  <title>Header | Document | UNITS - Simple and beautiful CSS component set.</title>
   <link rel="canonical" href="https://unitscss.com/">
   <meta name="description" content="UNITS is a simple and beautiful CSS component set.">
   <meta name="author" content="kokushin">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="UNITS - Simple and beautiful CSS component set.">
-  <meta property="og:title" content="Install | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta property="og:title" content="Header | Document | UNITS - Simple and beautiful CSS component set.">
   <meta property="og:description" content="UNITS is a simple and beautiful CSS component set.">
   <meta property="og:url" content="https://unitscss.com/">
   <meta property="og:image" content="https://unitscss.com/img/share/ogimage.png?r=2">
   <meta name="twitter:site" content="@kokushing">
   <meta name="twitter:creator" content="@kokushing">
   <meta name="twitter:url" content="https://unitscss.com/">
-  <meta name="twitter:title" content="Install | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta name="twitter:title" content="Header | Document | UNITS - Simple and beautiful CSS component set.">
   <meta name="twitter:description" content="UNITS is a simple and beautiful CSS component set.">
   <meta name="twitter:card" content="summary">
   <meta name="format-detection" content="telephone=no">
@@ -109,12 +109,12 @@
   <div class="uc-sidebar-wrap">
     <div class="uc-sidebar-list">
       <a href="/docs/" >Introduction</a>
-      <a href="/docs/install.html" class="_is-current">Install</a>
+      <a href="/docs/install.html" >Install</a>
       <!--<a href="/docs/guide.html" >Coding guide</a>-->
     </div>
     <div class="uc-sidebar-list">
       <p><strong>Components</strong></p>
-      <a href="/docs/header.html" >Header</a>
+      <a href="/docs/header.html" class="_is-current">Header</a>
       <a href="/docs/footer.html" >Footer</a>
       <a href="/docs/section.html" >Section</a>
       <a href="/docs/grid.html" >Grid</a>
@@ -147,47 +147,175 @@
   <main class="uc-content">
     <section class="uc-section">
 
-      <h2 class="uc-section-title">Install</h2>
-      <p>UNITS can be installed easily, it is possible to start using immediately!</p>
+      <h2 class="uc-section-title">Header</h2>
+      <p>You can create a header by specifying the <code>uc-header</code> class.</p>
 
-      <div class="uc-code-unit">
-        <p>1. UNITS itself can be downloaded from GitHub by cloning it or as a ZIP format, or you can download it via npm.</p>
-        <pre><code class="bash">$ git clone https://github.com/kokushin/unitscss.git</code></pre>
-        <pre><code class="bash">$ npm install unitscss --save</code></pre>
-      </div>
-      <div class="uc-code-unit">
-        <p>2. Let's load the necessary files.</p>
-<pre><code>&lt;link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"&gt;
-&lt;link rel="stylesheet" href="path/to/units.min.css"&gt;
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Basic</h3>
+        <p>Create a basic header.</p>
 
-&lt;script src="path/to/units.min.js"&gt;&lt;/script&gt;
+        <div class="doc-component-preview">
+          <div class="uc-header">
+            <div class="uc-header-logo">UNITS</div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;header class="uc-header"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/header&gt;
 </code></pre>
+        </div>
       </div>
-      <div class="uc-code-unit">
-        <p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut eos laudantium perferendis voluptatem sunt totam, esse mollitia officia! Ipsam numquam ducimus necessitatibus, nesciunt eos.</p>
-<pre><code>&lt;div class="uc-card _float"&gt;
-  &lt;div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
-  &lt;h3 class="uc-card-title"&gt;Sample card&lt;/h3&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.&lt;/p&gt;
-  &lt;div class="uc-btn _primary"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. Color variations</h3>
+        <p>Two kinds of color variations are available.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-header _black">
+            <div class="uc-header-logo">UNITS</div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-header _dark">
+            <div class="uc-header-logo">UNITS</div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;!-- Black --&gt;
+&lt;header class="uc-header _black"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;!-- Dark --&gt;
+&lt;header class="uc-header _dark"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/header&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-3">
+        <h3>3. Ghost header</h3>
+        <p>Combined with <code>uc-hero</code>, you can create a transparent header.</p>
+
+        <div class="doc-component-preview">
+          <div class="doc-component-preview-inner">
+            <div class="uc-header _ghost">
+              <div class="uc-header-logo">UNITS</div>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="uc-hero">
+              <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+              <div class="uc-hero-title">Hero components</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;header class="uc-header _ghost"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;div class="uc-hero"&gt;
+  &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-hero-title"&gt;Hero components&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
 &lt;/div&gt;
 </code></pre>
+        </div>
       </div>
-      <div class="uc-code-unit">
-        <p>4. It will be displayed on the browser like this:</p>
-        <div class="uc-card _float" style="margin-left:auto;margin-right:auto">
-          <div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"></div>
-          <h3 class="uc-card-title">Sample card</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.</p>
-          <div class="uc-btn _primary"><a href="#">Button</a></div>
+
+      <div class="doc-component-box" id="c-4">
+        <h3>4. Fixed header</h3>
+        <p>Fix the header at the top of the page.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-header">
+            <div class="uc-header-logo">UNITS</div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;header class="uc-header _fixed"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/header&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-5">
+        <h3>5. Header menu (text)</h3>
+        <p>You can add a header menu.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-header">
+            <div class="uc-header-logo">UNITS</div>
+            <div class="uc-header-menu">
+              <a href="#">Menu1</a>
+              <a href="#">Menu2</a>
+              <a href="#">Menu3</a>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;header class="uc-header"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;div class="uc-header-menu"&gt;
+    &lt;a href="#"&gt;Menu1&lt;/a&gt;
+    &lt;a href="#"&gt;Menu2&lt;/a&gt;
+    &lt;a href="#"&gt;Menu3&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-6">
+        <h3>6. Header menu (button)</h3>
+        <p>You can add a header menu button. <br>It must be combined with <code>uc-menu._slide</code>.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-header">
+            <div class="uc-header-logo">UNITS</div>
+            <div class="uc-menu-btn _text" data-open-target="#menu">
+              <button><i class="uc-menu-btn-icon"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;header class="uc-header"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;div class="uc-menu-btn _text" data-open-target="#menu"&gt;
+    &lt;button&gt;&lt;i class="uc-menu-btn-icon"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;nav class="uc-menu _slide" id="menu"&gt;
+  &lt;div class="uc-menu-wrap"&gt;
+    &lt;div class="uc-menu-list"&gt;
+      &lt;a href="#"&gt;Menu1&lt;/a&gt;
+      &lt;a href="#"&gt;Menu2&lt;/a&gt;
+      &lt;a href="#"&gt;Menu3&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+</code></pre>
         </div>
       </div>
 
     </section>
 
     <div class="uc-pager-unit">
-      <div class="uc-btn"><a href="./">← Introduction</a></div>
-      <div class="uc-btn _primary"><a href="./guide.html">Coding guide →</a></div>
+      <div class="uc-btn"><a href="./hero.html">← Hero</a></div>
+      <div class="uc-btn _primary"><a href="./button.html">Button →</a></div>
     </div>
   </main>
 
