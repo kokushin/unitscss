@@ -24,9 +24,13 @@
   --color-primary: #546e7a;
   --color-primary-hover: #37474f;
   --color-secondary: #333;
-  --color-success: #7cb342;
-  --color-danger: #f4511e;
+  --color-secondary-hover: black;
+  --color-success: #43a047;
+  --color-success-hover: #237d32;
+  --color-danger: #e53935;
+  --color-danger-hover: #c62828;
   --color-warning: #fdd835;
+  --color-warning-hover: #f9a825;
   --color-dark: #37474f;
   --color-black: #141414;
   --color-gray: #999;
