@@ -17,6 +17,7 @@
 .uc-section {
   position: relative;
   padding: 80px;
+  background-color: white;
 
   @media (--medium-viewport) {
     padding: 80px 40px;

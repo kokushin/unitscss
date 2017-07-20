@@ -1,4 +1,4 @@
-/*! UNITS v0.1.13 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
+/*! UNITS v0.1.14 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
 /**
  * UNITS footer components
  *
@@ -73,8 +73,11 @@
   }
     }
 
-.uc-footer._dark,
-  .uc-footer._black {
+.uc-footer._dark {
+    background-color: #37474f;
+  }
+
+.uc-footer._black {
     background-color: rgba(0, 0, 0, 0.92);
   }
 

@@ -2,7 +2,7 @@
 
 Simple and beautiful component set.
 
-![sample](https://raw.githubusercontent.com/kokushin/units/develop/public/img/readme/img_01.png)
+![sample](https://raw.githubusercontent.com/kokushin/units/master/public/img/readme/img_01.png)
 
 [![npm version](https://badge.fury.io/js/unitscss.svg)](https://badge.fury.io/js/unitscss)
 [![npm download](http://img.shields.io/npm/dm/unitscss.svg)](https://www.npmjs.com/package/unitscss)
@@ -66,7 +66,7 @@ Write exact html snippets and give it the right classes starting with `uc-`. For
 
 It will be displayed on the browser like this:
 
-<img src="https://raw.githubusercontent.com/kokushin/units/develop/public/img/readme/img_02.png" width="560">
+<img src="https://raw.githubusercontent.com/kokushin/units/master/public/img/readme/img_02.png" width="560">
 
 ## Demo
 
