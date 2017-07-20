@@ -63,8 +63,9 @@ gulp.task('default', ['styles', 'javascripts', 'dev:styles', 'dev:javascripts', 
 gulp.task('dev:serve', ['dev:styles', 'dev:javascripts', 'dev:htmls'], () => {
   browserSync.init({
     server: './public',
+    open: false,
     notify: false,
-    ghostMode: false
+    ghostMode: false,
   });
 
   gulp.watch('./src/css/**/*.css', ['dev:styles']);
