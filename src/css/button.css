@@ -78,7 +78,15 @@
   &._ghost > a,
   &._ghost > span,
   &._primary > a,
-  &._primary > span {
+  &._primary > span,
+  &._secondary> a,
+  &._secondary> span,
+  &._success> a,
+  &._success> span,
+  &._danger> a,
+  &._danger> span,
+  &._warning > a,
+  &._warning > span {
     color: white;
   }
 
@@ -102,6 +110,67 @@
     &:hover {
       background-color: var(--color-primary-hover);
       border: 2px solid var(--color-primary-hover);
+    }
+  }
+
+  &._secondary {
+    background-color: var(--color-secondary);
+    border: 2px solid var(--color-secondary);
+
+    &:hover {
+      background-color: var(--color-secondary-hover);
+      border: 2px solid var(--color-secondary-hover);
+    }
+  }
+
+  &._success {
+    background-color: var(--color-success);
+    border: 2px solid var(--color-success);
+
+    &:hover {
+      background-color: var(--color-success-hover);
+      border: 2px solid var(--color-success-hover);
+    }
+  }
+
+  &._danger {
+    background-color: var(--color-danger);
+    border: 2px solid var(--color-danger);
+
+    &:hover {
+      background-color: var(--color-danger-hover);
+      border: 2px solid var(--color-danger-hover);
+    }
+  }
+
+  &._warning {
+    background-color: var(--color-warning);
+    border: 2px solid var(--color-warning);
+
+    &:hover {
+      background-color: var(--color-warning-hover);
+      border: 2px solid var(--color-warning-hover);
+    }
+  }
+
+  &._disabled,
+  &:disabled {
+    background-color: var(--color-btn-hover);
+    border: 2px solid var(--color-btn-hover);
+    position: relative;
+    cursor: default;
+    opacity: .5;
+
+    &:before {
+      content: " ";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
     }
   }
 
