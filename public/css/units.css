@@ -1191,8 +1191,11 @@ p + h2,
   }
     }
 
-.uc-footer._dark,
-  .uc-footer._black {
+.uc-footer._dark {
+    background-color: #37474f;
+  }
+
+.uc-footer._black {
     background-color: rgba(0, 0, 0, 0.92);
   }
 
@@ -1326,6 +1329,7 @@ p + h2,
 .uc-section {
   position: relative;
   padding: 80px;
+  background-color: white;
 }
 
 @media (min-width: 769px) and (max-width: 1199px) {
