@@ -16,6 +16,7 @@
 .uc-section {
   position: relative;
   padding: 80px;
+  background-color: white;
 }
 
 @media (min-width: 769px) and (max-width: 1199px) {

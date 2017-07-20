@@ -73,8 +73,11 @@
   }
     }
 
-.uc-footer._dark,
-  .uc-footer._black {
+.uc-footer._dark {
+    background-color: #37474f;
+  }
+
+.uc-footer._black {
     background-color: rgba(0, 0, 0, 0.92);
   }
 

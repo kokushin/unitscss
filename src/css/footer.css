@@ -54,10 +54,16 @@
     }
   }
 
-  &._dark,
+  &._dark {
+    background-color: var(--color-dark);
+  }
+
   &._black {
     background-color: color(black a(.92));
+  }
 
+  &._dark,
+  &._black {
     > p,
     > small,
     a {
