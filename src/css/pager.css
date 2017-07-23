@@ -66,6 +66,7 @@
   margin: 0;
   padding: 80px;
   background-color: var(--color-bg);
+  text-align: center;
 
   @media (--small-viewport) {
     padding: 32px 0 48px;
@@ -75,10 +76,6 @@
         margin: 16px 8px 0;
       }
     }
-  }
-
-  &._center {
-    text-align: center;
   }
 
   > * {
