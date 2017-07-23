@@ -18,166 +18,88 @@
   <main class="uc-content">
     <section class="uc-section">
 
-      <h2 class="uc-section-title">Header</h2>
-      <p>You can create a header by specifying the <code>uc-header</code> class.</p>
+      <h2 class="uc-section-title">Hero</h2>
+      <p>You can create a hero area by specifying the <code>uc-hero</code> class.</p>
 
       <div class="doc-component-box" id="c-1">
         <h3>1. Basic</h3>
-        <p>Create a basic header.</p>
+        <p>Create a basic hero area.</p>
 
         <div class="doc-component-preview">
-          <div class="uc-header">
-            <div class="uc-header-logo">UNITS</div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        <div class="uc-code-unit">
-<pre><code class="html">&lt;header class="uc-header"&gt;
-  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
-&lt;/header&gt;
-</code></pre>
-        </div>
-      </div>
-
-      <div class="doc-component-box" id="c-2">
-        <h3>2. Color variations</h3>
-        <p>Two kinds of color variations are available.</p>
-
-        <div class="doc-component-preview">
-          <div class="uc-header _black">
-            <div class="uc-header-logo">UNITS</div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div>&nbsp;</div>
-          <div class="uc-header _dark">
-            <div class="uc-header-logo">UNITS</div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        <div class="uc-code-unit">
-<pre><code class="html">&lt;!-- Black --&gt;
-&lt;header class="uc-header _black"&gt;
-  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
-&lt;/header&gt;
-
-&lt;!-- Dark --&gt;
-&lt;header class="uc-header _dark"&gt;
-  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
-&lt;/header&gt;
-</code></pre>
-        </div>
-      </div>
-
-      <div class="doc-component-box" id="c-3">
-        <h3>3. Ghost header</h3>
-        <p>Combined with <code>uc-hero</code>, you can create a transparent header.</p>
-
-        <div class="doc-component-preview">
-          <div class="doc-component-preview-inner">
-            <div class="uc-header _ghost">
-              <div class="uc-header-logo">UNITS</div>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-            <div class="uc-hero">
-              <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
-              <div class="uc-hero-title">Hero components</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="uc-hero">
+            <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+            <div class="uc-hero-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?</p>
+            <div class="uc-btn-unit">
+              <div class="uc-btn _ghost"><span>Button</span></div>
             </div>
           </div>
         </div>
         <div class="uc-code-unit">
-<pre><code class="html">&lt;header class="uc-header _ghost"&gt;
-  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
-&lt;/header&gt;
-
-&lt;div class="uc-hero"&gt;
+<pre><code class="html">&lt;div class="uc-hero"&gt;
   &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
-  &lt;div class="uc-hero-title"&gt;Hero components&lt;/div&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+  &lt;div class="uc-hero-title"&gt;Lorem ipsum dolor sit amet.&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?&lt;/p&gt;
+  &lt;div class="uc-btn-unit"&gt;
+    &lt;div class="uc-btn _ghost"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
         </div>
       </div>
 
-      <div class="doc-component-box" id="c-4">
-        <h3>4. Fixed header</h3>
-        <p>Fix the header at the top of the page.</p>
+      <div class="doc-component-box" id="c-2">
+        <h3>2. Left align element</h3>
+        <p>You can left-justify an element by specifying the <code>_left</code> class.</p>
 
         <div class="doc-component-preview">
-          <div class="uc-header">
-            <div class="uc-header-logo">UNITS</div>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </div>
-        <div class="uc-code-unit">
-<pre><code class="html">&lt;header class="uc-header _fixed"&gt;
-  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
-&lt;/header&gt;
-</code></pre>
-        </div>
-      </div>
-
-      <div class="doc-component-box" id="c-5">
-        <h3>5. Header menu (text)</h3>
-        <p>You can add a header menu.</p>
-
-        <div class="doc-component-preview">
-          <div class="uc-header">
-            <div class="uc-header-logo">UNITS</div>
-            <div class="uc-header-menu">
-              <a href="#">Menu1</a>
-              <a href="#">Menu2</a>
-              <a href="#">Menu3</a>
+          <div class="uc-hero _left">
+            <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+            <div class="uc-hero-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?</p>
+            <div class="uc-btn-unit">
+              <div class="uc-btn _ghost"><span>Button</span></div>
             </div>
           </div>
         </div>
         <div class="uc-code-unit">
-<pre><code class="html">&lt;header class="uc-header"&gt;
-  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
-  &lt;div class="uc-header-menu"&gt;
-    &lt;a href="#"&gt;Menu1&lt;/a&gt;
-    &lt;a href="#"&gt;Menu2&lt;/a&gt;
-    &lt;a href="#"&gt;Menu3&lt;/a&gt;
+<pre><code class="html">&lt;div class="uc-hero _left"&gt;
+  &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-hero-title"&gt;Lorem ipsum dolor sit amet.&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?&lt;/p&gt;
+  &lt;div class="uc-btn-unit"&gt;
+    &lt;div class="uc-btn _ghost"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/div&gt;
   &lt;/div&gt;
-&lt;/header&gt;
+&lt;/div&gt;
 </code></pre>
         </div>
       </div>
 
-      <div class="doc-component-box" id="c-6">
-        <h3>6. Header menu (button)</h3>
-        <p>You can add a header menu button. <br>It must be combined with <code>uc-menu._slide</code>.</p>
+      <div class="doc-component-box" id="c-3">
+        <h3>3. Display on the whole screen</h3>
+        <p>By specifying the <code>`_full</code> class, you can display the entire screen.</p>
 
         <div class="doc-component-preview">
-          <div class="uc-header">
-            <div class="uc-header-logo">UNITS</div>
-            <div class="uc-menu-btn _text" data-open-target="#menu">
-              <button><i class="uc-menu-btn-icon"></i></button>
+          <div class="doc-component-preview-inner">
+            <div class="uc-hero _full">
+              <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+              <div class="uc-hero-title">Lorem ipsum dolor sit amet.</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?</p>
+              <div class="uc-btn-unit">
+                <div class="uc-btn _ghost"><span>Button</span></div>
+              </div>
             </div>
           </div>
         </div>
         <div class="uc-code-unit">
-<pre><code class="html">&lt;header class="uc-header"&gt;
-  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
-  &lt;div class="uc-menu-btn _text" data-open-target="#menu"&gt;
-    &lt;button&gt;&lt;i class="uc-menu-btn-icon"&gt;&lt;/i&gt;&lt;/button&gt;
+<pre><code class="html">&lt;div class="uc-hero _full"&gt;
+  &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-hero-title"&gt;Lorem ipsum dolor sit amet.&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?&lt;/p&gt;
+  &lt;div class="uc-btn-unit"&gt;
+    &lt;div class="uc-btn _ghost"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/div&gt;
   &lt;/div&gt;
-&lt;/header&gt;
-
-&lt;nav class="uc-menu _slide" id="menu"&gt;
-  &lt;div class="uc-menu-wrap"&gt;
-    &lt;div class="uc-menu-list"&gt;
-      &lt;a href="#"&gt;Menu1&lt;/a&gt;
-      &lt;a href="#"&gt;Menu2&lt;/a&gt;
-      &lt;a href="#"&gt;Menu3&lt;/a&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/nav&gt;
+&lt;/div&gt;
 </code></pre>
         </div>
       </div>

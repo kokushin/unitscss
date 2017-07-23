@@ -18,140 +18,70 @@
   <main class="uc-content">
     <section class="uc-section">
 
-      <h2 class="uc-section-title">Section</h2>
-      <p>You can create a main content / section by specifying the <code>uc-content, uc-section</code> class.</p>
+      <h2 class="uc-section-title">Button</h2>
+      <p>You can create a buttons by specifying the <code>uc-btn</code> class.</p>
 
       <div class="doc-component-box" id="c-1">
         <h3>1. Basic</h3>
-        <p>Create a basic section. <br>In principle, <code>uc-content</code> can only be specified once.</p>
+        <p>Create a basic button.</p>
 
         <div class="doc-component-preview">
           <div class="uc-content">
-            <div class="uc-section">
-              <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
+            <div class="uc-btn"><a href="#">Button</a></div>
+            <button class="uc-btn"><span>Button</span></button>
+            <div class="uc-btn"><span>Button</span></div>
           </div>
         </div>
         <div class="uc-code-unit">
-<pre><code class="html">&lt;main class="uc-content"&gt;
-  &lt;section class="uc-section"&gt;
-    &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-  &lt;/section&gt;
-&lt;/main&gt;
+<pre><code class="html">&lt;div class="uc-btn"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+&lt;button class="uc-btn"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/button&gt;
+&lt;!-- It can be used in `a` tag. --&gt;
+&lt;div class="uc-btn"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/div&gt;
 </code></pre>
         </div>
       </div>
 
       <div class="doc-component-box" id="c-2">
         <h3>2. Color variations</h3>
-        <p>Four kinds of color variations are available.</p>
+        <p>There are abundant color variations.</p>
 
         <div class="doc-component-preview">
-          <div class="uc-section _gray">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
+          <div><div class="uc-btn _ghost"><a href="#">Ghost</a></div></div>
           <div>&nbsp;</div>
-          <div class="uc-section _black">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
+          <div><div class="uc-btn _primary"><a href="#">Primary</a></div></div>
           <div>&nbsp;</div>
-          <div class="uc-section _dark">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
+          <div><div class="uc-btn _secondary"><a href="">Secondary</a></div></div>
           <div>&nbsp;</div>
-          <div class="uc-section _zebra">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
+          <div><div class="uc-btn _success"><a href="">Success</a></div></div>
+          <div>&nbsp;</div>
+          <div><div class="uc-btn _danger"><a href="">Danger</a></div></div>
+          <div>&nbsp;</div>
+          <div><div class="uc-btn _warning"><a href="">Warning</a></div></div>
+          <div>&nbsp;</div>
+          <div><div class="uc-btn _disabled"><span>Disabled</span></div></div>
+          <div>&nbsp;</div>
         </div>
         <div class="uc-code-unit">
-<pre><code class="html">&lt;!-- Gray --&gt;
-&lt;section class="uc-section _gray"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Black --&gt;
-&lt;section class="uc-section _black"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Dark --&gt;
-&lt;section class="uc-section _dark"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Zebra --&gt;
-&lt;!-- It changes to a gray background when the order of elements is even. --&gt;
-&lt;section class="uc-section _zebra"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
+<pre><code class="html">&lt;div class="uc-btn _ghost"&gt;&lt;a href="#"&gt;Ghost&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _primary"&gt;&lt;a href="#"&gt;Primary&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _secondary"&gt;&lt;a href=""&gt;Secondary&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _success"&gt;&lt;a href=""&gt;Success&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _danger"&gt;&lt;a href=""&gt;Danger&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _warning"&gt;&lt;a href=""&gt;Warning&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _disabled"&gt;&lt;span&gt;Disabled&lt;/span&gt;&lt;/div&gt;
 </code></pre>
         </div>
       </div>
 
       <div class="doc-component-box" id="c-3">
-        <h3>3. Centering</h3>
-        <p>Specify the <code>_center</code> class and center the element.</p>
+        <h3>3. Fit to width</h3>
+        <p>By specifying the <code>_full</code> class, you can display the button in the full width of the screen.</p>
 
         <div class="doc-component-preview">
-          <div class="uc-section _center">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repellendus, voluptatum provident dicta recusandae.</p>
-            <div class="uc-btn"><span>Button</span></div>
-          </div>
-          <div>&nbsp;</div>
-          <div class="uc-section">
-            <div class="uc-section-title _center">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repellendus, voluptatum provident dicta recusandae.</p>
-            <div class="uc-btn"><span>Button</span></div>
-          </div>
+          <div class="uc-btn _full"><a href="#">Button</a></div>
         </div>
         <div class="uc-code-unit">
-<pre><code class="html">&lt;!-- Make all elements centered. --&gt;
-&lt;section class="uc-section _center"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Place the title element and the text below it in the center. --&gt;
-&lt;section class="uc-section"&gt;
-  &lt;h2 class="uc-section-title _center"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-</code></pre>
-        </div>
-      </div>
-
-      <div class="doc-component-box" id="c-4">
-        <h3>4. Set max width and center</h3>
-        <p>Set the maximum horizontal width (1200px) and center it.</p>
-
-        <div class="doc-component-preview">
-          <div class="uc-section">
-            <div class="uc-section-inner">
-              <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="uc-code-unit">
-<pre><code class="html">&lt;section class="uc-section"&gt;
-  &lt;div class="uc-section-inner"&gt;
-    &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
+<pre><code class="html">&lt;div class="uc-btn _full"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
 </code></pre>
         </div>
       </div>
