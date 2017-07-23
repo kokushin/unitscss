@@ -80,7 +80,8 @@
   </div>
   <h1 class="uc-header-logo"><a href="/">UNITS</a></h1>
   <div class="uc-header-menu _hide-small">
-    <!--<a href="/docs/" class="_is-current">Document</a>-->
+    <a href="/docs/" class="_is-current">Document</a>
+    <a href="https://codepen.io/search/pens/?q=units&limit=kokushin" target="_blank">Snippets</a>
     <a href="/themes/">Themes</a>
     <a href="https://github.com/kokushin/unitscss" target="_blank">GitHub</a>
     <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
@@ -94,7 +95,8 @@
 <nav class="uc-menu _slide _black" id="menu">
   <div class="uc-menu-wrap">
     <div class="uc-menu-list">
-      <!--<a href="#" class="_is-current">Document</a>-->
+      <a href="/docs/" class="_is-current">Document</a>
+      <a href="https://codepen.io/search/pens/?q=units&limit=kokushin" target="_blank">Snippets</a>
       <a href="/themes/">Themes</a>
       <a href="https://github.com/kokushin/unitscss" target="_blank">GitHub</a>
       <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
@@ -147,140 +149,152 @@
   <main class="uc-content">
     <section class="uc-section">
 
-      <h2 class="uc-section-title">Section</h2>
-      <p>You can create a main content / section by specifying the <code>uc-content, uc-section</code> class.</p>
+      <h2 class="uc-section-title">Menu</h2>
+      <p>You can create a menu by specifying the <code>uc-menu</code> class.</p>
 
       <div class="doc-component-box" id="c-1">
-        <h3>1. Basic</h3>
-        <p>Create a basic section. <br>In principle, <code>uc-content</code> can only be specified once.</p>
+        <h3>1. Menu bar</h3>
+        <p>You can create a menu bar by specifying the <code>_bar</code> class.</p>
 
         <div class="doc-component-preview">
-          <div class="uc-content">
-            <div class="uc-section">
-              <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="uc-menu _bar" id="menu">
+            <div class="uc-menu-wrap">
+              <div class="uc-menu-list">
+                <a href="#">Menu1</a>
+                <a href="#">Menu2</a>
+                <a href="#">Menu3</a>
+                <a href="#">Menu4</a>
+                <a href="#">Menu5</a>
+                <a href="#">Menu6</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="uc-code-unit">
-<pre><code class="html">&lt;main class="uc-content"&gt;
-  &lt;section class="uc-section"&gt;
-    &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-  &lt;/section&gt;
-&lt;/main&gt;
+<pre><code class="html">&lt;nav class="uc-menu _bar _black" id="menu"&gt;
+  &lt;div class="uc-menu-wrap"&gt;
+    &lt;div class="uc-menu-list"&gt;
+      &lt;a href="#"&gt;Menu1&lt;/a&gt;
+      &lt;a href="#"&gt;Menu2&lt;/a&gt;
+      &lt;a href="#"&gt;Menu3&lt;/a&gt;
+      &lt;a href="#"&gt;Menu4&lt;/a&gt;
+      &lt;a href="#"&gt;Menu5&lt;/a&gt;
+      &lt;a href="#"&gt;Menu6&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
 </code></pre>
         </div>
       </div>
 
       <div class="doc-component-box" id="c-2">
         <h3>2. Color variations</h3>
-        <p>Four kinds of color variations are available.</p>
+        <p>Two kinds of color variations are available.</p>
 
         <div class="doc-component-preview">
-          <div class="uc-section _gray">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="uc-menu _bar _black" id="menu">
+            <div class="uc-menu-wrap">
+              <div class="uc-menu-list">
+                <a href="#">Menu1</a>
+                <a href="#">Menu2</a>
+                <a href="#">Menu3</a>
+                <a href="#">Menu4</a>
+                <a href="#">Menu5</a>
+                <a href="#">Menu6</a>
+              </div>
+            </div>
           </div>
           <div>&nbsp;</div>
-          <div class="uc-section _black">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div>&nbsp;</div>
-          <div class="uc-section _dark">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div>&nbsp;</div>
-          <div class="uc-section _zebra">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="uc-menu _bar _dark" id="menu">
+            <div class="uc-menu-wrap">
+              <div class="uc-menu-list">
+                <a href="#">Menu1</a>
+                <a href="#">Menu2</a>
+                <a href="#">Menu3</a>
+                <a href="#">Menu4</a>
+                <a href="#">Menu5</a>
+                <a href="#">Menu6</a>
+              </div>
+            </div>
           </div>
         </div>
         <div class="uc-code-unit">
-<pre><code class="html">&lt;!-- Gray --&gt;
-&lt;section class="uc-section _gray"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
+<pre><code class="html">&lt;!-- black --&gt;
+&lt;nav class="uc-menu _bar _black" id="menu"&gt;
+  &lt;div class="uc-menu-wrap"&gt;
+    &lt;div class="uc-menu-list"&gt;
+      &lt;a href="#"&gt;Menu1&lt;/a&gt;
+      &lt;a href="#"&gt;Menu2&lt;/a&gt;
+      &lt;a href="#"&gt;Menu3&lt;/a&gt;
+      &lt;a href="#"&gt;Menu4&lt;/a&gt;
+      &lt;a href="#"&gt;Menu5&lt;/a&gt;
+      &lt;a href="#"&gt;Menu6&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
 
-&lt;!-- Black --&gt;
-&lt;section class="uc-section _black"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Dark --&gt;
-&lt;section class="uc-section _dark"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Zebra --&gt;
-&lt;!-- It changes to a gray background when the order of elements is even. --&gt;
-&lt;section class="uc-section _zebra"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
+&lt;!-- dark --&gt;
+&lt;nav class="uc-menu _bar _dark" id="menu"&gt;
+  &lt;div class="uc-menu-wrap"&gt;
+    &lt;div class="uc-menu-list"&gt;
+      &lt;a href="#"&gt;Menu1&lt;/a&gt;
+      &lt;a href="#"&gt;Menu2&lt;/a&gt;
+      &lt;a href="#"&gt;Menu3&lt;/a&gt;
+      &lt;a href="#"&gt;Menu4&lt;/a&gt;
+      &lt;a href="#"&gt;Menu5&lt;/a&gt;
+      &lt;a href="#"&gt;Menu6&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
 </code></pre>
         </div>
       </div>
 
       <div class="doc-component-box" id="c-3">
-        <h3>3. Centering</h3>
-        <p>Specify the <code>_center</code> class and center the element.</p>
+        <h3>3. Slide menu</h3>
+        <p>By specifying the <code>_slide</code> class, you can create slide-style menus.</p>
 
         <div class="doc-component-preview">
-          <div class="uc-section _center">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repellendus, voluptatum provident dicta recusandae.</p>
-            <div class="uc-btn"><span>Button</span></div>
+          <div class="uc-menu-btn" data-open-target="#slide-menu">
+            <button><i class="uc-menu-btn-icon"></i></button>
           </div>
-          <div>&nbsp;</div>
-          <div class="uc-section">
-            <div class="uc-section-title _center">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repellendus, voluptatum provident dicta recusandae.</p>
-            <div class="uc-btn"><span>Button</span></div>
-          </div>
-        </div>
-        <div class="uc-code-unit">
-<pre><code class="html">&lt;!-- Make all elements centered. --&gt;
-&lt;section class="uc-section _center"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Place the title element and the text below it in the center. --&gt;
-&lt;section class="uc-section"&gt;
-  &lt;h2 class="uc-section-title _center"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-</code></pre>
-        </div>
-      </div>
-
-      <div class="doc-component-box" id="c-4">
-        <h3>4. Set max width and center</h3>
-        <p>Set the maximum horizontal width (1200px) and center it.</p>
-
-        <div class="doc-component-preview">
-          <div class="uc-section">
-            <div class="uc-section-inner">
-              <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="uc-menu _slide" id="slide-menu">
+            <div class="uc-menu-wrap">
+              <div class="uc-menu-list">
+                <a href="#">Menu1</a>
+                <a href="#">Menu2</a>
+                <a href="#">Menu3</a>
+              </div>
             </div>
           </div>
         </div>
         <div class="uc-code-unit">
-<pre><code class="html">&lt;section class="uc-section"&gt;
-  &lt;div class="uc-section-inner"&gt;
-    &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+<pre><code class="html">&lt;!-- A button for expanding the menu is necessary. --&gt;
+&lt;div class="uc-menu-btn" data-open-target="#slide-menu"&gt;
+  &lt;button&gt;&lt;i class="uc-menu-btn-icon"&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Slide menu body --&gt;
+&lt;nav class="uc-menu _slide" id="slide-menu"&gt;
+  &lt;div class="uc-menu-wrap"&gt;
+    &lt;div class="uc-menu-list"&gt;
+      &lt;a href="#"&gt;Menu1&lt;/a&gt;
+      &lt;a href="#"&gt;Menu2&lt;/a&gt;
+      &lt;a href="#"&gt;Menu3&lt;/a&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-&lt;/section&gt;
+&lt;/nav&gt;
+
+&lt;!-- If you specify the `_left` class, you can also slide from the left side. --&gt;
+&lt;nav class="uc-menu _slide _left" id="slide-menu"&gt;
+  &lt;div class="uc-menu-wrap"&gt;
+    &lt;div class="uc-menu-list"&gt;
+      &lt;a href="#"&gt;Menu1&lt;/a&gt;
+      &lt;a href="#"&gt;Menu2&lt;/a&gt;
+      &lt;a href="#"&gt;Menu3&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
 </code></pre>
         </div>
       </div>
@@ -288,8 +302,8 @@
     </section>
 
     <div class="uc-pager-unit">
-      <div class="uc-btn"><a href="./hero.html">← Hero</a></div>
-      <div class="uc-btn _primary"><a href="./button.html">Button →</a></div>
+      <div class="uc-btn"><a href="./gird.html">← Grid</a></div>
+      <div class="uc-btn _primary"><a href="./hero.html">Hero →</a></div>
     </div>
   </main>
 

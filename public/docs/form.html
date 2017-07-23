@@ -80,7 +80,8 @@
   </div>
   <h1 class="uc-header-logo"><a href="/">UNITS</a></h1>
   <div class="uc-header-menu _hide-small">
-    <!--<a href="/docs/" class="_is-current">Document</a>-->
+    <a href="/docs/" class="_is-current">Document</a>
+    <a href="https://codepen.io/search/pens/?q=units&limit=kokushin" target="_blank">Snippets</a>
     <a href="/themes/">Themes</a>
     <a href="https://github.com/kokushin/unitscss" target="_blank">GitHub</a>
     <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
@@ -94,7 +95,8 @@
 <nav class="uc-menu _slide _black" id="menu">
   <div class="uc-menu-wrap">
     <div class="uc-menu-list">
-      <!--<a href="#" class="_is-current">Document</a>-->
+      <a href="/docs/" class="_is-current">Document</a>
+      <a href="https://codepen.io/search/pens/?q=units&limit=kokushin" target="_blank">Snippets</a>
       <a href="/themes/">Themes</a>
       <a href="https://github.com/kokushin/unitscss" target="_blank">GitHub</a>
       <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
@@ -147,140 +149,191 @@
   <main class="uc-content">
     <section class="uc-section">
 
-      <h2 class="uc-section-title">Section</h2>
-      <p>You can create a main content / section by specifying the <code>uc-content, uc-section</code> class.</p>
+      <h2 class="uc-section-title">Form</h2>
+      <p>You can create a form by specifying the <code>uc-form</code> class.</p>
 
       <div class="doc-component-box" id="c-1">
         <h3>1. Basic</h3>
-        <p>Create a basic section. <br>In principle, <code>uc-content</code> can only be specified once.</p>
+        <p>Create a basic form parts.</p>
 
         <div class="doc-component-preview">
-          <div class="uc-content">
-            <div class="uc-section">
-              <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <form class="uc-form">
+            <div class="uc-form-parts-unit">
+              <label for="text">Text</label>
+              <input type="text" class="uc-form-parts" id="text">
             </div>
-          </div>
+            <div class="uc-form-parts-unit">
+              <label for="select">Select</label>
+              <select class="uc-form-parts" id="select">
+                <option value="">select 1</option>
+                <option value="">select 2</option>
+                <option value="">select 3</option>
+                <option value="">select 4</option>
+              </select>
+            </div>
+            <div class="uc-form-parts-unit">
+              <label for="textarea">Textarea</label>
+              <textarea class="uc-form-parts" id="textarea"></textarea>
+            </div>
+            <div class="uc-form-parts-unit">
+              <label for="checkbox"><input type="checkbox" class="uc-form-parts" id="checkbox">Checkbox</label>
+            </div>
+            <div class="uc-form-parts-unit">
+              <label for="radio"><input type="radio" class="uc-form-parts" id="radio">Radio</label>
+            </div>
+          </form>
         </div>
         <div class="uc-code-unit">
-<pre><code class="html">&lt;main class="uc-content"&gt;
-  &lt;section class="uc-section"&gt;
-    &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-  &lt;/section&gt;
-&lt;/main&gt;
+<pre><code class="html">&lt;form class="uc-form"&gt;
+
+  &lt;!-- text --&gt;
+  &lt;div class="uc-form-parts-unit"&gt;
+    &lt;label for="text"&gt;Text&lt;/label&gt;
+    &lt;input type="text" class="uc-form-parts" id="text"&gt;
+  &lt;/div&gt;
+
+  &lt;!-- select --&gt;
+  &lt;div class="uc-form-parts-unit"&gt;
+    &lt;label for="select"&gt;Select&lt;/label&gt;
+    &lt;select class="uc-form-parts" id="select"&gt;
+      &lt;option value=""&gt;select 1&lt;/option&gt;
+      &lt;option value=""&gt;select 2&lt;/option&gt;
+      &lt;option value=""&gt;select 3&lt;/option&gt;
+      &lt;option value=""&gt;select 4&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+
+  &lt;!-- textarea --&gt;
+  &lt;div class="uc-form-parts-unit"&gt;
+    &lt;label for="textarea"&gt;Textarea&lt;/label&gt;
+    &lt;textarea class="uc-form-parts" id="textarea"&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+
+  &lt;!-- checkbox --&gt;
+  &lt;div class="uc-form-parts-unit"&gt;
+    &lt;label for="checkbox"&gt;&lt;input type="checkbox" class="uc-form-parts" id="checkbox"&gt;Checkbox&lt;/label&gt;
+  &lt;/div&gt;
+
+  &lt;!-- radio --&gt;
+  &lt;div class="uc-form-parts-unit"&gt;
+    &lt;label for="radio"&gt;&lt;input type="radio" class="uc-form-parts" id="radio"&gt;Radio&lt;/label&gt;
+  &lt;/div&gt;
+
+&lt;/form&gt;
 </code></pre>
         </div>
       </div>
 
       <div class="doc-component-box" id="c-2">
-        <h3>2. Color variations</h3>
-        <p>Four kinds of color variations are available.</p>
+        <h3>2. Form group</h3>
+        <p>You can combine form parts by enclosing them in <code>uc-form-group</code> class.</p>
 
         <div class="doc-component-preview">
-          <div class="uc-section _gray">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div>&nbsp;</div>
-          <div class="uc-section _black">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div>&nbsp;</div>
-          <div class="uc-section _dark">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div>&nbsp;</div>
-          <div class="uc-section _zebra">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
+          <form class="uc-form">
+            <div class="uc-form-group">
+              <input type="text" class="uc-form-parts" required>
+              <button class="uc-btn"><span>Search</span></button>
+            </div>
+          </form>
         </div>
         <div class="uc-code-unit">
-<pre><code class="html">&lt;!-- Gray --&gt;
-&lt;section class="uc-section _gray"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Black --&gt;
-&lt;section class="uc-section _black"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Dark --&gt;
-&lt;section class="uc-section _dark"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Zebra --&gt;
-&lt;!-- It changes to a gray background when the order of elements is even. --&gt;
-&lt;section class="uc-section _zebra"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
+<pre><code class="html">&lt;form class="uc-form"&gt;
+  &lt;div class="uc-form-group"&gt;
+    &lt;input type="text" class="uc-form-parts" required&gt;
+    &lt;button class="uc-btn"&gt;&lt;span&gt;Search&lt;/span&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
 </code></pre>
         </div>
       </div>
 
       <div class="doc-component-box" id="c-3">
-        <h3>3. Centering</h3>
-        <p>Specify the <code>_center</code> class and center the element.</p>
+        <h3>3. Form set</h3>
+        <p>By designating the <code>_set</code> class, you can create a form with adjusted design.</p>
 
         <div class="doc-component-preview">
-          <div class="uc-section _center">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repellendus, voluptatum provident dicta recusandae.</p>
-            <div class="uc-btn"><span>Button</span></div>
-          </div>
-          <div>&nbsp;</div>
-          <div class="uc-section">
-            <div class="uc-section-title _center">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repellendus, voluptatum provident dicta recusandae.</p>
-            <div class="uc-btn"><span>Button</span></div>
-          </div>
-        </div>
-        <div class="uc-code-unit">
-<pre><code class="html">&lt;!-- Make all elements centered. --&gt;
-&lt;section class="uc-section _center"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Place the title element and the text below it in the center. --&gt;
-&lt;section class="uc-section"&gt;
-  &lt;h2 class="uc-section-title _center"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-</code></pre>
-        </div>
-      </div>
-
-      <div class="doc-component-box" id="c-4">
-        <h3>4. Set max width and center</h3>
-        <p>Set the maximum horizontal width (1200px) and center it.</p>
-
-        <div class="doc-component-preview">
-          <div class="uc-section">
-            <div class="uc-section-inner">
-              <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <form class="uc-form _set">
+            <div class="uc-form-parts-unit uc-grid _gutter">
+              <div class="uc-grid-cell _col-fit">
+                <label for="name">First name <span>required</span></label>
+                <input type="text" class="uc-form-parts" id="name" required>
+              </div>
+              <div class="uc-grid-cell _col-fit">
+                <label for="kana">Last name <span>required</span></label>
+                <input type="text" class="uc-form-parts" id="kana" required>
+              </div>
             </div>
-          </div>
+            <div class="uc-form-parts-unit uc-grid _gutter">
+              <div class="uc-grid-cell _col-fit">
+                <label for="name">First name <span>required</span></label>
+                <input type="text" class="uc-form-parts" id="name" required>
+              </div>
+              <div class="uc-grid-cell _col-fit">
+                <label for="kana">Last name <span>required</span></label>
+                <input type="text" class="uc-form-parts" id="kana" required>
+              </div>
+            </div>
+            <div class="uc-form-parts-unit">
+              <label for="tel">Phone number</label>
+              <input type="text" class="uc-form-parts" id="tel">
+            </div>
+            <div class="uc-form-parts-unit">
+              <label for="address">Address</label>
+              <div class="uc-form-group">
+                <input type="text" class="uc-form-parts" id="name" required>
+                <button class="uc-btn"><span>Search</span></button>
+              </div>
+            </div>
+            <div class="uc-form-parts-unit">
+              <label for="message">Message</label>
+              <textarea class="uc-form-parts" id="message"></textarea>
+            </div>
+            <div class="uc-form-parts-unit">
+              <button class="uc-btn _primary"><a href="#">Send</a></button>
+            </div>
+          </form>
         </div>
         <div class="uc-code-unit">
-<pre><code class="html">&lt;section class="uc-section"&gt;
-  &lt;div class="uc-section-inner"&gt;
-    &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+<pre><code class="html">&lt;form class="uc-form _set"&gt;
+  &lt;div class="uc-form-parts-unit uc-grid _gutter"&gt;
+    &lt;div class="uc-grid-cell _col-fit"&gt;
+      &lt;label for="name"&gt;First name &lt;span&gt;required&lt;/span&gt;&lt;/label&gt;
+      &lt;input type="text" class="uc-form-parts" id="name" required&gt;
+    &lt;/div&gt;
+    &lt;div class="uc-grid-cell _col-fit"&gt;
+      &lt;label for="kana"&gt;Last name &lt;span&gt;required&lt;/span&gt;&lt;/label&gt;
+      &lt;input type="text" class="uc-form-parts" id="kana" required&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-&lt;/section&gt;
+  &lt;div class="uc-form-parts-unit uc-grid _gutter"&gt;
+    &lt;div class="uc-grid-cell _col-fit"&gt;
+      &lt;label for="name"&gt;First name &lt;span&gt;required&lt;/span&gt;&lt;/label&gt;
+      &lt;input type="text" class="uc-form-parts" id="name" required&gt;
+    &lt;/div&gt;
+    &lt;div class="uc-grid-cell _col-fit"&gt;
+      &lt;label for="kana"&gt;Last name &lt;span&gt;required&lt;/span&gt;&lt;/label&gt;
+      &lt;input type="text" class="uc-form-parts" id="kana" required&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-form-parts-unit"&gt;
+    &lt;label for="tel"&gt;Phone number&lt;/label&gt;
+    &lt;input type="text" class="uc-form-parts" id="tel"&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-form-parts-unit"&gt;
+    &lt;label for="address"&gt;Address&lt;/label&gt;
+    &lt;div class="uc-form-group"&gt;
+      &lt;input type="text" class="uc-form-parts" id="name" required&gt;
+      &lt;button class="uc-btn"&gt;&lt;span&gt;Search&lt;/span&gt;&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-form-parts-unit"&gt;
+    &lt;label for="message"&gt;Message&lt;/label&gt;
+    &lt;textarea class="uc-form-parts" id="message"&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-form-parts-unit"&gt;
+    &lt;button class="uc-btn _primary"&gt;&lt;a href="#"&gt;Send&lt;/a&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
 </code></pre>
         </div>
       </div>
@@ -288,8 +341,8 @@
     </section>
 
     <div class="uc-pager-unit">
-      <div class="uc-btn"><a href="./hero.html">← Hero</a></div>
-      <div class="uc-btn _primary"><a href="./button.html">Button →</a></div>
+      <div class="uc-btn"><a href="./button.html">← Button</a></div>
+      <div class="uc-btn _primary"><a href="./list.html">List →</a></div>
     </div>
   </main>
 
