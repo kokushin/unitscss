@@ -2436,7 +2436,6 @@ figcaption,
   margin: 0;
   padding: 80px;
   background-color: #f2f2f2;
-  text-align: center;
 }
 
 @media (max-width: 768px) {
@@ -2447,6 +2446,10 @@ figcaption,
       .uc-pager-unit .uc-btn + .uc-btn {
         margin: 16px 8px 0;
       }
+  }
+
+.uc-pager-unit._center {
+    text-align: center;
   }
 
 .uc-pager-unit > * {
