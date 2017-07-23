@@ -80,7 +80,8 @@
   </div>
   <h1 class="uc-header-logo"><a href="/">UNITS</a></h1>
   <div class="uc-header-menu _hide-small">
-    <!--<a href="/docs/" class="_is-current">Document</a>-->
+    <a href="/docs/" class="_is-current">Document</a>
+    <a href="https://codepen.io/search/pens/?q=units&limit=kokushin" target="_blank">Snippets</a>
     <a href="/themes/">Themes</a>
     <a href="https://github.com/kokushin/unitscss" target="_blank">GitHub</a>
     <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
@@ -94,7 +95,8 @@
 <nav class="uc-menu _slide _black" id="menu">
   <div class="uc-menu-wrap">
     <div class="uc-menu-list">
-      <!--<a href="#" class="_is-current">Document</a>-->
+      <a href="/docs/" class="_is-current">Document</a>
+      <a href="https://codepen.io/search/pens/?q=units&limit=kokushin" target="_blank">Snippets</a>
       <a href="/themes/">Themes</a>
       <a href="https://github.com/kokushin/unitscss" target="_blank">GitHub</a>
       <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
@@ -147,140 +149,67 @@
   <main class="uc-content">
     <section class="uc-section">
 
-      <h2 class="uc-section-title">Section</h2>
-      <p>You can create a main content / section by specifying the <code>uc-content, uc-section</code> class.</p>
+      <h2 class="uc-section-title">Pager</h2>
+      <p>You can create a pager by specifying the <code>uc-pager</code> class.</p>
 
       <div class="doc-component-box" id="c-1">
         <h3>1. Basic</h3>
-        <p>Create a basic section. <br>In principle, <code>uc-content</code> can only be specified once.</p>
+        <p>Create a basic pager.</p>
 
         <div class="doc-component-preview">
-          <div class="uc-content">
-            <div class="uc-section">
-              <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
+          <div class="uc-pager-unit">
+            <ul class="uc-pager">
+              <li class="_current"><span>1</span></li>
+              <li><a href="#"><span>2</span></a></li>
+              <li><a href="#"><span>3</span></a></li>
+              <li><a href="#"><span>4</span></a></li>
+              <li class="_ghost"><span>...</span></li>
+              <li><a href="#"><span>10</span></a></li>
+            </ul>
           </div>
         </div>
         <div class="uc-code-unit">
-<pre><code class="html">&lt;main class="uc-content"&gt;
-  &lt;section class="uc-section"&gt;
-    &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-  &lt;/section&gt;
-&lt;/main&gt;
+<pre><code class="html">&lt;div class="uc-pager-unit"&gt;
+  &lt;ul class="uc-pager"&gt;
+    &lt;li class="_current"&gt;&lt;span&gt;1&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;3&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;4&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="_ghost"&gt;&lt;span&gt;...&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;10&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
 </code></pre>
         </div>
       </div>
 
       <div class="doc-component-box" id="c-2">
-        <h3>2. Color variations</h3>
-        <p>Four kinds of color variations are available.</p>
+        <h3>2. Centering</h3>
+        <p>By specifying the <code>_center</code> class, you can center the elements.</p>
 
         <div class="doc-component-preview">
-          <div class="uc-section _gray">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div>&nbsp;</div>
-          <div class="uc-section _black">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div>&nbsp;</div>
-          <div class="uc-section _dark">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div>&nbsp;</div>
-          <div class="uc-section _zebra">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="uc-pager-unit _center">
+            <ul class="uc-pager">
+              <li class="_current"><span>1</span></li>
+              <li><a href="#"><span>2</span></a></li>
+              <li><a href="#"><span>3</span></a></li>
+              <li><a href="#"><span>4</span></a></li>
+              <li class="_ghost"><span>...</span></li>
+              <li><a href="#"><span>10</span></a></li>
+            </ul>
           </div>
         </div>
         <div class="uc-code-unit">
-<pre><code class="html">&lt;!-- Gray --&gt;
-&lt;section class="uc-section _gray"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Black --&gt;
-&lt;section class="uc-section _black"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Dark --&gt;
-&lt;section class="uc-section _dark"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Zebra --&gt;
-&lt;!-- It changes to a gray background when the order of elements is even. --&gt;
-&lt;section class="uc-section _zebra"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-</code></pre>
-        </div>
-      </div>
-
-      <div class="doc-component-box" id="c-3">
-        <h3>3. Centering</h3>
-        <p>Specify the <code>_center</code> class and center the element.</p>
-
-        <div class="doc-component-preview">
-          <div class="uc-section _center">
-            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repellendus, voluptatum provident dicta recusandae.</p>
-            <div class="uc-btn"><span>Button</span></div>
-          </div>
-          <div>&nbsp;</div>
-          <div class="uc-section">
-            <div class="uc-section-title _center">Lorem ipsum dolor sit amet.</div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repellendus, voluptatum provident dicta recusandae.</p>
-            <div class="uc-btn"><span>Button</span></div>
-          </div>
-        </div>
-        <div class="uc-code-unit">
-<pre><code class="html">&lt;!-- Make all elements centered. --&gt;
-&lt;section class="uc-section _center"&gt;
-  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-
-&lt;!-- Place the title element and the text below it in the center. --&gt;
-&lt;section class="uc-section"&gt;
-  &lt;h2 class="uc-section-title _center"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-&lt;/section&gt;
-</code></pre>
-        </div>
-      </div>
-
-      <div class="doc-component-box" id="c-4">
-        <h3>4. Set max width and center</h3>
-        <p>Set the maximum horizontal width (1200px) and center it.</p>
-
-        <div class="doc-component-preview">
-          <div class="uc-section">
-            <div class="uc-section-inner">
-              <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
-        <div class="uc-code-unit">
-<pre><code class="html">&lt;section class="uc-section"&gt;
-  &lt;div class="uc-section-inner"&gt;
-    &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
-    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/section&gt;
+<pre><code class="html">&lt;div class="uc-pager-unit _center"&gt;
+  &lt;ul class="uc-pager"&gt;
+    &lt;li class="_current"&gt;&lt;span&gt;1&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;3&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;4&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="_ghost"&gt;&lt;span&gt;...&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;10&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
 </code></pre>
         </div>
       </div>
@@ -288,8 +217,8 @@
     </section>
 
     <div class="uc-pager-unit">
-      <div class="uc-btn"><a href="./hero.html">← Hero</a></div>
-      <div class="uc-btn _primary"><a href="./button.html">Button →</a></div>
+      <div class="uc-btn"><a href="./video.html">← Video</a></div>
+      <div class="uc-btn _primary"><a href="./loading.html">Loading →</a></div>
     </div>
   </main>
 
