@@ -2,11 +2,17 @@
 
 Simple and beautiful component set.
 
+[https://unitscss.com/](https://unitscss.com/)
+
 ![sample](https://raw.githubusercontent.com/kokushin/units/master/public/img/readme/img_01.png)
 
 [![npm version](https://badge.fury.io/js/unitscss.svg)](https://badge.fury.io/js/unitscss)
 [![npm download](http://img.shields.io/npm/dm/unitscss.svg)](https://www.npmjs.com/package/unitscss)
 [![GitHub license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://raw.githubusercontent.com/kokushin/unitscss/master/LICENSE)
+
+## Document
+
+[English](https://unitscss.com/docs/) / 日本語
 
 ## Feature
 
@@ -70,14 +76,10 @@ It will be displayed on the browser like this:
 
 ## Demo
 
-👉 [https://unitscss.com/themes/](https://unitscss.com/themes/)
+[https://unitscss.com/themes/](https://unitscss.com/themes/)
 
-## Document & Snippets
+## Snippets
 
-**Document**  
-Sorry, Coming Soon 😂
-
-**Snippets**  
 [Please check codepen.](https://codepen.io/search/pens/?q=units&limit=kokushin)
 
 ## Download

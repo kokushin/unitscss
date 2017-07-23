@@ -1,4 +1,4 @@
-/*! UNITS v0.1.15 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
+/*! UNITS v0.1.16 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
 /**
  * UNITS menu components
  *
@@ -12,6 +12,19 @@
  *          [._***]
  * ==================================
  */
+
+.uc-menu {
+  background-color: white;
+}
+
+.uc-menu a {
+    -webkit-transition: all .35s cubic-bezier(.25, .8, .25, 1);
+    transition: all .35s cubic-bezier(.25, .8, .25, 1);
+  }
+
+.uc-menu a:hover {
+      background-color: #eee;
+    }
 
 .uc-menu._bar {
     width: 100%;
@@ -116,13 +129,25 @@
     background-color: #f2f2f2;
   }
 
+.uc-menu._gray a:hover {
+        background-color: #bdbdbd;
+      }
+
 .uc-menu._dark {
     background-color: #37474f;
   }
 
+.uc-menu._dark a:hover {
+        background-color: #263238;
+      }
+
 .uc-menu._black {
     background-color: black;
   }
+
+.uc-menu._black a:hover {
+        background-color: #424242;
+      }
 
 .uc-menu._dark,
   .uc-menu._black {

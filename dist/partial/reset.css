@@ -1,4 +1,4 @@
-/*! UNITS v0.1.15 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
+/*! UNITS v0.1.16 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
 *,
 ::before,
 ::after {
@@ -326,6 +326,8 @@ textarea,
 code {
   padding: 0 8px;
   color: #d81b60;
+  background-color: #f2f2f2;
+  border-radius: 4px;
 }
 
 i {

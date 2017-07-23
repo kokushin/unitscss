@@ -32,8 +32,10 @@
   --color-warning: #fdd835;
   --color-warning-hover: #f9a825;
   --color-dark: #37474f;
+  --color-dark-hover: #263238;
   --color-black: #141414;
-  --color-gray: #999;
+  --color-black-hover: #424242;
+  --color-gray-hover: #bdbdbd;
   --color-border: #ebebeb;
   --color-bg: #f2f2f2;
   --color-code: #d81b60;
