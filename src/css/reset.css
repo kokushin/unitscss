@@ -321,6 +321,8 @@ textarea,
 code {
   padding: 0 8px;
   color: var(--color-code);
+  background-color: var(--color-bg);
+  border-radius: 4px;
 }
 
 i {

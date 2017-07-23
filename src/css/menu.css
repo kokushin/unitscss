@@ -15,6 +15,15 @@
  */
 
 .uc-menu {
+  background-color: white;
+
+  a {
+    transition: all .35s var(--Hover_easeOut);
+
+    &:hover {
+      background-color: var(--color-btn-hover);
+    }
+  }
 
   &._bar {
     width: 100%;
@@ -92,14 +101,32 @@
 
   &._gray {
     background-color: var(--color-bg);
+
+    a {
+      &:hover {
+        background-color: var(--color-gray-hover);
+      }
+    }
   }
 
   &._dark {
     background-color: var(--color-dark);
+
+    a {
+      &:hover {
+        background-color: var(--color-dark-hover);
+      }
+    }
   }
 
   &._black {
     background-color: black;
+
+    a {
+      &:hover {
+        background-color: var(--color-black-hover);
+      }
+    }
   }
 
   &._dark,
