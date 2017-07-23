@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Introduction | Document | UNITS - Simple and beautiful CSS component set.</title>
+  <title>Hero | Document | UNITS - Simple and beautiful CSS component set.</title>
   <link rel="canonical" href="https://unitscss.com/">
   <meta name="description" content="UNITS is a simple and beautiful CSS component set.">
   <meta name="author" content="kokushin">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="UNITS - Simple and beautiful CSS component set.">
-  <meta property="og:title" content="Introduction | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta property="og:title" content="Hero | Document | UNITS - Simple and beautiful CSS component set.">
   <meta property="og:description" content="UNITS is a simple and beautiful CSS component set.">
   <meta property="og:url" content="https://unitscss.com/">
   <meta property="og:image" content="https://unitscss.com/img/share/ogimage.png?r=2">
   <meta name="twitter:site" content="@kokushing">
   <meta name="twitter:creator" content="@kokushing">
   <meta name="twitter:url" content="https://unitscss.com/">
-  <meta name="twitter:title" content="Introduction | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta name="twitter:title" content="Hero | Document | UNITS - Simple and beautiful CSS component set.">
   <meta name="twitter:description" content="UNITS is a simple and beautiful CSS component set.">
   <meta name="twitter:card" content="summary">
   <meta name="format-detection" content="telephone=no">
@@ -108,7 +108,7 @@
 <div class="uc-sidebar _slide uc-grid-cell" id="sidebar">
   <div class="uc-sidebar-wrap">
     <div class="uc-sidebar-list">
-      <a href="/docs/" class="_is-current">Introduction</a>
+      <a href="/docs/" >Introduction</a>
       <a href="/docs/install.html" >Install</a>
       <!--<a href="/docs/guide.html" >Coding guide</a>-->
     </div>
@@ -119,7 +119,7 @@
       <a href="/docs/section.html" >Section</a>
       <a href="/docs/grid.html" >Grid</a>
       <a href="/docs/menu.html" >Menu</a>
-      <a href="/docs/hero.html" >Hero</a>
+      <a href="/docs/hero.html" class="_is-current">Hero</a>
       <a href="/docs/card.html" >Card</a>
       <a href="/docs/button.html" >Button</a>
       <a href="/docs/form.html" >Form</a>
@@ -144,63 +144,100 @@
 
   <div class="uc-grid-cell _col-fit">
 
-  <div class="uc-hero">
-  <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
-  <div class="uc-hero-title">Welcome to UNITS</div>
-</div>
-
-
   <main class="uc-content">
     <section class="uc-section">
 
-      <h2 class="uc-section-title">Introduction</h2>
-      <p>UNITS is a simple and beautiful component set. <br>All you have to do is just load css files, copy and paste snippets, so easy that anyone can use.</p>
+      <h2 class="uc-section-title">Hero</h2>
+      <p>You can create a hero area by specifying the <code>uc-hero</code> class.</p>
 
-      <div class="uc-card-unit">
-        <div class="uc-grid _col-3 _small-col-full _medium-col-2 _gutter">
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">Use Quickly</h3>
-              <p>All you have to do is just put units.css. Several components have been prepared already and you can choose components you want to use and apply it on your website.</p>
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Basic</h3>
+        <p>Create a basic hero area.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-hero">
+            <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+            <div class="uc-hero-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?</p>
+            <div class="uc-btn-unit">
+              <div class="uc-btn _ghost"><span>Button</span></div>
             </div>
           </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">Simple and Beautiful</h3>
-              <p>Each components are beautifully designed. The design will be updated periodically, We wont't apply big changes, but apply only a small changes such as adjusting margins.</p>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-hero"&gt;
+  &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-hero-title"&gt;Lorem ipsum dolor sit amet.&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?&lt;/p&gt;
+  &lt;div class="uc-btn-unit"&gt;
+    &lt;div class="uc-btn _ghost"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. Left align element</h3>
+        <p>You can left-justify an element by specifying the <code>_left</code> class.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-hero _left">
+            <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+            <div class="uc-hero-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?</p>
+            <div class="uc-btn-unit">
+              <div class="uc-btn _ghost"><span>Button</span></div>
             </div>
           </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">Support Modern Browser</h3>
-              <p>UNITS is optimized to be used on th modern browser such as Microsoft Edge, Google Chrome, Firefox, Safari, How about old browsers? ... I'm sorry.</p>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-hero _left"&gt;
+  &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-hero-title"&gt;Lorem ipsum dolor sit amet.&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?&lt;/p&gt;
+  &lt;div class="uc-btn-unit"&gt;
+    &lt;div class="uc-btn _ghost"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-3">
+        <h3>3. Display on the whole screen</h3>
+        <p>By specifying the <code>`_full</code> class, you can display the entire screen.</p>
+
+        <div class="doc-component-preview">
+          <div class="doc-component-preview-inner">
+            <div class="uc-hero _full">
+              <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+              <div class="uc-hero-title">Lorem ipsum dolor sit amet.</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?</p>
+              <div class="uc-btn-unit">
+                <div class="uc-btn _ghost"><span>Button</span></div>
+              </div>
             </div>
           </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">Responsive Web design</h3>
-              <p>We uses responsive web design approches to display optimized design on all devices.</p>
-            </div>
-          </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">Periodical Update</h3>
-              <p>UNITS is still a beta version, it will be updated periodically to a major version. Unitil the major version, We will add new components, optimize the source codes, adjusting its design.</p>
-            </div>
-          </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">Support Japanese</h3>
-              <p>Because the developers are Japanese that we can support in Japanese. We have been optimizing web pages and updating documents written in japanese.</p>
-            </div>
-          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-hero _full"&gt;
+  &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-hero-title"&gt;Lorem ipsum dolor sit amet.&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?&lt;/p&gt;
+  &lt;div class="uc-btn-unit"&gt;
+    &lt;div class="uc-btn _ghost"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
         </div>
       </div>
 
     </section>
 
     <div class="uc-pager-unit">
-      <div class="uc-btn _primary"><a href="./install.html">Install →</a></div>
+      <div class="uc-btn"><a href="./hero.html">← Hero</a></div>
+      <div class="uc-btn _primary"><a href="./button.html">Button →</a></div>
     </div>
   </main>
 

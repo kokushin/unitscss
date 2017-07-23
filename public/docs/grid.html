@@ -1,0 +1,443 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid | Document | UNITS - Simple and beautiful CSS component set.</title>
+  <link rel="canonical" href="https://unitscss.com/">
+  <meta name="description" content="UNITS is a simple and beautiful CSS component set.">
+  <meta name="author" content="kokushin">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UNITS - Simple and beautiful CSS component set.">
+  <meta property="og:title" content="Grid | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta property="og:description" content="UNITS is a simple and beautiful CSS component set.">
+  <meta property="og:url" content="https://unitscss.com/">
+  <meta property="og:image" content="https://unitscss.com/img/share/ogimage.png?r=2">
+  <meta name="twitter:site" content="@kokushing">
+  <meta name="twitter:creator" content="@kokushing">
+  <meta name="twitter:url" content="https://unitscss.com/">
+  <meta name="twitter:title" content="Grid | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta name="twitter:description" content="UNITS is a simple and beautiful CSS component set.">
+  <meta name="twitter:card" content="summary">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="UNITS - Simple and beautiful CSS component set.">
+  <link rel="shortcut icon" href="/assets/share/favicon.ico">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/css/units.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css" rel="stylesheet">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <style>
+    /* Document Page */
+    .doc-component-box {
+      padding: 100px 0 0;
+      margin-top: 0;
+    }
+    .doc-component-box h3 {
+      margin-top: 0;
+    }
+    .doc-component-box .doc-component-preview {
+      margin: 40px -80px 0;
+      padding: 40px 80px;
+      background-color:#f2f2f2;
+    }
+    @media (max-width: 1199px) and (min-width: 769px) {
+      .doc-component-box .doc-component-preview {
+        margin: 40px -40px 0;
+        padding: 40px 40px;
+        background-color:#f2f2f2;
+      }
+    }
+    @media (max-width: 768px) {
+      .doc-component-box .doc-component-preview {
+        margin: 40px -20px 0;
+        padding: 40px 20px;
+      }
+    }
+    .doc-component-box .doc-component-preview-inner {
+      position: relative;
+    }
+    .doc-component-box .uc-code-unit {
+      max-width: 800px;
+      margin: 40px 0 0;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #ebebeb;
+    }
+  </style>
+</head>
+<body class="page-docs">
+
+
+<header class="uc-header _black _fixed">
+  <div class="uc-menu-btn _hide-medium _hide-large" data-open-target="#sidebar">
+    <button><i class="uc-menu-btn-icon"></i></button>
+  </div>
+  <h1 class="uc-header-logo"><a href="/">UNITS</a></h1>
+  <div class="uc-header-menu _hide-small">
+    <!--<a href="/docs/" class="_is-current">Document</a>-->
+    <a href="/themes/">Themes</a>
+    <a href="https://github.com/kokushin/unitscss" target="_blank">GitHub</a>
+    <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
+  </div>
+  <div class="uc-menu-btn _text _hide-medium _hide-large" data-open-target="#menu">
+    <button>Menu</button>
+  </div>
+</header>
+
+
+<nav class="uc-menu _slide _black" id="menu">
+  <div class="uc-menu-wrap">
+    <div class="uc-menu-list">
+      <!--<a href="#" class="_is-current">Document</a>-->
+      <a href="/themes/">Themes</a>
+      <a href="https://github.com/kokushin/unitscss" target="_blank">GitHub</a>
+      <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="uc-grid _small-col-full _nowrap">
+
+<div class="uc-sidebar _slide uc-grid-cell" id="sidebar">
+  <div class="uc-sidebar-wrap">
+    <div class="uc-sidebar-list">
+      <a href="/docs/" >Introduction</a>
+      <a href="/docs/install.html" >Install</a>
+      <!--<a href="/docs/guide.html" >Coding guide</a>-->
+    </div>
+    <div class="uc-sidebar-list">
+      <p><strong>Components</strong></p>
+      <a href="/docs/header.html" >Header</a>
+      <a href="/docs/footer.html" >Footer</a>
+      <a href="/docs/section.html" >Section</a>
+      <a href="/docs/grid.html" class="_is-current">Grid</a>
+      <a href="/docs/menu.html" >Menu</a>
+      <a href="/docs/hero.html" >Hero</a>
+      <a href="/docs/card.html" >Card</a>
+      <a href="/docs/button.html" >Button</a>
+      <a href="/docs/form.html" >Form</a>
+      <a href="/docs/list.html" >List</a>
+      <a href="/docs/table.html" >Table</a>
+      <a href="/docs/Photo.html" >Photo</a>
+      <a href="/docs/code.html" >Code</a>
+      <a href="/docs/video.html" >Video</a>
+      <a href="/docs/pager.html" >Pager</a>
+      <!--<a href="/docs/typography.html" >Typography</a>-->
+      <a href="/docs/loading.html" >Loading</a>
+    </div>
+    <div class="uc-sidebar-list">
+      <p><strong>Links</strong></p>
+      <a href="/">Home</a>
+      <a href="/https://github.com/kokushin/unitscss">GitHub</a>
+      <a href="/https://twitter.com/kokushing">Twitter</a>
+    </div>
+  </div>
+</div>
+
+
+  <div class="uc-grid-cell _col-fit">
+
+  <main class="uc-content">
+    <section class="uc-section">
+
+      <h2 class="uc-section-title">Grid</h2>
+      <p>You can create a grid layout by specifying the <code>uc-grid</code> class.</p>
+
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Basic</h3>
+        <p>Create a grid layout. </p>
+        <p>Set <code>uc-grid</code> as the parent element and <code>uc-grid-child</code> as the child element. <br>You can also apply margins by adding the <code>_gutter</code> class.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-content">
+            <div class="uc-grid _gutter">
+              <div class="uc-grid-cell">
+                <div style="padding:3em;background:white">box1</div>
+              </div>
+              <div class="uc-grid-cell">
+                <div style="padding:3em;background:white">box2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-grid _gutter"&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box1&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box2&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. Adjust column width</h3>
+        <p>You can fit the width by specifying <code>_col-fit</code>, and you can place it in the full width by specifying <code>_col-full</code>.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-grid _col-fit _gutter">
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box1</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box2</div>
+            </div>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-grid _col-full _gutter">
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box1</div>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;!-- Adjust the width according to the number of elements. --&gt;
+&lt;div class="uc-grid _col-fit _gutter"&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box1&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box2&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Place it across the full width. --&gt;
+&lt;div class="uc-grid _col-full _gutter"&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box1&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-3">
+        <h3>3. Specify the number of columns</h3>
+        <p>To modify the number of columns, specify the <code>_col-{2...12}</code> class. <br>For example, in the next sample you can place it in four columns.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-grid _col-4 _gutter">
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box1</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box2</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box3</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box4</div>
+            </div>
+            <div class="uc-grid-cell _col-fit">
+              <div style="padding:3em;background:white">box5</div>
+            </div>
+            <div class="uc-grid-cell _col-fit">
+              <div style="padding:3em;background:white">box6</div>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-grid _col-4 _gutter"&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box1&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box4&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- It can also be specified as `uc-grid-cell`. --&gt;
+  &lt;div class="uc-grid-cell _col-fit"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box5&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell _col-fit"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box6&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-4">
+        <h3>4. Responsive</h3>
+        <p>By specifying class <code>_small-col-{full | fit | 2...12}</code> or <code>_medium-col-{full | fit | 2...12}</code>, <br>you can change the number of columns according to screen size.</p>
+        <p><code>_small-col</code> is applied when the screen width is 768px or less, and <code>_medium-col</code> is applied in the case of 769px to 1199px.</p>
+        <p>In the next sample, it is changed to 3 columns when the width is 1200px or more, <br>2 columns when 1199px to 769px, and 1 column (full) when the width is 768px or less.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-grid _col-3 _medium-col-2 _small-col-full _gutter">
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box1</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box2</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box3</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box4</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box5</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box6</div>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-grid _col-3 _medium-col-2 _small-col-full _gutter"&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box1&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box5&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box6&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-5">
+        <h3>5. Use in combination</h3>
+        <p>By combining various patterns, it is also possible to generate complicated grids.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-grid _nowrap">
+            <div class="uc-sidebar uc-grid-cell">
+              <div class="uc-sidebar-wrap">
+                <div class="uc-sidebar-list">
+                  <p><strong>Sidebar</strong></p>
+                  <a href="#">Menu1</a>
+                  <a href="#">Menu2</a>
+                  <a href="#">Menu3</a>
+                  <a href="#">Menu4</a>
+                  <a href="#">Menu5</a>
+                </div>
+              </div>
+            </div>
+            <div class="uc-grid-cell _col-fit">
+              <div class="uc-section">
+                <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="uc-grid-unit">
+                  <div class="uc-grid _col-3 _medium-col-2 _small-col-full _gutter">
+                    <div class="uc-grid-cell">
+                      <div style="padding:3em;background:#eee">box1</div>
+                    </div>
+                    <div class="uc-grid-cell">
+                      <div style="padding:3em;background:#eee">box2</div>
+                    </div>
+                    <div class="uc-grid-cell">
+                      <div style="padding:3em;background:#eee">box3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-grid _nowrap"&gt;
+  &lt;div class="uc-sidebar uc-grid-cell"&gt;
+    &lt;div class="uc-sidebar-wrap"&gt;
+      &lt;div class="uc-sidebar-list"&gt;
+        &lt;p&gt;&lt;strong&gt;Sidebar&lt;/strong&gt;&lt;/p&gt;
+        &lt;a href="#"&gt;Menu1&lt;/a&gt;
+        &lt;a href="#"&gt;Menu2&lt;/a&gt;
+        &lt;a href="#"&gt;Menu3&lt;/a&gt;
+        &lt;a href="#"&gt;Menu4&lt;/a&gt;
+        &lt;a href="#"&gt;Menu5&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell _col-fit"&gt;
+    &lt;div class="uc-section"&gt;
+      &lt;div class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/div&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+      &lt;div class="uc-grid-unit"&gt;
+        &lt;div class="uc-grid _col-3 _medium-col-2 _small-col-full _gutter"&gt;
+          &lt;div class="uc-grid-cell"&gt;
+            &lt;div style="padding:3em;background:#eee"&gt;box1&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="uc-grid-cell"&gt;
+            &lt;div style="padding:3em;background:#eee"&gt;box2&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="uc-grid-cell"&gt;
+            &lt;div style="padding:3em;background:#eee"&gt;box3&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="uc-pager-unit">
+      <div class="uc-btn"><a href="./hero.html">← Hero</a></div>
+      <div class="uc-btn _primary"><a href="./button.html">Button →</a></div>
+    </div>
+  </main>
+
+  </div>
+
+</div>
+
+<footer class="uc-footer _black">
+  <div class="uc-footer-menu">
+    <!--<a href="#" class="_is-current">Document</a>-->
+    <a href="https://codepen.io/search/pens/?q=units&limit=kokushin" target="_blank">Snippets</a>
+    <a href="/themes/">Themes</a>
+    <a href="https://github.com/kokushin/unitscss" target="_blank">GitHub</a>
+    <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
+  </div>
+  <div class="uc-footer-logo"><cite>UNITS</cite></div>
+  <p>Made by <a href="https://twitter.com/kokushing" target="_blank">@kokushing</a>,
+  Licensed under MIT license.<br>
+  Inspired by <a href="https://material.io/guidelines/" target="_blank">Google Material Design.</a><br>
+  Photo by <a href="https://unsplash.com/" target="_blank">unsplash.com.</a></p>
+  <small>&copy; 2017 UNITS v0.1.15</small>
+</footer>
+
+
+
+<script src="/js/units.js"></script>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
+

@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Introduction | Document | UNITS - Simple and beautiful CSS component set.</title>
+  <title>Loading | Document | UNITS - Simple and beautiful CSS component set.</title>
   <link rel="canonical" href="https://unitscss.com/">
   <meta name="description" content="UNITS is a simple and beautiful CSS component set.">
   <meta name="author" content="kokushin">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="UNITS - Simple and beautiful CSS component set.">
-  <meta property="og:title" content="Introduction | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta property="og:title" content="Loading | Document | UNITS - Simple and beautiful CSS component set.">
   <meta property="og:description" content="UNITS is a simple and beautiful CSS component set.">
   <meta property="og:url" content="https://unitscss.com/">
   <meta property="og:image" content="https://unitscss.com/img/share/ogimage.png?r=2">
   <meta name="twitter:site" content="@kokushing">
   <meta name="twitter:creator" content="@kokushing">
   <meta name="twitter:url" content="https://unitscss.com/">
-  <meta name="twitter:title" content="Introduction | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta name="twitter:title" content="Loading | Document | UNITS - Simple and beautiful CSS component set.">
   <meta name="twitter:description" content="UNITS is a simple and beautiful CSS component set.">
   <meta name="twitter:card" content="summary">
   <meta name="format-detection" content="telephone=no">
@@ -108,7 +108,7 @@
 <div class="uc-sidebar _slide uc-grid-cell" id="sidebar">
   <div class="uc-sidebar-wrap">
     <div class="uc-sidebar-list">
-      <a href="/docs/" class="_is-current">Introduction</a>
+      <a href="/docs/" >Introduction</a>
       <a href="/docs/install.html" >Install</a>
       <!--<a href="/docs/guide.html" >Coding guide</a>-->
     </div>
@@ -130,7 +130,7 @@
       <a href="/docs/video.html" >Video</a>
       <a href="/docs/pager.html" >Pager</a>
       <!--<a href="/docs/typography.html" >Typography</a>-->
-      <a href="/docs/loading.html" >Loading</a>
+      <a href="/docs/loading.html" class="_is-current">Loading</a>
     </div>
     <div class="uc-sidebar-list">
       <p><strong>Links</strong></p>
@@ -144,63 +144,152 @@
 
   <div class="uc-grid-cell _col-fit">
 
-  <div class="uc-hero">
-  <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
-  <div class="uc-hero-title">Welcome to UNITS</div>
-</div>
-
-
   <main class="uc-content">
     <section class="uc-section">
 
-      <h2 class="uc-section-title">Introduction</h2>
-      <p>UNITS is a simple and beautiful component set. <br>All you have to do is just load css files, copy and paste snippets, so easy that anyone can use.</p>
+      <h2 class="uc-section-title">Section</h2>
+      <p>You can create a main content / section by specifying the <code>uc-content, uc-section</code> class.</p>
 
-      <div class="uc-card-unit">
-        <div class="uc-grid _col-3 _small-col-full _medium-col-2 _gutter">
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">Use Quickly</h3>
-              <p>All you have to do is just put units.css. Several components have been prepared already and you can choose components you want to use and apply it on your website.</p>
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Basic</h3>
+        <p>Create a basic section. <br>In principle, <code>uc-content</code> can only be specified once.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-content">
+            <div class="uc-section">
+              <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
           </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">Simple and Beautiful</h3>
-              <p>Each components are beautifully designed. The design will be updated periodically, We wont't apply big changes, but apply only a small changes such as adjusting margins.</p>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;main class="uc-content"&gt;
+  &lt;section class="uc-section"&gt;
+    &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. Color variations</h3>
+        <p>Four kinds of color variations are available.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-section _gray">
+            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-section _black">
+            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-section _dark">
+            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-section _zebra">
+            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;!-- Gray --&gt;
+&lt;section class="uc-section _gray"&gt;
+  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;!-- Black --&gt;
+&lt;section class="uc-section _black"&gt;
+  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;!-- Dark --&gt;
+&lt;section class="uc-section _dark"&gt;
+  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;!-- Zebra --&gt;
+&lt;!-- It changes to a gray background when the order of elements is even. --&gt;
+&lt;section class="uc-section _zebra"&gt;
+  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;/section&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-3">
+        <h3>3. Centering</h3>
+        <p>Specify the <code>_center</code> class and center the element.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-section _center">
+            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repellendus, voluptatum provident dicta recusandae.</p>
+            <div class="uc-btn"><span>Button</span></div>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-section">
+            <div class="uc-section-title _center">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repellendus, voluptatum provident dicta recusandae.</p>
+            <div class="uc-btn"><span>Button</span></div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;!-- Make all elements centered. --&gt;
+&lt;section class="uc-section _center"&gt;
+  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;!-- Place the title element and the text below it in the center. --&gt;
+&lt;section class="uc-section"&gt;
+  &lt;h2 class="uc-section-title _center"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;/section&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-4">
+        <h3>4. Set max width and center</h3>
+        <p>Set the maximum horizontal width (1200px) and center it.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-section">
+            <div class="uc-section-inner">
+              <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
           </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">Support Modern Browser</h3>
-              <p>UNITS is optimized to be used on th modern browser such as Microsoft Edge, Google Chrome, Firefox, Safari, How about old browsers? ... I'm sorry.</p>
-            </div>
-          </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">Responsive Web design</h3>
-              <p>We uses responsive web design approches to display optimized design on all devices.</p>
-            </div>
-          </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">Periodical Update</h3>
-              <p>UNITS is still a beta version, it will be updated periodically to a major version. Unitil the major version, We will add new components, optimize the source codes, adjusting its design.</p>
-            </div>
-          </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">Support Japanese</h3>
-              <p>Because the developers are Japanese that we can support in Japanese. We have been optimizing web pages and updating documents written in japanese.</p>
-            </div>
-          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;section class="uc-section"&gt;
+  &lt;div class="uc-section-inner"&gt;
+    &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
         </div>
       </div>
 
     </section>
 
     <div class="uc-pager-unit">
-      <div class="uc-btn _primary"><a href="./install.html">Install →</a></div>
+      <div class="uc-btn"><a href="./hero.html">← Hero</a></div>
+      <div class="uc-btn _primary"><a href="./button.html">Button →</a></div>
     </div>
   </main>
 

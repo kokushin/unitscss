@@ -1,0 +1,121 @@
+<%- include('../_common/_head', {
+  key: 'docs',
+  pagetitle: 'Hero | Document'
+}) %>
+
+<%- include('../_component/docs/_header') %>
+
+<%- include('../_component/docs/_menu') %>
+
+<div class="uc-grid _small-col-full _nowrap">
+
+<%- include('../_component/docs/_sidebar', {
+  current: 'hero'
+}) %>
+
+  <div class="uc-grid-cell _col-fit">
+
+  <main class="uc-content">
+    <section class="uc-section">
+
+      <h2 class="uc-section-title">Hero</h2>
+      <p>You can create a hero area by specifying the <code>uc-hero</code> class.</p>
+
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Basic</h3>
+        <p>Create a basic hero area.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-hero">
+            <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+            <div class="uc-hero-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?</p>
+            <div class="uc-btn-unit">
+              <div class="uc-btn _ghost"><span>Button</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-hero"&gt;
+  &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-hero-title"&gt;Lorem ipsum dolor sit amet.&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?&lt;/p&gt;
+  &lt;div class="uc-btn-unit"&gt;
+    &lt;div class="uc-btn _ghost"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. Left align element</h3>
+        <p>You can left-justify an element by specifying the <code>_left</code> class.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-hero _left">
+            <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+            <div class="uc-hero-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?</p>
+            <div class="uc-btn-unit">
+              <div class="uc-btn _ghost"><span>Button</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-hero _left"&gt;
+  &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-hero-title"&gt;Lorem ipsum dolor sit amet.&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?&lt;/p&gt;
+  &lt;div class="uc-btn-unit"&gt;
+    &lt;div class="uc-btn _ghost"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-3">
+        <h3>3. Display on the whole screen</h3>
+        <p>By specifying the <code>`_full</code> class, you can display the entire screen.</p>
+
+        <div class="doc-component-preview">
+          <div class="doc-component-preview-inner">
+            <div class="uc-hero _full">
+              <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+              <div class="uc-hero-title">Lorem ipsum dolor sit amet.</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?</p>
+              <div class="uc-btn-unit">
+                <div class="uc-btn _ghost"><span>Button</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-hero _full"&gt;
+  &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-hero-title"&gt;Lorem ipsum dolor sit amet.&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, fuga?&lt;/p&gt;
+  &lt;div class="uc-btn-unit"&gt;
+    &lt;div class="uc-btn _ghost"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="uc-pager-unit">
+      <div class="uc-btn"><a href="./hero.html">← Hero</a></div>
+      <div class="uc-btn _primary"><a href="./button.html">Button →</a></div>
+    </div>
+  </main>
+
+  </div>
+
+</div>
+
+<%- include('../_component/_footer') %>
+
+<%- include('../_common/_foot') %>

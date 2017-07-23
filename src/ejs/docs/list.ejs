@@ -1,0 +1,123 @@
+<%- include('../_common/_head', {
+  key: 'docs',
+  pagetitle: 'List | Document'
+}) %>
+
+<%- include('../_component/docs/_header') %>
+
+<%- include('../_component/docs/_menu') %>
+
+<div class="uc-grid _small-col-full _nowrap">
+
+<%- include('../_component/docs/_sidebar', {
+  current: 'list'
+}) %>
+
+  <div class="uc-grid-cell _col-fit">
+
+  <main class="uc-content">
+    <section class="uc-section">
+
+      <h2 class="uc-section-title">List</h2>
+      <p>You can create a list by specifying the <code>uc-list</code> class.</p>
+
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Basic</h3>
+        <p>Create a basic list.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-content">
+            <ul class="uc-list">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.
+                <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                        <li>Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;ul class="uc-list"&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet.
+    &lt;ul&gt;
+      &lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;
+      &lt;li&gt;Lorem ipsum dolor sit amet.
+        &lt;ul&gt;
+            &lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;
+            &lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <!--<div class="doc-component-box" id="c-2">
+        <h3>2. Display borders</h3>
+        <p>By specifying the <code>_border</code> class, <br>
+        we add a border to the top and bottom of the list.</p>
+
+        <div class="doc-component-preview">
+          <ul class="uc-list">
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Lorem ipsum dolor sit amet.
+              <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.
+                  <ul>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                      <li>Lorem ipsum dolor sit amet.</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>Lorem ipsum dolor sit amet.</li>
+          </ul>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;ul class="uc-list _border"&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet.
+    &lt;ul&gt;
+      &lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;
+      &lt;li&gt;Lorem ipsum dolor sit amet.
+        &lt;ul&gt;
+            &lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;
+            &lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet.&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+        </div>
+      </div>-->
+
+    </section>
+
+    <div class="uc-pager-unit">
+      <div class="uc-btn"><a href="./hero.html">← Hero</a></div>
+      <div class="uc-btn _primary"><a href="./button.html">Button →</a></div>
+    </div>
+  </main>
+
+  </div>
+
+</div>
+
+<%- include('../_component/_footer') %>
+
+<%- include('../_common/_foot') %>
