@@ -1,0 +1,199 @@
+<%- include('../_common/_head', {
+  key: 'docs',
+  pagetitle: 'Header | Document'
+}) %>
+
+<%- include('../_component/docs/_header') %>
+
+<%- include('../_component/docs/_menu') %>
+
+<div class="uc-grid _small-col-full _nowrap">
+
+<%- include('../_component/docs/_sidebar', {
+  current: 'header'
+}) %>
+
+  <div class="uc-grid-cell _col-fit">
+
+  <main class="uc-content">
+    <section class="uc-section">
+
+      <h2 class="uc-section-title">Header</h2>
+      <p>You can create a header by specifying the <code>uc-header</code> class.</p>
+
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Basic</h3>
+        <p>Create a basic header.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-header">
+            <div class="uc-header-logo">UNITS</div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;header class="uc-header"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/header&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. Color variations</h3>
+        <p>Two kinds of color variations are available.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-header _black">
+            <div class="uc-header-logo">UNITS</div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-header _dark">
+            <div class="uc-header-logo">UNITS</div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;!-- Black --&gt;
+&lt;header class="uc-header _black"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;!-- Dark --&gt;
+&lt;header class="uc-header _dark"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/header&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-3">
+        <h3>3. Ghost header</h3>
+        <p>Combined with <code>uc-hero</code>, you can create a transparent header.</p>
+
+        <div class="doc-component-preview">
+          <div class="doc-component-preview-inner">
+            <div class="uc-header _ghost">
+              <div class="uc-header-logo">UNITS</div>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="uc-hero">
+              <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+              <div class="uc-hero-title">Hero components</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;header class="uc-header _ghost"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;div class="uc-hero"&gt;
+  &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-hero-title"&gt;Hero components&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-4">
+        <h3>4. Fixed header</h3>
+        <p>Fix the header at the top of the page.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-header">
+            <div class="uc-header-logo">UNITS</div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;header class="uc-header _fixed"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/header&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-5">
+        <h3>5. Header menu (text)</h3>
+        <p>You can add a header menu.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-header">
+            <div class="uc-header-logo">UNITS</div>
+            <div class="uc-header-menu">
+              <a href="#">Menu1</a>
+              <a href="#">Menu2</a>
+              <a href="#">Menu3</a>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;header class="uc-header"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;div class="uc-header-menu"&gt;
+    &lt;a href="#"&gt;Menu1&lt;/a&gt;
+    &lt;a href="#"&gt;Menu2&lt;/a&gt;
+    &lt;a href="#"&gt;Menu3&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-6">
+        <h3>6. Header menu (button)</h3>
+        <p>You can add a header menu button. <br>It must be combined with <code>uc-menu._slide</code>.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-header">
+            <div class="uc-header-logo">UNITS</div>
+            <div class="uc-menu-btn _text" data-open-target="#menu">
+              <button><i class="uc-menu-btn-icon"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;header class="uc-header"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;div class="uc-menu-btn _text" data-open-target="#menu"&gt;
+    &lt;button&gt;&lt;i class="uc-menu-btn-icon"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;nav class="uc-menu _slide" id="menu"&gt;
+  &lt;div class="uc-menu-wrap"&gt;
+    &lt;div class="uc-menu-list"&gt;
+      &lt;a href="#"&gt;Menu1&lt;/a&gt;
+      &lt;a href="#"&gt;Menu2&lt;/a&gt;
+      &lt;a href="#"&gt;Menu3&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+</code></pre>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="uc-pager-unit">
+      <div class="uc-btn"><a href="./install.html">← Install</a></div>
+      <div class="uc-btn _primary"><a href="./footer.html">Footer →</a></div>
+    </div>
+  </main>
+
+  </div>
+
+</div>
+
+<%- include('../_component/_footer') %>
+
+<%- include('../_common/_foot') %>

@@ -1,0 +1,91 @@
+<%- include('../_common/_head', {
+  key: 'docs',
+  pagetitle: 'Loading | Document'
+}) %>
+
+<%- include('../_component/docs/_header') %>
+
+<%- include('../_component/docs/_menu') %>
+
+<div class="uc-grid _small-col-full _nowrap">
+
+<%- include('../_component/docs/_sidebar', {
+  current: 'loading'
+}) %>
+
+  <div class="uc-grid-cell _col-fit">
+
+  <main class="uc-content">
+    <section class="uc-section">
+
+      <h2 class="uc-section-title">Loading</h2>
+      <p>You can create a loading by specifying the <code>uc-loading</code> class. <br>To activate the loading icon, please grant the <code>_is-active</code> class.</p>
+
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Spinner</h3>
+        <p>You can display the loading spinner by specifying the <code>_spinner</code> class.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-loading _spinner _is-active">
+            <i class="uc-loading-icon"></i>
+          </div>
+          <span style="display:inline-block;margin:0 10px">&nbsp;</span>
+          <div class="uc-loading _spinner _dark _is-active">
+            <i class="uc-loading-icon"></i>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;!-- white color --&gt;
+&lt;div class="uc-loading _spinner _is-active"&gt;
+  &lt;i class="uc-loading-icon"&gt;&lt;/i&gt;
+&lt;/div&gt;
+
+&lt;!-- dark color --&gt;
+&lt;div class="uc-loading _spinner _dark _is-active"&gt;
+  &lt;i class="uc-loading-icon"&gt;&lt;/i&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. Bar</h3>
+        <p>You can display the loading bar by specifying the <code>bar</code> class.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-loading _bar _is-active">
+            <i class="uc-loading-icon"></i>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-loading _bar _dark _is-active">
+            <i class="uc-loading-icon"></i>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;!-- white color --&gt;
+&lt;div class="uc-loading _bar _is-active"&gt;
+  &lt;i class="uc-loading-icon"&gt;&lt;/i&gt;
+&lt;/div&gt;
+
+&lt;!-- dark color --&gt;
+&lt;div class="uc-loading _bar _dark _is-active"&gt;
+  &lt;i class="uc-loading-icon"&gt;&lt;/i&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="uc-pager-unit">
+      <div class="uc-btn"><a href="./pager.html">← Pager</a></div>
+    </div>
+  </main>
+
+  </div>
+
+</div>
+
+<%- include('../_component/_footer') %>
+
+<%- include('../_common/_foot') %>

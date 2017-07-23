@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Install | Document | UNITS - Simple and beautiful CSS component set.</title>
+  <title>Loading | Document | UNITS - Simple and beautiful CSS component set.</title>
   <link rel="canonical" href="https://unitscss.com/">
   <meta name="description" content="UNITS is a simple and beautiful CSS component set.">
   <meta name="author" content="kokushin">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="UNITS - Simple and beautiful CSS component set.">
-  <meta property="og:title" content="Install | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta property="og:title" content="Loading | Document | UNITS - Simple and beautiful CSS component set.">
   <meta property="og:description" content="UNITS is a simple and beautiful CSS component set.">
   <meta property="og:url" content="https://unitscss.com/">
   <meta property="og:image" content="https://unitscss.com/img/share/ogimage.png?r=2">
   <meta name="twitter:site" content="@kokushing">
   <meta name="twitter:creator" content="@kokushing">
   <meta name="twitter:url" content="https://unitscss.com/">
-  <meta name="twitter:title" content="Install | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta name="twitter:title" content="Loading | Document | UNITS - Simple and beautiful CSS component set.">
   <meta name="twitter:description" content="UNITS is a simple and beautiful CSS component set.">
   <meta name="twitter:card" content="summary">
   <meta name="format-detection" content="telephone=no">
@@ -111,7 +111,7 @@
   <div class="uc-sidebar-wrap">
     <div class="uc-sidebar-list">
       <a href="/docs/" >Introduction</a>
-      <a href="/docs/install.html" class="_is-current">Install</a>
+      <a href="/docs/install.html" >Install</a>
       <!--<a href="/docs/guide.html" >Coding guide</a>-->
     </div>
     <div class="uc-sidebar-list">
@@ -132,7 +132,7 @@
       <a href="/docs/video.html" >Video</a>
       <a href="/docs/pager.html" >Pager</a>
       <!--<a href="/docs/typography.html" >Typography</a>-->
-      <a href="/docs/loading.html" >Loading</a>
+      <a href="/docs/loading.html" class="_is-current">Loading</a>
     </div>
     <div class="uc-sidebar-list">
       <p><strong>Links</strong></p>
@@ -149,47 +149,67 @@
   <main class="uc-content">
     <section class="uc-section">
 
-      <h2 class="uc-section-title">Install</h2>
-      <p>UNITS can be installed easily, it is possible to start using immediately!</p>
+      <h2 class="uc-section-title">Loading</h2>
+      <p>You can create a loading by specifying the <code>uc-loading</code> class. <br>To activate the loading icon, please grant the <code>_is-active</code> class.</p>
 
-      <div class="uc-code-unit">
-        <p>1. UNITS itself can be downloaded from GitHub by cloning it or as a ZIP format, or you can download it via npm.</p>
-        <pre><code class="bash">$ git clone https://github.com/kokushin/unitscss.git</code></pre>
-        <pre><code class="bash">$ npm install unitscss --save</code></pre>
-      </div>
-      <div class="uc-code-unit">
-        <p>2. Let's load the necessary files.</p>
-<pre><code>&lt;link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"&gt;
-&lt;link rel="stylesheet" href="path/to/units.min.css"&gt;
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Spinner</h3>
+        <p>You can display the loading spinner by specifying the <code>_spinner</code> class.</p>
 
-&lt;script src="path/to/units.min.js"&gt;&lt;/script&gt;
-</code></pre>
-      </div>
-      <div class="uc-code-unit">
-        <p>3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aut eos laudantium perferendis voluptatem sunt totam, esse mollitia officia! Ipsam numquam ducimus necessitatibus, nesciunt eos.</p>
-<pre><code>&lt;div class="uc-card _float"&gt;
-  &lt;div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
-  &lt;h3 class="uc-card-title"&gt;Sample card&lt;/h3&gt;
-  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.&lt;/p&gt;
-  &lt;div class="uc-btn _primary"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+        <div class="doc-component-preview">
+          <div class="uc-loading _spinner _is-active">
+            <i class="uc-loading-icon"></i>
+          </div>
+          <span style="display:inline-block;margin:0 10px">&nbsp;</span>
+          <div class="uc-loading _spinner _dark _is-active">
+            <i class="uc-loading-icon"></i>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;!-- white color --&gt;
+&lt;div class="uc-loading _spinner _is-active"&gt;
+  &lt;i class="uc-loading-icon"&gt;&lt;/i&gt;
+&lt;/div&gt;
+
+&lt;!-- dark color --&gt;
+&lt;div class="uc-loading _spinner _dark _is-active"&gt;
+  &lt;i class="uc-loading-icon"&gt;&lt;/i&gt;
 &lt;/div&gt;
 </code></pre>
+        </div>
       </div>
-      <div class="uc-code-unit">
-        <p>4. It will be displayed on the browser like this:</p>
-        <div class="uc-card _float" style="margin-left:auto;margin-right:auto">
-          <div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"></div>
-          <h3 class="uc-card-title">Sample card</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.</p>
-          <div class="uc-btn _primary"><a href="#">Button</a></div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. Bar</h3>
+        <p>You can display the loading bar by specifying the <code>bar</code> class.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-loading _bar _is-active">
+            <i class="uc-loading-icon"></i>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-loading _bar _dark _is-active">
+            <i class="uc-loading-icon"></i>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;!-- white color --&gt;
+&lt;div class="uc-loading _bar _is-active"&gt;
+  &lt;i class="uc-loading-icon"&gt;&lt;/i&gt;
+&lt;/div&gt;
+
+&lt;!-- dark color --&gt;
+&lt;div class="uc-loading _bar _dark _is-active"&gt;
+  &lt;i class="uc-loading-icon"&gt;&lt;/i&gt;
+&lt;/div&gt;
+</code></pre>
         </div>
       </div>
 
     </section>
 
     <div class="uc-pager-unit">
-      <div class="uc-btn"><a href="./">← Introduction</a></div>
-      <div class="uc-btn _primary"><a href="./header.html">Header →</a></div>
+      <div class="uc-btn"><a href="./pager.html">← Pager</a></div>
     </div>
   </main>
 
