@@ -156,6 +156,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 0 0 24px;
 }
 
@@ -179,7 +182,9 @@
   }
     }
 
-.uc-header-menu a + a {
+.uc-header-menu a + a,
+    .uc-header-menu a + .uc-btn,
+    .uc-header-menu a + .uc-btn-unit {
       margin: 0 0 0 24px;
     }
 
@@ -196,3 +201,8 @@
 ._dark .uc-header-menu a._is-current, ._black .uc-header-menu a._is-current, ._ghost .uc-header-menu a._is-current {
         color: white;
       }
+
+.uc-header-menu .uc-btn a {
+      padding: 12px 32px;
+      font-size: .875rem;
+    }
