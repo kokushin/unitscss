@@ -3454,16 +3454,52 @@ select.uc-form-parts,
   }
 
 /**
- * UNITS product theme
+ * UNITS docs theme
  *
  * ==================================
- * @required: [body._theme-product]
+ * @required: [body._theme-docs]
  * ==================================
  */
 
-._theme-product {
+._theme-docs .doc-component-box {
+    padding: 100px 0 0;
+    margin-top: 0;
+  }
 
+._theme-docs .doc-component-box h3 {
+    margin-top: 0;
+  }
 
-}
+._theme-docs .doc-component-box .doc-component-preview {
+    margin: 40px -80px 0;
+    padding: 40px 80px;
+    background-color:#f2f2f2;
+  }
+
+@media (max-width: 1199px) and (min-width: 769px) {
+    ._theme-docs .doc-component-box .doc-component-preview {
+      margin: 40px -40px 0;
+      padding: 40px 40px;
+      background-color:#f2f2f2;
+    }
+  }
+
+@media (max-width: 768px) {
+    ._theme-docs .doc-component-box .doc-component-preview {
+      margin: 40px -20px 0;
+      padding: 40px 20px;
+    }
+  }
+
+._theme-docs .doc-component-box .doc-component-preview-inner {
+    position: relative;
+  }
+
+._theme-docs .doc-component-box .uc-code-unit {
+    max-width: 800px;
+    margin: 40px 0 0;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ebebeb;
+  }
 
 /*# sourceMappingURL=maps/units.css.map */
