@@ -61,6 +61,10 @@
       text-align: center;
       font-size: .875rem;
     }
+
+    ._ghost & {
+      color: var(--color-text);
+    }
   }
 
   &._full {

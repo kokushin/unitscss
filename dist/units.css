@@ -1765,6 +1765,10 @@ p + h2,
   }
     }
 
+._ghost .uc-btn > span, ._ghost .uc-btn > a {
+      color: #333;
+    }
+
 .uc-btn._full {
     display: block;
     width: 100%;
