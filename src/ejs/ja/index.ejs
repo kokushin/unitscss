@@ -2,11 +2,117 @@
   key: 'index',
 }) %>
 
-<%- include('../_component/index/_header') %>
+<%- include('../_component/index/ja/_header') %>
 
-<main class="content">
-  <p>Velit non dolor cillum quis ea mollit ipsum est proident est sint ad. Proident nostrud cupidatat pariatur mollit do excepteur incididunt ad eu Lorem eu. Do magna ut sint dolore consequat consectetur sunt. Voluptate officia sunt excepteur magna. Esse ad est sint minim eu veniam aliquip proident. Do ut enim commodo sit consequat cillum mollit. Irure ea fugiat adipisicing dolore cillum pariatur sit pariatur ea.</p>
-  <p><a href="#">link</a></p>
+<%- include('../_component/index/ja/_menu') %>
+
+<%- include('../_component/index/_hero', {
+  title: 'Simple and beautiful components.',
+  text: 'UNITS v'+ pkg.version +' / Early access edition'
+}) %>
+
+<main class="uc-content">
+
+  <section class="uc-section _center">
+    <h2 class="uc-section-title">特徴</h2>
+    <p>UNITSはシンプルで美しいコンポーネントセットです。<br>CSSファイルを読み込み、決められたHTMLをコピー&amp;ペーストするだけで誰でも利用することができます。</p>
+    <div class="uc-card-unit">
+      <div class="uc-grid _gutter _col-3 _small-col-full">
+        <div class="uc-grid-cell">
+          <div class="uc-card">
+            <h3 class="uc-card-title">すぐに使える</h3>
+            <p>あなたがしなければならないのは、単にunits.cssを読み込ませることだけ。すでにいくつかのコンポーネントが用意されており、使用するコンポーネントを選択してWebサイトに適用することができます。</p>
+          </div>
+        </div>
+        <div class="uc-grid-cell">
+          <div class="uc-card">
+            <h3 class="uc-card-title">シンプルで美しい</h3>
+            <p>各コンポーネントは美しく設計されています。デザインは定期的に更新されますが、主にマージンの調整など細かい調整のみ加えられます。雰囲気を変えたいときのためにテーマクラスも用意されています。</p>
+          </div>
+        </div>
+        <div class="uc-grid-cell">
+          <div class="uc-card">
+            <h3 class="uc-card-title">日本語サポート</h3>
+            <p>開発者は日本人なので、日本語でのサポートが可能です。Webページにおける日本語表示の最適化を進めており、日本語ドキュメントも用意されています。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="uc-btn-unit">
+      <div class="uc-btn _primary"><a href="/docs/" target="_blank">詳しく見る</a></div>
+    </div>
+  </section>
+
+  <section class="uc-section _dark _center">
+    <div class="uc-section-inner">
+      <h2 class="uc-section-title">クイックスタート</h2>
+      <div class="uc-code-unit">
+        <p>&lt;head&gt; タグの中に次のコードを埋め込み、すぐに使用することができます :</p>
+        <pre class="uc-code"><code>&lt;link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"&gt;
+&lt;link rel="stylesheet" href="https://unpkg.com/unitscss@latest/dist/units.min.css"&gt;
+
+&lt;script src="https://unpkg.com/unitscss@latest/dist/units.min.js"&gt;&lt;/script&gt;
+</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section class="uc-section _gray _center">
+    <div class="uc-section-inner">
+      <h2 class="uc-section-title">使い方</h2>
+      <p>UNITSは簡単に設置でき、すぐに使用することができます！</p>
+      <div class="uc-code-unit">
+        <p>1. UNITSはGitHubからのクローンまたはZIP形式でダウンロードするか、npmからダウンロードすることができます。</p>
+        <pre><code class="bash">$ git clone https://github.com/kokushin/unitscss.git</code></pre>
+        <pre><code class="bash">$ npm install unitscss --save</code></pre>
+      </div>
+      <div class="uc-code-unit">
+        <p>2. 必要なファイルを読み込ませましょう。</p>
+<pre><code>&lt;link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"&gt;
+&lt;link rel="stylesheet" href="path/to/units.min.css"&gt;
+
+&lt;script src="path/to/units.min.js"&gt;&lt;/script&gt;
+</code></pre>
+      </div>
+      <div class="uc-code-unit">
+        <p>3. 定められたHTMLを組み、<code>uc-</code>からはじまるコンポーネントクラスを付与して下さい。例えば下記のサンプルでは、カバー画像カードのコンポーネントを適用させることができます。</p>
+<pre><code>&lt;div class="uc-card _float"&gt;
+  &lt;div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;h3 class="uc-card-title"&gt;Sample card&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.&lt;/p&gt;
+  &lt;div class="uc-btn _primary"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+      <div class="uc-code-unit">
+        <p>4. このようにブラウザに表示されます :</p>
+        <div class="uc-card _float" style="margin-left:auto;margin-right:auto">
+          <div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"></div>
+          <h3 class="uc-card-title">Sample card</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.</p>
+          <div class="uc-btn _primary"><a href="#">Button</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="uc-section _center">
+    <h2 class="uc-section-title">今後のアップデート</h2>
+    <p>UNITSはまだベータ版です。<br>新しいコンポーネントの追加、ソースコードの最適化、デザインの見直しは定期的に行われます。<br>
+      ご意見やご要望をぜひお寄せください！</p>
+    <div class="uc-list-unit _border uc-section-inner">
+      <ul class="uc-list">
+        <li>さまざまなシーンで利用できる、UNITS専用のJavaScriptライブラリを追加します。</li>
+        <li>マイクロインタラクションを追加します。</li>
+        <li>より高度なコンポーネントの組み合わせパターンに対応させます。</li>
+        <li>開発環境、ソースコードを最適化していきます。</li>
+      </ul>
+    </div>
+    <div class="uc-btn-unit">
+      <div class="uc-btn _primary"><a href="https://github.com/kokushin/units" target="_blank"><span style="text-transform:initial">GitHub</span>をフォロー</a></div>
+    </div>
+  </section>
+
 </main>
 
 <%- include('../_component/_footer') %>
