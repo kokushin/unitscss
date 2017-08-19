@@ -1,0 +1,78 @@
+<%- include('../../_common/ja/_head', {
+  key: 'docs',
+  pagetitle: 'Photo | Document'
+}) %>
+
+<%- include('../../_component/docs/ja/_header') %>
+
+<%- include('../../_component/docs/ja/_menu') %>
+
+<div class="uc-grid _small-col-full _nowrap">
+
+<%- include('../../_component/docs/ja/_sidebar', {
+  current: 'photo'
+}) %>
+
+  <div class="uc-grid-cell _col-fit">
+
+  <main class="uc-content">
+    <section class="uc-section">
+
+      <h2 class="uc-section-title">Photo</h2>
+      <p>You can optimize image embedding by specifying the <code>uc-photo</code> class.</p>
+
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Basic</h3>
+        <p>Create a basic photo block.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-content">
+            <figure class="uc-photo">
+              <img src="https://source.unsplash.com/random" alt="">
+              <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;figure class="uc-photo"&gt;
+  &lt;img src="https://source.unsplash.com/random" alt=""&gt;
+  &lt;figcaption&gt;Lorem ipsum dolor sit amet.&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. Fit to width</h3>
+        <p>By specifying the <code>_full</code> class, you can display the image in the full width.</p>
+
+        <div class="doc-component-preview">
+          <figure class="uc-photo _full">
+            <img src="https://source.unsplash.com/random" alt="">
+            <figcaption>Lorem ipsum dolor sit amet.</figcaption>
+          </figure>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;figure class="uc-photo _full"&gt;
+  &lt;img src="https://source.unsplash.com/random" alt=""&gt;
+  &lt;figcaption&gt;Lorem ipsum dolor sit amet.&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="uc-pager-unit">
+      <div class="uc-btn"><a href="./table.html">← Table</a></div>
+      <div class="uc-btn _primary"><a href="./code.html">Code →</a></div>
+    </div>
+  </main>
+
+  </div>
+
+</div>
+
+<%- include('../../_component/_footer') %>
+
+<%- include('../../_common/_foot') %>

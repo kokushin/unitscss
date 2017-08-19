@@ -1,0 +1,71 @@
+<%- include('../../_common/ja/_head', {
+  key: 'docs',
+  pagetitle: 'インストール手順 | Document'
+}) %>
+
+<%- include('../../_component/docs/ja/_header') %>
+
+<%- include('../../_component/docs/ja/_menu') %>
+
+<div class="uc-grid _small-col-full _nowrap">
+
+<%- include('../../_component/docs/ja/_sidebar', {
+  current: 'install'
+}) %>
+
+  <div class="uc-grid-cell _col-fit">
+
+  <main class="uc-content">
+    <section class="uc-section">
+
+      <h2 class="uc-section-title">インストール手順</h2>
+      <p>UNITSは簡単に設置でき、すぐに使用することができます！</p>
+
+      <div class="uc-code-unit">
+        <p>1. UNITSはGitHubからのクローンまたはZIP形式でダウンロードするか、npmからダウンロードすることができます。</p>
+        <pre><code class="bash">$ git clone https://github.com/kokushin/unitscss.git</code></pre>
+        <pre><code class="bash">$ npm install unitscss --save</code></pre>
+      </div>
+      <div class="uc-code-unit">
+        <p>2. 必要なファイルを読み込ませましょう。</p>
+<pre><code>&lt;link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"&gt;
+&lt;link rel="stylesheet" href="path/to/units.min.css"&gt;
+
+&lt;script src="path/to/units.min.js"&gt;&lt;/script&gt;
+</code></pre>
+      </div>
+      <div class="uc-code-unit">
+        <p>3. 定められたHTMLを組み、<code>uc-</code>からはじまるコンポーネントクラスを付与して下さい。例えば下記のサンプルでは、カバー画像カードのコンポーネントを適用させることができます。</p>
+<pre><code>&lt;div class="uc-card _float"&gt;
+  &lt;div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;h3 class="uc-card-title"&gt;Sample card&lt;/h3&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.&lt;/p&gt;
+  &lt;div class="uc-btn _primary"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+      </div>
+      <div class="uc-code-unit">
+        <p>4. このようにブラウザに表示されます :</p>
+        <div class="uc-card _float" style="margin-left:auto;margin-right:auto">
+          <div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"></div>
+          <h3 class="uc-card-title">Sample card</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, et.</p>
+          <div class="uc-btn _primary"><a href="#">Button</a></div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="uc-pager-unit">
+      <div class="uc-btn"><a href="./">← はじめに</a></div>
+      <div class="uc-btn _primary"><a href="./header.html">ヘッダー →</a></div>
+    </div>
+  </main>
+
+  </div>
+
+</div>
+
+<%- include('../../_component/_footer') %>
+
+<%- include('../../_common/_foot') %>

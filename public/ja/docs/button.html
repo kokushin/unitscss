@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>はじめに | Document | UNITS - Simple and beautiful CSS component set.</title>
+  <title>Button | Document | UNITS - Simple and beautiful CSS component set.</title>
   <link rel="canonical" href="https://unitscss.com/">
   <meta name="description" content="UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。">
   <meta name="author" content="kokushin">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="UNITS - Simple and beautiful CSS component set.">
-  <meta property="og:title" content="はじめに | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta property="og:title" content="Button | Document | UNITS - Simple and beautiful CSS component set.">
   <meta property="og:description" content="UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。">
   <meta property="og:url" content="https://unitscss.com/">
   <meta property="og:image" content="https://unitscss.com//assets/img/share/facebook.png">
   <meta name="twitter:site" content="@kokushing">
   <meta name="twitter:creator" content="@kokushing">
   <meta name="twitter:url" content="https://unitscss.com/">
-  <meta name="twitter:title" content="はじめに | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta name="twitter:title" content="Button | Document | UNITS - Simple and beautiful CSS component set.">
   <meta name="twitter:description" content="UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="https://unitscss.com//assets/img/share/twitter.png">
@@ -120,7 +120,7 @@
 <div class="uc-sidebar _slide uc-grid-cell" id="sidebar">
   <div class="uc-sidebar-wrap">
     <div class="uc-sidebar-list">
-      <a href="/ja/docs/" class="_is-current">はじめに</a>
+      <a href="/ja/docs/" >はじめに</a>
       <a href="/ja/docs/install.html" >インストール手順</a>
       <!--<a href="/ja/docs/guide.html" >Coding guide</a>-->
     </div>
@@ -133,7 +133,7 @@
       <a href="/ja/docs/menu.html" >メニュー</a>
       <a href="/ja/docs/hero.html" >ヒーロー画像</a>
       <a href="/ja/docs/card.html" >カード</a>
-      <a href="/ja/docs/button.html" >ボタン</a>
+      <a href="/ja/docs/button.html" class="_is-current">ボタン</a>
       <a href="/ja/docs/form.html" >フォーム</a>
       <a href="/ja/docs/list.html" >リスト</a>
       <a href="/ja/docs/table.html" >テーブル</a>
@@ -156,63 +156,82 @@
 
   <div class="uc-grid-cell _col-fit">
 
-  <div class="uc-hero">
-  <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
-  <div class="uc-hero-title">Welcome to UNITS</div>
-</div>
-
-
   <main class="uc-content">
     <section class="uc-section">
 
-      <h2 class="uc-section-title">はじめに</h2>
-      <p>UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。<br>CSSを読み込み、UNITS Componentとして定められたHTMLをコピー&ペーストするだけで誰でも簡単に利用することができます。</p>
+      <h2 class="uc-section-title">Button</h2>
+      <p>You can create a buttons by specifying the <code>uc-btn</code> class.</p>
 
-      <div class="uc-card-unit">
-        <div class="uc-grid _col-3 _small-col-full _medium-col-2 _gutter">
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">すぐに使える</h3>
-              <p>units.cssを読み込むだけ。あらかじめ様々なコンポーネントが用意されているので、必要なものだけを選択しあなたのWebサイトに組み込むことが可能です。</p>
-            </div>
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Basic</h3>
+        <p>Create a basic button.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-content">
+            <div class="uc-btn"><a href="#">Button</a></div>
+            <button class="uc-btn"><span>Button</span></button>
+            <div class="uc-btn"><span>Button</span></div>
           </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">シンプルで美しいビジュアル</h3>
-              <p>各コンポーネントは美しくデザインされています。デザインは定期的にアップデートされますが、大きな変更は加えず、細かいマージンの調整を中心に行われます。</p>
-            </div>
-          </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">モダンブラウザサポート</h3>
-              <p>UNITSはMicrosoft Edge, Google Chrome, Firefox, Safariなど各ブラウザの最新バージョンに最適化されています。古いブラウザの動作は...ごめんなさい。</p>
-            </div>
-          </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">レスポンシブWebデザイン</h3>
-              <p>UNITSはレスポンシブWebデザインを採用し、全てのデバイス上で最適化されたデザインを表示できるように調整されています。</p>
-            </div>
-          </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">定期アップデート</h3>
-              <p>UNITSはまだベータ版なので、正式版に向けて定期的にアップデートされます。それは新しいコンポーネントの追加やソースコード最適化、デザインの微調整などです。</p>
-            </div>
-          </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">日本語をサポート</h3>
-              <p>開発者は日本人なので、日本語でのサポートが可能です。日本語で書かれているWebページへの最適化、ドキュメントのアップデートも進めています。</p>
-            </div>
-          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-btn"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+&lt;button class="uc-btn"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/button&gt;
+&lt;!-- It can be used in `a` tag. --&gt;
+&lt;div class="uc-btn"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. Color variations</h3>
+        <p>There are abundant color variations.</p>
+
+        <div class="doc-component-preview">
+          <div><div class="uc-btn _ghost"><a href="#">Ghost</a></div></div>
+          <div>&nbsp;</div>
+          <div><div class="uc-btn _primary"><a href="#">Primary</a></div></div>
+          <div>&nbsp;</div>
+          <div><div class="uc-btn _secondary"><a href="">Secondary</a></div></div>
+          <div>&nbsp;</div>
+          <div><div class="uc-btn _success"><a href="">Success</a></div></div>
+          <div>&nbsp;</div>
+          <div><div class="uc-btn _danger"><a href="">Danger</a></div></div>
+          <div>&nbsp;</div>
+          <div><div class="uc-btn _warning"><a href="">Warning</a></div></div>
+          <div>&nbsp;</div>
+          <div><div class="uc-btn _disabled"><span>Disabled</span></div></div>
+          <div>&nbsp;</div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-btn _ghost"&gt;&lt;a href="#"&gt;Ghost&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _primary"&gt;&lt;a href="#"&gt;Primary&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _secondary"&gt;&lt;a href=""&gt;Secondary&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _success"&gt;&lt;a href=""&gt;Success&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _danger"&gt;&lt;a href=""&gt;Danger&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _warning"&gt;&lt;a href=""&gt;Warning&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _disabled"&gt;&lt;span&gt;Disabled&lt;/span&gt;&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-3">
+        <h3>3. Fit to width</h3>
+        <p>By specifying the <code>_full</code> class, you can display the button in the full width of the screen.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-btn _full"><a href="#">Button</a></div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-btn _full"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+</code></pre>
         </div>
       </div>
 
     </section>
 
     <div class="uc-pager-unit">
-      <div class="uc-btn _primary"><a href="./install.html">インストール手順 →</a></div>
+      <div class="uc-btn"><a href="./card.html">← Card</a></div>
+      <div class="uc-btn _primary"><a href="./form.html">Form →</a></div>
     </div>
   </main>
 

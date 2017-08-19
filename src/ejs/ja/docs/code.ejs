@@ -1,0 +1,51 @@
+<%- include('../../_common/ja/_head', {
+  key: 'docs',
+  pagetitle: 'Code | Document'
+}) %>
+
+<%- include('../../_component/docs/ja/_header') %>
+
+<%- include('../../_component/docs/ja/_menu') %>
+
+<div class="uc-grid _small-col-full _nowrap">
+
+<%- include('../../_component/docs/ja/_sidebar', {
+  current: 'code'
+}) %>
+
+  <div class="uc-grid-cell _col-fit">
+
+  <main class="uc-content">
+    <section class="uc-section">
+
+      <h2 class="uc-section-title">Code</h2>
+      <p>You can create a code block by specifying the <code>uc-code</code> class.</p>
+
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Basic</h3>
+        <p>Create a basic code block.</p>
+
+        <div class="doc-component-preview">
+          <pre class="uc-code"><code>$ npm install unitscss</code></pre>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;pre class="uc-code"&gt;&lt;code&gt;$ npm install unitscss&lt;/code&gt;&lt;/pre&gt;
+</code></pre>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="uc-pager-unit">
+      <div class="uc-btn"><a href="./photo.html">← Photo</a></div>
+      <div class="uc-btn _primary"><a href="./video.html">Video →</a></div>
+    </div>
+  </main>
+
+  </div>
+
+</div>
+
+<%- include('../../_component/_footer') %>
+
+<%- include('../../_common/_foot') %>

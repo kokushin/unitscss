@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card | Document | UNITS - Simple and beautiful CSS component set.</title>
+  <link rel="canonical" href="https://unitscss.com/">
+  <meta name="description" content="UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。">
+  <meta name="author" content="kokushin">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="UNITS - Simple and beautiful CSS component set.">
+  <meta property="og:title" content="Card | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta property="og:description" content="UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。">
+  <meta property="og:url" content="https://unitscss.com/">
+  <meta property="og:image" content="https://unitscss.com//assets/img/share/facebook.png">
+  <meta name="twitter:site" content="@kokushing">
+  <meta name="twitter:creator" content="@kokushing">
+  <meta name="twitter:url" content="https://unitscss.com/">
+  <meta name="twitter:title" content="Card | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta name="twitter:description" content="UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:image" content="https://unitscss.com//assets/img/share/twitter.png">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="UNITS - Simple and beautiful CSS component set.">
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/share/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/share/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/share/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/share/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/share/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/share/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/share/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/share/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/share/apzple-touch-icon-180x180.png">
+  <link rel="icon" sizes="32x32" type="image/png" href="/assets/share/favicon-32x32.png">
+  <link rel="shortcut icon" href="/assets/share/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="/css/units.css">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-dark.min.css" rel="stylesheet">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <style>
+    /* Document Page */
+    .doc-component-box {
+      padding: 100px 0 0;
+      margin-top: 0;
+    }
+    .doc-component-box h3 {
+      margin-top: 0;
+    }
+    .doc-component-box .doc-component-preview {
+      margin: 40px -80px 0;
+      padding: 40px 80px;
+      background-color:#f2f2f2;
+    }
+    @media (max-width: 1199px) and (min-width: 769px) {
+      .doc-component-box .doc-component-preview {
+        margin: 40px -40px 0;
+        padding: 40px 40px;
+        background-color:#f2f2f2;
+      }
+    }
+    @media (max-width: 768px) {
+      .doc-component-box .doc-component-preview {
+        margin: 40px -20px 0;
+        padding: 40px 20px;
+      }
+    }
+    .doc-component-box .doc-component-preview-inner {
+      position: relative;
+    }
+    .doc-component-box .uc-code-unit {
+      max-width: 800px;
+      margin: 40px 0 0;
+      padding-bottom: 40px;
+      border-bottom: 1px solid #ebebeb;
+    }
+  </style>
+</head>
+<body class="page-docs">
+
+
+<header class="uc-header _black _fixed">
+  <div class="uc-menu-btn _hide-medium _hide-large" data-open-target="#sidebar">
+    <button><i class="uc-menu-btn-icon"></i></button>
+  </div>
+  <h1 class="uc-header-logo"><a href="/">UNITS</a></h1>
+  <div class="uc-header-menu _hide-small">
+    <a href="/docs/" class="_is-current">Document</a>
+    <a href="https://codepen.io/search/pens/?q=units&limit=kokushin" target="_blank">Snippets</a>
+    <a href="/themes/">Themes</a>
+    <a href="https://github.com/kokushin/unitscss" target="_blank">GitHub</a>
+    <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
+  </div>
+  <div class="uc-menu-btn _text _hide-medium _hide-large" data-open-target="#menu">
+    <button>Menu</button>
+  </div>
+</header>
+
+
+<nav class="uc-menu _slide _black" id="menu">
+  <div class="uc-menu-wrap">
+    <div class="uc-menu-list">
+      <a href="/docs/" class="_is-current">Document</a>
+      <a href="https://codepen.io/search/pens/?q=units&limit=kokushin" target="_blank">Snippets</a>
+      <a href="/themes/">Themes</a>
+      <a href="https://github.com/kokushin/unitscss" target="_blank">GitHub</a>
+      <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="uc-grid _small-col-full _nowrap">
+
+<div class="uc-sidebar _slide uc-grid-cell" id="sidebar">
+  <div class="uc-sidebar-wrap">
+    <div class="uc-sidebar-list">
+      <a href="/ja/docs/" >はじめに</a>
+      <a href="/ja/docs/install.html" >インストール手順</a>
+      <!--<a href="/ja/docs/guide.html" >Coding guide</a>-->
+    </div>
+    <div class="uc-sidebar-list">
+      <p><strong>コンポーネント</strong></p>
+      <a href="/ja/docs/header.html" >ヘッダー</a>
+      <a href="/ja/docs/footer.html" >フッター</a>
+      <a href="/ja/docs/section.html" >セクション</a>
+      <a href="/ja/docs/grid.html" >グリッド</a>
+      <a href="/ja/docs/menu.html" >メニュー</a>
+      <a href="/ja/docs/hero.html" >ヒーロー画像</a>
+      <a href="/ja/docs/card.html" class="_is-current">カード</a>
+      <a href="/ja/docs/button.html" >ボタン</a>
+      <a href="/ja/docs/form.html" >フォーム</a>
+      <a href="/ja/docs/list.html" >リスト</a>
+      <a href="/ja/docs/table.html" >テーブル</a>
+      <a href="/ja/docs/photo.html" >埋め込み画像</a>
+      <a href="/ja/docs/code.html" >埋め込みコード</a>
+      <a href="/ja/docs/video.html" >埋め込み動画</a>
+      <a href="/ja/docs/pager.html" >ページャー</a>
+      <!--<a href="/ja/docs/typography.html" >Typography</a>-->
+      <a href="/ja/docs/loading.html" >ローディング</a>
+    </div>
+    <div class="uc-sidebar-list">
+      <p><strong>関連リンク</strong></p>
+      <a href="/ja/">トップページ</a>
+      <a href="https://github.com/kokushin/unitscss">GitHub</a>
+      <a href="https://twitter.com/kokushing">Twitter</a>
+    </div>
+  </div>
+</div>
+
+
+  <div class="uc-grid-cell _col-fit">
+
+  <main class="uc-content">
+    <section class="uc-section">
+
+      <h2 class="uc-section-title">Card</h2>
+      <p>You can create a simple card by specifying the <code>uc-card</code> class.</p>
+
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Basic</h3>
+        <p>It is a simple card composed of text and buttons.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-card">
+            <div class="uc-card-title">Simple card</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+            <div class="uc-btn _primary"><a href="#">Button</a></div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-card"&gt;
+  &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+  &lt;div class="uc-btn _primary"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. Hover</h3>
+        <p>It is a card that emerges when you hover the mouse cursor. <br>This is useful when you want to emphasize elements.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-card _hover">
+            <div class="uc-card-title">Hover card</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-card _hover"&gt;
+  &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-3">
+        <h3>3. Float</h3>
+        <p>It is a card that always emerges. <br>This is useful when you want to emphasize elements.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-card _float">
+            <div class="uc-card-title">Float card</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+            <div class="uc-btn _primary"><a href="#">Button</a></div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-card _float"&gt;
+  &lt;div class="uc-card-title"&gt;Simple card&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+  &lt;div class="uc-btn _primary"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-4">
+        <h3>4. Banner</h3>
+        <p>It is a card whose entire card is clickable.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-card _banner">
+            <a href="#">
+              <div class="uc-card-title">Banner card</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+              <div class="uc-btn _primary"><span>Button</span></div>
+            </a>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-card _banner"&gt;
+  &lt;a href="#"&gt;
+  &lt;div class="uc-card-title"&gt;Banner card&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+  &lt;div class="uc-btn _primary"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/div&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-5">
+        <h3>5. Cover Image</h3>
+        <p>You can embed images in the card. Images are automatically trimmed and placed in the center.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-card">
+            <div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"></div>
+            <div class="uc-card-title">Cover image card</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+            <div class="uc-btn _primary"><a href="#">Button</a></div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-card"&gt;
+  &lt;div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-card-title"&gt;Cover image card&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+  &lt;div class="uc-btn _primary"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-6">
+        <h3>6. Thumbnail</h3>
+        <p>The image embedded in the card is resized to the thumbnail size and displayed.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-card _thumb">
+            <div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"></div>
+            <div class="uc-card-wrap">
+              <div class="uc-card-title">Thumb image card</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+              <div class="uc-btn _primary"><a href="#">Button</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-card _thumb"&gt;
+  &lt;div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-card-wrap"&gt;
+  &lt;div class="uc-card-title"&gt;Thumb image card&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+  &lt;div class="uc-btn _primary"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-7">
+        <h3>7. Layout</h3>
+        <p>It has a structure inside the card, allowing for more complex styling. <br>You can easily create a profile card like the sample below.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-card">
+            <div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"></div>
+            <div class="uc-card-header">
+              <div class="uc-card-icon" style="background-image:url(https://source.unsplash.com/random)"></div>
+              <div class="uc-card-title">Layout card</div>
+            </div>
+            <div class="uc-card-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!</p>
+            </div>
+            <div class="uc-card-footer">
+              <div class="uc-btn _primary"><a href="#">Button</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-card"&gt;
+  &lt;div class="uc-card-image" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-card-header"&gt;
+    &lt;div class="uc-card-icon" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+    &lt;div class="uc-card-title"&gt;Layout card&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-card-body"&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime commodi ipsum ab quam culpa. Repudiandae eius maiores necessitatibus!&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-card-footer"&gt;
+    &lt;div class="uc-btn _primary"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="uc-pager-unit">
+      <div class="uc-btn"><a href="./hero.html">← Hero</a></div>
+      <div class="uc-btn _primary"><a href="./button.html">Button →</a></div>
+    </div>
+  </main>
+
+  </div>
+
+</div>
+
+<footer class="uc-footer _black">
+  <div class="uc-footer-menu">
+    <!--<a href="#" class="_is-current">Document</a>-->
+    <a href="https://codepen.io/search/pens/?q=units&limit=kokushin" target="_blank">Snippets</a>
+    <a href="/themes/">Themes</a>
+    <a href="https://github.com/kokushin/unitscss" target="_blank">GitHub</a>
+    <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
+  </div>
+  <div class="uc-footer-logo"><cite>UNITS</cite></div>
+  <p>Made by <a href="https://twitter.com/kokushing" target="_blank">@kokushing</a>,
+  Licensed under MIT license.<br>
+  Inspired by <a href="https://material.io/guidelines/" target="_blank">Google Material Design.</a><br>
+  Photo by <a href="https://unsplash.com/" target="_blank">unsplash.com.</a></p>
+  <small>&copy; 2017 UNITS v0.1.17</small>
+</footer>
+
+
+
+<script src="/js/units.js"></script>
+
+<!-- Place this tag in your head or just before your close body tag. -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>
+

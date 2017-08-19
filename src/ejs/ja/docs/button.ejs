@@ -1,0 +1,103 @@
+<%- include('../../_common/ja/_head', {
+  key: 'docs',
+  pagetitle: 'Button | Document'
+}) %>
+
+<%- include('../../_component/docs/ja/_header') %>
+
+<%- include('../../_component/docs/ja/_menu') %>
+
+<div class="uc-grid _small-col-full _nowrap">
+
+<%- include('../../_component/docs/ja/_sidebar', {
+  current: 'button'
+}) %>
+
+  <div class="uc-grid-cell _col-fit">
+
+  <main class="uc-content">
+    <section class="uc-section">
+
+      <h2 class="uc-section-title">Button</h2>
+      <p>You can create a buttons by specifying the <code>uc-btn</code> class.</p>
+
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Basic</h3>
+        <p>Create a basic button.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-content">
+            <div class="uc-btn"><a href="#">Button</a></div>
+            <button class="uc-btn"><span>Button</span></button>
+            <div class="uc-btn"><span>Button</span></div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-btn"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+&lt;button class="uc-btn"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/button&gt;
+&lt;!-- It can be used in `a` tag. --&gt;
+&lt;div class="uc-btn"&gt;&lt;span&gt;Button&lt;/span&gt;&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. Color variations</h3>
+        <p>There are abundant color variations.</p>
+
+        <div class="doc-component-preview">
+          <div><div class="uc-btn _ghost"><a href="#">Ghost</a></div></div>
+          <div>&nbsp;</div>
+          <div><div class="uc-btn _primary"><a href="#">Primary</a></div></div>
+          <div>&nbsp;</div>
+          <div><div class="uc-btn _secondary"><a href="">Secondary</a></div></div>
+          <div>&nbsp;</div>
+          <div><div class="uc-btn _success"><a href="">Success</a></div></div>
+          <div>&nbsp;</div>
+          <div><div class="uc-btn _danger"><a href="">Danger</a></div></div>
+          <div>&nbsp;</div>
+          <div><div class="uc-btn _warning"><a href="">Warning</a></div></div>
+          <div>&nbsp;</div>
+          <div><div class="uc-btn _disabled"><span>Disabled</span></div></div>
+          <div>&nbsp;</div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-btn _ghost"&gt;&lt;a href="#"&gt;Ghost&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _primary"&gt;&lt;a href="#"&gt;Primary&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _secondary"&gt;&lt;a href=""&gt;Secondary&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _success"&gt;&lt;a href=""&gt;Success&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _danger"&gt;&lt;a href=""&gt;Danger&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _warning"&gt;&lt;a href=""&gt;Warning&lt;/a&gt;&lt;/div&gt;
+&lt;div class="uc-btn _disabled"&gt;&lt;span&gt;Disabled&lt;/span&gt;&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-3">
+        <h3>3. Fit to width</h3>
+        <p>By specifying the <code>_full</code> class, you can display the button in the full width of the screen.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-btn _full"><a href="#">Button</a></div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-btn _full"&gt;&lt;a href="#"&gt;Button&lt;/a&gt;&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="uc-pager-unit">
+      <div class="uc-btn"><a href="./card.html">← Card</a></div>
+      <div class="uc-btn _primary"><a href="./form.html">Form →</a></div>
+    </div>
+  </main>
+
+  </div>
+
+</div>
+
+<%- include('../../_component/_footer') %>
+
+<%- include('../../_common/_foot') %>

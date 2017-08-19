@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>はじめに | Document | UNITS - Simple and beautiful CSS component set.</title>
+  <title>Section | Document | UNITS - Simple and beautiful CSS component set.</title>
   <link rel="canonical" href="https://unitscss.com/">
   <meta name="description" content="UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。">
   <meta name="author" content="kokushin">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="UNITS - Simple and beautiful CSS component set.">
-  <meta property="og:title" content="はじめに | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta property="og:title" content="Section | Document | UNITS - Simple and beautiful CSS component set.">
   <meta property="og:description" content="UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。">
   <meta property="og:url" content="https://unitscss.com/">
   <meta property="og:image" content="https://unitscss.com//assets/img/share/facebook.png">
   <meta name="twitter:site" content="@kokushing">
   <meta name="twitter:creator" content="@kokushing">
   <meta name="twitter:url" content="https://unitscss.com/">
-  <meta name="twitter:title" content="はじめに | Document | UNITS - Simple and beautiful CSS component set.">
+  <meta name="twitter:title" content="Section | Document | UNITS - Simple and beautiful CSS component set.">
   <meta name="twitter:description" content="UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="https://unitscss.com//assets/img/share/twitter.png">
@@ -120,7 +120,7 @@
 <div class="uc-sidebar _slide uc-grid-cell" id="sidebar">
   <div class="uc-sidebar-wrap">
     <div class="uc-sidebar-list">
-      <a href="/ja/docs/" class="_is-current">はじめに</a>
+      <a href="/ja/docs/" >はじめに</a>
       <a href="/ja/docs/install.html" >インストール手順</a>
       <!--<a href="/ja/docs/guide.html" >Coding guide</a>-->
     </div>
@@ -128,7 +128,7 @@
       <p><strong>コンポーネント</strong></p>
       <a href="/ja/docs/header.html" >ヘッダー</a>
       <a href="/ja/docs/footer.html" >フッター</a>
-      <a href="/ja/docs/section.html" >セクション</a>
+      <a href="/ja/docs/section.html" class="_is-current">セクション</a>
       <a href="/ja/docs/grid.html" >グリッド</a>
       <a href="/ja/docs/menu.html" >メニュー</a>
       <a href="/ja/docs/hero.html" >ヒーロー画像</a>
@@ -156,63 +156,152 @@
 
   <div class="uc-grid-cell _col-fit">
 
-  <div class="uc-hero">
-  <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
-  <div class="uc-hero-title">Welcome to UNITS</div>
-</div>
-
-
   <main class="uc-content">
     <section class="uc-section">
 
-      <h2 class="uc-section-title">はじめに</h2>
-      <p>UNITS（ユニッツ）は、シンプルで美しいコンポーネントセットです。<br>CSSを読み込み、UNITS Componentとして定められたHTMLをコピー&ペーストするだけで誰でも簡単に利用することができます。</p>
+      <h2 class="uc-section-title">Section</h2>
+      <p>You can create a main content / section by specifying the <code>uc-content, uc-section</code> class.</p>
 
-      <div class="uc-card-unit">
-        <div class="uc-grid _col-3 _small-col-full _medium-col-2 _gutter">
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">すぐに使える</h3>
-              <p>units.cssを読み込むだけ。あらかじめ様々なコンポーネントが用意されているので、必要なものだけを選択しあなたのWebサイトに組み込むことが可能です。</p>
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Basic</h3>
+        <p>Create a basic section. <br>In principle, <code>uc-content</code> can only be specified once.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-content">
+            <div class="uc-section">
+              <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
           </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">シンプルで美しいビジュアル</h3>
-              <p>各コンポーネントは美しくデザインされています。デザインは定期的にアップデートされますが、大きな変更は加えず、細かいマージンの調整を中心に行われます。</p>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;main class="uc-content"&gt;
+  &lt;section class="uc-section"&gt;
+    &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/main&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. Color variations</h3>
+        <p>Four kinds of color variations are available.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-section _gray">
+            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-section _black">
+            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-section _dark">
+            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-section _zebra">
+            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;!-- Gray --&gt;
+&lt;section class="uc-section _gray"&gt;
+  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;!-- Black --&gt;
+&lt;section class="uc-section _black"&gt;
+  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;!-- Dark --&gt;
+&lt;section class="uc-section _dark"&gt;
+  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;!-- Zebra --&gt;
+&lt;!-- It changes to a gray background when the order of elements is even. --&gt;
+&lt;section class="uc-section _zebra"&gt;
+  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;/section&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-3">
+        <h3>3. Centering</h3>
+        <p>Specify the <code>_center</code> class and center the element.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-section _center">
+            <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repellendus, voluptatum provident dicta recusandae.</p>
+            <div class="uc-btn"><span>Button</span></div>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-section">
+            <div class="uc-section-title _center">Lorem ipsum dolor sit amet.</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo repellendus, voluptatum provident dicta recusandae.</p>
+            <div class="uc-btn"><span>Button</span></div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;!-- Make all elements centered. --&gt;
+&lt;section class="uc-section _center"&gt;
+  &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;!-- Place the title element and the text below it in the center. --&gt;
+&lt;section class="uc-section"&gt;
+  &lt;h2 class="uc-section-title _center"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;/section&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-4">
+        <h3>4. Set max width and center</h3>
+        <p>Set the maximum horizontal width (1200px) and center it.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-section">
+            <div class="uc-section-inner">
+              <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
             </div>
           </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">モダンブラウザサポート</h3>
-              <p>UNITSはMicrosoft Edge, Google Chrome, Firefox, Safariなど各ブラウザの最新バージョンに最適化されています。古いブラウザの動作は...ごめんなさい。</p>
-            </div>
-          </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">レスポンシブWebデザイン</h3>
-              <p>UNITSはレスポンシブWebデザインを採用し、全てのデバイス上で最適化されたデザインを表示できるように調整されています。</p>
-            </div>
-          </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">定期アップデート</h3>
-              <p>UNITSはまだベータ版なので、正式版に向けて定期的にアップデートされます。それは新しいコンポーネントの追加やソースコード最適化、デザインの微調整などです。</p>
-            </div>
-          </div>
-          <div class="uc-grid-cell">
-            <div class="uc-card">
-              <h3 class="uc-card-title">日本語をサポート</h3>
-              <p>開発者は日本人なので、日本語でのサポートが可能です。日本語で書かれているWebページへの最適化、ドキュメントのアップデートも進めています。</p>
-            </div>
-          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;section class="uc-section"&gt;
+  &lt;div class="uc-section-inner"&gt;
+    &lt;h2 class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/h2&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
         </div>
       </div>
 
     </section>
 
     <div class="uc-pager-unit">
-      <div class="uc-btn _primary"><a href="./install.html">インストール手順 →</a></div>
+      <div class="uc-btn"><a href="./footer.html">← Footer</a></div>
+      <div class="uc-btn _primary"><a href="./section.html">Section →</a></div>
     </div>
   </main>
 

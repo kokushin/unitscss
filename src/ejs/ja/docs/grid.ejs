@@ -1,0 +1,292 @@
+<%- include('../../_common/ja/_head', {
+  key: 'docs',
+  pagetitle: 'グリッド | Document'
+}) %>
+
+<%- include('../../_component/docs/ja/_header') %>
+
+<%- include('../../_component/docs/ja/_menu') %>
+
+<div class="uc-grid _small-col-full _nowrap">
+
+<%- include('../../_component/docs/ja/_sidebar', {
+  current: 'grid'
+}) %>
+
+  <div class="uc-grid-cell _col-fit">
+
+  <main class="uc-content">
+    <section class="uc-section">
+
+      <h2 class="uc-section-title">グリッド</h2>
+      <p><code>uc-grid</code> クラスを適用することで、汎用的なグリッドレイアウトを作成することができます。</p>
+
+      <div class="doc-component-box" id="c-1">
+        <h3>1. 基本</h3>
+        <p>横並びのグリッドレイアウトを作成します。</p>
+        <p>親要素として <code>uc-grid</code>、子要素として <code>uc-grid-child</code> を設定します。<br>また、 <code>_gutter</code> クラスを追加することでマージンを適用することもできます。</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-content">
+            <div class="uc-grid _gutter">
+              <div class="uc-grid-cell">
+                <div style="padding:3em;background:white">box1</div>
+              </div>
+              <div class="uc-grid-cell">
+                <div style="padding:3em;background:white">box2</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-grid _gutter"&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box1&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box2&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. 列の横幅の調整</h3>
+        <p><code>_col-fit</code> を指定して列の横幅を自動調整することができます。<br>また、<code>_col-full</code> を指定することで画面の幅全体に配置することもできます。</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-grid _col-fit _gutter">
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box1</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box2</div>
+            </div>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-grid _col-full _gutter">
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box1</div>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;!-- Adjust the width according to the number of elements. --&gt;
+&lt;div class="uc-grid _col-fit _gutter"&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box1&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box2&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Place it across the full width. --&gt;
+&lt;div class="uc-grid _col-full _gutter"&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box1&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-3">
+        <h3>3. 列数の指定</h3>
+        <p>列の数を変更するには、<code>_col-{2...12}</code> クラスを指定します。<br>たとえば、次のサンプルでは4つの列に配置できます。</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-grid _col-4 _gutter">
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box1</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box2</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box3</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box4</div>
+            </div>
+            <div class="uc-grid-cell _col-fit">
+              <div style="padding:3em;background:white">box5</div>
+            </div>
+            <div class="uc-grid-cell _col-fit">
+              <div style="padding:3em;background:white">box6</div>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-grid _col-4 _gutter"&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box1&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box4&lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;!-- It can also be specified as `uc-grid-cell`. --&gt;
+  &lt;div class="uc-grid-cell _col-fit"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box5&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell _col-fit"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box6&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-4">
+        <h3>4. レスポンシブ対応</h3>
+        <p><code>_small-col-{full | fit | 2...12}</code> または <code>_medium-col-{full | fit | 2...12}</code> クラスを指定することで、画面サイズに応じて列の数を変更できます。</p>
+        <p>画面幅が768px以下の場合に <code>_small-col</code> で指定した列数が適用され、769px以上1199px以下のときに <code>_medium-col</code> で指定した列数が適用されます。</p>
+        <p>次のサンプルでは、​​幅が1200px以上の場合は3列に変更され、 1199pxから769pxのときは2列、幅が768px以下のときは1列（フル）に変更されます。</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-grid _col-3 _medium-col-2 _small-col-full _gutter">
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box1</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box2</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box3</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box4</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box5</div>
+            </div>
+            <div class="uc-grid-cell">
+              <div style="padding:3em;background:white">box6</div>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-grid _col-3 _medium-col-2 _small-col-full _gutter"&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box1&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box2&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box3&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box4&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box5&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell"&gt;
+    &lt;div style="padding:3em;background:white"&gt;box6&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-5">
+        <h3>5. 組み合わせて使用​​する</h3>
+        <p>他のコンポーネントや要素を組み合わせることにより、複雑なグリッドレイアウトを作成することも可能です。</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-grid _nowrap">
+            <div class="uc-sidebar uc-grid-cell">
+              <div class="uc-sidebar-wrap">
+                <div class="uc-sidebar-list">
+                  <p><strong>Sidebar</strong></p>
+                  <a href="#">Menu1</a>
+                  <a href="#">Menu2</a>
+                  <a href="#">Menu3</a>
+                  <a href="#">Menu4</a>
+                  <a href="#">Menu5</a>
+                </div>
+              </div>
+            </div>
+            <div class="uc-grid-cell _col-fit">
+              <div class="uc-section">
+                <div class="uc-section-title">Lorem ipsum dolor sit amet.</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="uc-grid-unit">
+                  <div class="uc-grid _col-3 _medium-col-2 _small-col-full _gutter">
+                    <div class="uc-grid-cell">
+                      <div style="padding:3em;background:#eee">box1</div>
+                    </div>
+                    <div class="uc-grid-cell">
+                      <div style="padding:3em;background:#eee">box2</div>
+                    </div>
+                    <div class="uc-grid-cell">
+                      <div style="padding:3em;background:#eee">box3</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-grid _nowrap"&gt;
+  &lt;div class="uc-sidebar uc-grid-cell"&gt;
+    &lt;div class="uc-sidebar-wrap"&gt;
+      &lt;div class="uc-sidebar-list"&gt;
+        &lt;p&gt;&lt;strong&gt;Sidebar&lt;/strong&gt;&lt;/p&gt;
+        &lt;a href="#"&gt;Menu1&lt;/a&gt;
+        &lt;a href="#"&gt;Menu2&lt;/a&gt;
+        &lt;a href="#"&gt;Menu3&lt;/a&gt;
+        &lt;a href="#"&gt;Menu4&lt;/a&gt;
+        &lt;a href="#"&gt;Menu5&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-grid-cell _col-fit"&gt;
+    &lt;div class="uc-section"&gt;
+      &lt;div class="uc-section-title"&gt;Lorem ipsum dolor sit amet.&lt;/div&gt;
+      &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+      &lt;div class="uc-grid-unit"&gt;
+        &lt;div class="uc-grid _col-3 _medium-col-2 _small-col-full _gutter"&gt;
+          &lt;div class="uc-grid-cell"&gt;
+            &lt;div style="padding:3em;background:#eee"&gt;box1&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="uc-grid-cell"&gt;
+            &lt;div style="padding:3em;background:#eee"&gt;box2&lt;/div&gt;
+          &lt;/div&gt;
+          &lt;div class="uc-grid-cell"&gt;
+            &lt;div style="padding:3em;background:#eee"&gt;box3&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="uc-pager-unit">
+      <div class="uc-btn"><a href="./section.html">← セクション</a></div>
+      <div class="uc-btn _primary"><a href="./menu.html">メニュー →</a></div>
+    </div>
+  </main>
+
+  </div>
+
+</div>
+
+<%- include('../../_component/_footer') %>
+
+<%- include('../../_common/_foot') %>
