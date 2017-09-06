@@ -1,0 +1,200 @@
+<%- include('../../_common/ja/_head', {
+  key: 'docs',
+  pagetitle: 'ヘッダー | Document'
+}) %>
+
+<%- include('../../_component/docs/ja/_header') %>
+
+<%- include('../../_component/docs/ja/_menu') %>
+
+<div class="uc-grid _small-col-full _nowrap">
+
+<%- include('../../_component/docs/ja/_sidebar', {
+  current: 'header'
+}) %>
+
+  <div class="uc-grid-cell _col-fit">
+
+  <main class="uc-content">
+    <section class="uc-section">
+
+      <h2 class="uc-section-title">ヘッダー</h2>
+      <p><code>uc-header</code>クラスを適用することで、ヘッダーを作成することができます。</p>
+
+      <div class="doc-component-box" id="c-1">
+        <h3>1. 基本</h3>
+        <p>基本のヘッダーを作成します。</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-header">
+            <div class="uc-header-logo">UNITS</div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;header class="uc-header"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/header&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. カラーバリエーション</h3>
+        <p>2種類のカラーバリエーションが用意されています。</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-header _black">
+            <div class="uc-header-logo">UNITS</div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-header _dark">
+            <div class="uc-header-logo">UNITS</div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;!-- Black --&gt;
+&lt;header class="uc-header _black"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;!-- Dark --&gt;
+&lt;header class="uc-header _dark"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/header&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-3">
+        <h3>3. ゴーストヘッダー</h3>
+        <p><code>uc-hero</code> クラスを指定することで、背景が透過されたヘッダーを作成することができます。<br>
+        <code>uc-hero</code> クラスと併用するのが効果的です。</p>
+
+        <div class="doc-component-preview">
+          <div class="doc-component-preview-inner">
+            <div class="uc-header _ghost">
+              <div class="uc-header-logo">UNITS</div>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="uc-hero">
+              <div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"></div>
+              <div class="uc-hero-title">Hero components</div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;header class="uc-header _ghost"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;div class="uc-hero"&gt;
+  &lt;div class="uc-hero-bg" style="background-image:url(https://source.unsplash.com/random)"&gt;&lt;/div&gt;
+  &lt;div class="uc-hero-title"&gt;Hero components&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-4">
+        <h3>4. 固定ヘッダー</h3>
+        <p>ページ最上部に固定され、スクロールに追従するヘッダーを作成します。</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-header">
+            <div class="uc-header-logo">UNITS</div>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;header class="uc-header _fixed"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/header&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-5">
+        <h3>5. ヘッダーメニュー (テキストベース)</h3>
+        <p>テキストベースのヘッダーメニューを作成します。</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-header">
+            <div class="uc-header-logo">UNITS</div>
+            <div class="uc-header-menu">
+              <a href="#">Menu1</a>
+              <a href="#">Menu2</a>
+              <a href="#">Menu3</a>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;header class="uc-header"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;div class="uc-header-menu"&gt;
+    &lt;a href="#"&gt;Menu1&lt;/a&gt;
+    &lt;a href="#"&gt;Menu2&lt;/a&gt;
+    &lt;a href="#"&gt;Menu3&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-6">
+        <h3>6. ヘッダーメニュー (ボタン)</h3>
+        <p>ヘッダーメニューボタンを作成します。 <br>このクラスは <code>uc-menu._slide</code> が配置されている場合のみ使用できます。</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-header">
+            <div class="uc-header-logo">UNITS</div>
+            <div class="uc-menu-btn _text" data-open-target="#menu">
+              <button><i class="uc-menu-btn-icon"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;header class="uc-header"&gt;
+  &lt;h1 class="uc-header-logo"&gt;UNITS&lt;/h1&gt;
+  &lt;div class="uc-menu-btn _text" data-open-target="#menu"&gt;
+    &lt;button&gt;&lt;i class="uc-menu-btn-icon"&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;nav class="uc-menu _slide" id="menu"&gt;
+  &lt;div class="uc-menu-wrap"&gt;
+    &lt;div class="uc-menu-list"&gt;
+      &lt;a href="#"&gt;Menu1&lt;/a&gt;
+      &lt;a href="#"&gt;Menu2&lt;/a&gt;
+      &lt;a href="#"&gt;Menu3&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/nav&gt;
+</code></pre>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="uc-pager-unit">
+      <div class="uc-btn"><a href="./install.html">← インストール手順</a></div>
+      <div class="uc-btn _primary"><a href="./footer.html">フッター →</a></div>
+    </div>
+  </main>
+
+  </div>
+
+</div>
+
+<%- include('../../_component/_footer') %>
+
+<%- include('../../_common/_foot') %>

@@ -58,4 +58,4 @@ typings/
 .env
 
 # demo
-public/test.html
+public/**/*.html

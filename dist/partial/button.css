@@ -1,4 +1,4 @@
-/*! UNITS v0.1.15 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
+/*! UNITS v0.1.20 | MIT License | Copyright 2017 @kokushing | mail@kokush.in | https://unitscss.com */
 /**
  * UNITS btn components
  *
@@ -57,6 +57,7 @@
     padding: 18px 48px;
     text-decoration: none;
     text-transform: uppercase;
+    color: #333;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: .05em;
@@ -73,6 +74,10 @@
       text-align: center;
       font-size: .875rem
   }
+    }
+
+._ghost .uc-btn > span, ._ghost .uc-btn > a {
+      color: #333;
     }
 
 .uc-btn._full {

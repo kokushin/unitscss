@@ -1,0 +1,124 @@
+<%- include('../../_common/ja/_head', {
+  key: 'docs',
+  pagetitle: 'フッター | Document'
+}) %>
+
+<%- include('../../_component/docs/ja/_header') %>
+
+<%- include('../../_component/docs/ja/_menu') %>
+
+<div class="uc-grid _small-col-full _nowrap">
+
+<%- include('../../_component/docs/ja/_sidebar', {
+  current: 'footer'
+}) %>
+
+  <div class="uc-grid-cell _col-fit">
+
+  <main class="uc-content">
+    <section class="uc-section">
+
+      <h2 class="uc-section-title">フッター</h2>
+      <p><code>uc-footer</code> クラスを適用することで、フッターを作成することができます。</p>
+
+      <div class="doc-component-box" id="c-1">
+        <h3>1. 基本</h3>
+        <p>基本的なフッターを作成します。</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-footer">
+            <div class="uc-footer-menu">
+              <a href="#">Menu1</a>
+              <a href="#">Menu2</a>
+              <a href="#">Menu3</a>
+            </div>
+            <div class="uc-footer-logo"><cite>UNITS</cite></div>
+            <p>Lorem ipsum dolor <a href="#">sit</a> amet.</p>
+            <small>&copy; <%= new Date().getFullYear() %> UNITS</small>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;footer class="uc-footer"&gt;
+  &lt;div class="uc-footer-menu"&gt;
+    &lt;a href="#"&gt;Menu1&lt;/a&gt;
+    &lt;a href="#"&gt;Menu2&lt;/a&gt;
+    &lt;a href="#"&gt;Menu3&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-footer-logo"&gt;&lt;cite&gt;UNITS&lt;/cite&gt;&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor &lt;a href="#"&gt;sit&lt;/a&gt; amet.&lt;/p&gt;
+  &lt;small&gt;&amp;copy; 2017 UNITS&lt;/small&gt;
+&lt;/footer&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. カラーバリエーション</h3>
+        <p>2種類のカラーバリエーションが用意されています。</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-footer _black">
+            <div class="uc-footer-menu">
+              <a href="#">Menu1</a>
+              <a href="#">Menu2</a>
+              <a href="#">Menu3</a>
+            </div>
+            <div class="uc-footer-logo"><cite>UNITS</cite></div>
+            <p>Lorem ipsum dolor <a href="#">sit</a> amet.</p>
+            <small>&copy; <%= new Date().getFullYear() %> UNITS</small>
+          </div>
+          <div>&nbsp;</div>
+          <div class="uc-footer _dark">
+            <div class="uc-footer-menu">
+              <a href="#">Menu1</a>
+              <a href="#">Menu2</a>
+              <a href="#">Menu3</a>
+            </div>
+            <div class="uc-footer-logo"><cite>UNITS</cite></div>
+            <p>Lorem ipsum dolor <a href="#">sit</a> amet.</p>
+            <small>&copy; <%= new Date().getFullYear() %> UNITS</small>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;!-- Black --&gt;
+&lt;footer class="uc-footer _black"&gt;
+  &lt;div class="uc-footer-menu"&gt;
+    &lt;a href="#"&gt;Menu1&lt;/a&gt;
+    &lt;a href="#"&gt;Menu2&lt;/a&gt;
+    &lt;a href="#"&gt;Menu3&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-footer-logo"&gt;&lt;cite&gt;UNITS&lt;/cite&gt;&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor &lt;a href="#"&gt;sit&lt;/a&gt; amet.&lt;/p&gt;
+  &lt;small&gt;&amp;copy; 2017 UNITS&lt;/small&gt;
+&lt;/footer&gt;
+
+&lt;!-- Dark --&gt;
+&lt;footer class="uc-footer _dark"&gt;
+  &lt;div class="uc-footer-menu"&gt;
+    &lt;a href="#"&gt;Menu1&lt;/a&gt;
+    &lt;a href="#"&gt;Menu2&lt;/a&gt;
+    &lt;a href="#"&gt;Menu3&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class="uc-footer-logo"&gt;&lt;cite&gt;UNITS&lt;/cite&gt;&lt;/div&gt;
+  &lt;p&gt;Lorem ipsum dolor &lt;a href="#"&gt;sit&lt;/a&gt; amet.&lt;/p&gt;
+  &lt;small&gt;&amp;copy; 2017 UNITS&lt;/small&gt;
+&lt;/footer&gt;
+</code></pre>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="uc-pager-unit">
+      <div class="uc-btn"><a href="./header.html">← ヘッダー</a></div>
+      <div class="uc-btn _primary"><a href="./section.html">セクション →</a></div>
+    </div>
+  </main>
+
+  </div>
+
+</div>
+
+<%- include('../../_component/_footer') %>
+
+<%- include('../../_common/_foot') %>

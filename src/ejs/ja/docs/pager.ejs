@@ -1,0 +1,100 @@
+<%- include('../../_common/ja/_head', {
+  key: 'docs',
+  pagetitle: 'Pager | Document'
+}) %>
+
+<%- include('../../_component/docs/ja/_header') %>
+
+<%- include('../../_component/docs/ja/_menu') %>
+
+<div class="uc-grid _small-col-full _nowrap">
+
+<%- include('../../_component/docs/ja/_sidebar', {
+  current: 'pager'
+}) %>
+
+  <div class="uc-grid-cell _col-fit">
+
+  <main class="uc-content">
+    <section class="uc-section">
+
+      <h2 class="uc-section-title">Pager</h2>
+      <p>You can create a pager by specifying the <code>uc-pager</code> class.</p>
+
+      <div class="doc-component-box" id="c-1">
+        <h3>1. Basic</h3>
+        <p>Create a basic pager.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-pager-unit">
+            <ul class="uc-pager">
+              <li class="_current"><span>1</span></li>
+              <li><a href="#"><span>2</span></a></li>
+              <li><a href="#"><span>3</span></a></li>
+              <li><a href="#"><span>4</span></a></li>
+              <li class="_ghost"><span>...</span></li>
+              <li><a href="#"><span>10</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-pager-unit"&gt;
+  &lt;ul class="uc-pager"&gt;
+    &lt;li class="_current"&gt;&lt;span&gt;1&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;3&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;4&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="_ghost"&gt;&lt;span&gt;...&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;10&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+      <div class="doc-component-box" id="c-2">
+        <h3>2. Centering</h3>
+        <p>By specifying the <code>_center</code> class, you can center the elements.</p>
+
+        <div class="doc-component-preview">
+          <div class="uc-pager-unit _center">
+            <ul class="uc-pager">
+              <li class="_current"><span>1</span></li>
+              <li><a href="#"><span>2</span></a></li>
+              <li><a href="#"><span>3</span></a></li>
+              <li><a href="#"><span>4</span></a></li>
+              <li class="_ghost"><span>...</span></li>
+              <li><a href="#"><span>10</span></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="uc-code-unit">
+<pre><code class="html">&lt;div class="uc-pager-unit _center"&gt;
+  &lt;ul class="uc-pager"&gt;
+    &lt;li class="_current"&gt;&lt;span&gt;1&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;2&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;3&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;4&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="_ghost"&gt;&lt;span&gt;...&lt;/span&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;&lt;span&gt;10&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="uc-pager-unit">
+      <div class="uc-btn"><a href="./video.html">← Video</a></div>
+      <div class="uc-btn _primary"><a href="./loading.html">Loading →</a></div>
+    </div>
+  </main>
+
+  </div>
+
+</div>
+
+<%- include('../../_component/_footer') %>
+
+<%- include('../../_common/_foot') %>

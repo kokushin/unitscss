@@ -49,6 +49,7 @@
     padding: 18px 48px;
     text-decoration: none;
     text-transform: uppercase;
+    color: var(--color-text);
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: .05em;
@@ -59,6 +60,10 @@
       padding: 16px 24px;
       text-align: center;
       font-size: .875rem;
+    }
+
+    ._ghost & {
+      color: var(--color-text);
     }
   }
 

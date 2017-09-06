@@ -1,34 +1,35 @@
 <div class="uc-sidebar _slide uc-grid-cell" id="sidebar">
   <div class="uc-sidebar-wrap">
     <div class="uc-sidebar-list">
-      <a href="/ja/docs/" class="_is-current">はじめに</a>
-      <a href="/ja/docs/install.html">インストール</a>
-      <a href="/ja/docs/coding_guide.html">コーディングガイド</a>
+      <a href="/ja/docs/" <% if (current === 'index') { %>class="_is-current"<% } %>>はじめに</a>
+      <a href="/ja/docs/install.html" <% if (current === 'install') { %>class="_is-current"<% } %>>インストール手順</a>
+      <!--<a href="/ja/docs/guide.html" <% if (current === 'guide') { %>class="_is-current"<% } %>>Coding guide</a>-->
     </div>
     <div class="uc-sidebar-list">
       <p><strong>コンポーネント</strong></p>
-      <a href="/ja/docs/components/header.html">ヘッダー</a>
-      <a href="/ja/docs/components/footer.html">フッター</a>
-      <a href="/ja/docs/components/section.html">セクション</a>
-      <a href="/ja/docs/components/sidebar.html">サイドバー</a>
-      <a href="/ja/docs/components/grid.html">グリッド</a>
-      <a href="/ja/docs/components/hero.html">ヒーローエリア</a>
-      <a href="/ja/docs/components/card.html">カード</a>
-      <a href="/ja/docs/components/button.html">ボタン</a>
-      <a href="/ja/docs/components/form.html">フォーム</a>
-      <a href="/ja/docs/components/list.html">リスト</a>
-      <a href="/ja/docs/components/table.html">テーブル</a>
-      <a href="/ja/docs/components/menu.html">メニュー</a>
-      <a href="/ja/docs/components/embed.html">埋め込み</a>
-      <a href="/ja/docs/components/pager.html">ページャー</a>
-      <a href="/ja/docs/components/typography.html">タイポグラフィー</a>
-      <a href="/ja/docs/components/loading.html">ローディング</a>
+      <a href="/ja/docs/header.html" <% if (current === 'header') { %>class="_is-current"<% } %>>ヘッダー</a>
+      <a href="/ja/docs/footer.html" <% if (current === 'footer') { %>class="_is-current"<% } %>>フッター</a>
+      <a href="/ja/docs/section.html" <% if (current === 'section') { %>class="_is-current"<% } %>>セクション</a>
+      <a href="/ja/docs/grid.html" <% if (current === 'grid') { %>class="_is-current"<% } %>>グリッド</a>
+      <a href="/ja/docs/menu.html" <% if (current === 'menu') { %>class="_is-current"<% } %>>メニュー</a>
+      <a href="/ja/docs/hero.html" <% if (current === 'hero') { %>class="_is-current"<% } %>>ヒーロー画像</a>
+      <a href="/ja/docs/card.html" <% if (current === 'card') { %>class="_is-current"<% } %>>カード</a>
+      <a href="/ja/docs/button.html" <% if (current === 'button') { %>class="_is-current"<% } %>>ボタン</a>
+      <a href="/ja/docs/form.html" <% if (current === 'form') { %>class="_is-current"<% } %>>フォーム</a>
+      <a href="/ja/docs/list.html" <% if (current === 'list') { %>class="_is-current"<% } %>>リスト</a>
+      <a href="/ja/docs/table.html" <% if (current === 'table') { %>class="_is-current"<% } %>>テーブル</a>
+      <a href="/ja/docs/photo.html" <% if (current === 'photo') { %>class="_is-current"<% } %>>埋め込み画像</a>
+      <a href="/ja/docs/code.html" <% if (current === 'code') { %>class="_is-current"<% } %>>埋め込みコード</a>
+      <a href="/ja/docs/video.html" <% if (current === 'video') { %>class="_is-current"<% } %>>埋め込み動画</a>
+      <a href="/ja/docs/pager.html" <% if (current === 'pager') { %>class="_is-current"<% } %>>ページャー</a>
+      <!--<a href="/ja/docs/typography.html" <% if (current === 'typography') { %>class="_is-current"<% } %>>Typography</a>-->
+      <a href="/ja/docs/loading.html" <% if (current === 'loading') { %>class="_is-current"<% } %>>ローディング</a>
     </div>
     <div class="uc-sidebar-list">
       <p><strong>関連リンク</strong></p>
-      <a href="/">Home</a>
-      <a href="https://github.com/kokushin/units" target="_blank">GitHub</a>
-      <a href="https://twitter.com/kokushing" target="_blank">Twitter</a>
+      <a href="/ja/">トップページ</a>
+      <a href="https://github.com/kokushin/unitscss">GitHub</a>
+      <a href="https://twitter.com/kokushing">Twitter</a>
     </div>
   </div>
 </div>

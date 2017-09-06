@@ -12,7 +12,7 @@ Simple and beautiful component set.
 
 ## Document
 
-[English](https://unitscss.com/docs/) / 日本語
+[English](https://unitscss.com/docs/) / [日本語](https://unitscss.com/ja/docs/)
 
 ## Feature
 

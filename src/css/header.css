@@ -133,6 +133,7 @@
 
 .uc-header-menu {
   display: flex;
+  align-items: center;
   margin: 0 0 0 24px;
 
   a {
@@ -150,7 +151,9 @@
       font-size: .875rem;
     }
 
-    & + a {
+    & + a,
+    & + .uc-btn,
+    & + .uc-btn-unit {
       margin: 0 0 0 24px;
     }
 
@@ -166,6 +169,13 @@
       &._is-current {
         color: white;
       }
+    }
+  }
+
+  .uc-btn {
+    a {
+      padding: 12px 32px;
+      font-size: .875rem;
     }
   }
 }

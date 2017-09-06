@@ -1078,6 +1078,9 @@ p + h2,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 0 0 24px;
 }
 
@@ -1101,7 +1104,9 @@ p + h2,
   }
     }
 
-.uc-header-menu a + a {
+.uc-header-menu a + a,
+    .uc-header-menu a + .uc-btn,
+    .uc-header-menu a + .uc-btn-unit {
       margin: 0 0 0 24px;
     }
 
@@ -1118,6 +1123,11 @@ p + h2,
 ._dark .uc-header-menu a._is-current, ._black .uc-header-menu a._is-current, ._ghost .uc-header-menu a._is-current {
         color: white;
       }
+
+.uc-header-menu .uc-btn a {
+      padding: 12px 32px;
+      font-size: .875rem;
+    }
 
 /**
  * UNITS footer components
@@ -1735,6 +1745,7 @@ p + h2,
     padding: 18px 48px;
     text-decoration: none;
     text-transform: uppercase;
+    color: #333;
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: .05em;
@@ -1751,6 +1762,10 @@ p + h2,
       text-align: center;
       font-size: .875rem
   }
+    }
+
+._ghost .uc-btn > span, ._ghost .uc-btn > a {
+      color: #333;
     }
 
 .uc-btn._full {
@@ -3440,6 +3455,55 @@ select.uc-form-parts,
 ._theme-light .uc-btn {
     font-family: 'Source Sans Pro';
     border-radius: 50px;
+  }
+
+/**
+ * UNITS docs theme
+ *
+ * ==================================
+ * @required: [body._theme-docs]
+ * ==================================
+ */
+
+._theme-docs .doc-component-box {
+    padding: 100px 0 0;
+    margin-top: 0;
+  }
+
+._theme-docs .doc-component-box h3 {
+    margin-top: 0;
+  }
+
+._theme-docs .doc-component-box .doc-component-preview {
+    margin: 40px -80px 0;
+    padding: 40px 80px;
+    background-color:#f2f2f2;
+  }
+
+@media (max-width: 1199px) and (min-width: 769px) {
+    ._theme-docs .doc-component-box .doc-component-preview {
+      margin: 40px -40px 0;
+      padding: 40px 40px;
+      background-color:#f2f2f2;
+    }
+  }
+
+@media (max-width: 768px) {
+    ._theme-docs .doc-component-box .doc-component-preview {
+      margin: 40px -20px 0;
+      padding: 40px 20px;
+    }
+  }
+
+._theme-docs .doc-component-box .doc-component-preview-inner {
+    position: relative;
+  }
+
+._theme-docs .doc-component-box .uc-code-unit {
+    max-width: 800px;
+    margin: 40px 0 0;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ebebeb;
   }
 
 /*# sourceMappingURL=maps/units.css.map */
