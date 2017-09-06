@@ -62,7 +62,7 @@ gulp.task('default', ['styles', 'javascripts', 'dev:styles', 'dev:javascripts', 
 
 gulp.task('dev:serve', ['dev:styles', 'dev:javascripts', 'dev:htmls'], () => {
   browserSync.init({
-    server: './docs',
+    server: './public',
     open: false,
     notify: false,
     ghostMode: false,
@@ -81,7 +81,7 @@ gulp.task('dev:styles', ['styles'], () => {
     .pipe($.postcss(processors))
     .pipe($.rename('units.css'))
     .pipe($.sourcemaps.write('./maps'))
-    .pipe(gulp.dest('./docs/css'))
+    .pipe(gulp.dest('./public/css'))
     .pipe(browserSync.stream());
 });
 
@@ -90,7 +90,7 @@ gulp.task('dev:javascripts', ['javascripts'], () => {
     .pipe($.plumber())
     .pipe(webpackStream(webpackConfig, webpack))
     .pipe($.rename('units.js'))
-    .pipe(gulp.dest('./docs/js'));
+    .pipe(gulp.dest('./public/js'));
 });
 
 gulp.task('dev:htmls', () => {
@@ -109,7 +109,7 @@ gulp.task('dev:htmls', () => {
     }, {}, {
       ext: '.html'
     }))
-    .pipe(gulp.dest('docs'));
+    .pipe(gulp.dest('public'));
 });
 
 gulp.task('dev:html-reload', ['dev:htmls'], (done) => {
